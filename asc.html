@@ -15,7 +15,7 @@
   h1 { font-family:Georgia,serif; font-weight:400; font-size:28px; margin:0 0 4px; letter-spacing:.01em; }
   .tag { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; }
   .bio { color:var(--muted); font-size:14px; max-width:360px; margin:10px auto 0; }
-  .section { margin-top:36px; }
+  .section { margin-top:36px; scroll-margin-top:20px; }
   .section h2 { font-family:Georgia,serif; font-weight:400; font-size:15px; color:var(--accent); letter-spacing:.18em; text-transform:uppercase; text-align:center; margin:0 0 14px; }
   a.card { display:flex; align-items:center; justify-content:space-between; gap:14px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin:10px 0; color:var(--ink); text-decoration:none; transition:transform .15s ease, border-color .15s ease; }
   a.card:hover { transform:translateY(-2px); border-color:var(--accent); }
@@ -39,36 +39,89 @@
     <p class="bio">Small-space decor picks for renters, first homes, and tiny dream corners.</p>
   </div>
 
-  <div class="section">
-    <h2>Bedroom</h2>
-    <a class="card" href="https://www.amazon.com/s?k=boho+woven+wall+hanging+macrame&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Macrame Wall Hanging</div><div class="s">Cozy neutral statement</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=linen+duvet+cover+queen+neutral&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Neutral Linen Duvet</div><div class="s">Effortless bedroom reset</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=warm+LED+bedside+lamp+ceramic&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Ceramic Bedside Lamp</div><div class="s">Warm glow, soft aesthetic</div></span><span class="arrow">›</span></a>
+  <div class="section" id="bedroom">
+    <h2>Small Bedroom</h2>
+    <a class="card" href="https://www.amazon.com/s?k=rattan+headboard+queen+small+space&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rattan Queen Headboard</div><div class="s">$80–180 · Cane-weave aesthetic</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=linen+duvet+cover+queen+oat&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Oat Linen Duvet</div><div class="s">$60–120 · Effortless reset</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=warm+LED+bedside+lamp+ceramic&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Ceramic Bedside Lamp</div><div class="s">$30–55 · Soft warm glow</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=boucle+throw+pillow+cream+18&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Boucle Throw Pillows</div><div class="s">$20–40 · Soft cream texture</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=peel+and+stick+wallpaper+arch+bedroom&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Peel-and-Stick Arch Wallpaper</div><div class="s">$25–45 · Renter-safe accent</div></span><span class="arrow">›</span></a>
   </div>
 
-  <div class="section">
-    <h2>Kitchen</h2>
-    <a class="card" href="https://www.amazon.com/s?k=glass+pantry+canister+set+airtight&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Glass Pantry Canisters</div><div class="s">Instant pinterest kitchen</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=wood+cutting+board+marble+handle&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wood &amp; Marble Board</div><div class="s">Countertop staple</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=linen+tea+towel+set+neutral&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Linen Tea Towel Set</div><div class="s">Soft, neutral, reusable</div></span><span class="arrow">›</span></a>
+  <div class="section" id="kitchen">
+    <h2>Small Kitchen</h2>
+    <a class="card" href="https://www.amazon.com/s?k=glass+pantry+canister+set+airtight&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Glass Pantry Canisters</div><div class="s">$25–45 · Instant pinterest kitchen</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=peel+and+stick+backsplash+terracotta&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Peel-and-Stick Backsplash</div><div class="s">$20–40 · No-tools rental fix</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=small+kitchen+rolling+cart+wood&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wood Rolling Cart</div><div class="s">$60–100 · Counter extender</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=rattan+pendant+light+small+kitchen&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rattan Pendant Light</div><div class="s">$50–110 · Boho swap-in</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=linen+tea+towel+set+neutral&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Linen Tea Towel Set</div><div class="s">$15–25 · Neutral textures</div></span><span class="arrow">›</span></a>
   </div>
 
-  <div class="section">
-    <h2>Living + Nooks</h2>
-    <a class="card" href="https://www.amazon.com/s?k=woven+basket+storage+tall&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tall Woven Storage Basket</div><div class="s">Blanket + plant friendly</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=boucle+accent+chair+cream&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cream Boucle Accent Chair</div><div class="s">The reading-nook move</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=beige+chunky+knit+throw+blanket&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Chunky Knit Throw</div><div class="s">Autumn cozy forever</div></span><span class="arrow">›</span></a>
+  <div class="section" id="bathroom">
+    <h2>Aesthetic Bathroom</h2>
+    <a class="card" href="https://www.amazon.com/s?k=peel+and+stick+terrazzo+bath+tile&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Peel-and-Stick Terrazzo Tile</div><div class="s">$25–55 · Floor refresh, no grout</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=small+bathroom+ladder+shelf+rattan&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rattan Bathroom Ladder Shelf</div><div class="s">$45–85 · Towel + plant combo</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=round+wood+frame+bathroom+mirror&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Round Wood-Frame Mirror</div><div class="s">$40–80 · Soft modern</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=moody+green+towel+set+turkish+cotton&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Moody Green Towel Set</div><div class="s">$30–55 · Spa vibes</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=small+bathroom+rug+washable+boho&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Washable Boho Bath Rug</div><div class="s">$25–45 · Cozy underfoot</div></span><span class="arrow">›</span></a>
   </div>
 
-  <div class="section">
-    <h2>Small-Space Magic</h2>
-    <a class="card" href="https://www.amazon.com/s?k=arched+full+length+mirror+gold&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Arched Full-Length Mirror</div><div class="s">Opens up any room</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=artificial+olive+tree+6ft&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Faux Olive Tree</div><div class="s">The rental-friendly staple</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=peel+and+stick+wallpaper+neutral&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Peel &amp; Stick Wallpaper</div><div class="s">Renter-safe accent wall</div></span><span class="arrow">›</span></a>
+  <div class="section" id="desk">
+    <h2>Aesthetic Desk Setup</h2>
+    <a class="card" href="https://www.amazon.com/s?k=boho+wicker+desk+small+space&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wicker Boho Desk</div><div class="s">$120–220 · Compact + warm</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=arch+mirror+small+space+desk&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Arch Desk Mirror</div><div class="s">$30–55 · Opens up the corner</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=dark+academia+desk+lamp+brass&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Dark Academia Brass Lamp</div><div class="s">$40–80 · The green-shade staple</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=minimalist+desk+organizer+wood&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wood Desk Organizer</div><div class="s">$25–50 · Minimal clutter cure</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=scandi+desk+chair+small+wood&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Scandi Desk Chair</div><div class="s">$80–160 · Light wood + linen</div></span><span class="arrow">›</span></a>
+  </div>
+
+  <div class="section" id="entryway">
+    <h2>Entryway</h2>
+    <a class="card" href="https://www.amazon.com/s?k=narrow+entryway+console+table+arched&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Narrow Arched Console</div><div class="s">$110–220 · Slim + elegant</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=boho+runner+rug+small+entryway&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Boho Runner Rug</div><div class="s">$35–65 · Welcomes the apartment</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=scandi+coat+rack+wall+mounted&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Scandi Wall Coat Rack</div><div class="s">$25–45 · No-shoe-pile fix</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=entryway+bench+with+storage+small&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Storage Entryway Bench</div><div class="s">$80–160 · Sit + stash</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=key+and+mail+holder+wall+wood&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wood Key + Mail Holder</div><div class="s">$15–28 · The lost-keys cure</div></span><span class="arrow">›</span></a>
+  </div>
+
+  <div class="section" id="reading-nook">
+    <h2>Reading Nook</h2>
+    <a class="card" href="https://www.amazon.com/s?k=boucle+accent+chair+cream&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cream Boucle Accent Chair</div><div class="s">$200–400 · The reading-nook move</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=bay+window+seat+cushion+linen&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Linen Bay Window Cushion</div><div class="s">$60–120 · Reading throne</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=japandi+floor+lamp+rattan+arc&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Japandi Arc Floor Lamp</div><div class="s">$80–160 · Warm + sculptural</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=beige+chunky+knit+throw+blanket&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Chunky Knit Throw</div><div class="s">$45–90 · Forever cozy</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=fairy+lights+warm+white+plug+in&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Plug-In Fairy Lights</div><div class="s">$15–28 · Mood instantly</div></span><span class="arrow">›</span></a>
+  </div>
+
+  <div class="section" id="balcony">
+    <h2>Tiny Balcony</h2>
+    <a class="card" href="https://www.amazon.com/s?k=balcony+bistro+table+set+2+chair+small&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Balcony Bistro Set (2-Chair)</div><div class="s">$110–220 · Café energy</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=balcony+boho+lounge+chair+rattan&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Boho Rattan Lounge Chair</div><div class="s">$120–250 · Sunday-morning chair</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=balcony+rug+outdoor+washable+9x12&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Washable Outdoor Rug</div><div class="s">$50–100 · Floor-fix in 30 sec</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=balcony+string+lights+solar+warm&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Solar Balcony String Lights</div><div class="s">$25–45 · Plugless ambiance</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=small+balcony+planter+rail+set&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rail Planter Set</div><div class="s">$30–55 · Vertical garden</div></span><span class="arrow">›</span></a>
+  </div>
+
+  <div class="section" id="storage">
+    <h2>Small-Space Storage</h2>
+    <a class="card" href="https://www.amazon.com/s?k=small+space+oak+pantry+storage&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Oak Pantry Cabinet</div><div class="s">$130–260 · Tall + slim</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=under+bed+storage+drawer+set&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Under-Bed Drawer Set</div><div class="s">$30–60 · Hidden capacity</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=woven+basket+storage+tall&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tall Woven Basket</div><div class="s">$25–55 · Blanket + plant friendly</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=stackable+closet+organizer+set&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Stackable Closet Organizer</div><div class="s">$40–80 · Apartment closet fix</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=renter+friendly+over+door+hooks&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Over-Door Hook Rack</div><div class="s">$10–20 · No-drill capacity</div></span><span class="arrow">›</span></a>
+  </div>
+
+  <div class="section" id="renter-magic">
+    <h2>Renter-Friendly Magic</h2>
+    <a class="card" href="https://www.amazon.com/s?k=arched+full+length+mirror+gold&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Arched Floor Mirror</div><div class="s">$80–180 · Opens up any room</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=artificial+olive+tree+6ft&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">6ft Faux Olive Tree</div><div class="s">$60–110 · Rental staple</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=command+strips+heavy+duty+damage+free&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Heavy-Duty Command Strips</div><div class="s">$10–18 · Damage-free hanging</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=no+drill+curtain+rod+tension&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">No-Drill Tension Rod</div><div class="s">$15–25 · Curtains, instantly</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=stick+on+led+strip+lights+warm+white&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Stick-On Warm LED Strip</div><div class="s">$15–28 · Cabinet glow-up</div></span><span class="arrow">›</span></a>
   </div>
 
   <div class="socials">
-    <a href="https://www.pinterest.com/saltybayflipsasc" target="_blank" rel="noopener">Pinterest</a>
+    <a href="https://www.pinterest.com/saltybayflipspin" target="_blank" rel="noopener">Pinterest</a>
   </div>
 
   <div class="disclosure">
