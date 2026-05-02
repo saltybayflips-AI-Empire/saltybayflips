@@ -1,0 +1,48 @@
+{
+  "platform": "tiktok",
+  "synced_at": "2026-05-02T17:30:00",
+  "accounts": {
+    "laurasunkist": {
+      "display_name": "Luxe Living Daily",
+      "handle": "@laurasunkist",
+      "url": "https://www.tiktok.com/@laurasunkist",
+      "followers": 16300,
+      "followers_note": "from CURRENT_STATE.md (16.3K) — TikTok Studio doesn't surface follower count on overview page",
+      "last_7d": {
+        "video_views": 103,
+        "video_views_delta": 39,
+        "video_views_delta_pct": 60.9,
+        "profile_views": 4,
+        "likes": 2,
+        "comments": -5,
+        "shares": 0,
+        "est_rewards_usd": 0
+      },
+      "last_28d": {
+        "video_views": 189,
+        "video_views_delta": -87,
+        "video_views_delta_pct": -31.5,
+        "profile_views": 14,
+        "likes": 5,
+        "comments": -8,
+        "shares": 0,
+        "est_rewards_usd": 0
+      },
+      "traffic_sources_pct": {
+        "Following": 100,
+        "For You": 0,
+        "Personal profile": 0,
+        "Search": 0,
+        "Sound": 0
+      }
+    },
+    "fuzzy_frames_ai": {
+      "display_name": "Fuzzy Frames AI",
+      "handle": "@fuzzy.frames.ai",
+      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
+      "status": "pending_business_verification",
+      "note": "Created 2026-05-01, IRS doc submitted, under review. Bio link blocked until approved. Analytics may be limited."
+    }
+  },
+  "report_url": "https://www.tiktok.com/tiktokstudio/analytics"
+}
