@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0f1115">
-<title>AI Empire ΓÇö Content Dashboard</title>
+<title>AI Empire — Content Dashboard</title>
 <style>
   :root {
     --bg:#0f1115; --card:#171a21; --card2:#1f232c; --line:#2a2f3a;
@@ -145,7 +145,7 @@
     <h1>AI Empire <span class="sub">Content Dashboard</span></h1>
     <div class="today" id="today"></div>
   </div>
-  <button class="refresh" id="refreshBtn" onclick="loadAll()">Γå╗ Refresh</button>
+  <button class="refresh" id="refreshBtn" onclick="loadAll()">↻ Refresh</button>
 </header>
 
 <div id="errors"></div>
@@ -195,22 +195,22 @@
 <footer>
   <div>Source of truth: <code>{niche}/content_tracker.json</code> per niche</div>
   <div style="margin-top:6px">Updated when you push fresh data via <code>scripts/sync_dashboard_data.py</code></div>
-  <div style="margin-top:6px"><a href="index.html">ΓåÉ Back to linktree</a></div>
+  <div style="margin-top:6px"><a href="index.html">← Back to linktree</a></div>
 </footer>
 
 </div>
 
 <script>
 const NICHES = [
-  { slug:'aesthetic_spaces_co', short:'ASC', title:'Aesthetic Spaces Co',
+  { slug:'aesthetic_spaces_co', data_file:'asc', short:'ASC', title:'Aesthetic Spaces Co',
     color:'asc', pinterest:'@saltybayflipspin',
     pinterest_url:'https://www.pinterest.com/saltybayflipspin/',
     img_base:'img/asc/' },
-  { slug:'luxe_living_daily', short:'LLD', title:'Luxe Living Daily',
+  { slug:'luxe_living_daily', data_file:'lld', short:'LLD', title:'Luxe Living Daily',
     color:'lld', pinterest:'@saltybayflipsluxe',
     pinterest_url:'https://www.pinterest.com/saltybayflipsluxe/',
     img_base:'img/lld/' },
-  { slug:'fuzzy_frames_ai', short:'Fuzzy', title:'Fuzzy Frames AI',
+  { slug:'fuzzy_frames_ai', data_file:'fuzzy', short:'Fuzzy', title:'Fuzzy Frames AI',
     color:'fuzzy', pinterest:'@saltybayflipsfuzzy',
     pinterest_url:'https://www.pinterest.com/saltybayflipsfuzzy/',
     img_base:'img/fuzzy/' },
@@ -284,7 +284,7 @@ function pinCard(post) {
 
 async function loadOne(niche) {
   try {
-    const r = await fetch(`data/${niche.slug}.json`, {cache:'no-cache'});
+    const r = await fetch(`data/${niche.data_file}.json`, {cache:'no-cache'});
     if (!r.ok) throw new Error(r.status);
     const data = await r.json();
     return { niche, data };
@@ -296,14 +296,14 @@ async function loadOne(niche) {
 async function loadAll() {
   document.getElementById('errors').innerHTML = '';
   document.getElementById('refreshBtn').disabled = true;
-  document.getElementById('refreshBtn').textContent = 'Γå╗ Loading...';
+  document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
   const results = await Promise.all(NICHES.map(loadOne));
   const errs = results.filter(r => !r.data).map(r =>
     `Couldn't load ${r.niche.title}: ${r.error}`);
   if (errs.length) {
     document.getElementById('errors').innerHTML =
-      `<div class="err">ΓÜá ${errs.join(' ┬╖ ')} ΓÇö run <code>python scripts/sync_dashboard_data.py</code> then refresh</div>`;
+      `<div class="err">⚠ ${errs.join(' · ')} — run <code>python scripts/sync_dashboard_data.py</code> then refresh</div>`;
   }
 
   allPosts = [];
@@ -319,7 +319,7 @@ async function loadAll() {
   render(totalRejected, results);
 
   document.getElementById('refreshBtn').disabled = false;
-  document.getElementById('refreshBtn').textContent = 'Γå╗ Refresh';
+  document.getElementById('refreshBtn').textContent = '↻ Refresh';
 }
 
 function render(totalRejected, results) {
@@ -350,7 +350,7 @@ function render(totalRejected, results) {
     <div class="stat warn">
       <div class="lbl">Posting today</div>
       <div class="val">${postingToday.length}</div>
-      <div class="delta">${postingToday.map(p => NICHES.find(n => n.slug === p.niche).short).join(' ┬╖ ') || 'nothing today'}</div>
+      <div class="delta">${postingToday.map(p => NICHES.find(n => n.slug === p.niche).short).join(' · ') || 'nothing today'}</div>
     </div>
     <div class="stat">
       <div class="lbl">QA rejected</div>
@@ -407,7 +407,7 @@ function render(totalRejected, results) {
   document.getElementById('posted').innerHTML = recentPosted.length
     ? recentPosted.map(pinCard).join('')
     : '<div class="empty">No posted pins yet</div>';
-  document.getElementById('postedCount').textContent = `${posted.length} total ┬╖ showing ${recentPosted.length}`;
+  document.getElementById('postedCount').textContent = `${posted.length} total · showing ${recentPosted.length}`;
 
   // ============ NICHES ============
   document.getElementById('niches').innerHTML = results.filter(r => r.data).map(r => {
@@ -426,8 +426,8 @@ function render(totalRejected, results) {
         <div class="br"><span class="n">${total}</span><span class="l">Total</span></div>
       </div>
       <div class="links">
-        <a href="${r.niche.pinterest_url}" target="_blank">Profile Γåù</a>
-        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue Γåù</a>
+        <a href="${r.niche.pinterest_url}" target="_blank">Profile ↗</a>
+        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue ↗</a>
       </div>
     </div>`;
   }).join('');
