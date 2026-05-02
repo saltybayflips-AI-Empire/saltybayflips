@@ -1,0 +1,50 @@
+{
+  "platform": "pinterest",
+  "synced_at": "2026-05-02T17:42:00",
+  "date_range": "4/1/2026 - 5/1/2026",
+  "window": "last_30d",
+  "accounts": {
+    "saltybayflipspin": {
+      "display_name": "Aesthetic Spaces Co",
+      "handle": "@saltybayflipspin",
+      "url": "https://www.pinterest.com/saltybayflipspin/",
+      "impressions": 13,
+      "engagements": 0,
+      "outbound_clicks": 0,
+      "saves": 0,
+      "total_audience": 5,
+      "engaged_audience": 0
+    },
+    "saltybayflipsluxe": {
+      "display_name": "Luxe Living Daily",
+      "handle": "@saltybayflipsluxe",
+      "url": "https://www.pinterest.com/saltybayflipsluxe/",
+      "impressions": 26,
+      "engagements": 2,
+      "outbound_clicks": 0,
+      "saves": 1,
+      "total_audience": 11,
+      "engaged_audience": 0
+    },
+    "saltybayflipsfuzzy": {
+      "display_name": "Fuzzy Frames AI",
+      "handle": "@saltybayflipsfuzzy",
+      "url": "https://www.pinterest.com/saltybayflipsfuzzy/",
+      "impressions": 71,
+      "engagements": 1,
+      "outbound_clicks": 0,
+      "saves": 0,
+      "total_audience": 4,
+      "engaged_audience": 0
+    }
+  },
+  "totals": {
+    "impressions": 110,
+    "engagements": 3,
+    "outbound_clicks": 0,
+    "saves": 1,
+    "total_audience": 20,
+    "engaged_audience": 0
+  },
+  "report_url": "https://analytics.pinterest.com/overview/"
+}
