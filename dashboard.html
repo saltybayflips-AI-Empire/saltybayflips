@@ -135,6 +135,50 @@
   .day .dots .d.asc { background:var(--asc); }
   .day .dots .d.lld { background:var(--lld); }
   .day .dots .d.fuzzy { background:var(--fuzzy); }
+
+  /* Performance cards (analytics) */
+  .perf { display:grid; grid-template-columns:1fr; gap:12px; margin-bottom:18px; }
+  @media (min-width:640px) { .perf { grid-template-columns:repeat(3,1fr); } }
+  .perfcard { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; position:relative; overflow:hidden; }
+  .perfcard.amazon { border-top:3px solid #ff9900; }
+  .perfcard.tiktok { border-top:3px solid #ff0050; }
+  .perfcard.pinterest { border-top:3px solid #e60023; }
+  .perfcard h3 { margin:0 0 4px; font-size:13px; display:flex; align-items:center;
+    justify-content:space-between; gap:6px; }
+  .perfcard .platform { font-size:10px; text-transform:uppercase; letter-spacing:.6px; color:var(--mut); }
+  .perfcard .synced { font-size:10px; color:var(--mut); margin-top:2px; }
+  .perfcard .big { font-size:28px; font-weight:600; margin:8px 0 2px; line-height:1.1; }
+  .perfcard .big small { font-size:13px; color:var(--mut); font-weight:400; margin-left:4px; }
+  .perfcard .sub { font-size:11px; color:var(--mut); }
+  .perfcard .row { display:flex; justify-content:space-between; align-items:baseline;
+    padding:4px 0; border-top:1px solid var(--line); font-size:12px; margin-top:6px; }
+  .perfcard .row:first-of-type { border-top:none; }
+  .perfcard .row .l { color:var(--mut); }
+  .perfcard .row .v { font-weight:600; color:var(--fg); }
+  .perfcard .row .v.good { color:var(--good); }
+  .perfcard .row .v.warn { color:var(--warn); }
+  .perfcard .row .v.bad { color:#ff5370; }
+  .perfcard .delta { font-size:10px; color:var(--mut); margin-left:4px; }
+  .perfcard .delta.up { color:var(--good); }
+  .perfcard .delta.down { color:#ff5370; }
+  .perfcard .footer { font-size:10px; color:var(--mut); margin-top:10px;
+    padding-top:8px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; }
+  .perfcard a { color:var(--info); }
+
+  /* Funnel summary card */
+  .funnel { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; margin-bottom:18px; }
+  .funnel h3 { margin:0 0 10px; font-size:13px; }
+  .funnelrow { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; }
+  @media (max-width:640px) { .funnelrow { grid-template-columns:repeat(2,1fr); } }
+  .funnelrow .step { background:var(--card2); border:1px solid var(--line);
+    border-radius:8px; padding:10px 6px; text-align:center; }
+  .funnelrow .step .n { font-size:18px; font-weight:600; }
+  .funnelrow .step .l { font-size:9px; color:var(--mut); text-transform:uppercase;
+    letter-spacing:.5px; margin-top:2px; }
+  .funnelrow .step.q .n { color:var(--info); }
+  .funnelrow .step.r .n { color:var(--good); }
 </style>
 </head>
 <body>
@@ -149,6 +193,15 @@
 </header>
 
 <div id="errors"></div>
+
+<!-- ============== PERFORMANCE (analytics) ================= -->
+<div class="perf" id="performance"></div>
+
+<!-- ============== FUNNEL ================= -->
+<div class="funnel" id="funnel" style="display:none;">
+  <h3>Revenue funnel <span style="color:var(--mut);font-weight:400;font-size:11px;">how reach turns into $</span></h3>
+  <div class="funnelrow" id="funnelRow"></div>
+</div>
 
 <!-- ============== TOP STATS ================= -->
 <div class="stats" id="stats"></div>
@@ -293,12 +346,134 @@ async function loadOne(niche) {
   }
 }
 
+async function loadAnalytics(name) {
+  try {
+    const r = await fetch(`data/analytics_${name}.json`, {cache:'no-cache'});
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+function timeAgo(iso) {
+  if (!iso) return 'never';
+  const dt = new Date(iso);
+  if (isNaN(dt)) return iso;
+  const mins = Math.round((Date.now() - dt.getTime()) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.round(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  const days = Math.round(hrs / 24);
+  return days + 'd ago';
+}
+
+function renderPerformance(amazon, tiktok, pinterest) {
+  const cards = [];
+
+  // Amazon card
+  if (amazon) {
+    const a = amazon;
+    const tm = a.this_month || {};
+    const m30 = a.last_30d || {};
+    const daysLeft = a.deadline_days_remaining ?? '';
+    cards.push(`
+      <div class="perfcard amazon">
+        <h3>Amazon Associates <span class="platform">$$</span></h3>
+        <div class="big">$${(tm.earnings_usd ?? 0).toFixed(2)}<small>this month</small></div>
+        <div class="sub">${tm.ordered_items ?? 0} orders · ${tm.items_shipped ?? 0} shipped · ${tm.conversion_pct ?? 0}% conv</div>
+        <div class="row"><span class="l">Clicks (30d)</span><span class="v ${m30.clicks > 0 ? 'good' : ''}">${m30.clicks ?? 0}</span></div>
+        <div class="row"><span class="l">Earnings (30d)</span><span class="v">$${(m30.commissions_usd ?? 0).toFixed(2)}</span></div>
+        <div class="row"><span class="l">Qualifying sales</span><span class="v ${a.qualifying_sales >= 3 ? 'good' : 'warn'}">${a.qualifying_sales ?? 0} / 3</span></div>
+        <div class="row"><span class="l">Days to deadline</span><span class="v ${daysLeft < 60 ? 'bad' : daysLeft < 120 ? 'warn' : ''}">${daysLeft}</span></div>
+        <div class="footer">
+          <span>Synced ${timeAgo(a.synced_at)}</span>
+          <a href="${a.report_url}" target="_blank">Open ↗</a>
+        </div>
+      </div>`);
+  }
+
+  // TikTok card (shows laurasunkist - the main account with reach)
+  if (tiktok && tiktok.accounts && tiktok.accounts.laurasunkist) {
+    const t = tiktok.accounts.laurasunkist;
+    const w7 = t.last_7d || {};
+    const w28 = t.last_28d || {};
+    const delta = w7.video_views_delta;
+    const deltaPct = w7.video_views_delta_pct;
+    const deltaCls = delta > 0 ? 'up' : delta < 0 ? 'down' : '';
+    cards.push(`
+      <div class="perfcard tiktok">
+        <h3>${t.display_name} <span class="platform">${t.handle}</span></h3>
+        <div class="big">${(w7.video_views ?? 0).toLocaleString()}<small>views (7d)</small></div>
+        <div class="sub">${(t.followers ?? 0).toLocaleString()} followers <span class="delta ${deltaCls}">${delta > 0 ? '+' : ''}${delta ?? 0} (${deltaPct ?? 0}%)</span></div>
+        <div class="row"><span class="l">Views (28d)</span><span class="v">${(w28.video_views ?? 0).toLocaleString()}</span></div>
+        <div class="row"><span class="l">Likes (7d)</span><span class="v">${w7.likes ?? 0}</span></div>
+        <div class="row"><span class="l">Profile views (7d)</span><span class="v">${w7.profile_views ?? 0}</span></div>
+        <div class="row"><span class="l">Est. rewards (7d)</span><span class="v ${(w7.est_rewards_usd ?? 0) > 0 ? 'good' : ''}">$${w7.est_rewards_usd ?? 0}</span></div>
+        <div class="footer">
+          <span>Synced ${timeAgo(tiktok.synced_at)}</span>
+          <a href="${t.url}" target="_blank">Open ↗</a>
+        </div>
+      </div>`);
+  }
+
+  // Pinterest aggregate
+  if (pinterest && pinterest.totals) {
+    const tot = pinterest.totals;
+    const accts = pinterest.accounts || {};
+    const bestAcct = Object.entries(accts).sort((a,b) => (b[1].impressions||0) - (a[1].impressions||0))[0];
+    cards.push(`
+      <div class="perfcard pinterest">
+        <h3>Pinterest <span class="platform">3 accounts</span></h3>
+        <div class="big">${(tot.impressions ?? 0).toLocaleString()}<small>impressions (30d)</small></div>
+        <div class="sub">Top: ${bestAcct ? bestAcct[1].display_name + ' (' + bestAcct[1].impressions + ')' : '—'}</div>
+        <div class="row"><span class="l">Engagements (30d)</span><span class="v">${tot.engagements ?? 0}</span></div>
+        <div class="row"><span class="l">Saves (30d)</span><span class="v ${(tot.saves ?? 0) > 0 ? 'good' : ''}">${tot.saves ?? 0}</span></div>
+        <div class="row"><span class="l">Outbound clicks (30d)</span><span class="v ${(tot.outbound_clicks ?? 0) > 0 ? 'good' : 'warn'}">${tot.outbound_clicks ?? 0}</span></div>
+        <div class="row"><span class="l">Total audience (30d)</span><span class="v">${tot.total_audience ?? 0}</span></div>
+        <div class="footer">
+          <span>Synced ${timeAgo(pinterest.synced_at)}</span>
+          <a href="${pinterest.report_url}" target="_blank">Open ↗</a>
+        </div>
+      </div>`);
+  }
+
+  document.getElementById('performance').innerHTML = cards.join('') ||
+    '<div class="empty" style="grid-column:1/-1">No analytics data yet — run <code>scripts/sync_analytics_*.py</code> to scrape Pinterest/TikTok/Amazon dashboards.</div>';
+
+  // Funnel: TikTok 28d views → Pinterest impressions → outbound clicks → Amazon 30d clicks → orders → earnings
+  if (amazon && tiktok && pinterest) {
+    document.getElementById('funnel').style.display = 'block';
+    const ttViews = tiktok.accounts?.laurasunkist?.last_28d?.video_views || 0;
+    const pinImps = pinterest.totals?.impressions || 0;
+    const pinClicks = pinterest.totals?.outbound_clicks || 0;
+    const amzClicks = amazon.last_30d?.clicks || 0;
+    const amzOrders = amazon.this_month?.ordered_items || 0;
+    const amzEarn = amazon.this_month?.earnings_usd || 0;
+    document.getElementById('funnelRow').innerHTML = `
+      <div class="step"><div class="n">${ttViews.toLocaleString()}</div><div class="l">TikTok views (28d)</div></div>
+      <div class="step"><div class="n">${pinImps.toLocaleString()}</div><div class="l">Pinterest impressions (30d)</div></div>
+      <div class="step q"><div class="n">${pinClicks.toLocaleString()}</div><div class="l">Outbound clicks (30d)</div></div>
+      <div class="step q"><div class="n">${amzClicks.toLocaleString()}</div><div class="l">Amazon clicks (30d)</div></div>
+      <div class="step r"><div class="n">$${amzEarn.toFixed(2)}</div><div class="l">${amzOrders} orders this month</div></div>
+    `;
+  }
+}
+
 async function loadAll() {
   document.getElementById('errors').innerHTML = '';
   document.getElementById('refreshBtn').disabled = true;
   document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
-  const results = await Promise.all(NICHES.map(loadOne));
+  // Tracker data + analytics in parallel
+  const [results, amazon, tiktok, pinterest] = await Promise.all([
+    Promise.all(NICHES.map(loadOne)),
+    loadAnalytics('amazon'),
+    loadAnalytics('tiktok'),
+    loadAnalytics('pinterest'),
+  ]);
+
   const errs = results.filter(r => !r.data).map(r =>
     `Couldn't load ${r.niche.title}: ${r.error}`);
   if (errs.length) {
@@ -316,6 +491,7 @@ async function loadAll() {
     totalRejected += (r.data.rejected || []).length;
   }
 
+  renderPerformance(amazon, tiktok, pinterest);
   render(totalRejected, results);
 
   document.getElementById('refreshBtn').disabled = false;
