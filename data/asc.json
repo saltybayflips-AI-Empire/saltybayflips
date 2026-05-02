@@ -37,7 +37,7 @@
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "status": "posted",
       "posted_date": "2026-04-16",
-      "notes": "First pin posted manually-assisted. User forgot to add topic tags ΓÇö edit on Pinterest when time permits."
+      "notes": "First pin posted manually-assisted. User forgot to add topic tags — edit on Pinterest when time permits."
     },
     {
       "id": 2,
@@ -112,7 +112,7 @@
       "pillar": "Bedroom",
       "file": "aesthetic_bedroom_warm_minimal_00001_.png",
       "title": "Warm Minimalist Bedroom Inspo",
-      "description": "Terracotta + oat + cream ΓÇö the warm minimalist palette is having a moment.",
+      "description": "Terracotta + oat + cream — the warm minimalist palette is having a moment.",
       "hashtags": [
         "warmminimalism",
         "neutralbedroom",
@@ -300,7 +300,7 @@
       "slug": "aesthetic_balcony_boho_lounge",
       "image_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/img/asc/aesthetic_balcony_boho_lounge.jpg",
       "title": "Tiny Balcony Boho Lounge Ideas For Apartments Renter Friendly Decor",
-      "description": "Turn a 4x6 balcony into a boho lounge: layered Moroccan rug, low rattan floor cushions, hanging macrame planters, and warm string lights. Perfect renter-friendly upgrade ΓÇö no drilling required. Save for your next balcony refresh, or tap profile to shop the rug, cushions, and planters.\n\n#BalconyBoho #TinyBalcony #ApartmentBalcony #BohoBalcony #RenterFriendly #SmallSpaceDecor #BalconyIdeas #OutdoorRug #MacrameDecor #BalconyMakeover #UrbanJungle #CozyBalcony",
+      "description": "Turn a 4x6 balcony into a boho lounge: layered Moroccan rug, low rattan floor cushions, hanging macrame planters, and warm string lights. Perfect renter-friendly upgrade — no drilling required. Save for your next balcony refresh, or tap profile to shop the rug, cushions, and planters.\n\n#BalconyBoho #TinyBalcony #ApartmentBalcony #BohoBalcony #RenterFriendly #SmallSpaceDecor #BalconyIdeas #OutdoorRug #MacrameDecor #BalconyMakeover #UrbanJungle #CozyBalcony",
       "hashtags": [
         "BalconyBoho",
         "TinyBalcony",
@@ -329,7 +329,7 @@
       "slug": "aesthetic_bath_coastal",
       "image_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/img/asc/aesthetic_bath_coastal.jpg",
       "title": "Cozy Small Space Bathroom Coastal Aesthetic",
-      "description": "Transform your tiny bathroom into a serene coastal escape with these space-saving picks! Think: a soft coastal rug ($29.99), minimalist sink with matte black faucet ($129), and a framed print of calming waves ($25). Brighten with a small seashell mirror (around $45) and maximize storage with woven wicker storage baskets ($35 each). Create your own cozy coastal nook without breaking the bankΓÇöperfect for renters! Tap profile to shop similar items and save for later.\n\n#CozySmall",
+      "description": "Transform your tiny bathroom into a serene coastal escape with these space-saving picks! Think: a soft coastal rug ($29.99), minimalist sink with matte black faucet ($129), and a framed print of calming waves ($25). Brighten with a small seashell mirror (around $45) and maximize storage with woven wicker storage baskets ($35 each). Create your own cozy coastal nook without breaking the bank—perfect for renters! Tap profile to shop similar items and save for later.\n\n#CozySmall",
       "hashtags": [
         "CozySmallSpace",
         "BathroomAesthetic",
@@ -996,23 +996,23 @@
     {
       "file": "aesthetic_bedroom_sage_boho_00001_.png",
       "title": "Sage Green Boho Bedroom Corner",
-      "reason": "Floating monstera plant ΓÇö no visible shelf/bracket under pot",
+      "reason": "Floating monstera plant — no visible shelf/bracket under pot",
       "rejected_date": "2026-04-16",
-      "regen_plan": "See REGENERATE_QUEUE.md ΓÇö add 'small floating wooden wall shelf mounted under potted monstera, visible brass L-bracket'"
+      "regen_plan": "See REGENERATE_QUEUE.md — add 'small floating wooden wall shelf mounted under potted monstera, visible brass L-bracket'"
     },
     {
       "file": "aesthetic_kitchen_white_subway_00001_.png",
-      "title": "Small Rental Kitchenette ΓÇö White + Brass",
-      "reason": "Two sink basins visible ΓÇö AI artifact, impossible layout",
+      "title": "Small Rental Kitchenette — White + Brass",
+      "reason": "Two sink basins visible — AI artifact, impossible layout",
       "rejected_date": "2026-04-16",
-      "regen_plan": "See REGENERATE_QUEUE.md ΓÇö force single undermount sink, negative prompt 'double sink, two sinks'"
+      "regen_plan": "See REGENERATE_QUEUE.md — force single undermount sink, negative prompt 'double sink, two sinks'"
     },
     {
       "file": "aesthetic_kitchen_bw_farmhouse_00001_.png",
       "title": "Black & White Farmhouse Kitchen",
       "reason": "Hallucinated letters ('GG'/'6G') printed on cabinet pull hardware",
       "rejected_date": "2026-04-16",
-      "regen_plan": "See REGENERATE_QUEUE.md ΓÇö plain black cabinet pulls only, negative prompt 'text, letters, numbers on hardware'"
+      "regen_plan": "See REGENERATE_QUEUE.md — plain black cabinet pulls only, negative prompt 'text, letters, numbers on hardware'"
     },
     {
       "file": "aesthetic_dining_banquette_window_00001_.png",
@@ -1022,5 +1022,5 @@
       "regen_plan": "Re-render with stronger photorealistic emphasis. Moved file to _qa_rejected/ to prevent reuse. Replaced today's slot with bistro_round (id 34)."
     }
   ],
-  "last_synced": "2026-05-02T10:13:55"
+  "last_synced": "2026-05-02T16:23:40"
 }

@@ -1,0 +1,80 @@
+{
+  "synced_at": "2026-05-02T16:20:43.577424",
+  "item_count": 9,
+  "items": [
+    {
+      "id": "studio_edit_lld_23_27",
+      "title": "Edit captions in TikTok Studio (LLD posts 23-27)",
+      "detail": "5 live-scheduled @laurasunkist posts have OLD captions without the bio CTA we just added. Open Studio scheduler → click each post → paste new caption from local caption.txt. ~25 min.",
+      "priority": "high",
+      "estimated_min": 25,
+      "category": "manual_edit",
+      "url": "https://www.tiktok.com/tiktokstudio/content?type=video"
+    },
+    {
+      "id": "schedule_scottish_fold",
+      "title": "Schedule scottish_fold Fuzzy pin for 5/12",
+      "detail": "Fills 1-day gap in Fuzzy schedule. Image is already in _gemini_passed/. Open Pinterest pin builder, drag image, run scheduling automation.",
+      "priority": "med",
+      "estimated_min": 5,
+      "category": "drag_drop",
+      "url": "https://www.pinterest.com/pin-creation-tool/"
+    },
+    {
+      "id": "qa_pending_aesthetic_spaces_co",
+      "title": "QA 20 pending ASC images",
+      "detail": "20 renders sitting in aesthetic_spaces_co/qa_pending/ awaiting your pass/reject verdict.",
+      "priority": "high",
+      "estimated_min": 20,
+      "category": "qa_review"
+    },
+    {
+      "id": "gap_aesthetic_spaces_co",
+      "title": "ASC has 5 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16",
+      "priority": "med",
+      "estimated_min": 25,
+      "category": "gap_warning"
+    },
+    {
+      "id": "qa_pending_luxe_living_daily",
+      "title": "QA 10 pending LLD images",
+      "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
+      "priority": "high",
+      "estimated_min": 10,
+      "category": "qa_review"
+    },
+    {
+      "id": "gap_luxe_living_daily",
+      "title": "LLD has 4 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16",
+      "priority": "med",
+      "estimated_min": 20,
+      "category": "gap_warning"
+    },
+    {
+      "id": "qa_pending_fuzzy_frames_ai",
+      "title": "QA 4 pending Fuzzy images",
+      "detail": "4 renders sitting in fuzzy_frames_ai/qa_pending/ awaiting your pass/reject verdict.",
+      "priority": "high",
+      "estimated_min": 4,
+      "category": "qa_review"
+    },
+    {
+      "id": "gap_fuzzy_frames_ai",
+      "title": "Fuzzy has 6 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-03, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, … (+1 more)",
+      "priority": "med",
+      "estimated_min": 30,
+      "category": "gap_warning"
+    },
+    {
+      "id": "stale_fuzzy_frames_ai",
+      "title": "Fuzzy hasn't posted in 4 days",
+      "detail": "Last live Fuzzy pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "priority": "med",
+      "estimated_min": 15,
+      "category": "cadence_alert"
+    }
+  ]
+}

@@ -179,6 +179,44 @@
     letter-spacing:.5px; margin-top:2px; }
   .funnelrow .step.q .n { color:var(--info); }
   .funnelrow .step.r .n { color:var(--good); }
+
+  /* Action items / "Needs your attention" */
+  .attn { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; margin-bottom:18px; position:relative; }
+  .attn h3 { margin:0 0 10px; font-size:13px; display:flex; align-items:center;
+    justify-content:space-between; gap:8px; }
+  .attn h3 .synced { font-weight:400; font-size:10px; color:var(--mut); }
+  .attn .items { display:grid; grid-template-columns:1fr; gap:8px; }
+  @media (min-width:768px) { .attn .items { grid-template-columns:repeat(2,1fr); } }
+  .attn-item { background:var(--card2); border:1px solid var(--line); border-radius:8px;
+    padding:10px 12px; display:flex; gap:10px; align-items:flex-start;
+    cursor:default; transition:border-color .15s, transform .15s; }
+  .attn-item:hover { border-color:var(--info); }
+  .attn-item.dismissed { display:none; }
+  .attn-item.high { border-left:3px solid #ff5370; }
+  .attn-item.med { border-left:3px solid var(--warn); }
+  .attn-item.low { border-left:3px solid var(--info); }
+  .attn-item .pri { font-size:9px; text-transform:uppercase; letter-spacing:.5px;
+    padding:2px 7px; border-radius:999px; font-weight:600;
+    background:rgba(255,83,112,.15); color:#ff5370; flex-shrink:0; }
+  .attn-item.med .pri { background:rgba(245,158,11,.15); color:var(--warn); }
+  .attn-item.low .pri { background:rgba(59,130,246,.15); color:var(--info); }
+  .attn-item .body { flex:1; min-width:0; }
+  .attn-item .ttl { font-size:13px; font-weight:500; line-height:1.3; }
+  .attn-item .det { font-size:11px; color:var(--mut); margin-top:3px; line-height:1.4; }
+  .attn-item .meta { display:flex; gap:8px; align-items:center; margin-top:6px;
+    font-size:10px; color:var(--mut); }
+  .attn-item .meta a { color:var(--info); }
+  .attn-item .est { background:#242935; padding:2px 6px; border-radius:4px; }
+  .attn-item .dismiss { background:transparent; border:1px solid var(--line);
+    color:var(--mut); border-radius:6px; padding:3px 8px; font:inherit; font-size:10px;
+    cursor:pointer; flex-shrink:0; align-self:flex-start; margin-left:auto; }
+  .attn-item .dismiss:hover { background:var(--line); color:var(--fg); }
+  .attn-empty { text-align:center; color:var(--mut); padding:14px; font-size:12px; }
+
+  /* Timeline gap-day highlight */
+  .day.gap { border-color:rgba(245,158,11,.4); background:rgba(245,158,11,.04); }
+  .day.gap .dcount { color:var(--warn); }
 </style>
 </head>
 <body>
@@ -193,6 +231,15 @@
 </header>
 
 <div id="errors"></div>
+
+<!-- ============== NEEDS YOUR ATTENTION ================= -->
+<div class="attn" id="attnSection" style="display:none;">
+  <h3>
+    <span>Needs your attention <span style="color:var(--mut);font-weight:400;font-size:11px;" id="attnCount"></span></span>
+    <span class="synced" id="attnSynced"></span>
+  </h3>
+  <div class="items" id="attnItems"></div>
+</div>
 
 <!-- ============== PERFORMANCE (analytics) ================= -->
 <div class="perf" id="performance"></div>
@@ -356,6 +403,71 @@ async function loadAnalytics(name) {
   }
 }
 
+async function loadActionItems() {
+  try {
+    const r = await fetch('data/action_items.json', {cache:'no-cache'});
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+// localStorage key for dismissed action items
+const DISMISS_KEY = 'aiempire.dismissed_actions.v1';
+function getDismissed() {
+  try { return new Set(JSON.parse(localStorage.getItem(DISMISS_KEY) || '[]')); }
+  catch (e) { return new Set(); }
+}
+function setDismissed(s) {
+  try { localStorage.setItem(DISMISS_KEY, JSON.stringify([...s])); } catch (e) {}
+}
+function dismissAction(id) {
+  const s = getDismissed();
+  s.add(id);
+  setDismissed(s);
+  document.querySelector(`[data-attn-id="${id}"]`)?.classList.add('dismissed');
+  updateAttnCount();
+}
+function updateAttnCount() {
+  const visible = document.querySelectorAll('.attn-item:not(.dismissed)').length;
+  document.getElementById('attnCount').textContent =
+    visible === 0 ? '(all clear ✓)' : `(${visible})`;
+}
+
+function renderActionItems(actionData) {
+  if (!actionData || !actionData.items || actionData.items.length === 0) {
+    document.getElementById('attnSection').style.display = 'none';
+    return;
+  }
+  const dismissed = getDismissed();
+  const sorted = [...actionData.items].sort((a,b) => {
+    const order = { high:0, med:1, low:2 };
+    return (order[a.priority] ?? 3) - (order[b.priority] ?? 3);
+  });
+  const html = sorted.map(it => {
+    const isDismissed = dismissed.has(it.id);
+    const link = it.url ? ` · <a href="${it.url}" target="_blank">Open ↗</a>` : '';
+    const est = it.estimated_min != null ? `<span class="est">${it.estimated_min} min</span>` : '';
+    return `<div class="attn-item ${it.priority || 'med'} ${isDismissed ? 'dismissed':''}" data-attn-id="${it.id}">
+      <span class="pri">${it.priority || 'med'}</span>
+      <div class="body">
+        <div class="ttl">${it.title}</div>
+        <div class="det">${it.detail || ''}</div>
+        <div class="meta">${est}<span>${it.category || ''}</span>${link}</div>
+      </div>
+      <button class="dismiss" onclick="dismissAction('${it.id}')" title="Hide for this device">✕</button>
+    </div>`;
+  }).join('');
+  document.getElementById('attnItems').innerHTML = html;
+  document.getElementById('attnSection').style.display = 'block';
+  if (actionData.synced_at) {
+    const dt = new Date(actionData.synced_at);
+    document.getElementById('attnSynced').textContent = 'synced ' + timeAgo(actionData.synced_at);
+  }
+  updateAttnCount();
+}
+
 function timeAgo(iso) {
   if (!iso) return 'never';
   const dt = new Date(iso);
@@ -466,13 +578,15 @@ async function loadAll() {
   document.getElementById('refreshBtn').disabled = true;
   document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
-  // Tracker data + analytics in parallel
-  const [results, amazon, tiktok, pinterest] = await Promise.all([
+  // Tracker data + analytics + action items in parallel
+  const [results, amazon, tiktok, pinterest, actionItems] = await Promise.all([
     Promise.all(NICHES.map(loadOne)),
     loadAnalytics('amazon'),
     loadAnalytics('tiktok'),
     loadAnalytics('pinterest'),
+    loadActionItems(),
   ]);
+  renderActionItems(actionItems);
 
   const errs = results.filter(r => !r.data).map(r =>
     `Couldn't load ${r.niche.title}: ${r.error}`);
@@ -550,10 +664,12 @@ function render(totalRejected, results) {
     const dk = dayKey(d);
     const dayPosts = scheduled.filter(p => dayKey(parseSched(p)) === dk);
     const isToday = i === 0;
-    days.push(`<div class="day">
+    // Flag future days with 0 scheduled pins as gaps (skip today + past days).
+    const isGap = !isToday && i > 0 && dayPosts.length === 0;
+    days.push(`<div class="day ${isGap ? 'gap':''}" title="${isGap ? 'No pins scheduled':''}">
       <div class="dow">${d.toLocaleDateString(undefined,{weekday:'short'})}</div>
       <div class="dnum ${isToday ? 'today':''}">${d.getDate()}</div>
-      <div class="dcount">${dayPosts.length} ${dayPosts.length === 1 ? 'pin':'pins'}</div>
+      <div class="dcount">${isGap ? 'gap' : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'pin':'pins'))}</div>
       <div class="dots">${dayPosts.map(p =>
         `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="${p.title}"></div>`).join('')}</div>
     </div>`);
