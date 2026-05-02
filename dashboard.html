@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<title>AI Empire ΓÇö Content Dashboard</title>
+<style>
+  :root {
+    --bg:#0f1115; --card:#171a21; --card2:#1f232c; --line:#2a2f3a;
+    --fg:#e7ecf3; --mut:#9aa3b2; --accent:#e60023; --good:#22c55e;
+    --warn:#f59e0b; --info:#3b82f6; --purp:#a855f7; --teal:#14b8a6;
+    --asc:#b56d50; --lld:#9b7e3a; --fuzzy:#d472a2;
+  }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+    font:15px/1.45 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%; }
+  a { color:var(--info); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+
+  .wrap { max-width:1200px; margin:0 auto; padding:18px 14px 80px; }
+  header { display:flex; justify-content:space-between; align-items:flex-end;
+    gap:14px; margin-bottom:18px; flex-wrap:wrap; }
+  h1 { margin:0; font-size:22px; letter-spacing:-0.5px; }
+  h1 .sub { color:var(--mut); font-size:12px; font-weight:400;
+    margin-left:8px; display:inline-block; }
+  .today { color:var(--mut); font-size:12px; }
+  .refresh { background:var(--card2); border:1px solid var(--line); color:var(--fg);
+    border-radius:8px; padding:8px 12px; font:inherit; cursor:pointer; font-size:12px; }
+  .refresh:hover { background:#2a2f3a; }
+
+  /* Stats */
+  .stats { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:18px; }
+  @media (min-width:640px) { .stats { grid-template-columns:repeat(4,1fr); } }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; }
+  .stat .lbl { font-size:10px; text-transform:uppercase; letter-spacing:.7px;
+    color:var(--mut); }
+  .stat .val { font-size:24px; font-weight:600; margin-top:4px; }
+  .stat .delta { font-size:11px; color:var(--mut); margin-top:2px; }
+  .stat.good .val { color:var(--good); }
+  .stat.warn .val { color:var(--warn); }
+
+  /* Filter bar */
+  .filterbar { display:flex; gap:6px; overflow-x:auto; padding-bottom:6px;
+    margin-bottom:14px; -webkit-overflow-scrolling:touch; }
+  .filterbar::-webkit-scrollbar { display:none; }
+  .filter { background:var(--card2); border:1px solid var(--line); color:var(--mut);
+    border-radius:999px; padding:8px 14px; font:inherit; font-size:12px;
+    cursor:pointer; white-space:nowrap; }
+  .filter.active { background:var(--info); border-color:var(--info); color:#fff; }
+  .filter:hover:not(.active) { background:#2a2f3a; color:var(--fg); }
+
+  /* Section */
+  .section { margin-bottom:24px; }
+  .section h2 { margin:0 0 10px; font-size:15px; display:flex; align-items:center;
+    gap:8px; color:var(--fg); }
+  .section h2 .count { font-size:11px; color:var(--mut); font-weight:400; }
+  .pill { font-size:9px; text-transform:uppercase; letter-spacing:.6px;
+    padding:2px 7px; border-radius:999px; background:#242935; color:var(--mut); }
+  .pill.live { background:rgba(34,197,94,.15); color:var(--good); }
+  .pill.sched { background:rgba(59,130,246,.15); color:var(--info); }
+  .pill.todo { background:rgba(245,158,11,.15); color:var(--warn); }
+  .pill.rej { background:rgba(230,0,35,.15); color:#ff5370; }
+  .pill.asc { background:rgba(181,109,80,.18); color:#d8a48f; }
+  .pill.lld { background:rgba(155,126,58,.18); color:#d4b876; }
+  .pill.fuzzy { background:rgba(212,114,162,.18); color:#f0a8c8; }
+
+  /* Pin grid */
+  .pingrid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  @media (min-width:520px) { .pingrid { grid-template-columns:repeat(3,1fr); } }
+  @media (min-width:768px) { .pingrid { grid-template-columns:repeat(4,1fr); } }
+  @media (min-width:1024px) { .pingrid { grid-template-columns:repeat(5,1fr); } }
+
+  .pin { background:var(--card); border:1px solid var(--line); border-radius:10px;
+    overflow:hidden; display:flex; flex-direction:column; transition:transform .15s; }
+  .pin:hover { transform:translateY(-2px); border-color:var(--info); }
+  .pin .img { aspect-ratio:2/3; background:var(--card2) center/cover no-repeat;
+    position:relative; }
+  .pin .badge { position:absolute; top:6px; left:6px; background:rgba(0,0,0,.7);
+    backdrop-filter:blur(4px); border-radius:6px; padding:3px 7px; font-size:10px;
+    font-weight:600; letter-spacing:.3px; }
+  .pin .badge.today { background:rgba(230,0,35,.85); }
+  .pin .badge.tomorrow { background:rgba(245,158,11,.85); }
+  .pin .acct { position:absolute; top:6px; right:6px; }
+  .pin .body { padding:8px 10px 10px; flex:1; display:flex; flex-direction:column; gap:4px; }
+  .pin .title { font-size:12px; line-height:1.3; font-weight:500;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;
+    overflow:hidden; }
+  .pin .meta { font-size:10px; color:var(--mut); display:flex;
+    justify-content:space-between; margin-top:auto; padding-top:4px; }
+
+  /* Niche row */
+  .nicherow { display:grid; grid-template-columns:1fr; gap:12px; }
+  @media (min-width:768px) { .nicherow { grid-template-columns:repeat(3,1fr); } }
+  .nichecard { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; }
+  .nichecard h3 { margin:0 0 8px; font-size:14px; display:flex; align-items:center;
+    justify-content:space-between; gap:6px; }
+  .nichecard .breakdown { display:grid; grid-template-columns:repeat(4,1fr); gap:6px;
+    font-size:11px; }
+  .nichecard .br { background:var(--card2); border-radius:6px; padding:6px 4px;
+    text-align:center; }
+  .nichecard .br .n { font-size:16px; font-weight:600; display:block; }
+  .nichecard .br .l { color:var(--mut); font-size:9px; text-transform:uppercase; }
+  .nichecard .br.s .n { color:var(--info); }
+  .nichecard .br.p .n { color:var(--good); }
+  .nichecard .br.r .n { color:#ff5370; }
+  .nichecard .links { display:flex; gap:6px; margin-top:10px; flex-wrap:wrap; }
+  .nichecard .links a { font-size:11px; padding:5px 9px; background:var(--card2);
+    border:1px solid var(--line); border-radius:6px; color:var(--fg); }
+
+  .empty { text-align:center; color:var(--mut); padding:40px 20px; font-size:13px;
+    background:var(--card); border:1px dashed var(--line); border-radius:12px; }
+
+  footer { text-align:center; color:var(--mut); font-size:11px; margin-top:30px; }
+  footer a { color:var(--mut); }
+
+  .err { background:rgba(230,0,35,.1); border:1px solid #ff5370; color:#ffaaaa;
+    padding:10px 14px; border-radius:8px; font-size:12px; margin-bottom:14px; }
+
+  .timeline { display:flex; gap:8px; overflow-x:auto; padding-bottom:8px;
+    -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; }
+  .timeline::-webkit-scrollbar { height:6px; }
+  .timeline::-webkit-scrollbar-thumb { background:var(--line); border-radius:3px; }
+  .day { flex:0 0 110px; scroll-snap-align:start; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; padding:10px 8px; text-align:center; }
+  .day .dow { font-size:10px; color:var(--mut); text-transform:uppercase; letter-spacing:.5px; }
+  .day .dnum { font-size:22px; font-weight:600; margin:2px 0; }
+  .day .dnum.today { color:var(--accent); }
+  .day .dcount { font-size:11px; color:var(--mut); }
+  .day .dots { display:flex; justify-content:center; gap:3px; margin-top:6px; min-height:8px; }
+  .day .dots .d { width:6px; height:6px; border-radius:50%; }
+  .day .dots .d.asc { background:var(--asc); }
+  .day .dots .d.lld { background:var(--lld); }
+  .day .dots .d.fuzzy { background:var(--fuzzy); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>AI Empire <span class="sub">Content Dashboard</span></h1>
+    <div class="today" id="today"></div>
+  </div>
+  <button class="refresh" id="refreshBtn" onclick="loadAll()">Γå╗ Refresh</button>
+</header>
+
+<div id="errors"></div>
+
+<!-- ============== TOP STATS ================= -->
+<div class="stats" id="stats"></div>
+
+<!-- ============== TIMELINE (next 14 days) ================= -->
+<div class="section">
+  <h2>Next 14 days <span class="count" id="timelineCount"></span></h2>
+  <div class="timeline" id="timeline"></div>
+</div>
+
+<!-- ============== FILTER ================= -->
+<div class="filterbar" id="filterbar"></div>
+
+<!-- ============== POSTING TODAY ================= -->
+<div class="section" id="todaySection" style="display:none;">
+  <h2>Posting today <span class="pill live" id="todayCount"></span></h2>
+  <div class="pingrid" id="todayPins"></div>
+</div>
+
+<!-- ============== SCHEDULED ================= -->
+<div class="section">
+  <h2>Scheduled <span class="count" id="schedCount"></span></h2>
+  <div class="pingrid" id="scheduled"></div>
+</div>
+
+<!-- ============== RECENTLY POSTED ================= -->
+<div class="section">
+  <h2>Recently posted <span class="count" id="postedCount"></span></h2>
+  <div class="pingrid" id="posted"></div>
+</div>
+
+<!-- ============== NICHES ================= -->
+<div class="section">
+  <h2>Channels</h2>
+  <div class="nicherow" id="niches"></div>
+</div>
+
+<!-- ============== REJECTED ================= -->
+<div class="section">
+  <h2>QA rejected <span class="count" id="rejCount"></span></h2>
+  <div id="rejected" class="pingrid"></div>
+</div>
+
+<footer>
+  <div>Source of truth: <code>{niche}/content_tracker.json</code> per niche</div>
+  <div style="margin-top:6px">Updated when you push fresh data via <code>scripts/sync_dashboard_data.py</code></div>
+  <div style="margin-top:6px"><a href="index.html">ΓåÉ Back to linktree</a></div>
+</footer>
+
+</div>
+
+<script>
+const NICHES = [
+  { slug:'aesthetic_spaces_co', short:'ASC', title:'Aesthetic Spaces Co',
+    color:'asc', pinterest:'@saltybayflipspin',
+    pinterest_url:'https://www.pinterest.com/saltybayflipspin/',
+    img_base:'img/asc/' },
+  { slug:'luxe_living_daily', short:'LLD', title:'Luxe Living Daily',
+    color:'lld', pinterest:'@saltybayflipsluxe',
+    pinterest_url:'https://www.pinterest.com/saltybayflipsluxe/',
+    img_base:'img/lld/' },
+  { slug:'fuzzy_frames_ai', short:'Fuzzy', title:'Fuzzy Frames AI',
+    color:'fuzzy', pinterest:'@saltybayflipsfuzzy',
+    pinterest_url:'https://www.pinterest.com/saltybayflipsfuzzy/',
+    img_base:'img/fuzzy/' },
+];
+
+let allPosts = [];     // flat list across niches with .niche set
+let activeFilter = 'all';
+const today = new Date(); today.setHours(0,0,0,0);
+
+document.getElementById('today').textContent =
+  new Date().toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+
+function fmtDate(d) {
+  const dt = new Date(d);
+  if (isNaN(dt)) return '';
+  return dt.toLocaleDateString(undefined,{month:'short',day:'numeric'});
+}
+function fmtTime(d) {
+  const dt = new Date(d);
+  if (isNaN(dt)) return '';
+  return dt.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'});
+}
+function parseSched(p) {
+  const s = p.scheduled_for || p.posted_date;
+  if (!s) return null;
+  // Handle "2026-05-04 12:00" or "2026-05-04T12:00:00" or "2026-05-04"
+  const norm = s.includes('T') ? s : s.replace(' ','T');
+  const dt = new Date(norm.length === 10 ? norm + 'T12:00:00' : norm);
+  return isNaN(dt) ? null : dt;
+}
+function dayKey(d) { return d.toISOString().slice(0,10); }
+function addDays(base, n) { const d = new Date(base); d.setDate(d.getDate()+n); return d; }
+
+function imgGuess(post, niche) {
+  // Try img_url first; else guess from slug/file
+  if (post.image_url) return post.image_url;
+  const slug = post.slug || (post.file && post.file.replace('_00001_.png',''));
+  if (!slug) return '';
+  return `https://saltybayflips-ai-empire.github.io/saltybayflips/${niche.img_base}${slug}.jpg`;
+}
+
+function pinCard(post) {
+  const niche = NICHES.find(n => n.slug === post.niche);
+  const img = imgGuess(post, niche);
+  const sched = parseSched(post);
+  let badge = '';
+  if (post.status === 'scheduled' && sched) {
+    const diffDays = Math.round((sched - today) / 86400000);
+    let cls = '';
+    let label = sched.toLocaleDateString(undefined,{month:'short',day:'numeric'}) + ' ' + fmtTime(sched);
+    if (diffDays === 0) { cls = 'today'; label = 'TODAY ' + fmtTime(sched); }
+    else if (diffDays === 1) { cls = 'tomorrow'; label = 'Tomorrow ' + fmtTime(sched); }
+    badge = `<span class="badge ${cls}">${label}</span>`;
+  } else if (post.status === 'posted') {
+    badge = `<span class="badge">Posted ${fmtDate(post.posted_date)}</span>`;
+  }
+  const pUrl = niche.pinterest_url || '#';
+  return `<a class="pin" href="${pUrl}" target="_blank" rel="noopener">
+    <div class="img" style="background-image:url('${img}')">
+      ${badge}
+      <span class="badge acct"><span class="pill ${niche.color}">${niche.short}</span></span>
+    </div>
+    <div class="body">
+      <div class="title">${post.title || post.slug || post.file || '(untitled)'}</div>
+      <div class="meta">
+        <span>${post.board || ''}</span>
+      </div>
+    </div>
+  </a>`;
+}
+
+async function loadOne(niche) {
+  try {
+    const r = await fetch(`data/${niche.slug}.json`, {cache:'no-cache'});
+    if (!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    return { niche, data };
+  } catch (e) {
+    return { niche, data:null, error:e.message };
+  }
+}
+
+async function loadAll() {
+  document.getElementById('errors').innerHTML = '';
+  document.getElementById('refreshBtn').disabled = true;
+  document.getElementById('refreshBtn').textContent = 'Γå╗ Loading...';
+
+  const results = await Promise.all(NICHES.map(loadOne));
+  const errs = results.filter(r => !r.data).map(r =>
+    `Couldn't load ${r.niche.title}: ${r.error}`);
+  if (errs.length) {
+    document.getElementById('errors').innerHTML =
+      `<div class="err">ΓÜá ${errs.join(' ┬╖ ')} ΓÇö run <code>python scripts/sync_dashboard_data.py</code> then refresh</div>`;
+  }
+
+  allPosts = [];
+  let totalRejected = 0;
+  for (const r of results) {
+    if (!r.data) continue;
+    for (const p of (r.data.posts || [])) {
+      allPosts.push({ ...p, niche: r.niche.slug });
+    }
+    totalRejected += (r.data.rejected || []).length;
+  }
+
+  render(totalRejected, results);
+
+  document.getElementById('refreshBtn').disabled = false;
+  document.getElementById('refreshBtn').textContent = 'Γå╗ Refresh';
+}
+
+function render(totalRejected, results) {
+  const filtered = (activeFilter === 'all') ? allPosts :
+    allPosts.filter(p => p.niche === activeFilter);
+
+  // Compute stats from filtered set
+  const scheduled = filtered.filter(p => p.status === 'scheduled')
+    .sort((a,b) => parseSched(a) - parseSched(b));
+  const posted = filtered.filter(p => p.status === 'posted')
+    .sort((a,b) => parseSched(b) - parseSched(a));
+  const postingToday = scheduled.filter(p => {
+    const d = parseSched(p); return d && dayKey(d) === dayKey(today);
+  });
+
+  // ============ STATS ============
+  document.getElementById('stats').innerHTML = `
+    <div class="stat">
+      <div class="lbl">Scheduled</div>
+      <div class="val">${scheduled.length}</div>
+      <div class="delta">across all queues</div>
+    </div>
+    <div class="stat good">
+      <div class="lbl">Posted total</div>
+      <div class="val">${posted.length}</div>
+      <div class="delta">historical</div>
+    </div>
+    <div class="stat warn">
+      <div class="lbl">Posting today</div>
+      <div class="val">${postingToday.length}</div>
+      <div class="delta">${postingToday.map(p => NICHES.find(n => n.slug === p.niche).short).join(' ┬╖ ') || 'nothing today'}</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">QA rejected</div>
+      <div class="val">${totalRejected}</div>
+      <div class="delta">across all niches</div>
+    </div>
+  `;
+
+  // ============ FILTER BAR ============
+  document.getElementById('filterbar').innerHTML = [
+    {k:'all', label:'All', n:allPosts.length},
+    ...NICHES.map(n => ({k:n.slug, label:n.title, n:allPosts.filter(p => p.niche === n.slug).length})),
+  ].map(f =>
+    `<button class="filter ${activeFilter === f.k ? 'active':''}" onclick="setFilter('${f.k}')">${f.label} <span style="opacity:.6">${f.n}</span></button>`
+  ).join('');
+
+  // ============ TIMELINE ============
+  const days = [];
+  for (let i = 0; i < 14; i++) {
+    const d = addDays(today, i);
+    const dk = dayKey(d);
+    const dayPosts = scheduled.filter(p => dayKey(parseSched(p)) === dk);
+    const isToday = i === 0;
+    days.push(`<div class="day">
+      <div class="dow">${d.toLocaleDateString(undefined,{weekday:'short'})}</div>
+      <div class="dnum ${isToday ? 'today':''}">${d.getDate()}</div>
+      <div class="dcount">${dayPosts.length} ${dayPosts.length === 1 ? 'pin':'pins'}</div>
+      <div class="dots">${dayPosts.map(p =>
+        `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="${p.title}"></div>`).join('')}</div>
+    </div>`);
+  }
+  document.getElementById('timeline').innerHTML = days.join('');
+  document.getElementById('timelineCount').textContent =
+    `${scheduled.filter(p => { const d = parseSched(p); return d && (d - today)/86400000 < 14; }).length} pins queued`;
+
+  // ============ POSTING TODAY ============
+  const todaySection = document.getElementById('todaySection');
+  if (postingToday.length > 0) {
+    todaySection.style.display = 'block';
+    document.getElementById('todayCount').textContent = postingToday.length + ' going live';
+    document.getElementById('todayPins').innerHTML = postingToday.map(pinCard).join('');
+  } else {
+    todaySection.style.display = 'none';
+  }
+
+  // ============ SCHEDULED ============
+  document.getElementById('scheduled').innerHTML = scheduled.length
+    ? scheduled.map(pinCard).join('')
+    : '<div class="empty">No scheduled pins</div>';
+  document.getElementById('schedCount').textContent = scheduled.length;
+
+  // ============ POSTED ============
+  const recentPosted = posted.slice(0, 12);
+  document.getElementById('posted').innerHTML = recentPosted.length
+    ? recentPosted.map(pinCard).join('')
+    : '<div class="empty">No posted pins yet</div>';
+  document.getElementById('postedCount').textContent = `${posted.length} total ┬╖ showing ${recentPosted.length}`;
+
+  // ============ NICHES ============
+  document.getElementById('niches').innerHTML = results.filter(r => r.data).map(r => {
+    const posts = r.data.posts || [];
+    const sched = posts.filter(p => p.status === 'scheduled').length;
+    const post = posts.filter(p => p.status === 'posted').length;
+    const rej = (r.data.rejected || []).length;
+    const total = posts.length + rej;
+    return `<div class="nichecard">
+      <h3>${r.niche.title} <span class="pill ${r.niche.color}">${r.niche.short}</span></h3>
+      <div style="font-size:11px;color:var(--mut);margin-bottom:8px;">${r.niche.pinterest}</div>
+      <div class="breakdown">
+        <div class="br s"><span class="n">${sched}</span><span class="l">Sched</span></div>
+        <div class="br p"><span class="n">${post}</span><span class="l">Posted</span></div>
+        <div class="br r"><span class="n">${rej}</span><span class="l">Rejected</span></div>
+        <div class="br"><span class="n">${total}</span><span class="l">Total</span></div>
+      </div>
+      <div class="links">
+        <a href="${r.niche.pinterest_url}" target="_blank">Profile Γåù</a>
+        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue Γåù</a>
+      </div>
+    </div>`;
+  }).join('');
+
+  // ============ REJECTED ============
+  const allRejected = [];
+  for (const r of results) {
+    if (!r.data) continue;
+    for (const x of (r.data.rejected || [])) {
+      if (activeFilter === 'all' || activeFilter === r.niche.slug) {
+        allRejected.push({ ...x, niche: r.niche.slug, status:'rejected', title: x.title || x.file });
+      }
+    }
+  }
+  document.getElementById('rejected').innerHTML = allRejected.length
+    ? allRejected.map(p => `<a class="pin" href="#">
+        <div class="img" style="background-image:url('${imgGuess(p, NICHES.find(n => n.slug === p.niche))}')">
+          <span class="badge" style="background:rgba(230,0,35,.85)">REJECTED</span>
+          <span class="badge acct"><span class="pill ${NICHES.find(n => n.slug === p.niche).color}">${NICHES.find(n => n.slug === p.niche).short}</span></span>
+        </div>
+        <div class="body">
+          <div class="title">${p.title}</div>
+          <div class="meta"><span>${p.reason ? p.reason.slice(0,60) : ''}</span></div>
+        </div>
+      </a>`).join('')
+    : '<div class="empty">No rejections</div>';
+  document.getElementById('rejCount').textContent = allRejected.length;
+}
+
+function setFilter(k) { activeFilter = k; loadAll(); }
+
+loadAll();
+// Auto-refresh every 5 min when tab visible
+setInterval(() => { if (!document.hidden) loadAll(); }, 5*60*1000);
+</script>
+</body>
+</html>
