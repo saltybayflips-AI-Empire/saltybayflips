@@ -1,0 +1,23 @@
+{
+  "platform": "amazon",
+  "synced_at": "2026-05-02T17:27:27",
+  "store_id": "saltybayfli0c-20",
+  "this_month": {
+    "month": "May 2026",
+    "items_shipped": 0,
+    "earnings_usd": 0.0,
+    "ordered_items": 0,
+    "clicks": 0,
+    "conversion_pct": 0.0
+  },
+  "last_30d": {
+    "commissions_usd": 0.0,
+    "bounties_usd": 0.0,
+    "clicks": 7
+  },
+  "qualifying_sales": 0,
+  "deadline": "2026-10-11",
+  "deadline_days_remaining": 162,
+  "amazon_last_updated": "May 01 2026",
+  "report_url": "https://affiliate-program.amazon.com/home"
+}
