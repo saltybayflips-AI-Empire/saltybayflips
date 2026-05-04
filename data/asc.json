@@ -997,7 +997,7 @@
     {
       "id": 40,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 1,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/01_living_boho_minimalist.png",
       "title": "Living Boho Minimalist Small Apartment Room",
@@ -1020,12 +1020,13 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-12 12:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:50:00"
     },
     {
       "id": 41,
       "platform": "pinterest",
-      "status": "deferred",
+      "status": "scheduled",
       "source_prompt_id": 2,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/02_living_coastal_blue.png",
       "title": "Living Coastal Blue Small Apartment Room",
@@ -1049,12 +1050,13 @@
       "image_url": null,
       "scheduled_for": "2026-05-13 12:00",
       "qa_passed_at": "2026-05-04",
-      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later."
+      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
+      "scheduled_at_pinterest": "2026-05-04T13:50:00"
     },
     {
       "id": 42,
       "platform": "pinterest",
-      "status": "deferred",
+      "status": "scheduled",
       "source_prompt_id": 3,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/03_living_dark_moody.png",
       "title": "Living Dark Moody Small Apartment Room",
@@ -1078,12 +1080,13 @@
       "image_url": null,
       "scheduled_for": "2026-05-14 12:00",
       "qa_passed_at": "2026-05-04",
-      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later."
+      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
+      "scheduled_at_pinterest": "2026-05-04T13:50:00"
     },
     {
       "id": 43,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 4,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/04_dining_banquette_window.png",
       "title": "Dining Banquette Window Small Apartment Nook",
@@ -1105,13 +1108,14 @@
         "Window"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-13 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-15 12:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:50:00"
     },
     {
       "id": 44,
       "platform": "pinterest",
-      "status": "deferred",
+      "status": "scheduled",
       "source_prompt_id": 5,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/05_dining_bistro_round.png",
       "title": "Dining Bistro Round Small Apartment Nook",
@@ -1135,7 +1139,9 @@
       "image_url": null,
       "scheduled_for": "2026-05-16 12:00",
       "qa_passed_at": "2026-05-04",
-      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later."
+      "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
+      "scheduled_at_pinterest": "2026-05-04T13:50:00",
+      "needs_spot_check": "Description has Small Dining suffix appended (typing went to wrong field during scheduling). Board likely set via auto-pick. Spot-check this pin on profile to confirm."
     },
     {
       "id": 45,
@@ -1590,5 +1596,5 @@
       "regen_plan": "Re-render with stronger photorealistic emphasis. Moved file to _qa_rejected/ to prevent reuse. Replaced today's slot with bistro_round (id 34)."
     }
   ],
-  "last_synced": "2026-05-04T10:12:44"
+  "last_synced": "2026-05-04T10:29:12"
 }

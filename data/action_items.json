@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-04T10:12:44.628230",
-  "item_count": 6,
+  "synced_at": "2026-05-04T10:29:12.417880",
+  "item_count": 5,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
@@ -29,14 +29,6 @@
       "url": "https://www.pinterest.com/pin-creation-tool/"
     },
     {
-      "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 7 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+2 more)",
-      "priority": "med",
-      "estimated_min": 35,
-      "category": "gap_warning"
-    },
-    {
       "id": "gap_fuzzy_frames_ai",
       "title": "Fuzzy has 6 unscheduled days in next 14d",
       "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+1 more)",
@@ -47,7 +39,7 @@
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #25 (2026-05-04 10:00, 0.2h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #25 (2026-05-04 10:00, 0.5h ago).",
       "priority": "high",
       "estimated_min": 2,
       "category": "missed_slot"
