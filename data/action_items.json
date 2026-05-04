@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-04T09:10:36.723743",
-  "item_count": 9,
+  "synced_at": "2026-05-04T09:24:35.672719",
+  "item_count": 6,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
@@ -29,14 +29,6 @@
       "url": "https://www.pinterest.com/pin-creation-tool/"
     },
     {
-      "id": "qa_pending_aesthetic_spaces_co",
-      "title": "QA 20 pending ASC images",
-      "detail": "20 renders sitting in aesthetic_spaces_co/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "high",
-      "estimated_min": 20,
-      "category": "qa_review"
-    },
-    {
       "id": "gap_aesthetic_spaces_co",
       "title": "ASC has 7 unscheduled days in next 14d",
       "detail": "Days with no scheduled ASC pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+2 more)",
@@ -45,28 +37,12 @@
       "category": "gap_warning"
     },
     {
-      "id": "qa_pending_luxe_living_daily",
-      "title": "QA 10 pending LLD images",
-      "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "high",
-      "estimated_min": 10,
-      "category": "qa_review"
-    },
-    {
       "id": "gap_luxe_living_daily",
       "title": "LLD has 6 unscheduled days in next 14d",
       "detail": "Days with no scheduled LLD pin: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17, … (+1 more)",
       "priority": "med",
       "estimated_min": 30,
       "category": "gap_warning"
-    },
-    {
-      "id": "qa_pending_fuzzy_frames_ai",
-      "title": "QA 4 pending Fuzzy images",
-      "detail": "4 renders sitting in fuzzy_frames_ai/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "high",
-      "estimated_min": 4,
-      "category": "qa_review"
     },
     {
       "id": "gap_fuzzy_frames_ai",
