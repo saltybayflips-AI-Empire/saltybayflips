@@ -1,48 +1,41 @@
 {
-  "platform": "tiktok",
-  "synced_at": "2026-05-02T17:30:00",
+  "synced_at": "2026-05-04T08:26:55",
   "accounts": {
     "laurasunkist": {
-      "display_name": "Luxe Living Daily",
       "handle": "@laurasunkist",
-      "url": "https://www.tiktok.com/@laurasunkist",
+      "display_name": "Luxe Living Daily (rebranded from purchased account)",
       "followers": 16300,
-      "followers_note": "from CURRENT_STATE.md (16.3K) — TikTok Studio doesn't surface follower count on overview page",
+      "url": "https://www.tiktok.com/@laurasunkist",
       "last_7d": {
-        "video_views": 103,
-        "video_views_delta": 39,
-        "video_views_delta_pct": 60.9,
-        "profile_views": 4,
-        "likes": 2,
+        "video_views": 435,
+        "video_views_delta": 402,
+        "video_views_delta_pct": 1218.2,
+        "profile_views": 2,
+        "profile_views_delta": -2,
+        "likes": 1,
+        "likes_delta": -2,
         "comments": -5,
-        "shares": 0,
-        "est_rewards_usd": 0
+        "shares": 1,
+        "est_rewards_usd": 0,
+        "profile_view_ctr_pct": 0.46
       },
       "last_28d": {
-        "video_views": 189,
-        "video_views_delta": -87,
-        "video_views_delta_pct": -31.5,
-        "profile_views": 14,
-        "likes": 5,
-        "comments": -8,
-        "shares": 0,
-        "est_rewards_usd": 0
+        "video_views": "unknown"
       },
       "traffic_sources_pct": {
-        "Following": 100,
-        "For You": 0,
-        "Personal profile": 0,
-        "Search": 0,
-        "Sound": 0
-      }
+        "For You": 78.9,
+        "Following": 19.3,
+        "Search": 1.0,
+        "Personal profile": 0.8,
+        "Sound": 0.0
+      },
+      "note": "Algorithm IS pushing (78.9% For You) but profile-view CTR = 0.46%. Bio link clicks effectively zero. Posts 23-27 still need Studio caption edit to add bio CTA."
     },
     "fuzzy_frames_ai": {
-      "display_name": "Fuzzy Frames AI",
       "handle": "@fuzzy.frames.ai",
-      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
-      "status": "pending_business_verification",
-      "note": "Created 2026-05-01, IRS doc submitted, under review. Bio link blocked until approved. Analytics may be limited."
+      "display_name": "Fuzzy Frames AI",
+      "status": "business_verification_pending",
+      "note": "Bio link blocked until verification. Posting fine. post_g01 was scheduled 5/4 9 AM."
     }
-  },
-  "report_url": "https://www.tiktok.com/tiktokstudio/analytics"
+  }
 }

@@ -1,50 +1,39 @@
 {
-  "platform": "pinterest",
-  "synced_at": "2026-05-02T17:42:00",
-  "date_range": "4/1/2026 - 5/1/2026",
-  "window": "last_30d",
+  "synced_at": "2026-05-04T08:26:55",
   "accounts": {
-    "saltybayflipspin": {
-      "display_name": "Aesthetic Spaces Co",
-      "handle": "@saltybayflipspin",
-      "url": "https://www.pinterest.com/saltybayflipspin/",
-      "impressions": 13,
-      "engagements": 0,
-      "outbound_clicks": 0,
-      "saves": 0,
-      "total_audience": 5,
-      "engaged_audience": 0
-    },
-    "saltybayflipsluxe": {
-      "display_name": "Luxe Living Daily",
-      "handle": "@saltybayflipsluxe",
-      "url": "https://www.pinterest.com/saltybayflipsluxe/",
-      "impressions": 26,
-      "engagements": 2,
-      "outbound_clicks": 0,
-      "saves": 1,
-      "total_audience": 11,
-      "engaged_audience": 0
-    },
-    "saltybayflipsfuzzy": {
+    "fuzzy_frames_ai": {
       "display_name": "Fuzzy Frames AI",
       "handle": "@saltybayflipsfuzzy",
-      "url": "https://www.pinterest.com/saltybayflipsfuzzy/",
-      "impressions": 71,
+      "date_range": "Last 30 Days",
+      "date_range_iso": "2026-04-04 to 2026-05-04",
+      "impressions": 112,
       "engagements": 1,
       "outbound_clicks": 0,
       "saves": 0,
-      "total_audience": 4,
-      "engaged_audience": 0
+      "total_audience": 35,
+      "engaged_audience": 1,
+      "note": "Pins ARE going live (chart shows spike 5/2-5/4) but 0 outbound clicks across 30d. Pin descriptions need stronger CTA."
+    },
+    "luxe_living_daily": {
+      "display_name": "Luxe Living Daily",
+      "handle": "@saltybayflipsluxe",
+      "status": "separate_login_required",
+      "note": "Cannot scrape - Chrome currently logged into Fuzzy Pinterest only. LLD is a separate account."
+    },
+    "aesthetic_spaces_co": {
+      "display_name": "Aesthetic Spaces Co",
+      "handle": "@saltybayflipspin",
+      "status": "separate_login_required",
+      "note": "Cannot scrape - separate Pinterest login."
     }
   },
   "totals": {
-    "impressions": 110,
-    "engagements": 3,
+    "impressions": 112,
+    "engagements": 1,
+    "saves": 0,
     "outbound_clicks": 0,
-    "saves": 1,
-    "total_audience": 20,
-    "engaged_audience": 0
+    "total_audience": 35,
+    "note": "Totals are FUZZY ONLY. LLD + ASC unreached due to multi-account scraping limitation."
   },
   "report_url": "https://analytics.pinterest.com/overview/"
 }

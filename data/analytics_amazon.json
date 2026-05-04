@@ -1,23 +1,34 @@
 {
-  "platform": "amazon",
-  "synced_at": "2026-05-02T17:27:27",
+  "synced_at": "2026-05-04T08:26:55",
   "store_id": "saltybayfli0c-20",
+  "last_updated": "May 03 2026",
   "this_month": {
-    "month": "May 2026",
-    "items_shipped": 0,
     "earnings_usd": 0.0,
     "ordered_items": 0,
-    "clicks": 0,
-    "conversion_pct": 0.0
+    "items_shipped": 0,
+    "conversion_pct": 0.0,
+    "clicks": 0
   },
   "last_30d": {
+    "clicks": 0,
     "commissions_usd": 0.0,
-    "bounties_usd": 0.0,
-    "clicks": 7
+    "has_data": false,
+    "note": "Amazon shows \"There is no data available for the date range selected\" for Last 30 Days (Apr 4 - May 4, 2026). Lifetime click count is 7 per home-page summary block."
   },
+  "lifetime_total_clicks": 7,
   "qualifying_sales": 0,
-  "deadline": "2026-10-11",
-  "deadline_days_remaining": 162,
-  "amazon_last_updated": "May 01 2026",
-  "report_url": "https://affiliate-program.amazon.com/home"
+  "deadline_days_remaining": 159,
+  "report_url": "https://affiliate-program.amazon.com/home/reports/global",
+  "link_health": {
+    "lld_html_links": 58,
+    "lld_correctly_tagged": 58,
+    "fuzzy_html_links": 31,
+    "fuzzy_correctly_tagged": 31,
+    "asc_html_links": 45,
+    "asc_correctly_tagged": 45,
+    "total_links": 134,
+    "total_correctly_tagged": 134,
+    "expected_tag": "saltybayfli0c-20",
+    "audit_pass": true
+  }
 }

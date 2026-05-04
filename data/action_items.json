@@ -1,7 +1,15 @@
 {
-  "synced_at": "2026-05-04T08:17:33.863038",
-  "item_count": 9,
+  "synced_at": "2026-05-04T08:28:28.056394",
+  "item_count": 13,
   "items": [
+    {
+      "id": "diagnose_funnel_2026_05_04",
+      "title": "Funnel diagnosis: 0 Amazon clicks (30d) — TRAFFIC problem, not link problem",
+      "detail": "All 134 Amazon links across lld.html (58), fuzzy.html (31), asc.html (45) verified correctly tagged with saltybayfli0c-20. So 0 clicks is upstream: Pinterest impressions are real (Fuzzy 112/30d) but 0 outbound clicks; TikTok Laura had 435 video views/7d but only 2 profile views (0.46% CTR). Levers: (a) finish the LLD posts 23-27 Studio caption-CTA edit, (b) add stronger CTAs to Pinterest pin descriptions on existing pins, (c) increase pin volume per niche to widen the top-of-funnel.",
+      "priority": "high",
+      "estimated_min": 60,
+      "category": "funnel_fix"
+    },
     {
       "id": "studio_edit_lld_23_27",
       "title": "Edit captions in TikTok Studio (LLD posts 23-27)",
@@ -37,6 +45,14 @@
       "category": "gap_warning"
     },
     {
+      "id": "overdue_aesthetic_spaces_co",
+      "title": "ASC: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #31 (2026-05-03 12:00, 20.5h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
+    },
+    {
       "id": "qa_pending_luxe_living_daily",
       "title": "QA 10 pending LLD images",
       "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
@@ -53,6 +69,14 @@
       "category": "gap_warning"
     },
     {
+      "id": "overdue_luxe_living_daily",
+      "title": "LLD: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #30 (2026-05-03 11:00, 21.5h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
+    },
+    {
       "id": "qa_pending_fuzzy_frames_ai",
       "title": "QA 4 pending Fuzzy images",
       "detail": "4 renders sitting in fuzzy_frames_ai/qa_pending/ awaiting your pass/reject verdict.",
@@ -67,6 +91,14 @@
       "priority": "med",
       "estimated_min": 30,
       "category": "gap_warning"
+    },
+    {
+      "id": "overdue_fuzzy_frames_ai",
+      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #22 (2026-05-02 10:00, 46.5h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
     },
     {
       "id": "stale_fuzzy_frames_ai",
