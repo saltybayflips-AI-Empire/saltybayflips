@@ -1225,6 +1225,82 @@
       "music_primary": "wholesome curious lofi",
       "image_source": "Wan 2.2 5B TI2V (animated from Gemini stills)",
       "status": "ready_to_upload"
+    },
+    {
+      "id": 50,
+      "platform": "tiktok",
+      "account": "@fuzzy.frames.ai",
+      "kind": "wan_2clip_animation_v3",
+      "slot": "v3_v01",
+      "folder": "tiktok_ready_to_post/post_v3_v01_wan_2clip",
+      "hook": "Pets too sleepy to function",
+      "clips": [
+        "panda",
+        "maine_coon"
+      ],
+      "duration_s": 9.5,
+      "scheduled_for": "2026-05-10 09:00",
+      "music_primary": "lazy lofi sleepy trending",
+      "image_source": "Wan 2.2 5B TI2V (v3 batch — fresh task prompts)",
+      "status": "ready_to_upload",
+      "notes": "Auto-added by build_wan_v3_tiktok_posts.py."
+    },
+    {
+      "id": 51,
+      "platform": "tiktok",
+      "account": "@fuzzy.frames.ai",
+      "kind": "wan_2clip_animation_v3",
+      "slot": "v3_v02",
+      "folder": "tiktok_ready_to_post/post_v3_v02_wan_2clip",
+      "hook": "Sleepy puppy meets curious kitten",
+      "clips": [
+        "golden_retriever",
+        "scottish_fold"
+      ],
+      "duration_s": 9.5,
+      "scheduled_for": "2026-05-11 09:00",
+      "music_primary": "wholesome cute trending",
+      "image_source": "Wan 2.2 5B TI2V (v3 batch — fresh task prompts)",
+      "status": "ready_to_upload",
+      "notes": "Auto-added by build_wan_v3_tiktok_posts.py."
+    },
+    {
+      "id": 52,
+      "platform": "tiktok",
+      "account": "@fuzzy.frames.ai",
+      "kind": "wan_2clip_animation_v3",
+      "slot": "v3_v03",
+      "folder": "tiktok_ready_to_post/post_v3_v03_wan_2clip",
+      "hook": "Pets hearing the snack bag from another room",
+      "clips": [
+        "husky",
+        "beagle"
+      ],
+      "duration_s": 9.5,
+      "scheduled_for": "2026-05-12 09:00",
+      "music_primary": "trending suspense lofi",
+      "image_source": "Wan 2.2 5B TI2V (v3 batch — fresh task prompts)",
+      "status": "ready_to_upload",
+      "notes": "Auto-added by build_wan_v3_tiktok_posts.py."
+    },
+    {
+      "id": 53,
+      "platform": "tiktok",
+      "account": "@fuzzy.frames.ai",
+      "kind": "wan_2clip_animation_v3",
+      "slot": "v3_v04",
+      "folder": "tiktok_ready_to_post/post_v3_v04_wan_2clip",
+      "hook": "Tiny pet details that make me melt",
+      "clips": [
+        "bunny",
+        "persian_kitten"
+      ],
+      "duration_s": 9.5,
+      "scheduled_for": "2026-05-13 09:00",
+      "music_primary": "soft heartstring cute trending",
+      "image_source": "Wan 2.2 5B TI2V (v3 batch — fresh task prompts)",
+      "status": "ready_to_upload",
+      "notes": "Auto-added by build_wan_v3_tiktok_posts.py."
     }
   ],
   "rejected": [
@@ -1277,5 +1353,5 @@
       "regen_plan": "Switch Fuzzy generation to Gemini (Imagen) - prior session showed dramatically better photographic results for pet subjects."
     }
   ],
-  "last_synced": "2026-05-04T09:24:35"
+  "last_synced": "2026-05-04T10:12:44"
 }

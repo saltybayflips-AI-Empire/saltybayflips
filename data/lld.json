@@ -1169,12 +1169,12 @@
     {
       "id": 40,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 41,
       "source_image": "pinterest/luxe_living_daily/qa_pending/41_brutalist_concrete_penthouse.png",
       "title": "Brutalist Concrete Penthouse Inspiration",
       "description": "Brutalist Concrete Penthouse. brutalist concrete penthouse, raw board-formed concrete walls and ceiling with visible wood-grain texture, polished concrete floor in pale cool gray, single oversized L-shape sectional in steel-gray boucle, low slab travertine coffee table.... Save to your dream penthouse, luxury home, or modern interior moodboards. → Tap link in bio to shop the look 🛋️",
-      "board": "Modern Penthouses",
+      "board": "Penthouse Living",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#living-room",
       "hashtags": [
         "LuxuryHome",
@@ -1192,17 +1192,18 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-13 11:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:30:00"
     },
     {
       "id": 41,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 42,
       "source_image": "pinterest/luxe_living_daily/qa_pending/42_midcentury_conversation_pit.png",
       "title": "Midcentury Conversation Pit Sunken Living Room",
       "description": "Midcentury Conversation Pit. 1960s mid-century modern living room with a sunken conversation pit, walnut paneled walls with linear grooves, vintage atomic-age starburst chandelier in brass, plush avocado green wool sectional wrapping around the sunken square pit.... Save to your mid-century moodboard or retro luxury inspo. → Tap link in bio to shop the look 🛋️",
-      "board": "Mid-Century Modern",
+      "board": "Great Rooms & Living Spaces",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#living-room",
       "hashtags": [
         "LuxuryHome",
@@ -1220,17 +1221,18 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-14 11:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:30:00"
     },
     {
       "id": 42,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 43,
       "source_image": "pinterest/luxe_living_daily/qa_pending/43_tropical_jungle_outdoor_shower.png",
       "title": "Tropical Jungle Outdoor Shower Goals",
       "description": "Tropical Jungle Outdoor Shower. outdoor shower set in a dense tropical jungle clearing, polished black slate floor with embedded round river stones, free-standing matte black rainfall showerhead on a tall slate column.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🛋️",
-      "board": "Outdoor Showers",
+      "board": "Outdoor Living & Pools",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#bathroom",
       "hashtags": [
         "LuxuryHome",
@@ -1248,17 +1250,18 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-15 11:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:30:00"
     },
     {
       "id": 43,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 44,
       "source_image": "pinterest/luxe_living_daily/qa_pending/44_santorini_cliff_villa.png",
       "title": "Santorini Cliff Villa Cliffside",
       "description": "Santorini Cliff Villa. Santorini cliffside villa terrace at midday, blinding whitewashed walls and curved stairs cascading down toward an infinity-edge plunge pool, polished cycladic limestone floor, blue-and-white striped cushions on rattan loungers.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🛋️",
-      "board": "Mediterranean Villas",
+      "board": "Coastal Glass Homes",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
       "hashtags": [
         "LuxuryHome",
@@ -1276,17 +1279,18 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-16 11:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:30:00"
     },
     {
       "id": 44,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 45,
       "source_image": "pinterest/luxe_living_daily/qa_pending/45_prohibition_speakeasy.png",
       "title": "Prohibition Speakeasy Hidden Vibes",
       "description": "Prohibition Speakeasy. 1920s Prohibition-era underground speakeasy bar, low brick-arched ceilings with weathered red brick, gilded antique brass chandeliers casting warm amber light, brass-railed mahogany bar with backlit glass shelves of vintage amber whiskey bottles.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🛋️",
-      "board": "Vintage Bars",
+      "board": "Wine Cellars & Home Bars",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#wine-bar",
       "hashtags": [
         "LuxuryHome",
@@ -1303,7 +1307,8 @@
       ],
       "image_url": null,
       "scheduled_for": "2026-05-17 11:00",
-      "qa_passed_at": "2026-05-04"
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at_pinterest": "2026-05-04T13:30:00"
     },
     {
       "id": 45,
@@ -1446,5 +1451,5 @@
     }
   ],
   "rejected": [],
-  "last_synced": "2026-05-04T09:24:35"
+  "last_synced": "2026-05-04T10:12:44"
 }
