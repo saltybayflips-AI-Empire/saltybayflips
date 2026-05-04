@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-02T16:25:24.308686",
+  "synced_at": "2026-05-04T08:17:33.863038",
   "item_count": 9,
   "items": [
     {
@@ -30,10 +30,10 @@
     },
     {
       "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 5 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16",
+      "title": "ASC has 7 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+2 more)",
       "priority": "med",
-      "estimated_min": 25,
+      "estimated_min": 35,
       "category": "gap_warning"
     },
     {
@@ -46,10 +46,10 @@
     },
     {
       "id": "gap_luxe_living_daily",
-      "title": "LLD has 4 unscheduled days in next 14d",
-      "detail": "Days with no scheduled LLD pin: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16",
+      "title": "LLD has 6 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17, … (+1 more)",
       "priority": "med",
-      "estimated_min": 20,
+      "estimated_min": 30,
       "category": "gap_warning"
     },
     {
@@ -63,15 +63,15 @@
     {
       "id": "gap_fuzzy_frames_ai",
       "title": "Fuzzy has 6 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-03, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, … (+1 more)",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+1 more)",
       "priority": "med",
       "estimated_min": 30,
       "category": "gap_warning"
     },
     {
       "id": "stale_fuzzy_frames_ai",
-      "title": "Fuzzy hasn't posted in 4 days",
-      "detail": "Last live Fuzzy pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "title": "Fuzzy hasn't posted in 6 days",
+      "detail": "Last live Fuzzy pin posted 6 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
       "priority": "med",
       "estimated_min": 15,
       "category": "cadence_alert"
