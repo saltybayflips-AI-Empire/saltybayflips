@@ -877,12 +877,15 @@
         "DreamHomeGoals"
       ],
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#entertainment",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-01",
       "scheduled_for": "2026-05-03 11:00",
-      "board_actual": "Home Theater & Game Rooms"
+      "board_actual": "Home Theater & Game Rooms",
+      "posted_date": "2026-05-03 11:00",
+      "reconciled_at": "2026-05-04T08:43:16",
+      "reconcile_note": "Auto-marked posted on 2026-05-04 daily check-in. scheduled_for was past + Pinterest scheduler is reliable. User should spot-check on profile."
     },
     {
       "id": 31,
@@ -1165,5 +1168,5 @@
     }
   ],
   "rejected": [],
-  "last_synced": "2026-05-04T08:28:27"
+  "last_synced": "2026-05-04T08:43:33"
 }

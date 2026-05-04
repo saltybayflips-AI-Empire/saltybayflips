@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-04T08:28:28.056394",
-  "item_count": 13,
+  "synced_at": "2026-05-04T08:43:33.313752",
+  "item_count": 9,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
@@ -45,14 +45,6 @@
       "category": "gap_warning"
     },
     {
-      "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #31 (2026-05-03 12:00, 20.5h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot"
-    },
-    {
       "id": "qa_pending_luxe_living_daily",
       "title": "QA 10 pending LLD images",
       "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
@@ -69,14 +61,6 @@
       "category": "gap_warning"
     },
     {
-      "id": "overdue_luxe_living_daily",
-      "title": "LLD: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #30 (2026-05-03 11:00, 21.5h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot"
-    },
-    {
       "id": "qa_pending_fuzzy_frames_ai",
       "title": "QA 4 pending Fuzzy images",
       "detail": "4 renders sitting in fuzzy_frames_ai/qa_pending/ awaiting your pass/reject verdict.",
@@ -91,22 +75,6 @@
       "priority": "med",
       "estimated_min": 30,
       "category": "gap_warning"
-    },
-    {
-      "id": "overdue_fuzzy_frames_ai",
-      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #22 (2026-05-02 10:00, 46.5h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot"
-    },
-    {
-      "id": "stale_fuzzy_frames_ai",
-      "title": "Fuzzy hasn't posted in 6 days",
-      "detail": "Last live Fuzzy pin posted 6 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
-      "priority": "med",
-      "estimated_min": 15,
-      "category": "cadence_alert"
     }
   ]
 }

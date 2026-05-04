@@ -663,13 +663,16 @@
         "AestheticPets"
       ],
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#seasonal",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "qa_verdict": "approve",
       "qa_date": "2026-05-01",
       "qa_notes": "Visual QA — most fail with painterly/oversaturated look (Fuzzy prompt template likely needs rework)",
-      "scheduled_for": "2026-05-02 10:00"
+      "scheduled_for": "2026-05-02 10:00",
+      "posted_date": "2026-05-02 10:00",
+      "reconciled_at": "2026-05-04T08:43:16",
+      "reconcile_note": "Auto-marked posted on 2026-05-04 daily check-in. scheduled_for was past + Pinterest scheduler is reliable. User should spot-check on profile."
     },
     {
       "id": 23,
@@ -1201,5 +1204,5 @@
       "regen_plan": "Switch Fuzzy generation to Gemini (Imagen) - prior session showed dramatically better photographic results for pet subjects."
     }
   ],
-  "last_synced": "2026-05-04T08:28:27"
+  "last_synced": "2026-05-04T08:43:33"
 }

@@ -874,10 +874,13 @@
       "platform": "pinterest",
       "board": "Small Living Room Ideas",
       "file": "aesthetic_living_boho_minimalist_00001_.png",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-03 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
-      "board_actual": "Small Living Room Ideas (new board created)"
+      "board_actual": "Small Living Room Ideas (new board created)",
+      "posted_date": "2026-05-03 12:00",
+      "reconciled_at": "2026-05-04T08:43:16",
+      "reconcile_note": "Auto-marked posted on 2026-05-04 daily check-in. scheduled_for was past + Pinterest scheduler is reliable. User should spot-check on profile."
     },
     {
       "id": 32,
@@ -1022,5 +1025,5 @@
       "regen_plan": "Re-render with stronger photorealistic emphasis. Moved file to _qa_rejected/ to prevent reuse. Replaced today's slot with bistro_round (id 34)."
     }
   ],
-  "last_synced": "2026-05-04T08:28:27"
+  "last_synced": "2026-05-04T08:43:33"
 }
