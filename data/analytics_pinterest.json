@@ -1,39 +1,57 @@
 {
-  "synced_at": "2026-05-04T08:26:55",
+  "synced_at": "2026-05-04T14:09:30",
   "accounts": {
     "fuzzy_frames_ai": {
       "display_name": "Fuzzy Frames AI",
       "handle": "@saltybayflipsfuzzy",
       "date_range": "Last 30 Days",
       "date_range_iso": "2026-04-04 to 2026-05-04",
-      "impressions": 112,
+      "impressions": 127,
       "engagements": 1,
       "outbound_clicks": 0,
       "saves": 0,
       "total_audience": 35,
       "engaged_audience": 1,
-      "note": "Pins ARE going live (chart shows spike 5/2-5/4) but 0 outbound clicks across 30d. Pin descriptions need stronger CTA."
+      "delta_vs_prior_check": "+15 impressions (was 112). Engagements/saves/outbound clicks all unchanged.",
+      "note": "Pins ARE going live and impressions trickling up, but 0 outbound clicks across 30d remains the funnel block."
     },
     "luxe_living_daily": {
       "display_name": "Luxe Living Daily",
       "handle": "@saltybayflipsluxe",
-      "status": "separate_login_required",
-      "note": "Cannot scrape - Chrome currently logged into Fuzzy Pinterest only. LLD is a separate account."
+      "date_range": "Last 30 Days",
+      "date_range_iso": "2026-04-04 to 2026-05-04",
+      "impressions": 56,
+      "engagements": 2,
+      "outbound_clicks": 0,
+      "saves": 1,
+      "total_audience": 36,
+      "engaged_audience": 1,
+      "delta_vs_prior_check": "FIRST scrape - yesterday's check-in incorrectly logged this account as 'separate login required'. All 3 accounts ARE switchable from same Chrome session via avatar dropdown.",
+      "note": "1 save is the only positive engagement in the portfolio today. Still 0 outbound clicks despite 10 LLD pins now live."
     },
     "aesthetic_spaces_co": {
       "display_name": "Aesthetic Spaces Co",
       "handle": "@saltybayflipspin",
-      "status": "separate_login_required",
-      "note": "Cannot scrape - separate Pinterest login."
+      "date_range": "Last 30 Days",
+      "date_range_iso": "2026-04-04 to 2026-05-04",
+      "impressions": 12,
+      "engagements": 0,
+      "outbound_clicks": 0,
+      "saves": 0,
+      "total_audience": 8,
+      "engaged_audience": 0,
+      "delta_vs_prior_check": "FIRST scrape (same dropdown-switcher discovery as LLD).",
+      "note": "Lowest-traffic account by far. 30 published pins delivered only 12 impressions in 30 days. Algorithm not picking ASC up. Contributing factor: ASC bio URL is still NOT pointing at asc.html (open todo #10) so even a click would land somewhere weak."
     }
   },
   "totals": {
-    "impressions": 112,
-    "engagements": 1,
-    "saves": 0,
+    "impressions": 195,
+    "engagements": 3,
+    "saves": 1,
     "outbound_clicks": 0,
-    "total_audience": 35,
-    "note": "Totals are FUZZY ONLY. LLD + ASC unreached due to multi-account scraping limitation."
+    "total_audience": 79,
+    "engaged_audience": 2,
+    "note": "Full portfolio totals across all 3 accounts. 0 outbound clicks across the entire 30-day window despite 195 impressions = 0% CTR portfolio-wide. Funnel diagnosis from yesterday confirmed: traffic problem (low impressions) + descriptions don't drive clicks (0% CTR). Backlog of 28 scheduled pins (5/2-5/12) will keep fueling impressions; clicks need pin-description retrofit."
   },
   "report_url": "https://analytics.pinterest.com/overview/"
 }
