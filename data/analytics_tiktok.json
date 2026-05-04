@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-04T08:26:55",
+  "synced_at": "2026-05-04T14:08:15",
   "accounts": {
     "laurasunkist": {
       "handle": "@laurasunkist",
@@ -29,13 +29,14 @@
         "Personal profile": 0.8,
         "Sound": 0.0
       },
-      "note": "Algorithm IS pushing (78.9% For You) but profile-view CTR = 0.46%. Bio link clicks effectively zero. Posts 23-27 still need Studio caption edit to add bio CTA."
+      "delta_vs_prior_check": "FLAT - identical numbers to 2026-05-04 08:26 scrape (analytics likely refresh once per day; new data appears tomorrow). Algorithm distribution unchanged.",
+      "note": "Algorithm IS pushing (78.9% For You) but profile-view CTR = 0.46%. Bio link clicks effectively zero. Posts 23-26 captions edited yesterday with bio CTA (under TT review); post 27 (Mudrooms) blocked until it fires today 5/4 9 AM."
     },
     "fuzzy_frames_ai": {
       "handle": "@fuzzy.frames.ai",
       "display_name": "Fuzzy Frames AI",
       "status": "business_verification_pending",
-      "note": "Bio link blocked until verification. Posting fine. post_g01 was scheduled 5/4 9 AM."
+      "note": "Bio link blocked until verification. Posting fine. 4 Wan v2 stitched clips queued (5/6-5/9 9 AM)."
     }
   }
 }

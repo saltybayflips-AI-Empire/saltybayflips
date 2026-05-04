@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-04T08:26:55",
+  "synced_at": "2026-05-04T14:07:09",
   "store_id": "saltybayfli0c-20",
   "last_updated": "May 03 2026",
   "this_month": {
@@ -13,11 +13,11 @@
     "clicks": 0,
     "commissions_usd": 0.0,
     "has_data": false,
-    "note": "Amazon shows \"There is no data available for the date range selected\" for Last 30 Days (Apr 4 - May 4, 2026). Lifetime click count is 7 per home-page summary block."
+    "note": "Amazon shows \"There is no data available for the date range selected\" for Last 30 Days (Apr 4 - May 4, 2026). Lifetime click count is 7 per home-page summary block — unchanged since yesterday's check-in."
   },
   "lifetime_total_clicks": 7,
   "qualifying_sales": 0,
-  "deadline_days_remaining": 159,
+  "deadline_days_remaining": 160,
   "report_url": "https://affiliate-program.amazon.com/home/reports/global",
   "link_health": {
     "lld_html_links": 58,
