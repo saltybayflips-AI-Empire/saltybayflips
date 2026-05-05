@@ -22,6 +22,14 @@
   a.card .t { font-weight:600; font-size:15px; }
   a.card .s { color:var(--muted); font-size:12px; margin-top:3px; }
   a.card .arrow { color:var(--accent); font-size:20px; }
+  /* Gumroad shop hero card */
+  a.shop-card { display:block; background:linear-gradient(135deg,#fff 0%,#fae9d4 100%); border:2px solid var(--accent); border-radius:14px; padding:18px 20px; margin:18px 0 8px; color:var(--ink); text-decoration:none; transition:transform .15s ease, box-shadow .15s ease; box-shadow:0 4px 18px rgba(201,123,74,0.15); }
+  a.shop-card:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(201,123,74,0.28); }
+  a.shop-card .pp-tag { color:var(--accent); font-size:10px; font-weight:700; letter-spacing:.25em; text-transform:uppercase; margin-bottom:6px; }
+  a.shop-card .shop-title { font-family:Georgia,serif; font-weight:400; font-size:20px; line-height:1.25; margin:2px 0 4px; }
+  a.shop-card .shop-sub { color:var(--muted); font-size:13px; }
+  a.shop-card .shop-cta { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.08em; margin-top:8px; display:inline-block; }
+  a.shop-card .shop-cta::after { content:" \\203A"; }
   .disclosure { margin-top:40px; padding:16px; border:1px dashed var(--line); border-radius:12px; font-size:12px; color:var(--muted); line-height:1.6; }
   .disclosure strong { color:var(--ink); }
   .socials { text-align:center; margin-top:28px; }
@@ -37,6 +45,16 @@
     <div class="tag">Fuzzy Frames AI</div>
     <h1>Shop Pet Cozy</h1>
     <p class="bio">Gear that makes fluffy pups, teacup kittens, and tiny wild friends extra adorable.</p>
+  </div>
+
+  <div class="section" id="shop">
+    <h2>&#x2728; Shop My Prompt Pack</h2>
+    <a class="shop-card" href="https://saltybayflips.gumroad.com/l/cute-pet-photo-prompts" target="_blank" rel="noopener">
+      <div class="pp-tag">Prompt Pack &middot; $11</div>
+      <div class="shop-title">40 Cute Pet Photo Prompts</div>
+      <div class="shop-sub">Photoreal pet portraits for Flux + Gemini. JSON + Markdown + 3 sample renders. Instant download.</div>
+      <span class="shop-cta">Get the pack on Gumroad</span>
+    </a>
   </div>
 
   <div class="section" id="puppies">
