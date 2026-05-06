@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0f1115">
-<title>AI Empire — Content Dashboard</title>
+<title>AI Empire &mdash; Content Dashboard</title>
 <style>
   :root {
     --bg:#0f1115; --card:#171a21; --card2:#1f232c; --line:#2a2f3a;
@@ -217,6 +217,44 @@
   /* Timeline gap-day highlight */
   .day.gap { border-color:rgba(245,158,11,.4); background:rgba(245,158,11,.04); }
   .day.gap .dcount { color:var(--warn); }
+
+  /* ===== RUNWAY SECTION (Pinterest vs TikTok per niche) ===== */
+  .runway { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px; margin-bottom:18px; }
+  .runway h3 { margin:0 0 10px; font-size:13px; display:flex; align-items:center;
+    justify-content:space-between; gap:8px; }
+  .runway h3 .hint { font-weight:400; font-size:10px; color:var(--mut); }
+  .runway-grid { display:grid; grid-template-columns:1fr; gap:10px; }
+  @media (min-width:760px) { .runway-grid { grid-template-columns:repeat(3,1fr); } }
+  .runway-card { background:var(--card2); border:1px solid var(--line);
+    border-radius:10px; padding:12px; }
+  .runway-card .niche-head { display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:10px; padding-bottom:8px; border-bottom:1px solid var(--line); }
+  .runway-card .niche-head .name { font-size:13px; font-weight:600; }
+  .runway-card .niche-head .pill { font-size:9px; padding:2px 7px; }
+  .channel-row { display:grid; grid-template-columns:auto 1fr auto; gap:10px;
+    align-items:center; padding:8px 0; border-bottom:1px dashed var(--line); }
+  .channel-row:last-child { border-bottom:none; }
+  .channel-row .icon { font-size:14px; width:24px; text-align:center; }
+  .channel-row .icon.pin { color:#e60023; }
+  .channel-row .icon.tt { color:#ff0050; }
+  .channel-row .info { min-width:0; }
+  .channel-row .label { font-size:12px; font-weight:500; }
+  .channel-row .sub { font-size:10px; color:var(--mut); margin-top:2px; line-height:1.3; }
+  .channel-row .runway-num { text-align:right; }
+  .channel-row .runway-num .num { font-size:18px; font-weight:700; line-height:1; }
+  .channel-row .runway-num .unit { font-size:9px; color:var(--mut);
+    text-transform:uppercase; letter-spacing:.5px; }
+  .channel-row.green .num { color:var(--good); }
+  .channel-row.yellow .num { color:#e9c46a; }
+  .channel-row.orange .num { color:var(--warn); }
+  .channel-row.red .num { color:#ff5370; }
+  .channel-row.gray .num { color:var(--mut); font-weight:400; font-size:14px; }
+  .channel-row.red { background:rgba(255,83,112,.06); }
+  .channel-row.orange { background:rgba(245,158,11,.05); }
+  .channel-row .schedule-by { font-size:9px; color:#ff5370; margin-top:2px;
+    text-transform:uppercase; letter-spacing:.4px; font-weight:600; }
+  .channel-row.gray .schedule-by, .channel-row.green .schedule-by, .channel-row.yellow .schedule-by { display:none; }
 </style>
 </head>
 <body>
@@ -227,7 +265,7 @@
     <h1>AI Empire <span class="sub">Content Dashboard</span></h1>
     <div class="today" id="today"></div>
   </div>
-  <button class="refresh" id="refreshBtn" onclick="loadAll()">↻ Refresh</button>
+  <button class="refresh" id="refreshBtn" onclick="loadAll()">&#x21BB; Refresh</button>
 </header>
 
 <div id="errors"></div>
@@ -252,6 +290,14 @@
 
 <!-- ============== TOP STATS ================= -->
 <div class="stats" id="stats"></div>
+
+<!-- ============== RUNWAY (Pinterest + TikTok per niche, color-coded) ================= -->
+<div class="runway" id="runwaySection">
+  <h3>
+    <span>Content runway <span class="hint">days until you must schedule more</span></span>
+  </h3>
+  <div class="runway-grid" id="runwayGrid"></div>
+</div>
 
 <!-- ============== TIMELINE (next 14 days) ================= -->
 <div class="section">
@@ -295,7 +341,7 @@
 <footer>
   <div>Source of truth: <code>{niche}/content_tracker.json</code> per niche</div>
   <div style="margin-top:6px">Updated when you push fresh data via <code>scripts/sync_dashboard_data.py</code></div>
-  <div style="margin-top:6px"><a href="index.html">← Back to linktree</a></div>
+  <div style="margin-top:6px"><a href="index.html">&larr; Back to linktree</a></div>
 </footer>
 
 </div>
@@ -432,7 +478,7 @@ function dismissAction(id) {
 function updateAttnCount() {
   const visible = document.querySelectorAll('.attn-item:not(.dismissed)').length;
   document.getElementById('attnCount').textContent =
-    visible === 0 ? '(all clear ✓)' : `(${visible})`;
+    visible === 0 ? '(all clear &check;)' : `(${visible})`;
 }
 
 function renderActionItems(actionData) {
@@ -447,7 +493,7 @@ function renderActionItems(actionData) {
   });
   const html = sorted.map(it => {
     const isDismissed = dismissed.has(it.id);
-    const link = it.url ? ` · <a href="${it.url}" target="_blank">Open ↗</a>` : '';
+    const link = it.url ? ` &middot; <a href="${it.url}" target="_blank">Open &#x2197;</a>` : '';
     const est = it.estimated_min != null ? `<span class="est">${it.estimated_min} min</span>` : '';
     return `<div class="attn-item ${it.priority || 'med'} ${isDismissed ? 'dismissed':''}" data-attn-id="${it.id}">
       <span class="pri">${it.priority || 'med'}</span>
@@ -456,7 +502,7 @@ function renderActionItems(actionData) {
         <div class="det">${it.detail || ''}</div>
         <div class="meta">${est}<span>${it.category || ''}</span>${link}</div>
       </div>
-      <button class="dismiss" onclick="dismissAction('${it.id}')" title="Hide for this device">✕</button>
+      <button class="dismiss" onclick="dismissAction('${it.id}')" title="Hide for this device">&times;</button>
     </div>`;
   }).join('');
   document.getElementById('attnItems').innerHTML = html;
@@ -494,14 +540,14 @@ function renderPerformance(amazon, tiktok, pinterest) {
       <div class="perfcard amazon">
         <h3>Amazon Associates <span class="platform">$$</span></h3>
         <div class="big">$${(tm.earnings_usd ?? 0).toFixed(2)}<small>this month</small></div>
-        <div class="sub">${tm.ordered_items ?? 0} orders · ${tm.items_shipped ?? 0} shipped · ${tm.conversion_pct ?? 0}% conv</div>
+        <div class="sub">${tm.ordered_items ?? 0} orders &middot; ${tm.items_shipped ?? 0} shipped &middot; ${tm.conversion_pct ?? 0}% conv</div>
         <div class="row"><span class="l">Clicks (30d)</span><span class="v ${m30.clicks > 0 ? 'good' : ''}">${m30.clicks ?? 0}</span></div>
         <div class="row"><span class="l">Earnings (30d)</span><span class="v">$${(m30.commissions_usd ?? 0).toFixed(2)}</span></div>
         <div class="row"><span class="l">Qualifying sales</span><span class="v ${a.qualifying_sales >= 3 ? 'good' : 'warn'}">${a.qualifying_sales ?? 0} / 3</span></div>
         <div class="row"><span class="l">Days to deadline</span><span class="v ${daysLeft < 60 ? 'bad' : daysLeft < 120 ? 'warn' : ''}">${daysLeft}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(a.synced_at)}</span>
-          <a href="${a.report_url}" target="_blank">Open ↗</a>
+          <a href="${a.report_url}" target="_blank">Open &#x2197;</a>
         </div>
       </div>`);
   }
@@ -525,7 +571,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
         <div class="row"><span class="l">Est. rewards (7d)</span><span class="v ${(w7.est_rewards_usd ?? 0) > 0 ? 'good' : ''}">$${w7.est_rewards_usd ?? 0}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(tiktok.synced_at)}</span>
-          <a href="${t.url}" target="_blank">Open ↗</a>
+          <a href="${t.url}" target="_blank">Open &#x2197;</a>
         </div>
       </div>`);
   }
@@ -539,22 +585,22 @@ function renderPerformance(amazon, tiktok, pinterest) {
       <div class="perfcard pinterest">
         <h3>Pinterest <span class="platform">3 accounts</span></h3>
         <div class="big">${(tot.impressions ?? 0).toLocaleString()}<small>impressions (30d)</small></div>
-        <div class="sub">Top: ${bestAcct ? bestAcct[1].display_name + ' (' + bestAcct[1].impressions + ')' : '—'}</div>
+        <div class="sub">Top: ${bestAcct ? bestAcct[1].display_name + ' (' + bestAcct[1].impressions + ')' : '&mdash;'}</div>
         <div class="row"><span class="l">Engagements (30d)</span><span class="v">${tot.engagements ?? 0}</span></div>
         <div class="row"><span class="l">Saves (30d)</span><span class="v ${(tot.saves ?? 0) > 0 ? 'good' : ''}">${tot.saves ?? 0}</span></div>
         <div class="row"><span class="l">Outbound clicks (30d)</span><span class="v ${(tot.outbound_clicks ?? 0) > 0 ? 'good' : 'warn'}">${tot.outbound_clicks ?? 0}</span></div>
         <div class="row"><span class="l">Total audience (30d)</span><span class="v">${tot.total_audience ?? 0}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(pinterest.synced_at)}</span>
-          <a href="${pinterest.report_url}" target="_blank">Open ↗</a>
+          <a href="${pinterest.report_url}" target="_blank">Open &#x2197;</a>
         </div>
       </div>`);
   }
 
   document.getElementById('performance').innerHTML = cards.join('') ||
-    '<div class="empty" style="grid-column:1/-1">No analytics data yet — run <code>scripts/sync_analytics_*.py</code> to scrape Pinterest/TikTok/Amazon dashboards.</div>';
+    '<div class="empty" style="grid-column:1/-1">No analytics data yet &mdash; run <code>scripts/sync_analytics_*.py</code> to scrape Pinterest/TikTok/Amazon dashboards.</div>';
 
-  // Funnel: TikTok 28d views → Pinterest impressions → outbound clicks → Amazon 30d clicks → orders → earnings
+  // Funnel: TikTok 28d views &rarr; Pinterest impressions &rarr; outbound clicks &rarr; Amazon 30d clicks &rarr; orders &rarr; earnings
   if (amazon && tiktok && pinterest) {
     document.getElementById('funnel').style.display = 'block';
     const ttViews = tiktok.accounts?.laurasunkist?.last_28d?.video_views || 0;
@@ -576,7 +622,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
 async function loadAll() {
   document.getElementById('errors').innerHTML = '';
   document.getElementById('refreshBtn').disabled = true;
-  document.getElementById('refreshBtn').textContent = '↻ Loading...';
+  document.getElementById('refreshBtn').textContent = '&#x21BB; Loading...';
 
   // Tracker data + analytics + action items in parallel
   const [results, amazon, tiktok, pinterest, actionItems] = await Promise.all([
@@ -592,7 +638,7 @@ async function loadAll() {
     `Couldn't load ${r.niche.title}: ${r.error}`);
   if (errs.length) {
     document.getElementById('errors').innerHTML =
-      `<div class="err">⚠ ${errs.join(' · ')} — run <code>python scripts/sync_dashboard_data.py</code> then refresh</div>`;
+      `<div class="err">&#x26A0; ${errs.join(' &middot; ')} &mdash; run <code>python scripts/sync_dashboard_data.py</code> then refresh</div>`;
   }
 
   allPosts = [];
@@ -609,10 +655,102 @@ async function loadAll() {
   render(totalRejected, results);
 
   document.getElementById('refreshBtn').disabled = false;
-  document.getElementById('refreshBtn').textContent = '↻ Refresh';
+  document.getElementById('refreshBtn').textContent = '&#x21BB; Refresh';
+}
+
+function runwayClass(days, isEnabled) {
+  // Color-code runway: green >=14d, yellow 7-13d, orange 3-6d, red 0-2d, gray N/A
+  if (!isEnabled || days === null || days === undefined) return 'gray';
+  if (days >= 14) return 'green';
+  if (days >= 7) return 'yellow';
+  if (days >= 3) return 'orange';
+  return 'red';
+}
+
+function fmtRelDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  const days = Math.round((d - today) / 86400000);
+  const datePart = d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
+  if (days === 0) return `${datePart} (today)`;
+  if (days === 1) return `${datePart} (tomorrow)`;
+  if (days > 0) return `${datePart} (in ${days}d)`;
+  return `${datePart} (${-days}d ago)`;
+}
+
+function renderRunway(results) {
+  const cards = results.filter(r => r.data).map(r => {
+    const niche = r.niche;
+    const data = r.data;
+
+    // Pinterest runway
+    const pin = data.pinterest_runway || {runway_days:0, count:0, last_scheduled:null};
+    const pinDays = pin.count > 0 ? pin.runway_days : null;
+    const pinClass = runwayClass(pinDays, pin.count > 0);
+    const pinLastDate = pin.last_scheduled ? fmtRelDate(pin.last_scheduled) : '-';
+    const pinScheduleBy = pinDays !== null && pinDays < 7
+      ? `&#x26A0;&#xFE0F; Schedule more by ${pinLastDate.split(' (')[0]}`
+      : '';
+
+    // TikTok runway
+    const tt = data.tiktok || {enabled:false, totals:{scheduled:0, posted:0, ready_no_date:0}, runway_days:null, last_scheduled:null};
+    const ttSched = tt.totals?.scheduled || 0;
+    const ttReady = tt.totals?.ready_no_date || 0;
+    const ttDays = tt.enabled && ttSched > 0 ? tt.runway_days : null;
+    const ttClass = !tt.enabled ? 'gray' : runwayClass(ttDays, ttSched > 0);
+    const ttLastDate = tt.last_scheduled ? fmtRelDate(tt.last_scheduled) : '-';
+    let ttSubLabel = '';
+    if (!tt.enabled) {
+      ttSubLabel = 'No TikTok queue for this niche';
+    } else if (ttSched === 0 && ttReady === 0) {
+      ttSubLabel = 'Nothing built &mdash; queue is empty';
+    } else if (ttSched === 0 && ttReady > 0) {
+      ttSubLabel = `${ttReady} built but no dates assigned &mdash; needs scheduling`;
+    } else {
+      ttSubLabel = `${ttSched} scheduled &middot; last ${ttLastDate}`;
+      if (ttReady > 0) ttSubLabel += ` &middot; +${ttReady} undated`;
+    }
+    const ttScheduleBy = ttDays !== null && ttDays < 7
+      ? `&#x26A0;&#xFE0F; Schedule more by ${ttLastDate.split(' (')[0]}`
+      : (ttSched === 0 && ttReady > 0 ? '&#x26A0;&#xFE0F; Assign dates to built clips' : '');
+
+    return `<div class="runway-card">
+      <div class="niche-head">
+        <div class="name">${niche.title}</div>
+        <span class="pill ${niche.color}">${niche.short}</span>
+      </div>
+      <div class="channel-row ${pinClass}">
+        <div class="icon pin">P</div>
+        <div class="info">
+          <div class="label">Pinterest</div>
+          <div class="sub">${pin.count} scheduled &middot; last ${pinLastDate}</div>
+          ${pinScheduleBy ? `<div class="schedule-by">${pinScheduleBy}</div>` : ''}
+        </div>
+        <div class="runway-num">
+          ${pinDays !== null ? `<div class="num">${pinDays}</div><div class="unit">days</div>` : `<div class="num">&mdash;</div>`}
+        </div>
+      </div>
+      <div class="channel-row ${ttClass}">
+        <div class="icon tt">T</div>
+        <div class="info">
+          <div class="label">TikTok</div>
+          <div class="sub">${ttSubLabel}</div>
+          ${ttScheduleBy ? `<div class="schedule-by">${ttScheduleBy}</div>` : ''}
+        </div>
+        <div class="runway-num">
+          ${ttDays !== null ? `<div class="num">${ttDays}</div><div class="unit">days</div>` : `<div class="num">&mdash;</div>`}
+        </div>
+      </div>
+    </div>`;
+  });
+  document.getElementById('runwayGrid').innerHTML = cards.join('') ||
+    '<div class="empty" style="grid-column:1/-1">No tracker data &mdash; run scripts/sync_dashboard_data.py</div>';
 }
 
 function render(totalRejected, results) {
+  renderRunway(results);
+
   const filtered = (activeFilter === 'all') ? allPosts :
     allPosts.filter(p => p.niche === activeFilter);
 
@@ -640,7 +778,7 @@ function render(totalRejected, results) {
     <div class="stat warn">
       <div class="lbl">Posting today</div>
       <div class="val">${postingToday.length}</div>
-      <div class="delta">${postingToday.map(p => NICHES.find(n => n.slug === p.niche).short).join(' · ') || 'nothing today'}</div>
+      <div class="delta">${postingToday.map(p => NICHES.find(n => n.slug === p.niche).short).join(' &middot; ') || 'nothing today'}</div>
     </div>
     <div class="stat">
       <div class="lbl">QA rejected</div>
@@ -699,7 +837,7 @@ function render(totalRejected, results) {
   document.getElementById('posted').innerHTML = recentPosted.length
     ? recentPosted.map(pinCard).join('')
     : '<div class="empty">No posted pins yet</div>';
-  document.getElementById('postedCount').textContent = `${posted.length} total · showing ${recentPosted.length}`;
+  document.getElementById('postedCount').textContent = `${posted.length} total &middot; showing ${recentPosted.length}`;
 
   // ============ NICHES ============
   document.getElementById('niches').innerHTML = results.filter(r => r.data).map(r => {
@@ -718,8 +856,8 @@ function render(totalRejected, results) {
         <div class="br"><span class="n">${total}</span><span class="l">Total</span></div>
       </div>
       <div class="links">
-        <a href="${r.niche.pinterest_url}" target="_blank">Profile ↗</a>
-        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue ↗</a>
+        <a href="${r.niche.pinterest_url}" target="_blank">Profile &#x2197;</a>
+        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue &#x2197;</a>
       </div>
     </div>`;
   }).join('');

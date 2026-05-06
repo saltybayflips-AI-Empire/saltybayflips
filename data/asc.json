@@ -1,7 +1,10 @@
 {
   "account": "Aesthetic Spaces Co",
   "pinterest_handle": "@saltybayflipspin",
+  "tiktok_handle": null,
   "linktree_page": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html",
+  "amazon_idea_list": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
+  "associate_tag": "saltybayfli0c-20",
   "posts": [
     {
       "id": 1,
@@ -1596,5 +1599,24 @@
       "regen_plan": "Re-render with stronger photorealistic emphasis. Moved file to _qa_rejected/ to prevent reuse. Replaced today's slot with bistro_round (id 34)."
     }
   ],
-  "last_synced": "2026-05-06T09:15:08"
+  "pinterest_runway": {
+    "runway_days": 10,
+    "next_scheduled": "2026-05-06T12:00:00",
+    "last_scheduled": "2026-05-16T12:00:00",
+    "count": 11
+  },
+  "tiktok": {
+    "enabled": false,
+    "note": "No tiktok_ready_to_post folder for this niche",
+    "schedule": [],
+    "totals": {
+      "posted": 0,
+      "scheduled": 0,
+      "ready_no_date": 0
+    },
+    "runway_days": null,
+    "next_unposted": null,
+    "last_scheduled": null
+  },
+  "last_synced": "2026-05-06T09:55:14"
 }

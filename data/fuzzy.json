@@ -1,7 +1,10 @@
 {
   "account": "Fuzzy Frames AI",
   "pinterest_handle": "@saltybayflipsfuzzy",
+  "tiktok_handle": "@fuzzy.frames.ai",
   "linktree_page": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
+  "amazon_idea_list": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
+  "associate_tag": "saltybayfli0c-20",
   "posts": [
     {
       "id": 1,
@@ -1527,5 +1530,240 @@
       "regen_plan": "Switch Fuzzy generation to Gemini (Imagen) - prior session showed dramatically better photographic results for pet subjects."
     }
   ],
-  "last_synced": "2026-05-06T09:15:08"
+  "pinterest_runway": {
+    "runway_days": 12,
+    "next_scheduled": "2026-05-06T10:00:00",
+    "last_scheduled": "2026-05-18T10:00:00",
+    "count": 7
+  },
+  "tiktok": {
+    "enabled": true,
+    "schedule": [
+      {
+        "slot": "post_01_day1_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Puppies I'd commit crimes for",
+        "caption_preview": "Puppies I'd commit crimes for\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n",
+        "music": ""
+      },
+      {
+        "slot": "post_02_day1_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Kittens that would fit in a teacup",
+        "caption_preview": "Kittens that would fit in a teacup\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
+        "music": ""
+      },
+      {
+        "slot": "post_03_day2_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Pets that belong in a fairytale",
+        "caption_preview": "Pets that belong in a fairytale\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾",
+        "music": ""
+      },
+      {
+        "slot": "post_04_day2_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Exotic babies you shouldn't legally be able to own",
+        "caption_preview": "Exotic babies you shouldn't legally be able to own\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio ",
+        "music": ""
+      },
+      {
+        "slot": "post_05_day3_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Dogs dressed better than you",
+        "caption_preview": "Dogs dressed better than you\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#",
+        "music": ""
+      },
+      {
+        "slot": "post_06_day3_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Winter pets at their absolute peak",
+        "caption_preview": "Winter pets at their absolute peak\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
+        "music": ""
+      },
+      {
+        "slot": "post_07_day4_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Spring-core animals that stopped my scroll",
+        "caption_preview": "Spring-core animals that stopped my scroll\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
+        "music": ""
+      },
+      {
+        "slot": "post_08_day4_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Kittens I'd adopt on sight",
+        "caption_preview": "Kittens I'd adopt on sight\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#cu",
+        "music": ""
+      },
+      {
+        "slot": "post_09_day5_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Studio Ghibli main characters, irl",
+        "caption_preview": "Studio Ghibli main characters, irl\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
+        "music": ""
+      },
+      {
+        "slot": "post_10_day5_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Halloween pets you need to see",
+        "caption_preview": "Halloween pets you need to see\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n",
+        "music": ""
+      },
+      {
+        "slot": "post_11_day6_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Pets with better photoshoots than us",
+        "caption_preview": "Pets with better photoshoots than us\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet fi",
+        "music": ""
+      },
+      {
+        "slot": "post_12_day6_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Fall-core pets that cured my seasonal depression",
+        "caption_preview": "Fall-core pets that cured my seasonal depression\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to",
+        "music": ""
+      },
+      {
+        "slot": "post_13_day7_am",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "The ultimate 'I need a pet' compilation",
+        "caption_preview": "The ultimate 'I need a pet' compilation\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet",
+        "music": ""
+      },
+      {
+        "slot": "post_14_day7_pm",
+        "scheduled_for": "",
+        "sched_date": null,
+        "posted": false,
+        "hook": "Bunnies > dogs, fight me",
+        "caption_preview": "Bunnies > dogs, fight me\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#cute",
+        "music": ""
+      },
+      {
+        "slot": "post_g01_day1_am",
+        "scheduled_for": "2026-05-04 09:00",
+        "sched_date": "2026-05-04",
+        "posted": false,
+        "hook": "Pets that single-handedly cured my bad mood",
+        "caption_preview": "Pets that single-handedly cured my bad mood\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop",
+        "music": "lofi pet ambience trending"
+      },
+      {
+        "slot": "post_g02_day2_am",
+        "scheduled_for": "2026-05-05 09:00",
+        "sched_date": "2026-05-05",
+        "posted": false,
+        "hook": "Studio Ghibli main characters, IRL edition",
+        "caption_preview": "Studio Ghibli main characters, IRL edition\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
+        "music": "Ghibli orchestral edit"
+      },
+      {
+        "slot": "post_v01_wan_2clip",
+        "scheduled_for": "2026-05-06 09:00",
+        "sched_date": "2026-05-06",
+        "posted": false,
+        "hook": "Pets that single-handedly cured my Monday",
+        "caption_preview": "Pets that single-handedly cured my Monday\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop p",
+        "music": "lofi pet ambience trending"
+      },
+      {
+        "slot": "post_v02_wan_2clip",
+        "scheduled_for": "2026-05-07 09:00",
+        "sched_date": "2026-05-07",
+        "posted": false,
+        "hook": "Cold-weather pets at peak vibes",
+        "caption_preview": "Cold-weather pets at peak vibes\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾",
+        "music": "winter cozy lofi trending"
+      },
+      {
+        "slot": "post_v03_wan_2clip",
+        "scheduled_for": "2026-05-08 09:00",
+        "sched_date": "2026-05-08",
+        "posted": false,
+        "hook": "Studio Ghibli main characters, IRL edition",
+        "caption_preview": "Studio Ghibli main characters, IRL edition\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
+        "music": "Ghibli orchestral edit trending"
+      },
+      {
+        "slot": "post_v04_wan_2clip",
+        "scheduled_for": "2026-05-09 09:00",
+        "sched_date": "2026-05-09",
+        "posted": false,
+        "hook": "When pets take their job seriously",
+        "caption_preview": "When pets take their job seriously\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
+        "music": "wholesome curious lofi"
+      },
+      {
+        "slot": "post_v3_v01_wan_2clip",
+        "scheduled_for": "2026-05-10 09:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "Pets too sleepy to function",
+        "caption_preview": "Pets too sleepy to function\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#c",
+        "music": "lazy lofi sleepy trending"
+      },
+      {
+        "slot": "post_v3_v02_wan_2clip",
+        "scheduled_for": "2026-05-11 09:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "Sleepy puppy meets curious kitten",
+        "caption_preview": "Sleepy puppy meets curious kitten\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds",
+        "music": "wholesome cute trending"
+      },
+      {
+        "slot": "post_v3_v03_wan_2clip",
+        "scheduled_for": "2026-05-12 09:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "Pets hearing the snack bag from another room",
+        "caption_preview": "Pets hearing the snack bag from another room\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to sho",
+        "music": "trending suspense lofi"
+      },
+      {
+        "slot": "post_v3_v04_wan_2clip",
+        "scheduled_for": "2026-05-13 09:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "Tiny pet details that make me melt",
+        "caption_preview": "Tiny pet details that make me melt\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
+        "music": "soft heartstring cute trending"
+      }
+    ],
+    "totals": {
+      "posted": 0,
+      "scheduled": 10,
+      "ready_no_date": 14
+    },
+    "runway_days": 7,
+    "next_unposted": "2026-05-06T09:00:00",
+    "last_scheduled": "2026-05-13T09:00:00"
+  },
+  "last_synced": "2026-05-06T09:55:14"
 }

@@ -1,7 +1,10 @@
 {
   "account": "Luxe Living Daily",
   "pinterest_handle": "@saltybayflipsluxe",
+  "tiktok_handle": null,
   "linktree_page": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html",
+  "amazon_idea_list": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
+  "associate_tag": "saltybayfli0c-20",
   "posts": [
     {
       "id": 1,
@@ -1720,5 +1723,186 @@
     }
   ],
   "rejected": [],
-  "last_synced": "2026-05-06T09:15:08"
+  "pinterest_runway": {
+    "runway_days": 11,
+    "next_scheduled": "2026-05-06T11:00:00",
+    "last_scheduled": "2026-05-17T11:00:00",
+    "count": 12
+  },
+  "tiktok": {
+    "enabled": true,
+    "schedule": [
+      {
+        "slot": "post_23_day12_am",
+        "scheduled_for": "2026-05-02 09:00",
+        "sched_date": "2026-05-02",
+        "posted": false,
+        "hook": "Walk-in closets that broke me",
+        "caption_preview": "Walk-in closets that broke me\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryhomes #",
+        "music": "rich girl aesthetic"
+      },
+      {
+        "slot": "post_24_day12_pm",
+        "scheduled_for": "2026-05-02 18:00",
+        "sched_date": "2026-05-02",
+        "posted": false,
+        "hook": "Showroom garages > most people's houses",
+        "caption_preview": "Showroom garages > most people's houses\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#lux",
+        "music": "Drive Forever Sergio Valentino"
+      },
+      {
+        "slot": "post_25_day13_am",
+        "scheduled_for": "2026-05-03 09:00",
+        "sched_date": "2026-05-03",
+        "posted": false,
+        "hook": "Speakeasy bars hidden in luxury homes",
+        "caption_preview": "Speakeasy bars hidden in luxury homes\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxur",
+        "music": "speakeasy aesthetic"
+      },
+      {
+        "slot": "post_26_day13_pm",
+        "scheduled_for": "2026-05-03 18:00",
+        "sched_date": "2026-05-03",
+        "posted": false,
+        "hook": "Powder rooms doing the absolute most",
+        "caption_preview": "Powder rooms doing the absolute most\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxury",
+        "music": "maximalist aesthetic"
+      },
+      {
+        "slot": "post_27_day14_am",
+        "scheduled_for": "2026-05-04 09:00",
+        "sched_date": "2026-05-04",
+        "posted": false,
+        "hook": "Mudrooms more luxe than my whole apartment",
+        "caption_preview": "Mudrooms more luxe than my whole apartment\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#",
+        "music": "modern farmhouse aesthetic"
+      },
+      {
+        "slot": "post_28_day14_pm",
+        "scheduled_for": "2026-05-04 18:00",
+        "sched_date": "2026-05-04",
+        "posted": false,
+        "hook": "Home theaters that cost more than my degree",
+        "caption_preview": "Home theaters that cost more than my degree\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n",
+        "music": "Experience Ludovico Einaudi"
+      },
+      {
+        "slot": "post_29_day15_am",
+        "scheduled_for": "2026-05-05 09:00",
+        "sched_date": "2026-05-05",
+        "posted": false,
+        "hook": "Bedrooms that cured my insomnia",
+        "caption_preview": "Bedrooms that cured my insomnia\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryhomes",
+        "music": "slow living aesthetic"
+      },
+      {
+        "slot": "post_30_day15_pm",
+        "scheduled_for": "2026-05-05 18:00",
+        "sched_date": "2026-05-05",
+        "posted": false,
+        "hook": "Great rooms with main character energy",
+        "caption_preview": "Great rooms with main character energy\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxu",
+        "music": "main character energy"
+      },
+      {
+        "slot": "post_31_day16_am",
+        "scheduled_for": "2026-05-06 09:00",
+        "sched_date": "2026-05-06",
+        "posted": false,
+        "hook": "Houses with private gyms that put my YMCA to shame",
+        "caption_preview": "Houses with private gyms that put my YMCA to shame\n\nwhich one would you buy? 🤍\n\n→ shop the look in b",
+        "music": "athletic flex"
+      },
+      {
+        "slot": "post_32_day16_pm",
+        "scheduled_for": "2026-05-06 18:00",
+        "sched_date": "2026-05-06",
+        "posted": false,
+        "hook": "Victorian orangeries: the OG conservatory",
+        "caption_preview": "Victorian orangeries: the OG conservatory\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#l",
+        "music": "garden party aesthetic"
+      },
+      {
+        "slot": "post_33_day17_am",
+        "scheduled_for": "2026-05-07 09:00",
+        "sched_date": "2026-05-07",
+        "posted": false,
+        "hook": "Foyers that scream 'I just inherited a fortune'",
+        "caption_preview": "Foyers that scream 'I just inherited a fortune'\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio ",
+        "music": "Bridgerton soundtrack"
+      },
+      {
+        "slot": "post_34_day17_pm",
+        "scheduled_for": "2026-05-07 18:00",
+        "sched_date": "2026-05-07",
+        "posted": false,
+        "hook": "Music rooms that demand an audience",
+        "caption_preview": "Music rooms that demand an audience\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryh",
+        "music": "Clair de Lune Debussy"
+      },
+      {
+        "slot": "post_35_day18_am",
+        "scheduled_for": "2026-05-08 09:00",
+        "sched_date": "2026-05-08",
+        "posted": false,
+        "hook": "Private bowling alleys are a real thing apparently",
+        "caption_preview": "Private bowling alleys are a real thing apparently\n\nwhich one would you buy? 🤍\n\n→ shop the look in b",
+        "music": "Frank Sinatra slowed"
+      },
+      {
+        "slot": "post_36_day18_pm",
+        "scheduled_for": "2026-05-08 18:00",
+        "sched_date": "2026-05-08",
+        "posted": false,
+        "hook": "Indoor pools that look like cathedrals",
+        "caption_preview": "Indoor pools that look like cathedrals\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxu",
+        "music": "cathedral ambient"
+      },
+      {
+        "slot": "post_37_day19_am",
+        "scheduled_for": "2026-05-09 09:00",
+        "sched_date": "2026-05-09",
+        "posted": false,
+        "hook": "Meditation rooms that make peace look expensive",
+        "caption_preview": "Meditation rooms that make peace look expensive\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio ",
+        "music": "tibetan singing bowl"
+      },
+      {
+        "slot": "post_38_day19_pm",
+        "scheduled_for": "2026-05-09 18:00",
+        "sched_date": "2026-05-09",
+        "posted": false,
+        "hook": "Saunas with views I'd never leave",
+        "caption_preview": "Saunas with views I'd never leave\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryhom",
+        "music": "Nordic aesthetic"
+      },
+      {
+        "slot": "post_39_day20_am",
+        "scheduled_for": "2026-05-10 09:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "Stables nicer than my apartment (the horses don't even know)",
+        "caption_preview": "Stables nicer than my apartment (the horses don't even know)\n\nwhich one would you buy? 🤍\n\n→ shop the",
+        "music": "Hamptons aesthetic"
+      },
+      {
+        "slot": "post_40_day20_pm",
+        "scheduled_for": "2026-05-10 18:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "Bedrooms under the stars: literal version",
+        "caption_preview": "Bedrooms under the stars: literal version\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#l",
+        "music": "Hans Zimmer Time"
+      }
+    ],
+    "totals": {
+      "posted": 0,
+      "scheduled": 18,
+      "ready_no_date": 0
+    },
+    "runway_days": 4,
+    "next_unposted": "2026-05-06T09:00:00",
+    "last_scheduled": "2026-05-10T18:00:00"
+  },
+  "last_synced": "2026-05-06T09:55:14"
 }
