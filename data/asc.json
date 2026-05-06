@@ -894,9 +894,11 @@
       "title": "Small Coastal Blue Living Room Renter Friendly Apartment Aesthetic Beach Vibes",
       "description": "Tiny coastal blue living room: navy + white slipcovered sofa, navy striped pillows, jute rug, weathered driftwood coffee table, woven storage baskets - beachy in zero commitment. Save this for your coastal apartment moodboard, navy color-palette inspo, or renter-friendly setup. Tap profile to shop slipcovered sofas, navy striped pillows, jute baskets, sisal rugs, and peel-stick coastal wallpaper. #CoastalLivingRoom #SmallApartment #RenterFriendly #CoastalDecor #NavyAndWhite #BeachAesthetic #CoastalGrandmother #ApartmentDecor #PeelAndStick #SmallSpaceDecor #ApartmentInspo #RentalDecor",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-04 12:00",
-      "method": "pin-creation-tool drag-drop + Chrome MCP automation"
+      "method": "pin-creation-tool drag-drop + Chrome MCP automation",
+      "posted_date": "2026-05-04",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 33,
@@ -907,9 +909,11 @@
       "title": "Small Dark Moody Living Room Apartment Aesthetic Velvet Brass Renter Setup",
       "description": "Cozy small dark moody living room: emerald green walls, deep burgundy velvet sofa, brass arc lamp, vintage gallery wall - moody apartment vibes with zero renovation. Save for your dark academia living room moodboard, jewel-tone color palette inspo, or velvet + brass renter-friendly setup. Tap profile to shop velvet sofas, brass arc lamps, gallery wall art, and rich jewel-tone pillows. #DarkMoodyLivingRoom #SmallApartment #RenterFriendly #DarkAcademia #VelvetSofa #BrassDecor #JewelTones #ApartmentDecor #MoodyDecor #SmallSpaceDecor #ApartmentInspo #RentalDecor",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-05 12:00",
-      "method": "pin-creation-tool drag-drop + Chrome MCP automation"
+      "method": "pin-creation-tool drag-drop + Chrome MCP automation",
+      "posted_date": "2026-05-05",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 34,
@@ -1618,5 +1622,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-06T09:55:14"
+  "last_synced": "2026-05-06T11:56:47"
 }

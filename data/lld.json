@@ -1094,7 +1094,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1105,7 +1105,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_date": "2026-05-04",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 32,
@@ -1131,7 +1133,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1142,7 +1144,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_date": "2026-05-05",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 33,
@@ -1168,7 +1172,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1179,7 +1183,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_date": "2026-05-06",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 34,
@@ -1725,9 +1731,9 @@
   "rejected": [],
   "pinterest_runway": {
     "runway_days": 11,
-    "next_scheduled": "2026-05-06T11:00:00",
+    "next_scheduled": "2026-05-07T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 12
+    "count": 11
   },
   "tiktok": {
     "enabled": true,
@@ -1904,5 +1910,5 @@
     "next_unposted": "2026-05-06T09:00:00",
     "last_scheduled": "2026-05-10T18:00:00"
   },
-  "last_synced": "2026-05-06T09:55:14"
+  "last_synced": "2026-05-06T11:56:47"
 }

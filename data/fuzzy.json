@@ -874,7 +874,7 @@
         "AestheticPets"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "qa_verdict": "approve",
@@ -887,7 +887,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "posted_date": "2026-05-04",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 26,
@@ -1110,7 +1112,7 @@
       "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
       "description": "Adorable baby panda cub holding bamboo - peak wildlife aesthetic. Save for your panda moodboard, wildlife photography inspo, or cute baby animal vibes. Tap profile to shop panda-themed home decor, bamboo plant decor, wildlife art prints, and adorable animal art. #BabyPanda #PandaLove #Pandas #WildlifePhotography #CuteAnimals #BabyAnimals #PandaCub #BambooLove #WildlifeAesthetic #AnimalLovers #PandaArt #NatureLovers",
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-05 10:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_history": [
@@ -1119,7 +1121,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "posted_date": "2026-05-05",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 36,
@@ -1131,7 +1135,7 @@
       "title": "Golden Retriever Puppy In A Daisy Field Adorable Wholesome Pet Photography",
       "description": "Golden retriever puppy sitting in a sunny daisy field at golden hour - the wholesome pet photography we all need. Save for your puppy moodboard, golden retriever inspo, or daisy-field aesthetic. Tap profile to shop golden retriever-themed home decor, daisy throw pillows, sunny pet photo prints, and adorable puppy art. #GoldenRetriever #GoldenPuppy #CutePuppy #CuteDogs #PetPhotography #DaisyField #GoldenHour #WholesomePets #PuppyAesthetic #PuppyOfTheDay #DogLovers #PetInspo",
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-06 10:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_history": [
@@ -1140,7 +1144,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "posted_date": "2026-05-06",
+      "auto_reconciled": "2026-05-06 11:53"
     },
     {
       "id": 37,
@@ -1532,9 +1538,9 @@
   ],
   "pinterest_runway": {
     "runway_days": 12,
-    "next_scheduled": "2026-05-06T10:00:00",
+    "next_scheduled": "2026-05-07T10:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
-    "count": 7
+    "count": 6
   },
   "tiktok": {
     "enabled": true,
@@ -1765,5 +1771,5 @@
     "next_unposted": "2026-05-06T09:00:00",
     "last_scheduled": "2026-05-13T09:00:00"
   },
-  "last_synced": "2026-05-06T09:55:14"
+  "last_synced": "2026-05-06T11:56:47"
 }
