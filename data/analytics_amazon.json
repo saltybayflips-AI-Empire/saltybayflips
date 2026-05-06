@@ -1,7 +1,7 @@
 {
-  "synced_at": "2026-05-04T14:07:09",
+  "synced_at": "2026-05-06T09:10:00",
   "store_id": "saltybayfli0c-20",
-  "last_updated": "May 03 2026",
+  "last_updated": "May 05 2026",
   "this_month": {
     "earnings_usd": 0.0,
     "ordered_items": 0,
@@ -10,15 +10,17 @@
     "clicks": 0
   },
   "last_30d": {
-    "clicks": 0,
+    "clicks": 7,
     "commissions_usd": 0.0,
-    "has_data": false,
-    "note": "Amazon shows \"There is no data available for the date range selected\" for Last 30 Days (Apr 4 - May 4, 2026). Lifetime click count is 7 per home-page summary block — unchanged since yesterday's check-in."
+    "bounties_usd": 0.0,
+    "has_data": true,
+    "note": "Earnings Overview chart bottom-row totals show 7 clicks across 30d. UNCHANGED vs 2026-05-05 check-in. Phase 2 (live Pinterest pin URL edits) only 2/114 pins retrofitted as of yesterday — Pinterest rate-limit hit faster than expected (2 saves before Edit Pin item disappeared). Most live pins still point at GitHub Pages, not the Amazon idea-lists."
   },
   "lifetime_total_clicks": 7,
   "qualifying_sales": 0,
-  "deadline_days_remaining": 160,
+  "deadline_days_remaining": 158,
   "report_url": "https://affiliate-program.amazon.com/home/reports/global",
+  "delta_vs_prior_check": "FLAT - 0 click delta vs 2026-05-05. No new clicks in the 24h. The 30d window now drops the earliest day so the spike from mid-April is closer to falling out — once it does, the lifetime click counter will still show 7 but Last 30d clicks will read 0 and the 'has_data' flag should flip.",
   "link_health": {
     "lld_html_links": 58,
     "lld_correctly_tagged": 58,

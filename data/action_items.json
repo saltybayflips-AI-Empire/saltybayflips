@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-04T10:31:04.977932",
-  "item_count": 5,
+  "synced_at": "2026-05-06T09:15:08.198267",
+  "item_count": 12,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
@@ -29,20 +29,76 @@
       "url": "https://www.pinterest.com/pin-creation-tool/"
     },
     {
-      "id": "gap_fuzzy_frames_ai",
-      "title": "Fuzzy has 6 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+1 more)",
+      "id": "qa_pending_aesthetic_spaces_co",
+      "title": "QA 8 pending ASC images",
+      "detail": "8 renders sitting in aesthetic_spaces_co/qa_pending/ awaiting your pass/reject verdict.",
+      "priority": "high",
+      "estimated_min": 8,
+      "category": "qa_review"
+    },
+    {
+      "id": "gap_aesthetic_spaces_co",
+      "title": "ASC has 4 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20",
       "priority": "med",
-      "estimated_min": 30,
+      "estimated_min": 20,
+      "category": "gap_warning"
+    },
+    {
+      "id": "overdue_aesthetic_spaces_co",
+      "title": "ASC: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #32 (2026-05-04 12:00, 45.3h ago), #33 (2026-05-05 12:00, 21.3h ago).",
+      "priority": "high",
+      "estimated_min": 4,
+      "category": "missed_slot"
+    },
+    {
+      "id": "qa_pending_luxe_living_daily",
+      "title": "QA 10 pending LLD images",
+      "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
+      "priority": "high",
+      "estimated_min": 10,
+      "category": "qa_review"
+    },
+    {
+      "id": "gap_luxe_living_daily",
+      "title": "LLD has 3 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20",
+      "priority": "med",
+      "estimated_min": 15,
+      "category": "gap_warning"
+    },
+    {
+      "id": "overdue_luxe_living_daily",
+      "title": "LLD: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #31 (2026-05-04 11:00, 46.3h ago), #32 (2026-05-05 11:00, 22.3h ago).",
+      "priority": "high",
+      "estimated_min": 4,
+      "category": "missed_slot"
+    },
+    {
+      "id": "gap_fuzzy_frames_ai",
+      "title": "Fuzzy has 8 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+3 more)",
+      "priority": "med",
+      "estimated_min": 40,
       "category": "gap_warning"
     },
     {
       "id": "overdue_fuzzy_frames_ai",
-      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #25 (2026-05-04 10:00, 0.5h ago).",
+      "title": "Fuzzy: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #25 (2026-05-04 10:00, 47.3h ago), #35 (2026-05-05 10:00, 23.3h ago).",
       "priority": "high",
-      "estimated_min": 2,
+      "estimated_min": 4,
       "category": "missed_slot"
+    },
+    {
+      "id": "stale_fuzzy_frames_ai",
+      "title": "Fuzzy hasn't posted in 4 days",
+      "detail": "Last live Fuzzy pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "priority": "med",
+      "estimated_min": 15,
+      "category": "cadence_alert"
     }
   ]
 }

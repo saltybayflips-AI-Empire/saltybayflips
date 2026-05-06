@@ -1,57 +1,57 @@
 {
-  "synced_at": "2026-05-04T14:09:30",
+  "synced_at": "2026-05-06T09:11:00",
   "accounts": {
     "fuzzy_frames_ai": {
       "display_name": "Fuzzy Frames AI",
       "handle": "@saltybayflipsfuzzy",
       "date_range": "Last 30 Days",
-      "date_range_iso": "2026-04-04 to 2026-05-04",
-      "impressions": 127,
+      "date_range_iso": "2026-04-06 to 2026-05-06",
+      "impressions": 169,
       "engagements": 1,
       "outbound_clicks": 0,
       "saves": 0,
-      "total_audience": 35,
+      "total_audience": 64,
       "engaged_audience": 1,
-      "delta_vs_prior_check": "+15 impressions (was 112). Engagements/saves/outbound clicks all unchanged.",
-      "note": "Pins ARE going live and impressions trickling up, but 0 outbound clicks across 30d remains the funnel block."
+      "delta_vs_prior_check": "+42 impressions vs 2026-05-05 (was 127). +29 audience (was 35). Engagements/saves/outbound clicks all unchanged. Strong impression growth (+33%) but the funnel remains broken at the click step.",
+      "note": "Pins ARE going live and impressions trickling up faster, but 0 outbound clicks across 30d remains the funnel block. Phase 2 retrofit (Amazon idea-list URLs on live pins) not done yet for any Fuzzy pin — this is the single highest-leverage fix."
     },
     "luxe_living_daily": {
       "display_name": "Luxe Living Daily",
       "handle": "@saltybayflipsluxe",
       "date_range": "Last 30 Days",
-      "date_range_iso": "2026-04-04 to 2026-05-04",
-      "impressions": 56,
+      "date_range_iso": "2026-04-05 to 2026-05-05",
+      "impressions": 91,
       "engagements": 2,
       "outbound_clicks": 0,
       "saves": 1,
-      "total_audience": 36,
+      "total_audience": 60,
       "engaged_audience": 1,
-      "delta_vs_prior_check": "FIRST scrape - yesterday's check-in incorrectly logged this account as 'separate login required'. All 3 accounts ARE switchable from same Chrome session via avatar dropdown.",
-      "note": "1 save is the only positive engagement in the portfolio today. Still 0 outbound clicks despite 10 LLD pins now live."
+      "delta_vs_prior_check": "+35 impressions vs 2026-05-05 (was 56). +24 audience (was 36). Engagements/saves unchanged at 2/1. Strong impression growth (+62%) — LLD is now the second-best-impression-trending account behind Fuzzy. Note: 2 LLD pins were Phase 2 retrofitted yesterday to point at Amazon idea-list. Too soon to attribute the impression delta to that change but worth watching whether outbound clicks start moving in 48-72h.",
+      "note": "1 save still the only positive engagement. Still 0 outbound clicks despite scheduling activity. Pin URL retrofit pilot completed 2026-05-06 morning on 2 pins (Grand Foyer, Victorian Orangery)."
     },
     "aesthetic_spaces_co": {
       "display_name": "Aesthetic Spaces Co",
       "handle": "@saltybayflipspin",
       "date_range": "Last 30 Days",
-      "date_range_iso": "2026-04-04 to 2026-05-04",
-      "impressions": 12,
-      "engagements": 0,
+      "date_range_iso": "2026-04-05 to 2026-05-05",
+      "impressions": 21,
+      "engagements": 1,
       "outbound_clicks": 0,
       "saves": 0,
-      "total_audience": 8,
+      "total_audience": 14,
       "engaged_audience": 0,
-      "delta_vs_prior_check": "FIRST scrape (same dropdown-switcher discovery as LLD).",
-      "note": "Lowest-traffic account by far. 30 published pins delivered only 12 impressions in 30 days. Algorithm not picking ASC up. Contributing factor: ASC bio URL is still NOT pointing at asc.html (open todo #10) so even a click would land somewhere weak."
+      "delta_vs_prior_check": "+9 impressions vs 2026-05-05 (was 12, +75%). FIRST engagement registered on the entire ASC account history (engagements 0 -> 1). Audience also grew (8 -> 14, +75%). ASC is clearly the smallest channel but it's no longer flat-lined — the 9 ASC pins scheduled for 5/3-5/11 appear to be working.",
+      "note": "ASC bio URL still NOT pointing at asc.html (open todo #10). Even with the first engagement, traffic still leaks at the bio-link step. Most actionable fix: change ASC bio URL — user-only since it's an account-settings change."
     }
   },
   "totals": {
-    "impressions": 195,
-    "engagements": 3,
+    "impressions": 281,
+    "engagements": 4,
     "saves": 1,
     "outbound_clicks": 0,
-    "total_audience": 79,
+    "total_audience": 138,
     "engaged_audience": 2,
-    "note": "Full portfolio totals across all 3 accounts. 0 outbound clicks across the entire 30-day window despite 195 impressions = 0% CTR portfolio-wide. Funnel diagnosis from yesterday confirmed: traffic problem (low impressions) + descriptions don't drive clicks (0% CTR). Backlog of 28 scheduled pins (5/2-5/12) will keep fueling impressions; clicks need pin-description retrofit."
+    "note": "Full portfolio totals across all 3 accounts. 281 impressions in 30 days (vs 195 yesterday, +44%). Still 0 outbound clicks portfolio-wide despite the impression growth. ASC engagements went 0 -> 1 (first ever). LLD impressions doubled. Funnel diagnosis unchanged: traffic is growing but descriptions don't drive clicks. Highest-leverage next move is finishing the Phase 2 Pinterest live pin URL retrofit — only 2 of 114 done."
   },
   "report_url": "https://analytics.pinterest.com/overview/"
 }
