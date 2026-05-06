@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fuzzy Frames AI — Pet Shop</title>
-<meta name="description" content="Curated Amazon pet finds — cozy gear for fluffy pups, teacup kittens, and exotic pets. A SaltyBayFlips LLC project.">
+<title>Fuzzy Frames AI ΓÇö Pet Shop</title>
+<meta name="description" content="Curated Amazon pet finds ΓÇö cozy gear for fluffy pups, teacup kittens, and exotic pets. A SaltyBayFlips LLC project.">
 <style>
   :root { --bg:#fdf8f0; --panel:#fff; --ink:#2d1f14; --muted:#7a6856; --accent:#c97b4a; --line:#f0e6d4; }
   * { box-sizing:border-box; }
@@ -29,20 +29,102 @@
   a.shop-card .shop-title { font-family:Georgia,serif; font-weight:400; font-size:20px; line-height:1.25; margin:2px 0 4px; }
   a.shop-card .shop-sub { color:var(--muted); font-size:13px; }
   a.shop-card .shop-cta { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.08em; margin-top:8px; display:inline-block; }
-  a.shop-card .shop-cta::after { content:" ›"; }
+  a.shop-card .shop-cta::after { content:" ΓÇ║"; }
   .disclosure { margin-top:40px; padding:16px; border:1px dashed var(--line); border-radius:12px; font-size:12px; color:var(--muted); line-height:1.6; }
   .disclosure strong { color:var(--ink); }
   .socials { text-align:center; margin-top:28px; }
   .socials a { color:var(--muted); text-decoration:none; margin:0 10px; font-size:13px; }
   .socials a:hover { color:var(--accent); }
   footer { text-align:center; color:var(--muted); font-size:11px; margin-top:40px; }
+<!-- editor-picks-css-start -->
+  .picks { margin-top:28px; }
+  .picks .picks-head { text-align:center; margin-bottom:14px; }
+  .picks .picks-head h2 { font-family:Georgia,serif; font-weight:400; font-size:15px;
+    color:var(--accent); letter-spacing:.18em; text-transform:uppercase; margin:0 0 6px; }
+  .picks .picks-head p { color:var(--muted); font-size:13px; margin:0 auto; max-width:380px; }
+  .picks-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:14px; }
+  @media (min-width:600px) { .picks-grid { grid-template-columns:repeat(3,1fr); } }
+  a.picks-card { display:flex; flex-direction:column; background:var(--panel);
+    border:1px solid var(--line); border-radius:14px; overflow:hidden;
+    color:var(--ink); text-decoration:none; transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+  a.picks-card:hover { transform:translateY(-2px); border-color:var(--accent);
+    box-shadow:0 8px 24px rgba(0,0,0,0.18); }
+  .picks-img { aspect-ratio:1/1; background:#fff center/cover no-repeat; }
+  .picks-img img { width:100%; height:100%; object-fit:cover; display:block; }
+  .picks-info { padding:10px 12px 12px; }
+  .picks-title { font-weight:600; font-size:13px; line-height:1.3; margin:0 0 4px;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .picks-blurb { color:var(--muted); font-size:11px; line-height:1.35; margin:0 0 6px;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .picks-meta { display:flex; justify-content:space-between; align-items:center; margin-top:4px; }
+  .picks-price { color:var(--accent); font-size:13px; font-weight:700; }
+  .picks-cta { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.04em; }
+  .picks-cta::after { content:" \203A"; }
+  .picks-shopall { display:block; text-align:center; margin-top:14px; padding:10px;
+    color:var(--muted); font-size:12px; text-decoration:none; border:1px dashed var(--line);
+    border-radius:10px; }
+  .picks-shopall:hover { color:var(--accent); border-color:var(--accent); }
+<!-- editor-picks-css-end -->
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="brand">
     <div class="logo">F</div>
-    <div class="tag">Fuzzy Frames AI</div>
+    
+
+  <!-- editor-picks-section-start -->
+  <div class="section picks" id="picks">
+    <div class="picks-head">
+      <h2>&#x272E; Editor's Picks ΓÇö Wholesome Pet Finds</h2>
+      <p>Cozy beds, slow bowls, and tiny sweaters real pet parents swear by. Vet-friendly, photo-pretty.</p>
+    </div>
+    <div class="picks-grid">
+    <a class="picks-card" href="https://www.amazon.com/dp/B00L3O4JI6?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">
+      <div class="picks-img"><img src="https://m.media-amazon.com/images/I/811O8lYB5uL._AC_SL1500_.jpg" alt="Outward Hound Slow Feeder Bowl" loading="lazy"></div>
+      <div class="picks-info">
+        <div class="picks-title">Outward Hound Slow Feeder Bowl</div>
+        <div class="picks-blurb">Stops gulping. 4.6Γÿà / 62k reviews. Pinterest's #1 pet pick.</div>
+        <div class="picks-meta"><span class="picks-price">$10.49</span><span class="picks-cta">Shop on Amazon</span></div>
+      </div>
+    </a>
+    <a class="picks-card" href="https://www.amazon.com/dp/B09GW9TY73?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">
+      <div class="picks-img"><img src="https://m.media-amazon.com/images/I/8158USnLUBL._AC_SL1500_.jpg" alt="Best Friends by Sheri Calming Donut Dog Bed" loading="lazy"></div>
+      <div class="picks-info">
+        <div class="picks-title">Best Friends by Sheri Calming Donut Dog Bed</div>
+        <div class="picks-blurb">The viral fluffy donut. Anti-anxiety + photo-pretty.</div>
+        <div class="picks-meta"><span class="picks-price">$47.49</span><span class="picks-cta">Shop on Amazon</span></div>
+      </div>
+    </a>
+    <a class="picks-card" href="https://www.amazon.com/dp/B07C1PYJTY?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">
+      <div class="picks-img"><img src="https://m.media-amazon.com/images/I/71Jyywxmw1L._AC_SL1002_.jpg" alt="Mihachi Cable Knit Dog Sweater" loading="lazy"></div>
+      <div class="picks-info">
+        <div class="picks-title">Mihachi Cable Knit Dog Sweater</div>
+        <div class="picks-blurb">Cozy turtleneck. Tiny-pup uniform.</div>
+        <div class="picks-meta"><span class="picks-price">$12.77</span><span class="picks-cta">Shop on Amazon</span></div>
+      </div>
+    </a>
+    <a class="picks-card" href="https://www.amazon.com/dp/B0CH81BRK7?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">
+      <div class="picks-img"><img src="https://m.media-amazon.com/images/I/71G+99-CFAL._AC_SL1002_.jpg" alt="EXPAWLORER Plaid Bowtie Collar + Leash Set" loading="lazy"></div>
+      <div class="picks-info">
+        <div class="picks-title">EXPAWLORER Plaid Bowtie Collar + Leash Set</div>
+        <div class="picks-blurb">Dapper-pup energy. Embroidered pawprints.</div>
+        <div class="picks-meta"><span class="picks-price">$13.99</span><span class="picks-cta">Shop on Amazon</span></div>
+      </div>
+    </a>
+    <a class="picks-card" href="https://www.amazon.com/dp/B01IUPTKFM?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">
+      <div class="picks-img"><img src="https://m.media-amazon.com/images/I/61uROu5DC6L._AC_SL1200_.jpg" alt="KONG Classic Rubber Dog Toy (2-Pack, Large)" loading="lazy"></div>
+      <div class="picks-info">
+        <div class="picks-title">KONG Classic Rubber Dog Toy (2-Pack, Large)</div>
+        <div class="picks-blurb">Vet-recommended. Teething saver.</div>
+        <div class="picks-meta"><span class="picks-price">$26.45</span><span class="picks-cta">Shop on Amazon</span></div>
+      </div>
+    </a>
+    </div>
+    <a class="picks-shopall" href="https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener sponsored">View the full Amazon idea list &#8250;</a>
+  </div>
+  <!-- editor-picks-section-end -->
+<div class="tag">Fuzzy Frames AI</div>
     <h1>Shop Pet Cozy</h1>
     <p class="bio">Gear that makes fluffy pups, teacup kittens, and tiny wild friends extra adorable.</p>
   </div>
@@ -59,57 +141,57 @@
 
   <div class="section" id="puppies">
     <h2>Puppies &amp; Dogs</h2>
-    <a class="card" href="https://www.amazon.com/s?k=puppy+chew+toys+teething&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Puppy Teething Chew Toys</div><div class="s">$8–15 · The new-puppy must</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=cable+knit+dog+sweater+small+xs&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cable Knit Dog Sweater (XS)</div><div class="s">$15–25 · Instant pinterest pup</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=dog+bowtie+collar+set+puppy&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Puppy Bowtie Collar Set</div><div class="s">$10–18 · Dapper-pup energy</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=goldendoodle+grooming+slicker+brush&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Doodle Slicker Brush</div><div class="s">$12–20 · For maximum fluff</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=calming+donut+dog+bed&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Calming Donut Dog Bed</div><div class="s">$25–45 · The viral fluffy cloud</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=puppy+chew+toys+teething&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Puppy Teething Chew Toys</div><div class="s">$8ΓÇô15 ┬╖ The new-puppy must</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cable+knit+dog+sweater+small+xs&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cable Knit Dog Sweater (XS)</div><div class="s">$15ΓÇô25 ┬╖ Instant pinterest pup</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=dog+bowtie+collar+set+puppy&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Puppy Bowtie Collar Set</div><div class="s">$10ΓÇô18 ┬╖ Dapper-pup energy</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=goldendoodle+grooming+slicker+brush&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Doodle Slicker Brush</div><div class="s">$12ΓÇô20 ┬╖ For maximum fluff</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=calming+donut+dog+bed&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Calming Donut Dog Bed</div><div class="s">$25ΓÇô45 ┬╖ The viral fluffy cloud</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="section" id="kittens">
     <h2>Kittens &amp; Cats</h2>
-    <a class="card" href="https://www.amazon.com/s?k=cat+tunnel+collapsible+plush&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Collapsible Cat Tunnel</div><div class="s">$12–22 · Endless zoomies</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=kitten+sweater+xs+knit&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tiny Kitten Knit Sweater</div><div class="s">$10–18 · Photo-ready</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=cat+bowtie+collar+set&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cat Bowtie Collar</div><div class="s">$8–15 · Dapper kitty energy</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=cat+cave+bed+felted+wool&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Felted Wool Cat Cave</div><div class="s">$30–55 · Hide-and-snooze</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=cat+window+perch+suction&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Window Perch (Suction)</div><div class="s">$20–35 · Renter-friendly</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=catnip+silvervine+toys&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Catnip + Silvervine Toys</div><div class="s">$8–15 · Kitten crack</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cat+tunnel+collapsible+plush&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Collapsible Cat Tunnel</div><div class="s">$12ΓÇô22 ┬╖ Endless zoomies</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=kitten+sweater+xs+knit&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tiny Kitten Knit Sweater</div><div class="s">$10ΓÇô18 ┬╖ Photo-ready</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cat+bowtie+collar+set&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cat Bowtie Collar</div><div class="s">$8ΓÇô15 ┬╖ Dapper kitty energy</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cat+cave+bed+felted+wool&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Felted Wool Cat Cave</div><div class="s">$30ΓÇô55 ┬╖ Hide-and-snooze</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cat+window+perch+suction&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Window Perch (Suction)</div><div class="s">$20ΓÇô35 ┬╖ Renter-friendly</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=catnip+silvervine+toys&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Catnip + Silvervine Toys</div><div class="s">$8ΓÇô15 ┬╖ Kitten crack</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="section" id="wild-friends">
     <h2>Tiny Wild Friends</h2>
-    <a class="card" href="https://www.amazon.com/s?k=hedgehog+cage+habitat+starter&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Hedgehog Habitat Starter</div><div class="s">$50–90 · Full set-up</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=chinchilla+wheel+silent+15+inch&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">15&quot; Silent Chinchilla Wheel</div><div class="s">$40–65 · Sleep-safe</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=bunny+hay+feeder+timothy&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Bunny Hay Feeder</div><div class="s">$15–30 · Less mess</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=rabbit+playpen+indoor&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Indoor Rabbit Playpen</div><div class="s">$30–55 · Free-roam-safe</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=red+panda+plush+stuffed+animal&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Red Panda Plushie</div><div class="s">$15–25 · For the cuddler</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=fennec+fox+plush+stuffed+animal&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Fennec Fox Plushie</div><div class="s">$12–22 · Tiny ears, big love</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=hedgehog+cage+habitat+starter&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Hedgehog Habitat Starter</div><div class="s">$50ΓÇô90 ┬╖ Full set-up</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=chinchilla+wheel+silent+15+inch&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">15&quot; Silent Chinchilla Wheel</div><div class="s">$40ΓÇô65 ┬╖ Sleep-safe</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=bunny+hay+feeder+timothy&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Bunny Hay Feeder</div><div class="s">$15ΓÇô30 ┬╖ Less mess</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=rabbit+playpen+indoor&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Indoor Rabbit Playpen</div><div class="s">$30ΓÇô55 ┬╖ Free-roam-safe</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=red+panda+plush+stuffed+animal&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Red Panda Plushie</div><div class="s">$15ΓÇô25 ┬╖ For the cuddler</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=fennec+fox+plush+stuffed+animal&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Fennec Fox Plushie</div><div class="s">$12ΓÇô22 ┬╖ Tiny ears, big love</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="section" id="seasonal">
     <h2>Seasonal Pet Style</h2>
-    <a class="card" href="https://www.amazon.com/s?k=pet+halloween+costume+small+witch&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Halloween Pet Costumes</div><div class="s">$10–20 · Witch + pumpkin styles</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=pet+bandana+fall+leaves&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Fall Pet Bandana</div><div class="s">$8–15 · Photo-ready prints</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=cat+santa+hat+christmas+tiny&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tiny Santa Hat for Cats</div><div class="s">$5–12 · Holiday card gold</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=puppy+raincoat+spring+small&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Spring Puppy Raincoat</div><div class="s">$15–25 · Stay-dry walks</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=pet+flower+crown+photo+prop&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Pet Flower Crown</div><div class="s">$8–15 · The dreamy prop</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+halloween+costume+small+witch&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Halloween Pet Costumes</div><div class="s">$10ΓÇô20 ┬╖ Witch + pumpkin styles</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+bandana+fall+leaves&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Fall Pet Bandana</div><div class="s">$8ΓÇô15 ┬╖ Photo-ready prints</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=cat+santa+hat+christmas+tiny&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Tiny Santa Hat for Cats</div><div class="s">$5ΓÇô12 ┬╖ Holiday card gold</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=puppy+raincoat+spring+small&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Spring Puppy Raincoat</div><div class="s">$15ΓÇô25 ┬╖ Stay-dry walks</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+flower+crown+photo+prop&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Pet Flower Crown</div><div class="s">$8ΓÇô15 ┬╖ The dreamy prop</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="section" id="cozy-decor">
     <h2>Cozy Pet Decor</h2>
-    <a class="card" href="https://www.amazon.com/s?k=fluffy+pet+blanket+sherpa&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Sherpa Pet Blanket</div><div class="s">$15–28 · Bed-ready</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=ceramic+cat+food+bowl+aesthetic&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Aesthetic Ceramic Bowl</div><div class="s">$12–25 · Pinterest-worthy</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=heated+pet+bed+warmer&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Heated Pet Bed</div><div class="s">$25–45 · Winter cuddle</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=pet+name+tag+cute+silicone&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cute Silicone Name Tag</div><div class="s">$6–14 · No-jingle</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=rattan+pet+bed+small+dog&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rattan Pet Bed</div><div class="s">$45–80 · Furniture-grade</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=fluffy+pet+blanket+sherpa&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Sherpa Pet Blanket</div><div class="s">$15ΓÇô28 ┬╖ Bed-ready</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=ceramic+cat+food+bowl+aesthetic&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Aesthetic Ceramic Bowl</div><div class="s">$12ΓÇô25 ┬╖ Pinterest-worthy</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=heated+pet+bed+warmer&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Heated Pet Bed</div><div class="s">$25ΓÇô45 ┬╖ Winter cuddle</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+name+tag+cute+silicone&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Cute Silicone Name Tag</div><div class="s">$6ΓÇô14 ┬╖ No-jingle</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=rattan+pet+bed+small+dog&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Rattan Pet Bed</div><div class="s">$45ΓÇô80 ┬╖ Furniture-grade</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="section" id="smart-tech">
     <h2>Smart Pet Tech</h2>
-    <a class="card" href="https://www.amazon.com/s?k=automatic+cat+feeder+wifi&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wi-Fi Automatic Feeder</div><div class="s">$50–90 · Never-miss-a-meal</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=pet+water+fountain+stainless&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Stainless Water Fountain</div><div class="s">$30–60 · Filtered, flowing</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=pet+camera+treat+dispenser&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Treat-Tossing Pet Camera</div><div class="s">$60–120 · Day-care from work</div></span><span class="arrow">›</span></a>
-    <a class="card" href="https://www.amazon.com/s?k=gps+dog+tracker+collar&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">GPS Dog Tracker</div><div class="s">$50–100 · Peace of mind</div></span><span class="arrow">›</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=automatic+cat+feeder+wifi&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Wi-Fi Automatic Feeder</div><div class="s">$50ΓÇô90 ┬╖ Never-miss-a-meal</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+water+fountain+stainless&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Stainless Water Fountain</div><div class="s">$30ΓÇô60 ┬╖ Filtered, flowing</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=pet+camera+treat+dispenser&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">Treat-Tossing Pet Camera</div><div class="s">$60ΓÇô120 ┬╖ Day-care from work</div></span><span class="arrow">ΓÇ║</span></a>
+    <a class="card" href="https://www.amazon.com/s?k=gps+dog+tracker+collar&tag=saltybayfli0c-20" target="_blank" rel="nofollow noopener"><span><div class="t">GPS Dog Tracker</div><div class="s">$50ΓÇô100 ┬╖ Peace of mind</div></span><span class="arrow">ΓÇ║</span></a>
   </div>
 
   <div class="socials">
@@ -121,7 +203,7 @@
     <strong>Affiliate disclosure.</strong> Fuzzy Frames AI is a publishing project of SALTYBAYFLIPS LLC and participates in the Amazon Services LLC Associates Program. As an Amazon Associate we earn from qualifying purchases.
   </div>
 
-  <footer>© SALTYBAYFLIPS LLC · <a href="privacy.html" style="color:var(--muted);">Privacy</a></footer>
+  <footer>┬⌐ SALTYBAYFLIPS LLC ┬╖ <a href="privacy.html" style="color:var(--muted);">Privacy</a></footer>
 </div>
 </body>
 </html>
