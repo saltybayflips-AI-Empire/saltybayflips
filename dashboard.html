@@ -144,6 +144,13 @@
   .perfcard.amazon { border-top:3px solid #ff9900; }
   .perfcard.tiktok { border-top:3px solid #ff0050; }
   .perfcard.pinterest { border-top:3px solid #e60023; }
+  /* Platform tag (top-left, before title) */
+  .perfcard .ptag { display:inline-block; font-size:9px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.7px; padding:3px 8px;
+    border-radius:999px; margin-bottom:6px; }
+  .perfcard.tiktok .ptag { background:rgba(255,0,80,.18); color:#ff5b8c; }
+  .perfcard.pinterest .ptag { background:rgba(230,0,35,.18); color:#ff7a8c; }
+  .perfcard.amazon .ptag { background:rgba(255,153,0,.18); color:#ffba66; }
   .perfcard h3 { margin:0 0 4px; font-size:13px; display:flex; align-items:center;
     justify-content:space-between; gap:6px; }
   .perfcard .platform { font-size:10px; text-transform:uppercase; letter-spacing:.6px; color:var(--mut); }
@@ -265,7 +272,7 @@
     <h1>AI Empire <span class="sub">Content Dashboard</span></h1>
     <div class="today" id="today"></div>
   </div>
-  <button class="refresh" id="refreshBtn" onclick="loadAll()">&#x21BB; Refresh</button>
+  <button class="refresh" id="refreshBtn" onclick="loadAll()">↻ Refresh</button>
 </header>
 
 <div id="errors"></div>
@@ -320,22 +327,10 @@
   <div class="pingrid" id="scheduled"></div>
 </div>
 
-<!-- ============== RECENTLY POSTED ================= -->
-<div class="section">
-  <h2>Recently posted <span class="count" id="postedCount"></span></h2>
-  <div class="pingrid" id="posted"></div>
-</div>
-
 <!-- ============== NICHES ================= -->
 <div class="section">
   <h2>Channels</h2>
   <div class="nicherow" id="niches"></div>
-</div>
-
-<!-- ============== REJECTED ================= -->
-<div class="section">
-  <h2>QA rejected <span class="count" id="rejCount"></span></h2>
-  <div id="rejected" class="pingrid"></div>
 </div>
 
 <footer>
@@ -538,6 +533,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const daysLeft = a.deadline_days_remaining ?? '';
     cards.push(`
       <div class="perfcard amazon">
+        <span class="ptag">💰 Amazon Associates</span>
         <h3>Amazon Associates <span class="platform">$$</span></h3>
         <div class="big">$${(tm.earnings_usd ?? 0).toFixed(2)}<small>this month</small></div>
         <div class="sub">${tm.ordered_items ?? 0} orders &middot; ${tm.items_shipped ?? 0} shipped &middot; ${tm.conversion_pct ?? 0}% conv</div>
@@ -562,6 +558,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const deltaCls = delta > 0 ? 'up' : delta < 0 ? 'down' : '';
     cards.push(`
       <div class="perfcard tiktok">
+        <span class="ptag">🎵 TikTok</span>
         <h3>${t.display_name} <span class="platform">${t.handle}</span></h3>
         <div class="big">${(w7.video_views ?? 0).toLocaleString()}<small>views (7d)</small></div>
         <div class="sub">${(t.followers ?? 0).toLocaleString()} followers <span class="delta ${deltaCls}">${delta > 0 ? '+' : ''}${delta ?? 0} (${deltaPct ?? 0}%)</span></div>
@@ -587,6 +584,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const liveViews = live ? (live.first_check_views ?? 0) : 0;
     cards.push(`
       <div class="perfcard tiktok" style="border-top-color:#d472a2">
+        <span class="ptag">🎵 TikTok</span>
         <h3>${f.display_name} <span class="platform">${f.handle}</span></h3>
         <div class="big">${liveViews}<small>views (V1 first check)</small></div>
         <div class="sub">v5 stitched format started 2026-05-07 &middot; ${recent.length} post${recent.length === 1 ? '' : 's'} this cycle</div>
@@ -612,6 +610,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const bestAcct = Object.entries(accts).sort((a,b) => (b[1].impressions||0) - (a[1].impressions||0))[0];
     cards.push(`
       <div class="perfcard pinterest">
+        <span class="ptag">📌 Pinterest</span>
         <h3>Pinterest <span class="platform">3 accounts</span></h3>
         <div class="big">${(tot.impressions ?? 0).toLocaleString()}<small>impressions (30d)</small></div>
         <div class="sub">Top: ${bestAcct ? bestAcct[1].display_name + ' (' + bestAcct[1].impressions + ')' : '&mdash;'}</div>
@@ -651,7 +650,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
 async function loadAll() {
   document.getElementById('errors').innerHTML = '';
   document.getElementById('refreshBtn').disabled = true;
-  document.getElementById('refreshBtn').textContent = '&#x21BB; Loading...';
+  document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
   // Tracker data + analytics + action items in parallel
   const [results, amazon, tiktok, pinterest, actionItems] = await Promise.all([
@@ -684,7 +683,7 @@ async function loadAll() {
   render(totalRejected, results);
 
   document.getElementById('refreshBtn').disabled = false;
-  document.getElementById('refreshBtn').textContent = '&#x21BB; Refresh';
+  document.getElementById('refreshBtn').textContent = '↻ Refresh';
 }
 
 function runwayClass(days, isEnabled) {
@@ -861,13 +860,6 @@ function render(totalRejected, results) {
     : '<div class="empty">No scheduled pins</div>';
   document.getElementById('schedCount').textContent = scheduled.length;
 
-  // ============ POSTED ============
-  const recentPosted = posted.slice(0, 12);
-  document.getElementById('posted').innerHTML = recentPosted.length
-    ? recentPosted.map(pinCard).join('')
-    : '<div class="empty">No posted pins yet</div>';
-  document.getElementById('postedCount').textContent = `${posted.length} total &middot; showing ${recentPosted.length}`;
-
   // ============ NICHES ============
   document.getElementById('niches').innerHTML = results.filter(r => r.data).map(r => {
     const posts = r.data.posts || [];
@@ -891,29 +883,6 @@ function render(totalRejected, results) {
     </div>`;
   }).join('');
 
-  // ============ REJECTED ============
-  const allRejected = [];
-  for (const r of results) {
-    if (!r.data) continue;
-    for (const x of (r.data.rejected || [])) {
-      if (activeFilter === 'all' || activeFilter === r.niche.slug) {
-        allRejected.push({ ...x, niche: r.niche.slug, status:'rejected', title: x.title || x.file });
-      }
-    }
-  }
-  document.getElementById('rejected').innerHTML = allRejected.length
-    ? allRejected.map(p => `<a class="pin" href="#">
-        <div class="img" style="background-image:url('${imgGuess(p, NICHES.find(n => n.slug === p.niche))}')">
-          <span class="badge" style="background:rgba(230,0,35,.85)">REJECTED</span>
-          <span class="badge acct"><span class="pill ${NICHES.find(n => n.slug === p.niche).color}">${NICHES.find(n => n.slug === p.niche).short}</span></span>
-        </div>
-        <div class="body">
-          <div class="title">${p.title}</div>
-          <div class="meta"><span>${p.reason ? p.reason.slice(0,60) : ''}</span></div>
-        </div>
-      </a>`).join('')
-    : '<div class="empty">No rejections</div>';
-  document.getElementById('rejCount').textContent = allRejected.length;
 }
 
 function setFilter(k) { activeFilter = k; loadAll(); }
