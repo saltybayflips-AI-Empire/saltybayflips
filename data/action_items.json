@@ -1,23 +1,26 @@
 {
-  "synced_at": "2026-05-07T09:17:04.811155",
+  "synced_at": "2026-05-07T09:36:54",
   "item_count": 9,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
-      "title": "Funnel diagnosis: 0 Amazon clicks (30d) — TRAFFIC problem, not link problem",
-      "detail": "All 134 Amazon links across lld.html (58), fuzzy.html (31), asc.html (45) verified correctly tagged with saltybayfli0c-20. So 0 clicks is upstream: Pinterest impressions are real (Fuzzy 112/30d) but 0 outbound clicks; TikTok Laura had 435 video views/7d but only 2 profile views (0.46% CTR). Levers: (a) finish the LLD posts 23-27 Studio caption-CTA edit, (b) add stronger CTAs to Pinterest pin descriptions on existing pins, (c) increase pin volume per niche to widen the top-of-funnel.",
-      "priority": "high",
+      "title": "Funnel retrofit IN PROGRESS — 5/20 Fuzzy pins flipped to direct Amazon",
+      "detail": "Diagnosed 2026-05-07 morning: 199 Fuzzy impressions / 0 outbound clicks because live Pinterest pins were silently still pointing at fuzzy.html linktree (cavapoo bug pattern), even though tracker said Amazon. Phase 1 retrofit done 9:30 AM 5/7: 5 Fuzzy pins manually flipped via Chrome MCP edit dialog and verified live Visit-site link points at amazon.com/hz/wishlist/ls/5RB44WI33ISZ. Remaining 15 Fuzzy pins to retrofit at 5/session pace per CLAUDE.md rate limit. Watch fuzzy_frames_ai outbound_clicks in next analytics scrape (24-48h). LLD already had 7 clicks per actual Amazon dashboard so the original '0 clicks' claim was stale.",
+      "priority": "med",
       "estimated_min": 60,
-      "category": "funnel_fix"
+      "category": "funnel_fix",
+      "updated_at": "2026-05-07T09:35:56",
+      "progress": "5 of 20 Fuzzy pins retrofitted"
     },
     {
       "id": "studio_edit_lld_23_27",
-      "title": "Edit captions in TikTok Studio (LLD posts 23-27)",
-      "detail": "5 live-scheduled @laurasunkist posts have OLD captions without the bio CTA we just added. Open Studio scheduler → click each post → paste new caption from local caption.txt. ~25 min.",
-      "priority": "high",
+      "title": "DONE: LLD posts 23-27 already have bio CTAs",
+      "detail": "Verified 2026-05-07: posts 23-27 captions in LLD tracker already include '→ shop the look in bio 🛋️' CTA line. Action item was stale. No edit needed.",
+      "priority": "done",
       "estimated_min": 25,
       "category": "manual_edit",
-      "url": "https://www.tiktok.com/tiktokstudio/content?type=video"
+      "url": "https://www.tiktok.com/tiktokstudio/content?type=video",
+      "updated_at": "2026-05-07T09:35:56"
     },
     {
       "id": "schedule_scottish_fold",
@@ -76,5 +79,6 @@
       "estimated_min": 45,
       "category": "gap_warning"
     }
-  ]
+  ],
+  "updated_at": "2026-05-07T09:35:56"
 }

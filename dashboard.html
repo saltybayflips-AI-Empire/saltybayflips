@@ -277,6 +277,7 @@
   <div>
     <h1>AI Empire <span class="sub">Content Dashboard</span></h1>
     <div class="today" id="today"></div>
+    <div class="today" id="lastSynced" style="margin-top:2px;"></div>
   </div>
   <button class="refresh" id="refreshBtn" onclick="loadAll()">↻ Refresh</button>
 </header>
@@ -696,6 +697,21 @@ async function loadAll() {
 
   renderPerformance(amazon, tiktok, pinterest);
   render(totalRejected, results);
+
+  // ============ LAST SYNCED ============
+  // Show the oldest (i.e. staleness floor) across all data sources, plus when the
+  // browser last loaded the data. Helps the user see at a glance how fresh the
+  // numbers below actually are.
+  const syncTimes = [
+    amazon?.synced_at, tiktok?.synced_at, pinterest?.synced_at, actionItems?.synced_at,
+    ...results.filter(r => r.data).map(r => r.data.last_synced),
+  ].filter(Boolean).map(s => new Date(s)).filter(d => !isNaN(d));
+  const oldestSync = syncTimes.length ? new Date(Math.min(...syncTimes.map(d => d.getTime()))) : null;
+  const refreshedAt = new Date();
+  const refreshedStr = refreshedAt.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit',second:'2-digit'});
+  document.getElementById('lastSynced').innerHTML = oldestSync
+    ? `Data synced: ${timeAgo(oldestSync.toISOString())} (${oldestSync.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}) · Browser refreshed: ${refreshedStr}`
+    : `Browser refreshed: ${refreshedStr}`;
 
   document.getElementById('refreshBtn').disabled = false;
   document.getElementById('refreshBtn').textContent = '↻ Refresh';
