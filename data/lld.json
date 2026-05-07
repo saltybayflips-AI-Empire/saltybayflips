@@ -427,7 +427,11 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1087056428836983789",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428836983789/",
+      "destination_url_retrofitted_at": "2026-05-07T09:47:27",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified live"
     },
     {
       "id": 13,
@@ -1068,7 +1072,11 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#entertainment",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1087056428837699207",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428837699207/",
+      "destination_url_retrofitted_at": "2026-05-07T09:47:27",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified live"
     },
     {
       "id": 31,
@@ -1107,7 +1115,11 @@
         }
       ],
       "posted_date": "2026-05-04",
-      "auto_reconciled": "2026-05-06 11:53"
+      "auto_reconciled": "2026-05-06 11:53",
+      "pinterest_pin_id": "1087056428837762416",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428837762416/",
+      "destination_url_retrofitted_at": "2026-05-07T09:47:27",
+      "destination_url_retrofitted_method": "verified during 2026-05-07 audit, was already retrofitted in earlier Phase 2 pilot"
     },
     {
       "id": 32,
@@ -1146,7 +1158,11 @@
         }
       ],
       "posted_date": "2026-05-05",
-      "auto_reconciled": "2026-05-06 11:53"
+      "auto_reconciled": "2026-05-06 11:53",
+      "pinterest_pin_id": "1087056428837823970",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428837823970/",
+      "destination_url_retrofitted_at": "2026-05-07T09:47:27",
+      "destination_url_retrofitted_method": "verified during 2026-05-07 audit, was already retrofitted in earlier Phase 2 pilot"
     },
     {
       "id": 33,
@@ -1185,7 +1201,11 @@
         }
       ],
       "posted_date": "2026-05-06",
-      "auto_reconciled": "2026-05-06 11:53"
+      "auto_reconciled": "2026-05-06 11:53",
+      "pinterest_pin_id": "1087056428837893070",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428837893070/",
+      "destination_url_retrofitted_at": "2026-05-07T09:47:27",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified live"
     },
     {
       "id": 34,
@@ -1910,5 +1930,5 @@
     "next_unposted": "2026-05-07T09:00:00",
     "last_scheduled": "2026-05-10T18:00:00"
   },
-  "last_synced": "2026-05-07T09:17:04"
+  "last_synced": "2026-05-07T10:17:34"
 }

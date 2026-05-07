@@ -435,7 +435,11 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893927416",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893927416/",
+      "destination_url_retrofitted_at": "2026-05-07T09:32:46",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified Visit site link points at Amazon"
     },
     {
       "id": 13,
@@ -509,7 +513,11 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893994009",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893994009/",
+      "destination_url_retrofitted_at": "2026-05-07T09:32:46",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified Visit site link points at Amazon"
     },
     {
       "id": 15,
@@ -583,7 +591,11 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987894056570",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894056570/",
+      "destination_url_retrofitted_at": "2026-05-07T09:32:46",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified Visit site link points at Amazon"
     },
     {
       "id": 17,
@@ -736,7 +748,7 @@
         "SpringPuppy",
         "AestheticPets"
       ],
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
       "status": "superseded_by_gemini",
       "queued_date": "2026-05-01",
       "method": "chrome-mcp save-from-url",
@@ -744,7 +756,11 @@
       "qa_date": "2026-05-01",
       "qa_notes": "Visual QA — most fail with painterly/oversaturated look (Fuzzy prompt template likely needs rework)",
       "scheduled_for_planned": "2026-05-06 10:00",
-      "superseded_note": "Flux 8GB rendering produced subpar quality (saturated/painterly per user QA). Replaced with Gemini-generated version."
+      "superseded_note": "Flux 8GB rendering produced subpar quality (saturated/painterly per user QA). Replaced with Gemini-generated version.",
+      "pinterest_pin_id": "1128573987894588707",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894588707/",
+      "destination_url_retrofitted_at": "2026-05-07T09:32:46",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified Visit site link points at Amazon"
     },
     {
       "id": 22,
@@ -889,7 +905,11 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_date": "2026-05-04",
-      "auto_reconciled": "2026-05-06 11:53"
+      "auto_reconciled": "2026-05-06 11:53",
+      "pinterest_pin_id": "1128573987894455303",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894455303/",
+      "destination_url_retrofitted_at": "2026-05-07T09:32:46",
+      "destination_url_retrofitted_method": "chrome-mcp manual edit, verified Visit site link points at Amazon"
     },
     {
       "id": 26,
@@ -1920,16 +1940,43 @@
         "hook": "Tiny pet details that make me melt",
         "caption_preview": "Tiny pet details that make me melt\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
         "music": "soft heartstring cute trending"
+      },
+      {
+        "slot": "v5_001_2026_05_07_am",
+        "scheduled_for": "2026-05-07 08:30",
+        "sched_date": "2026-05-07",
+        "posted": true,
+        "post_date": "2026-05-07",
+        "hook": "pets that soften your whole day",
+        "format": "v5_stitched_16s_4clips",
+        "video_file": "pinterest/fuzzy_frames_ai/_v5_stitched/fuzzy_v5_final_spring_softness.mp4",
+        "music": "Original sound (no trending audio added on V1 — manual mobile post)",
+        "caption_preview": "pets that soften your whole day\nwhich one is your spirit animal? 🦌",
+        "live_url_unknown_until_scrape": true,
+        "first_check_views": 56,
+        "first_check_at": "2026-05-07 10:18"
+      },
+      {
+        "slot": "v5_002_2026_05_07_pm",
+        "scheduled_for": "2026-05-07 19:55",
+        "sched_date": "2026-05-07",
+        "posted": false,
+        "scheduled_in_tiktok_studio": true,
+        "hook": "5 reasons we have pets",
+        "format": "v5_stitched_20s_5clips",
+        "video_file": "pinterest/fuzzy_frames_ai/_v5_stitched/fuzzy_v5_final_cozy_five.mp4",
+        "music": "Animal baby — 上野遥 (TikTok For You trending pick)",
+        "caption_preview": "5 reasons we have pets ➡️\nsave this for the worst day later"
       }
     ],
     "totals": {
-      "posted": 0,
-      "scheduled": 10,
+      "posted": 1,
+      "scheduled": 11,
       "ready_no_date": 14
     },
     "runway_days": 6,
     "next_unposted": "2026-05-07T09:00:00",
     "last_scheduled": "2026-05-13T09:00:00"
   },
-  "last_synced": "2026-05-07T09:17:04"
+  "last_synced": "2026-05-07 10:18"
 }

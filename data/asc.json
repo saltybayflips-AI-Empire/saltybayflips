@@ -973,12 +973,14 @@
       "title": "Small Apartment Round Bistro Dining Set Aesthetic Renter Friendly Studio",
       "description": "Tiny apartment dining nook with a 2-seat round bistro set, rattan chairs, gingham wallpaper, eucalyptus centerpiece - Parisian cafe vibes in a 4x4 corner, no full dining room required. Save for your small apartment dining setup, studio dining nook ideas, or renter-friendly dining inspo. Tap profile to shop round bistro tables, rattan bistro chairs, peel-stick gingham wallpaper, and faux eucalyptus stems. #SmallDiningRoom #BistroSet #ApartmentDining #RentersDining #ParisianApartment #RattanChairs #DiningNook #SmallSpaceDecor #ApartmentDecor #StudioApartmentLiving #RenterFriendly #RentalDecor",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-06 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "notes": "Replacement for banquette_window which failed QA (painterly/soft).",
       "pinterest_pin_id": "1140747780637741205",
-      "pinterest_url": "https://www.pinterest.com/pin/1140747780637741205/"
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780637741205/",
+      "posted_date": "2026-05-06",
+      "flip_method": "verified live on pinterest.com 2026-05-07T10:17:11 via Chrome MCP visual"
     },
     {
       "id": 35,
@@ -1672,5 +1674,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-07T09:17:04"
+  "last_synced": "2026-05-07T10:17:34"
 }
