@@ -135,6 +135,12 @@
   .day .dots .d.asc { background:var(--asc); }
   .day .dots .d.lld { background:var(--lld); }
   .day .dots .d.fuzzy { background:var(--fuzzy); }
+  /* Platform shape: Pinterest = circle (default), TikTok = square */
+  .day .dots .d.tt { border-radius:1px; }
+  .legend-dot { display:inline-block; width:8px; height:8px; vertical-align:middle;
+    margin-right:4px; background:var(--mut); }
+  .legend-dot.legend-pin { border-radius:50%; }
+  .legend-dot.legend-tt { border-radius:1px; }
 
   /* Performance cards (analytics) */
   .perf { display:grid; grid-template-columns:1fr; gap:12px; margin-bottom:18px; }
@@ -310,22 +316,14 @@
 <div class="section">
   <h2>Next 14 days <span class="count" id="timelineCount"></span></h2>
   <div class="timeline" id="timeline"></div>
+  <div style="font-size:10px;color:var(--mut);margin-top:6px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+    <span><span class="legend-dot legend-pin"></span> Pinterest</span>
+    <span><span class="legend-dot legend-tt"></span> TikTok</span>
+  </div>
 </div>
 
 <!-- ============== FILTER ================= -->
 <div class="filterbar" id="filterbar"></div>
-
-<!-- ============== POSTING TODAY ================= -->
-<div class="section" id="todaySection" style="display:none;">
-  <h2>Posting today <span class="pill live" id="todayCount"></span></h2>
-  <div class="pingrid" id="todayPins"></div>
-</div>
-
-<!-- ============== SCHEDULED ================= -->
-<div class="section">
-  <h2>Scheduled <span class="count" id="schedCount"></span></h2>
-  <div class="pingrid" id="scheduled"></div>
-</div>
 
 <!-- ============== NICHES ================= -->
 <div class="section">
@@ -673,8 +671,25 @@ async function loadAll() {
   let totalRejected = 0;
   for (const r of results) {
     if (!r.data) continue;
+    // Pinterest posts (existing)
     for (const p of (r.data.posts || [])) {
-      allPosts.push({ ...p, niche: r.niche.slug });
+      allPosts.push({ ...p, niche: r.niche.slug, platform: 'pinterest' });
+    }
+    // TikTok schedule entries — only include ones with a real scheduled_for date
+    const ttSched = r.data.tiktok && r.data.tiktok.schedule;
+    if (ttSched) {
+      for (const t of ttSched) {
+        if (!t || !t.scheduled_for) continue;
+        allPosts.push({
+          niche: r.niche.slug,
+          platform: 'tiktok',
+          status: t.posted ? 'posted' : 'scheduled',
+          scheduled_for: t.scheduled_for,
+          posted_date: t.posted ? (t.post_date || t.scheduled_for) : null,
+          title: t.hook || t.slot || 'TikTok post',
+          slug: t.slot,
+        });
+      }
     }
     totalRejected += (r.data.rejected || []).length;
   }
@@ -824,61 +839,73 @@ function render(totalRejected, results) {
   ).join('');
 
   // ============ TIMELINE ============
+  // Includes BOTH Pinterest AND TikTok scheduled posts (within next 14 days).
   const days = [];
+  let pinIn14 = 0, ttIn14 = 0;
   for (let i = 0; i < 14; i++) {
     const d = addDays(today, i);
     const dk = dayKey(d);
     const dayPosts = scheduled.filter(p => dayKey(parseSched(p)) === dk);
+    const dayPin = dayPosts.filter(p => p.platform !== 'tiktok');
+    const dayTT = dayPosts.filter(p => p.platform === 'tiktok');
+    pinIn14 += dayPin.length;
+    ttIn14 += dayTT.length;
     const isToday = i === 0;
-    // Flag future days with 0 scheduled pins as gaps (skip today + past days).
     const isGap = !isToday && i > 0 && dayPosts.length === 0;
-    days.push(`<div class="day ${isGap ? 'gap':''}" title="${isGap ? 'No pins scheduled':''}">
+    const dotsHtml = [
+      ...dayPin.map(p => `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="📌 ${p.title}"></div>`),
+      ...dayTT.map(p => `<div class="d tt ${NICHES.find(n => n.slug === p.niche).color}" title="🎵 ${p.title}"></div>`),
+    ].join('');
+    days.push(`<div class="day ${isGap ? 'gap':''}" title="${isGap ? 'No posts scheduled':''}">
       <div class="dow">${d.toLocaleDateString(undefined,{weekday:'short'})}</div>
       <div class="dnum ${isToday ? 'today':''}">${d.getDate()}</div>
-      <div class="dcount">${isGap ? 'gap' : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'pin':'pins'))}</div>
-      <div class="dots">${dayPosts.map(p =>
-        `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="${p.title}"></div>`).join('')}</div>
+      <div class="dcount">${isGap ? 'gap' : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'post':'posts'))}</div>
+      <div class="dots">${dotsHtml}</div>
     </div>`);
   }
   document.getElementById('timeline').innerHTML = days.join('');
   document.getElementById('timelineCount').textContent =
-    `${scheduled.filter(p => { const d = parseSched(p); return d && (d - today)/86400000 < 14; }).length} pins queued`;
+    `${pinIn14 + ttIn14} posts queued (${pinIn14} Pinterest · ${ttIn14} TikTok)`;
 
-  // ============ POSTING TODAY ============
-  const todaySection = document.getElementById('todaySection');
-  if (postingToday.length > 0) {
-    todaySection.style.display = 'block';
-    document.getElementById('todayCount').textContent = postingToday.length + ' going live';
-    document.getElementById('todayPins').innerHTML = postingToday.map(pinCard).join('');
-  } else {
-    todaySection.style.display = 'none';
-  }
-
-  // ============ SCHEDULED ============
-  document.getElementById('scheduled').innerHTML = scheduled.length
-    ? scheduled.map(pinCard).join('')
-    : '<div class="empty">No scheduled pins</div>';
-  document.getElementById('schedCount').textContent = scheduled.length;
-
-  // ============ NICHES ============
+  // ============ NICHES (Pinterest + TikTok per channel) ============
+  // TikTok handle map (matches data file). Falls back to '—' if niche has no TikTok.
+  const TT_HANDLES = {
+    aesthetic_spaces_co: null,
+    luxe_living_daily: { handle: '@laurasunkist', url: 'https://www.tiktok.com/@laurasunkist' },
+    fuzzy_frames_ai:    { handle: '@fuzzy.frames.ai', url: 'https://www.tiktok.com/@fuzzy.frames.ai' },
+  };
   document.getElementById('niches').innerHTML = results.filter(r => r.data).map(r => {
     const posts = r.data.posts || [];
-    const sched = posts.filter(p => p.status === 'scheduled').length;
-    const post = posts.filter(p => p.status === 'posted').length;
-    const rej = (r.data.rejected || []).length;
-    const total = posts.length + rej;
+    const pinSched = posts.filter(p => p.status === 'scheduled').length;
+    const pinPosted = posts.filter(p => p.status === 'posted').length;
+
+    const tt = r.data.tiktok || {};
+    const ttSchedArr = tt.schedule || [];
+    const ttSched = ttSchedArr.filter(s => s && s.scheduled_for && !s.posted).length;
+    const ttPosted = ttSchedArr.filter(s => s && s.posted).length;
+    const ttHandle = TT_HANDLES[r.niche.slug];
+
     return `<div class="nichecard">
       <h3>${r.niche.title} <span class="pill ${r.niche.color}">${r.niche.short}</span></h3>
-      <div style="font-size:11px;color:var(--mut);margin-bottom:8px;">${r.niche.pinterest}</div>
-      <div class="breakdown">
-        <div class="br s"><span class="n">${sched}</span><span class="l">Sched</span></div>
-        <div class="br p"><span class="n">${post}</span><span class="l">Posted</span></div>
-        <div class="br r"><span class="n">${rej}</span><span class="l">Rejected</span></div>
-        <div class="br"><span class="n">${total}</span><span class="l">Total</span></div>
+
+      <!-- Pinterest row -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0 4px;font-size:11px;">
+        <span style="color:var(--mut);">📌 Pinterest <span style="color:var(--fg)">${r.niche.pinterest}</span></span>
+        <a href="${r.niche.pinterest_url}" target="_blank" style="font-size:10px;">Open ↗</a>
       </div>
-      <div class="links">
-        <a href="${r.niche.pinterest_url}" target="_blank">Profile &#x2197;</a>
-        <a href="${r.niche.pinterest_url.replace(/\/$/,'')}/scheduled-pins/" target="_blank">Scheduled queue &#x2197;</a>
+      <div class="breakdown" style="grid-template-columns:repeat(2,1fr);margin-bottom:8px;">
+        <div class="br s"><span class="n">${pinSched}</span><span class="l">Scheduled</span></div>
+        <div class="br p"><span class="n">${pinPosted}</span><span class="l">Posted</span></div>
+      </div>
+
+      <!-- TikTok row -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0 4px;font-size:11px;">
+        <span style="color:var(--mut);">🎵 TikTok <span style="color:var(--fg)">${ttHandle ? ttHandle.handle : '— not configured'}</span></span>
+        ${ttHandle ? `<a href="${ttHandle.url}" target="_blank" style="font-size:10px;">Open ↗</a>` : ''}
+      </div>
+      <div class="breakdown" style="grid-template-columns:repeat(2,1fr);">
+        <div class="br s"><span class="n">${ttSched}</span><span class="l">Scheduled</span></div>
+        <div class="br p"><span class="n">${ttPosted}</span><span class="l">Posted</span></div>
       </div>
     </div>`;
   }).join('');
