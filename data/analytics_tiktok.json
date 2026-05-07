@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-07T10:18:32",
+  "synced_at": "2026-05-07T10:39:09",
   "accounts": {
     "laurasunkist": {
       "handle": "@laurasunkist",
@@ -54,7 +54,7 @@
       "handle": "@fuzzy.frames.ai",
       "display_name": "Fuzzy Frames AI",
       "status": "posting_v5_format",
-      "note": "Started v5 stitched format 2026-05-07 (Wan I2V multi-clip 16-20s). Bio link still blocked pending business verification but content cadence active. V1 manual mobile post 8:30 AM, V2 scheduled web 7:55 PM with trending audio.",
+      "note": "Started v5 stitched format 2026-05-07 (Wan I2V multi-clip 16-20s). BIO LINK NOW LIVE 2026-05-07 (Business Verification cleared, user added fuzzy.html linktree via mobile app). V1 manual mobile post 8:30 AM, V2 scheduled web 7:55 PM with trending audio, V3 scheduled Fri 10:15 AM.",
       "url": "https://www.tiktok.com/@fuzzy.frames.ai",
       "posting_active": true,
       "followers": 0,
@@ -86,7 +86,10 @@
           "status": "scheduled",
           "music": "Animal baby — 上野遥 (For You trending)"
         }
-      ]
+      ],
+      "bio_link": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
+      "business_verification_status": "approved",
+      "bio_link_verified_at": "2026-05-07T10:39:09"
     }
   }
 }
