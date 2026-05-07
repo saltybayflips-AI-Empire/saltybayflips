@@ -576,6 +576,35 @@ function renderPerformance(amazon, tiktok, pinterest) {
       </div>`);
   }
 
+  // 2nd TikTok card: Fuzzy Frames AI — shown when posting_active=true (no analytics surface yet
+  // because business verification is still pending, so we render the v5 stitched cadence + recent posts).
+  if (tiktok && tiktok.accounts && tiktok.accounts.fuzzy_frames_ai &&
+      tiktok.accounts.fuzzy_frames_ai.posting_active) {
+    const f = tiktok.accounts.fuzzy_frames_ai;
+    const recent = f.recent_posts || [];
+    const live = recent.find(r => r.status === 'live');
+    const sched = recent.find(r => r.status === 'scheduled');
+    const liveViews = live ? (live.first_check_views ?? 0) : 0;
+    cards.push(`
+      <div class="perfcard tiktok" style="border-top-color:#d472a2">
+        <h3>${f.display_name} <span class="platform">${f.handle}</span></h3>
+        <div class="big">${liveViews}<small>views (V1 first check)</small></div>
+        <div class="sub">v5 stitched format started 2026-05-07 &middot; ${recent.length} post${recent.length === 1 ? '' : 's'} this cycle</div>
+        ${live ? `
+          <div class="row"><span class="l">Live: "${live.title.slice(0,28)}${live.title.length>28?'…':''}"</span><span class="v good">${live.format.split(' · ')[0]}</span></div>
+          <div class="row"><span class="l">Music</span><span class="v" style="font-size:10px;font-weight:400">${(live.music||'').slice(0,30)}${(live.music||'').length>30?'…':''}</span></div>
+        `: ''}
+        ${sched ? `
+          <div class="row"><span class="l">Scheduled: "${sched.title.slice(0,28)}${sched.title.length>28?'…':''}"</span><span class="v" style="color:var(--info)">${fmtTime(sched.scheduled_for.replace(' ','T'))}</span></div>
+          <div class="row"><span class="l">Music</span><span class="v" style="font-size:10px;font-weight:400">${(sched.music||'').slice(0,30)}${(sched.music||'').length>30?'…':''}</span></div>
+        `: ''}
+        <div class="footer">
+          <span>${f.note ? f.note.slice(0,55) + '…' : 'Posting cadence active'}</span>
+          <a href="${f.url}" target="_blank">Open &#x2197;</a>
+        </div>
+      </div>`);
+  }
+
   // Pinterest aggregate
   if (pinterest && pinterest.totals) {
     const tot = pinterest.totals;

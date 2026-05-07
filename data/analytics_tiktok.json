@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-06T09:10:30",
+  "synced_at": "2026-05-07T08:47:52",
   "accounts": {
     "laurasunkist": {
       "handle": "@laurasunkist",
@@ -21,7 +21,7 @@
         "shares": 1,
         "shares_delta": 1,
         "est_rewards_usd": 0,
-        "profile_view_ctr_pct": 0.40
+        "profile_view_ctr_pct": 0.4
       },
       "traffic_sources_pct": {
         "For You": 91.1,
@@ -43,8 +43,29 @@
     "fuzzy_frames_ai": {
       "handle": "@fuzzy.frames.ai",
       "display_name": "Fuzzy Frames AI",
-      "status": "business_verification_pending",
-      "note": "Bio link still blocked pending IRS doc verification (submitted 2026-05-01). 5+ business days have passed; user may want to escalate or re-submit if not approved by 2026-05-08. No analytics surface to scrape until verification clears."
+      "status": "posting_v5_format",
+      "note": "Started v5 stitched format 2026-05-07 (Wan I2V multi-clip 16-20s). Bio link still blocked pending business verification but content cadence active. V1 manual mobile post 8:30 AM, V2 scheduled web 7:55 PM with trending audio.",
+      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
+      "posting_active": true,
+      "followers": 0,
+      "recent_posts": [
+        {
+          "title": "pets that soften your whole day",
+          "format": "v5 stitched 16s · 4 clips",
+          "posted_at": "2026-05-07 08:30",
+          "status": "live",
+          "first_check_views": 56,
+          "first_check_at": "2026-05-07 08:47",
+          "music": "original sound (no trending audio - mobile manual post)"
+        },
+        {
+          "title": "5 reasons we have pets",
+          "format": "v5 stitched 20s · 5 clips",
+          "scheduled_for": "2026-05-07 19:55",
+          "status": "scheduled",
+          "music": "Animal baby — 上野遥 (For You trending)"
+        }
+      ]
     }
   }
 }
