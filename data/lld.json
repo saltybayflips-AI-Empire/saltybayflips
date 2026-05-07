@@ -1742,7 +1742,7 @@
         "slot": "post_23_day12_am",
         "scheduled_for": "2026-05-02 09:00",
         "sched_date": "2026-05-02",
-        "posted": false,
+        "posted": true,
         "hook": "Walk-in closets that broke me",
         "caption_preview": "Walk-in closets that broke me\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryhomes #",
         "music": "rich girl aesthetic"
@@ -1751,7 +1751,7 @@
         "slot": "post_24_day12_pm",
         "scheduled_for": "2026-05-02 18:00",
         "sched_date": "2026-05-02",
-        "posted": false,
+        "posted": true,
         "hook": "Showroom garages > most people's houses",
         "caption_preview": "Showroom garages > most people's houses\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#lux",
         "music": "Drive Forever Sergio Valentino"
@@ -1760,7 +1760,7 @@
         "slot": "post_25_day13_am",
         "scheduled_for": "2026-05-03 09:00",
         "sched_date": "2026-05-03",
-        "posted": false,
+        "posted": true,
         "hook": "Speakeasy bars hidden in luxury homes",
         "caption_preview": "Speakeasy bars hidden in luxury homes\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxur",
         "music": "speakeasy aesthetic"
@@ -1769,7 +1769,7 @@
         "slot": "post_26_day13_pm",
         "scheduled_for": "2026-05-03 18:00",
         "sched_date": "2026-05-03",
-        "posted": false,
+        "posted": true,
         "hook": "Powder rooms doing the absolute most",
         "caption_preview": "Powder rooms doing the absolute most\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxury",
         "music": "maximalist aesthetic"
@@ -1778,7 +1778,7 @@
         "slot": "post_27_day14_am",
         "scheduled_for": "2026-05-04 09:00",
         "sched_date": "2026-05-04",
-        "posted": false,
+        "posted": true,
         "hook": "Mudrooms more luxe than my whole apartment",
         "caption_preview": "Mudrooms more luxe than my whole apartment\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#",
         "music": "modern farmhouse aesthetic"
@@ -1787,7 +1787,7 @@
         "slot": "post_28_day14_pm",
         "scheduled_for": "2026-05-04 18:00",
         "sched_date": "2026-05-04",
-        "posted": false,
+        "posted": true,
         "hook": "Home theaters that cost more than my degree",
         "caption_preview": "Home theaters that cost more than my degree\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n",
         "music": "Experience Ludovico Einaudi"
@@ -1796,7 +1796,7 @@
         "slot": "post_29_day15_am",
         "scheduled_for": "2026-05-05 09:00",
         "sched_date": "2026-05-05",
-        "posted": false,
+        "posted": true,
         "hook": "Bedrooms that cured my insomnia",
         "caption_preview": "Bedrooms that cured my insomnia\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxuryhomes",
         "music": "slow living aesthetic"
@@ -1805,7 +1805,7 @@
         "slot": "post_30_day15_pm",
         "scheduled_for": "2026-05-05 18:00",
         "sched_date": "2026-05-05",
-        "posted": false,
+        "posted": true,
         "hook": "Great rooms with main character energy",
         "caption_preview": "Great rooms with main character energy\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#luxu",
         "music": "main character energy"
@@ -1902,13 +1902,13 @@
       }
     ],
     "totals": {
-      "posted": 0,
-      "scheduled": 18,
+      "posted": 8,
+      "scheduled": 10,
       "ready_no_date": 0
     },
     "runway_days": 3,
     "next_unposted": "2026-05-07T09:00:00",
     "last_scheduled": "2026-05-10T18:00:00"
   },
-  "last_synced": "2026-05-07T06:09:35"
+  "last_synced": "2026-05-07T09:17:04"
 }

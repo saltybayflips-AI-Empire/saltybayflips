@@ -1,57 +1,63 @@
 {
-  "synced_at": "2026-05-06T09:11:00",
+  "synced_at": "2026-05-07T14:14:00",
   "accounts": {
     "fuzzy_frames_ai": {
       "display_name": "Fuzzy Frames AI",
       "handle": "@saltybayflipsfuzzy",
       "date_range": "Last 30 Days",
       "date_range_iso": "2026-04-06 to 2026-05-06",
-      "impressions": 169,
+      "impressions": 199,
       "engagements": 1,
       "outbound_clicks": 0,
       "saves": 0,
-      "total_audience": 64,
+      "total_audience": 79,
       "engaged_audience": 1,
-      "delta_vs_prior_check": "+42 impressions vs 2026-05-05 (was 127). +29 audience (was 35). Engagements/saves/outbound clicks all unchanged. Strong impression growth (+33%) but the funnel remains broken at the click step.",
-      "note": "Pins ARE going live and impressions trickling up faster, but 0 outbound clicks across 30d remains the funnel block. Phase 2 retrofit (Amazon idea-list URLs on live pins) not done yet for any Fuzzy pin — this is the single highest-leverage fix."
+      "monthly_views_public": 154,
+      "scheduled_pins_visible": 6,
+      "scheduled_distribution_days_out": [0, 1, 2, 3, 4, 11],
+      "scheduled_gap_note": "Visible queue jumps 4d -> 11d — 6-day gap in Fuzzy Pinterest schedule between days 5 and 10. Should fill with 5-6 fresh pins to avoid mid-cycle silence.",
+      "delta_vs_prior_check": "+30 impressions vs 2026-05-06 (was 169). +15 audience (was 64). Engagements/saves/outbound clicks all unchanged. Impression growth slowed from yesterday's +33% to today's +18% — still positive but normalizing. Funnel still broken at click step.",
+      "note": "Pins ARE going live and impressions still climbing. 0 outbound clicks across 30d remains the funnel block. Phase 2 retrofit (Amazon idea-list URLs on live Fuzzy pins) STILL not done for any Fuzzy pin — Fuzzy was the first niche to get its idea-list (5RB44WI33ISZ) but no live pin URL has been edited yet."
     },
     "luxe_living_daily": {
       "display_name": "Luxe Living Daily",
       "handle": "@saltybayflipsluxe",
       "date_range": "Last 30 Days",
-      "date_range_iso": "2026-04-05 to 2026-05-05",
-      "impressions": 91,
-      "engagements": 2,
-      "outbound_clicks": 0,
+      "date_range_iso": "2026-04-07 to 2026-05-07",
+      "impressions": 104,
+      "engagements": 3,
+      "outbound_clicks": 1,
       "saves": 1,
-      "total_audience": 60,
+      "total_audience": 84,
       "engaged_audience": 1,
-      "delta_vs_prior_check": "+35 impressions vs 2026-05-05 (was 56). +24 audience (was 36). Engagements/saves unchanged at 2/1. Strong impression growth (+62%) — LLD is now the second-best-impression-trending account behind Fuzzy. Note: 2 LLD pins were Phase 2 retrofitted yesterday to point at Amazon idea-list. Too soon to attribute the impression delta to that change but worth watching whether outbound clicks start moving in 48-72h.",
-      "note": "1 save still the only positive engagement. Still 0 outbound clicks despite scheduling activity. Pin URL retrofit pilot completed 2026-05-06 morning on 2 pins (Grand Foyer, Victorian Orangery)."
+      "monthly_views_public": 92,
+      "scheduled_pins_visible": 11,
+      "delta_vs_prior_check": "MAJOR: First-ever outbound click (0 -> 1) and engagements jumped (2 -> 3). Impressions +13 (91 -> 104, +14%). Audience +24 (60 -> 84, +40%). The 2 Phase 2 LLD pins flipped to Amazon idea-list URLs on 2026-05-06 (Grand Foyer + Victorian Orangery, Group A) appear to have generated the first click within ~24-48h — exactly the validation the A/B test was designed to surface.",
+      "note": "FIRST OUTBOUND CLICK in LLD account history. Coincides closely with Phase 2 pin URL retrofit pilot. Single click is not statistical proof yet — but it's the first click signal the LLD funnel has ever produced, and timing matches the Amazon-direct A/B variant going live. Decision deadline 2026-05-20: if Group A continues to outclick Group B (which still all linktree-redirected), we accelerate the LLD-wide retrofit. Action: edit the 2 Group A pins to add ascsubtag=lld_a_amzdirect so the click attribution is unambiguous."
     },
     "aesthetic_spaces_co": {
       "display_name": "Aesthetic Spaces Co",
       "handle": "@saltybayflipspin",
       "date_range": "Last 30 Days",
-      "date_range_iso": "2026-04-05 to 2026-05-05",
-      "impressions": 21,
-      "engagements": 1,
-      "outbound_clicks": 0,
+      "date_range_iso": "2026-04-07 to 2026-05-07",
+      "impressions": 27,
+      "engagements": 3,
+      "outbound_clicks": 1,
       "saves": 0,
-      "total_audience": 14,
-      "engaged_audience": 0,
-      "delta_vs_prior_check": "+9 impressions vs 2026-05-05 (was 12, +75%). FIRST engagement registered on the entire ASC account history (engagements 0 -> 1). Audience also grew (8 -> 14, +75%). ASC is clearly the smallest channel but it's no longer flat-lined — the 9 ASC pins scheduled for 5/3-5/11 appear to be working.",
-      "note": "ASC bio URL still NOT pointing at asc.html (open todo #10). Even with the first engagement, traffic still leaks at the bio-link step. Most actionable fix: change ASC bio URL — user-only since it's an account-settings change."
+      "total_audience": 20,
+      "engaged_audience": 1,
+      "delta_vs_prior_check": "MAJOR: ASC also got its FIRST OUTBOUND CLICK ever (0 -> 1). Engagements jumped (1 -> 3). Engaged audience went 0 -> 1. Impressions +6 (21 -> 27, +29%). Audience +6 (14 -> 20, +43%). Two days ago ASC was completely flat-lined; today it has its first click. ASC tracker had `amazon_idea_list: 21BQSKV6S3ZTH` set BEFORE Fuzzy or LLD per yesterday's note ('44/44 ASC pins already pointed at Amazon. No retrofit needed there.') — meaning the click could be attributed to that Amazon-direct routing that's been live longest.",
+      "note": "ASC bio URL still NOT pointing at asc.html (open todo #10) — fixing that should unlock more click volume since the bio is currently still routing to whatever default. Even so: first ASC engagement YESTERDAY, first ASC click TODAY. The smallest channel is now contributing to the funnel."
     }
   },
   "totals": {
-    "impressions": 281,
-    "engagements": 4,
+    "impressions": 330,
+    "engagements": 7,
     "saves": 1,
-    "outbound_clicks": 0,
-    "total_audience": 138,
-    "engaged_audience": 2,
-    "note": "Full portfolio totals across all 3 accounts. 281 impressions in 30 days (vs 195 yesterday, +44%). Still 0 outbound clicks portfolio-wide despite the impression growth. ASC engagements went 0 -> 1 (first ever). LLD impressions doubled. Funnel diagnosis unchanged: traffic is growing but descriptions don't drive clicks. Highest-leverage next move is finishing the Phase 2 Pinterest live pin URL retrofit — only 2 of 114 done."
+    "outbound_clicks": 2,
+    "total_audience": 183,
+    "engaged_audience": 3,
+    "note": "Portfolio total: 330 impressions (+49 vs 2026-05-06, +17%), 7 engagements (+3), saves flat at 1, **2 OUTBOUND CLICKS (FIRST EVER for the portfolio — 0 yesterday, 2 today)**. The Phase 1 Amazon retrofit (114 pins now pointing at idea-lists at the tracker level) + Phase 2 pilot (2 LLD live pins flipped) appear to be producing the first click signal within 24-48h. This is the leading indicator we've been waiting for since the pivot. Both LLD and ASC contributed 1 click each. Fuzzy still 0 — and Fuzzy had the LARGEST impression base, suggesting Fuzzy's pin destinations need retrofit work next."
   },
   "report_url": "https://analytics.pinterest.com/overview/"
 }

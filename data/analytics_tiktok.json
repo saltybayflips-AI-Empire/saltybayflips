@@ -1,10 +1,11 @@
 {
-  "synced_at": "2026-05-07T08:47:52",
+  "synced_at": "2026-05-07T14:11:00",
   "accounts": {
     "laurasunkist": {
       "handle": "@laurasunkist",
       "display_name": "Luxe Living Daily (rebranded from purchased account)",
       "followers": 16300,
+      "likes_total": 108600,
       "url": "https://www.tiktok.com/@laurasunkist",
       "last_7d": {
         "video_views": 994,
@@ -21,8 +22,10 @@
         "shares": 1,
         "shares_delta": 1,
         "est_rewards_usd": 0,
-        "profile_view_ctr_pct": 0.4
+        "profile_view_ctr_pct": 0.4,
+        "data_freshness_note": "Last_7d numbers are from this morning's 08:47 scrape (still on @laurasunkist session). Studio dashboard at 14:11 today is on @fuzzy.frames.ai — switching back requires user-only logout/login. Public profile verified: 16.3K followers / 108.6K likes UNCHANGED, posts firing (most-recent 6 view counts visible: 8, 103, 111, 115, 91, 92)."
       },
+      "recent_visible_view_counts": [8, 103, 111, 115, 91, 92],
       "traffic_sources_pct": {
         "For You": 91.1,
         "Following": 4.2,
@@ -37,29 +40,41 @@
         "Luxe": 6.9,
         "bar in living room ideas": 3.4
       },
-      "delta_vs_prior_check": "Continued positive trend vs 2026-05-05 09:09 scrape. Views: 910 -> 994 (+84 in 24h, +9.2%). Likes: 5 -> 6 (+1). Profile views, shares unchanged. For-You distribution strengthened further: 90.1% -> 91.1%. Search queries reshaped: 'walkin closet' dropped, 'rich house aesthetic' / 'HomeLuxury' / 'bar in living room ideas' newly populated — algorithm is doubling down on the luxury-home reposition.",
-      "note": "Profile-view CTR remains anemic (4 profile views / 994 video views = 0.40%, slightly worse than yesterday's 0.44%). Bio link clicks still effectively zero. Algorithm pushing impressions hard but viewers aren't profile-tapping — the bio CTA edits from 5/4 are not visibly moving the needle yet. May need stronger 'link in bio' verbal/visual hook in actual post content rather than caption-only."
+      "delta_vs_prior_check": "Followers / total likes flat vs 08:47 scrape (16.3K / 108.6K). Recent visible posts in 91-115 view range — consistent with the ~100/post baseline since the rebrand. Most recent post showing only 8 views = just-published, will accrue. Algorithm continues luxury-home distribution per traffic source / search query data captured this morning.",
+      "note": "Profile-view CTR remains anemic (~0.40%). Bio link clicks effectively zero. Algorithm pushing impressions but viewers aren't profile-tapping — caption-only CTA isn't moving the needle. Need stronger 'link in bio' verbal/visual hook in actual post content."
     },
     "fuzzy_frames_ai": {
       "handle": "@fuzzy.frames.ai",
       "display_name": "Fuzzy Frames AI",
       "status": "posting_v5_format",
-      "note": "Started v5 stitched format 2026-05-07 (Wan I2V multi-clip 16-20s). Bio link still blocked pending business verification but content cadence active. V1 manual mobile post 8:30 AM, V2 scheduled web 7:55 PM with trending audio.",
+      "note": "Studio analytics (Last 7d) currently shows 0 across video views/profile views/likes/shares — likely because the v5 bunny post (96 views as of 14:11) doesn't have impression telemetry attributed yet OR the dashboard window starts BEFORE the post. Will update when more posts accumulate.",
       "url": "https://www.tiktok.com/@fuzzy.frames.ai",
       "posting_active": true,
       "followers": 0,
+      "likes_total": 0,
+      "studio_last_7d": {
+        "video_views": 0,
+        "profile_views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "est_rewards_usd": 0,
+        "data_range_iso": "2026-04-29 to 2026-05-05",
+        "note": "Dashboard window predates the bunny post (5/7 morning) so 0 is expected. Recheck tomorrow once 7d window includes 5/6-5/7."
+      },
       "recent_posts": [
         {
-          "title": "pets that soften your whole day",
+          "title": "pets that soften your whole day (bunny daisies)",
           "format": "v5 stitched 16s · 4 clips",
           "posted_at": "2026-05-07 08:30",
           "status": "live",
-          "first_check_views": 56,
-          "first_check_at": "2026-05-07 08:47",
+          "current_views": 96,
+          "current_views_check_at": "2026-05-07 14:11",
+          "delta_since_first_check": "+40 (56 -> 96 in ~5h45m, +71% growth)",
           "music": "original sound (no trending audio - mobile manual post)"
         },
         {
-          "title": "5 reasons we have pets",
+          "title": "5 reasons we have pets (dachshund tutu)",
           "format": "v5 stitched 20s · 5 clips",
           "scheduled_for": "2026-05-07 19:55",
           "status": "scheduled",

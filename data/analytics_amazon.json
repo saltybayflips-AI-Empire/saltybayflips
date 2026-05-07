@@ -1,7 +1,7 @@
 {
-  "synced_at": "2026-05-06T09:10:00",
+  "synced_at": "2026-05-07T14:08:00",
   "store_id": "saltybayfli0c-20",
-  "last_updated": "May 05 2026",
+  "last_updated": "May 06 2026",
   "this_month": {
     "earnings_usd": 0.0,
     "ordered_items": 0,
@@ -14,13 +14,13 @@
     "commissions_usd": 0.0,
     "bounties_usd": 0.0,
     "has_data": true,
-    "note": "Earnings Overview chart bottom-row totals show 7 clicks across 30d. UNCHANGED vs 2026-05-05 check-in. Phase 2 (live Pinterest pin URL edits) only 2/114 pins retrofitted as of yesterday — Pinterest rate-limit hit faster than expected (2 saves before Edit Pin item disappeared). Most live pins still point at GitHub Pages, not the Amazon idea-lists."
+    "note": "30d clicks UNCHANGED at 7 vs both 2026-05-05 and 2026-05-06 check-ins. Third consecutive day flat. Phase 2 retrofit (live Pinterest pin URL edits to point at Amazon idea-lists) only 2/114 done; rate-limited to 2-3 edits/session. Image-rich Editor's Picks linktree pages live as of 2026-05-06 with ascsubtag attribution on all 153 Amazon links — too soon to read attribution but the LLD A/B test (lld_a_amzdirect vs lld_b_linktree) decision deadline is 2026-05-20."
   },
   "lifetime_total_clicks": 7,
   "qualifying_sales": 0,
-  "deadline_days_remaining": 158,
+  "deadline_days_remaining": 157,
   "report_url": "https://affiliate-program.amazon.com/home/reports/global",
-  "delta_vs_prior_check": "FLAT - 0 click delta vs 2026-05-05. No new clicks in the 24h. The 30d window now drops the earliest day so the spike from mid-April is closer to falling out — once it does, the lifetime click counter will still show 7 but Last 30d clicks will read 0 and the 'has_data' flag should flip.",
+  "delta_vs_prior_check": "FLAT - 0 click delta vs 2026-05-06. No new clicks in 24h. The 30d window keeps rolling forward; the mid-April spike has not yet fallen out so 30d still reads 7. Once it falls out the 30d count drops while lifetime stays at 7 — that's the signal we're back to baseline 0/day until pin retrofits or new content move the needle.",
   "link_health": {
     "lld_html_links": 58,
     "lld_correctly_tagged": 58,
@@ -31,6 +31,21 @@
     "total_links": 134,
     "total_correctly_tagged": 134,
     "expected_tag": "saltybayfli0c-20",
-    "audit_pass": true
+    "audit_pass": true,
+    "ascsubtag_links": 153,
+    "ascsubtag_breakdown": {
+      "lld_b_linktree": 64,
+      "asc_linktree": 52,
+      "fuzzy_linktree": 37
+    }
+  },
+  "ab_test_status": {
+    "name": "LLD pin destination A/B (Amazon direct vs linktree)",
+    "started": "2026-05-06",
+    "decision_due": "2026-05-20",
+    "group_a_pins_flipped": 2,
+    "group_a_target": 22,
+    "group_b_pins_pending_subtag": 22,
+    "note": "2 of 22 Group A LLD pins live on Amazon URL. Group A pins still need ascsubtag=lld_a_amzdirect appended; current URL is bare Amazon idea-list."
   }
 }
