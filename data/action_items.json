@@ -1,16 +1,16 @@
 {
-  "synced_at": "2026-05-07T09:36:54",
-  "item_count": 9,
+  "synced_at": "2026-05-07T10:26:35",
+  "item_count": 10,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
-      "title": "Funnel retrofit IN PROGRESS — 5/20 Fuzzy pins flipped to direct Amazon",
-      "detail": "Diagnosed 2026-05-07 morning: 199 Fuzzy impressions / 0 outbound clicks because live Pinterest pins were silently still pointing at fuzzy.html linktree (cavapoo bug pattern), even though tracker said Amazon. Phase 1 retrofit done 9:30 AM 5/7: 5 Fuzzy pins manually flipped via Chrome MCP edit dialog and verified live Visit-site link points at amazon.com/hz/wishlist/ls/5RB44WI33ISZ. Remaining 15 Fuzzy pins to retrofit at 5/session pace per CLAUDE.md rate limit. Watch fuzzy_frames_ai outbound_clicks in next analytics scrape (24-48h). LLD already had 7 clicks per actual Amazon dashboard so the original '0 clicks' claim was stale.",
+      "title": "Funnel retrofit IN PROGRESS — 8/48 broken pins flipped (5 Fuzzy + 3 LLD)",
+      "detail": "Pin URL retrofit (linktree -> Amazon idea-list direct) progress: Fuzzy 5/20 done, LLD 3/30 done. ASC was already clean (no work needed). Hit Pinterest 8-saves session limit on 2026-05-07; resume tomorrow at 5/session. Watch fuzzy_frames_ai outbound_clicks in next analytics scrape (24-48h).",
       "priority": "med",
       "estimated_min": 60,
       "category": "funnel_fix",
-      "updated_at": "2026-05-07T09:35:56",
-      "progress": "5 of 20 Fuzzy pins retrofitted"
+      "updated_at": "2026-05-07T10:26:35",
+      "progress": "8 of ~48 broken pins flipped"
     },
     {
       "id": "studio_edit_lld_23_27",
@@ -33,11 +33,12 @@
     },
     {
       "id": "qa_pending_aesthetic_spaces_co",
-      "title": "QA 8 pending ASC images",
+      "title": "DONE: 8 ASC images user-approved + promoted to ready_to_post",
       "detail": "8 renders sitting in aesthetic_spaces_co/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "high",
+      "priority": "done",
       "estimated_min": 8,
-      "category": "qa_review"
+      "category": "qa_review",
+      "updated_at": "2026-05-07T10:26:35"
     },
     {
       "id": "gap_aesthetic_spaces_co",
@@ -49,19 +50,21 @@
     },
     {
       "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 1 scheduled slot(s) past their fire time",
+      "title": "DONE: ASC #34 (Bistro Dining) verified live, flipped to posted",
       "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-06 12:00, 21.3h ago).",
-      "priority": "high",
+      "priority": "done",
       "estimated_min": 2,
-      "category": "missed_slot"
+      "category": "missed_slot",
+      "updated_at": "2026-05-07T10:26:35"
     },
     {
       "id": "qa_pending_luxe_living_daily",
-      "title": "QA 10 pending LLD images",
+      "title": "DONE: 9 of 10 LLD images approved (1 rejected: equestrian_stable)",
       "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "high",
+      "priority": "done",
       "estimated_min": 10,
-      "category": "qa_review"
+      "category": "qa_review",
+      "updated_at": "2026-05-07T10:26:35"
     },
     {
       "id": "gap_luxe_living_daily",
@@ -78,6 +81,15 @@
       "priority": "med",
       "estimated_min": 45,
       "category": "gap_warning"
+    },
+    {
+      "id": "lld_tiktok_3d_runway_2026_05_07",
+      "title": "LLD TikTok 3d runway alert — content queued, needs post-stitch upload by 5/10",
+      "detail": "LLD @laurasunkist runway hits zero on 5/10. 5 luxe-home stills queued via queue_lld_tiktok_native_pipeline.py (japandi spa, organic bedroom, grand foyer, butler's pantry, Santorini villa). Will require user QA on 9:16 stills, then Wan I2V, then stitch into LLD V1 native, then drag-drop schedule for Mon 5/11 9 AM. See LLD_TIKTOK_NATIVE_PLAN_2026_05_07.md for full spec.",
+      "priority": "high",
+      "category": "tiktok_cadence",
+      "created_at": "2026-05-07T10:26:35",
+      "est_minutes": 30
     }
   ],
   "updated_at": "2026-05-07T09:35:56"
