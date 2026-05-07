@@ -1,12 +1,12 @@
 {
   "synced_at": "2026-05-07T10:39:09",
   "accounts": {
-    "laurasunkist": {
-      "handle": "@laurasunkist",
+    "luxe.living.daily": {
+      "handle": "@luxe.living.daily",
       "display_name": "Luxe Living Daily (rebranded from purchased account)",
       "followers": 16300,
       "likes_total": 108600,
-      "url": "https://www.tiktok.com/@laurasunkist",
+      "url": "https://www.tiktok.com/@luxe.living.daily",
       "last_7d": {
         "video_views": 994,
         "video_views_delta": 909,
@@ -23,7 +23,7 @@
         "shares_delta": 1,
         "est_rewards_usd": 0,
         "profile_view_ctr_pct": 0.4,
-        "data_freshness_note": "Last_7d numbers are from this morning's 08:47 scrape (still on @laurasunkist session). Studio dashboard at 14:11 today is on @fuzzy.frames.ai — switching back requires user-only logout/login. Public profile verified: 16.3K followers / 108.6K likes UNCHANGED, posts firing (most-recent 6 view counts visible: 8, 103, 111, 115, 91, 92)."
+        "data_freshness_note": "Last_7d numbers are from this morning's 08:47 scrape (still on @luxe.living.daily session). Studio dashboard at 14:11 today is on @fuzzy.frames.ai — switching back requires user-only logout/login. Public profile verified: 16.3K followers / 108.6K likes UNCHANGED, posts firing (most-recent 6 view counts visible: 8, 103, 111, 115, 91, 92)."
       },
       "recent_visible_view_counts": [
         8,
