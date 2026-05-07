@@ -1919,16 +1919,26 @@
         "hook": "Bedrooms under the stars: literal version",
         "caption_preview": "Bedrooms under the stars: literal version\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#l",
         "music": "Hans Zimmer Time"
+      },
+      {
+        "slot": "v1_native_2026_05_11",
+        "scheduled_for": "2026-05-11 11:45",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "scheduled_in_tiktok_studio": true,
+        "hook": "Rooms that broke my apartment forever",
+        "format": "v6_native_9_16_text_fitted_LLD_first",
+        "music": "Dreamy — Elijah Lee"
       }
     ],
     "totals": {
       "posted": 8,
-      "scheduled": 10,
+      "scheduled": 11,
       "ready_no_date": 0
     },
-    "runway_days": 3,
+    "runway_days": 4,
     "next_unposted": "2026-05-07T09:00:00",
-    "last_scheduled": "2026-05-10T18:00:00"
+    "last_scheduled": "2026-05-11T11:45:00"
   },
-  "last_synced": "2026-05-07T10:17:34"
+  "last_synced": "2026-05-07T11:39:31"
 }
