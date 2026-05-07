@@ -547,9 +547,11 @@ function renderPerformance(amazon, tiktok, pinterest) {
       </div>`);
   }
 
-  // TikTok card (shows laurasunkist - the main account with reach)
-  if (tiktok && tiktok.accounts && tiktok.accounts.laurasunkist) {
-    const t = tiktok.accounts.laurasunkist;
+  // TikTok card (shows luxe.living.daily — main account with reach;
+  // key renamed from laurasunkist 2026-05-07; supports both during transition)
+  const lldAccount = tiktok?.accounts?.['luxe.living.daily'] || tiktok?.accounts?.laurasunkist;
+  if (tiktok && tiktok.accounts && lldAccount) {
+    const t = lldAccount;
     const w7 = t.last_7d || {};
     const w28 = t.last_28d || {};
     const delta = w7.video_views_delta;
@@ -630,7 +632,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
   // Funnel: TikTok 28d views &rarr; Pinterest impressions &rarr; outbound clicks &rarr; Amazon 30d clicks &rarr; orders &rarr; earnings
   if (amazon && tiktok && pinterest) {
     document.getElementById('funnel').style.display = 'block';
-    const ttViews = tiktok.accounts?.laurasunkist?.last_28d?.video_views || 0;
+    const ttViews = (tiktok.accounts?.['luxe.living.daily'] || tiktok.accounts?.laurasunkist)?.last_28d?.video_views || 0;
     const pinImps = pinterest.totals?.impressions || 0;
     const pinClicks = pinterest.totals?.outbound_clicks || 0;
     const amzClicks = amazon.last_30d?.clicks || 0;
