@@ -1,26 +1,23 @@
 {
-  "synced_at": "2026-05-07T10:26:35",
-  "item_count": 10,
+  "synced_at": "2026-05-08T09:17:48.908996",
+  "item_count": 9,
   "items": [
     {
       "id": "diagnose_funnel_2026_05_04",
-      "title": "Funnel retrofit IN PROGRESS — 8/48 broken pins flipped (5 Fuzzy + 3 LLD)",
-      "detail": "Pin URL retrofit (linktree -> Amazon idea-list direct) progress: Fuzzy 5/20 done, LLD 3/30 done. ASC was already clean (no work needed). Hit Pinterest 8-saves session limit on 2026-05-07; resume tomorrow at 5/session. Watch fuzzy_frames_ai outbound_clicks in next analytics scrape (24-48h).",
-      "priority": "med",
+      "title": "Funnel diagnosis: 0 Amazon clicks (30d) — TRAFFIC problem, not link problem",
+      "detail": "All 134 Amazon links across lld.html (58), fuzzy.html (31), asc.html (45) verified correctly tagged with saltybayfli0c-20. So 0 clicks is upstream: Pinterest impressions are real (Fuzzy 112/30d) but 0 outbound clicks; TikTok Laura had 435 video views/7d but only 2 profile views (0.46% CTR). Levers: (a) finish the LLD posts 23-27 Studio caption-CTA edit, (b) add stronger CTAs to Pinterest pin descriptions on existing pins, (c) increase pin volume per niche to widen the top-of-funnel.",
+      "priority": "high",
       "estimated_min": 60,
-      "category": "funnel_fix",
-      "updated_at": "2026-05-07T10:26:35",
-      "progress": "8 of ~48 broken pins flipped"
+      "category": "funnel_fix"
     },
     {
       "id": "studio_edit_lld_23_27",
-      "title": "DONE: LLD posts 23-27 already have bio CTAs",
-      "detail": "Verified 2026-05-07: posts 23-27 captions in LLD tracker already include '→ shop the look in bio 🛋️' CTA line. Action item was stale. No edit needed.",
-      "priority": "done",
+      "title": "Edit captions in TikTok Studio (LLD posts 23-27)",
+      "detail": "5 live-scheduled @laurasunkist posts have OLD captions without the bio CTA we just added. Open Studio scheduler → click each post → paste new caption from local caption.txt. ~25 min.",
+      "priority": "high",
       "estimated_min": 25,
       "category": "manual_edit",
-      "url": "https://www.tiktok.com/tiktokstudio/content?type=video",
-      "updated_at": "2026-05-07T09:35:56"
+      "url": "https://www.tiktok.com/tiktokstudio/content?type=video"
     },
     {
       "id": "schedule_scottish_fold",
@@ -32,65 +29,52 @@
       "url": "https://www.pinterest.com/pin-creation-tool/"
     },
     {
-      "id": "qa_pending_aesthetic_spaces_co",
-      "title": "DONE: 8 ASC images user-approved + promoted to ready_to_post",
-      "detail": "8 renders sitting in aesthetic_spaces_co/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "done",
-      "estimated_min": 8,
-      "category": "qa_review",
-      "updated_at": "2026-05-07T10:26:35"
+      "id": "gap_aesthetic_spaces_co",
+      "title": "ASC has 6 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, … (+1 more)",
+      "priority": "med",
+      "estimated_min": 30,
+      "category": "gap_warning"
     },
     {
-      "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 5 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21",
+      "id": "overdue_aesthetic_spaces_co",
+      "title": "ASC: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 21.3h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
+    },
+    {
+      "id": "gap_luxe_living_daily",
+      "title": "LLD has 5 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22",
       "priority": "med",
       "estimated_min": 25,
       "category": "gap_warning"
     },
     {
-      "id": "overdue_aesthetic_spaces_co",
-      "title": "DONE: ASC #34 (Bistro Dining) verified live, flipped to posted",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-06 12:00, 21.3h ago).",
-      "priority": "done",
+      "id": "overdue_luxe_living_daily",
+      "title": "LLD: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 22.3h ago).",
+      "priority": "high",
       "estimated_min": 2,
-      "category": "missed_slot",
-      "updated_at": "2026-05-07T10:26:35"
-    },
-    {
-      "id": "qa_pending_luxe_living_daily",
-      "title": "DONE: 9 of 10 LLD images approved (1 rejected: equestrian_stable)",
-      "detail": "10 renders sitting in luxe_living_daily/qa_pending/ awaiting your pass/reject verdict.",
-      "priority": "done",
-      "estimated_min": 10,
-      "category": "qa_review",
-      "updated_at": "2026-05-07T10:26:35"
-    },
-    {
-      "id": "gap_luxe_living_daily",
-      "title": "LLD has 4 unscheduled days in next 14d",
-      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21",
-      "priority": "med",
-      "estimated_min": 20,
-      "category": "gap_warning"
+      "category": "missed_slot"
     },
     {
       "id": "gap_fuzzy_frames_ai",
-      "title": "Fuzzy has 9 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+4 more)",
+      "title": "Fuzzy has 10 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+5 more)",
       "priority": "med",
-      "estimated_min": 45,
+      "estimated_min": 50,
       "category": "gap_warning"
     },
     {
-      "id": "lld_tiktok_3d_runway_2026_05_07",
-      "title": "LLD TikTok 3d runway alert — content queued, needs post-stitch upload by 5/10",
-      "detail": "LLD @laurasunkist runway hits zero on 5/10. 5 luxe-home stills queued via queue_lld_tiktok_native_pipeline.py (japandi spa, organic bedroom, grand foyer, butler's pantry, Santorini villa). Will require user QA on 9:16 stills, then Wan I2V, then stitch into LLD V1 native, then drag-drop schedule for Mon 5/11 9 AM. See LLD_TIKTOK_NATIVE_PLAN_2026_05_07.md for full spec.",
+      "id": "overdue_fuzzy_frames_ai",
+      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 23.3h ago).",
       "priority": "high",
-      "category": "tiktok_cadence",
-      "created_at": "2026-05-07T10:26:35",
-      "est_minutes": 30
+      "estimated_min": 2,
+      "category": "missed_slot"
     }
-  ],
-  "updated_at": "2026-05-07T09:35:56"
+  ]
 }

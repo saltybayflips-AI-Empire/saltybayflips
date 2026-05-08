@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-08T08:46:18",
+  "synced_at": "2026-05-08T14:07:30",
   "this_month": {
     "clicks": 3,
     "ordered_items": 0,
@@ -8,14 +8,15 @@
     "conversion_pct": 0.0
   },
   "last_30d": {
-    "clicks": 7,
+    "clicks": 10,
     "commissions_usd": 0.0,
     "bounties_usd": 0.0,
     "has_data": true,
     "date_range": "Apr 08 2026 - May 07 2026",
-    "last_updated_per_amazon": "May 07 2026 00:00",
-    "note": "30d clicks STILL 7 (vs 7 yesterday — flat). All 7 from a single mid-April spike (~Apr 16-17 per chart). 0 visible clicks in May despite Pinterest 2 outbound clicks (LLD + ASC). LIKELY explanation: those 2 Pinterest outbound went to LINKTREE pages (fuzzy.html / lld.html / asc.html) NOT directly to Amazon (those pins were PRE-retrofit). Users hit linktree but didn't click through Amazon shop cards. TODAY's retrofits flipped 8 pins to direct-Amazon URLs — those should register 1:1 going forward. Watch for May click spike in next 24-48h scrape.",
-    "clicks_delta_24h": 0
+    "last_updated_per_amazon": "May 07 2026",
+    "note": "30d clicks 10 (vs 7 morning sync — +3 in ~5h, FIRST clicks-delta movement after yesterday's 8 Pinterest pin retrofits flipped to direct Amazon idea-list URLs (5 Fuzzy + 3 LLD). Likely 2-3 of the new clicks are post-retrofit conversions. This-month clicks still 3 (May portion of the 30d window) — small but the slope is finally up after weeks of flat 7. 0 ordered items, 0 commissions still. Watch May click count over next 24h to confirm the retrofit lift is real not a one-off.",
+    "clicks_delta_24h_morning": 0,
+    "clicks_delta_since_morning": 3
   },
   "qualifying_sales": 0,
   "store_id": "saltybayfli0c-20",

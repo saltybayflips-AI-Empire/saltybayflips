@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-07T10:39:09",
+  "synced_at": "2026-05-08T14:09:00",
   "accounts": {
     "luxe.living.daily": {
       "handle": "@luxe.living.daily",
@@ -23,16 +23,15 @@
         "shares_delta": 1,
         "est_rewards_usd": 0,
         "profile_view_ctr_pct": 0.4,
-        "data_freshness_note": "Last_7d numbers are from this morning's 08:47 scrape (still on @luxe.living.daily session). Studio dashboard at 14:11 today is on @fuzzy.frames.ai — switching back requires user-only logout/login. Public profile verified: 16.3K followers / 108.6K likes UNCHANGED, posts firing (most-recent 6 view counts visible: 8, 103, 111, 115, 91, 92)."
+        "data_freshness_note": "Last_7d numbers held at 2026-05-07 morning scrape values (Studio session is on @fuzzy.frames.ai, switching back requires user-only logout/login). Public profile verified TODAY 14:09: 16.3K followers / 108.6K likes UNCHANGED. Video grid temporarily not rendering on public page (TikTok intermittent grid load) but profile metadata loaded clean."
       },
-      "recent_visible_view_counts": [
-        8,
-        103,
-        111,
-        115,
-        91,
-        92
-      ],
+      "public_profile_check_2026_05_08": {
+        "checked_at": "2026-05-08T14:09:30",
+        "followers": "16.3K",
+        "likes": "108.6K",
+        "video_grid_loaded": false,
+        "note": "Followers + likes unchanged vs yesterday — algorithm momentum holding flat. Video grid didn't render today (TikTok intermittent issue, not a profile problem)."
+      },
       "traffic_sources_pct": {
         "For You": 91.1,
         "Following": 4.2,
@@ -47,49 +46,43 @@
         "Luxe": 6.9,
         "bar in living room ideas": 3.4
       },
-      "delta_vs_prior_check": "Followers / total likes flat vs 08:47 scrape (16.3K / 108.6K). Recent visible posts in 91-115 view range — consistent with the ~100/post baseline since the rebrand. Most recent post showing only 8 views = just-published, will accrue. Algorithm continues luxury-home distribution per traffic source / search query data captured this morning.",
-      "note": "Profile-view CTR remains anemic (~0.40%). Bio link clicks effectively zero. Algorithm pushing impressions but viewers aren't profile-tapping — caption-only CTA isn't moving the needle. Need stronger 'link in bio' verbal/visual hook in actual post content."
+      "delta_vs_prior_check": "Followers / total likes flat vs 2026-05-07 (16.3K / 108.6K). Today's LLD V1 native 9:16 'Rooms that broke my apartment forever' is scheduled Mon 5/11 11:45 AM — no LLD post fired today (the 4 LLD posts in this morning's cadence reference Studio scheduler, not local tracker — verified yesterday).",
+      "note": "Profile-view CTR remains anemic (~0.40%). Bio link clicks effectively zero. Algorithm pushing impressions but viewers aren't profile-tapping."
     },
     "fuzzy_frames_ai": {
       "handle": "@fuzzy.frames.ai",
       "display_name": "Fuzzy Frames AI",
-      "status": "posting_v5_format",
-      "note": "Started v5 stitched format 2026-05-07 (Wan I2V multi-clip 16-20s). BIO LINK NOW LIVE 2026-05-07 (Business Verification cleared, user added fuzzy.html linktree via mobile app). V1 manual mobile post 8:30 AM, V2 scheduled web 7:55 PM with trending audio, V3 scheduled Fri 10:15 AM.",
+      "status": "posting_active",
       "url": "https://www.tiktok.com/@fuzzy.frames.ai",
       "posting_active": true,
-      "followers": 0,
-      "likes_total": 0,
-      "studio_last_7d": {
+      "studio_dashboard_2026_05_08": {
+        "session_active": true,
+        "active_account": "fuzzy.frames.ai",
+        "date_range": "Last 7 days",
         "video_views": 0,
         "profile_views": 0,
         "likes": 0,
-        "comments": 0,
+        "comments": "--",
         "shares": 0,
         "est_rewards_usd": 0,
-        "data_range_iso": "2026-04-29 to 2026-05-05",
-        "note": "Dashboard window predates the bunny post (5/7 morning) so 0 is expected. Recheck tomorrow once 7d window includes 5/6-5/7."
+        "note": "Studio dashboard window predates the V1 bunny post (still showing 4/29-5/5). Should populate once 7d window includes 5/7-5/8."
       },
-      "recent_posts": [
-        {
-          "title": "pets that soften your whole day",
-          "format": "v5 stitched 16s · 4 clips",
-          "posted_at": "2026-05-07 08:30",
-          "status": "live",
-          "first_check_views": 56,
-          "first_check_at": "2026-05-07 10:18",
-          "music": "original sound (no trending audio - mobile manual post)"
-        },
-        {
-          "title": "5 reasons we have pets",
-          "format": "v5 stitched 20s · 5 clips",
-          "scheduled_for": "2026-05-07 19:55",
-          "status": "scheduled",
-          "music": "Animal baby — 上野遥 (For You trending)"
-        }
-      ],
+      "public_profile_check_2026_05_08": {
+        "checked_at": "2026-05-08T14:08:00",
+        "followers": "0",
+        "likes": "2",
+        "bio": "Cute pets that don't exist (yet) AI-made art · shop pet picks",
+        "bio_link": "saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
+        "video_grid_loaded": false,
+        "note": "TikTok public profile showed 'Something went wrong / Refresh' on the video grid attempt 1; reload didn't fix. Profile metadata loaded (bio + linktree confirmed live). Likes total: 2 (V1 has been liked at least 2x). V2 (Animal baby) was scheduled for last night 7:55 PM — verify firing on next dashboard refresh once Studio analytics window includes 5/7."
+      },
       "bio_link": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
       "business_verification_status": "approved",
-      "bio_link_verified_at": "2026-05-07T10:39:09"
+      "bio_link_verified_at": "2026-05-08T14:08:00"
     }
-  }
+  },
+  "afternoon_check_anomalies": [
+    "TikTok public profile video grid did not render for either account on first navigation (likely TikTok rate-limit on rapid profile loads from same browser). Profile-level metadata (followers/likes/bio) loaded fine.",
+    "Studio dashboard is logged in as @fuzzy.frames.ai with 7d window predating today's content — counts will be 0 until window rolls forward."
+  ]
 }

@@ -1717,10 +1717,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 11,
-    "next_scheduled": "2026-05-07T10:00:00",
+    "runway_days": 10,
+    "next_scheduled": "2026-05-08T10:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
-    "count": 6
+    "count": 5
   },
   "tiktok": {
     "enabled": true,
@@ -1940,67 +1940,16 @@
         "hook": "Tiny pet details that make me melt",
         "caption_preview": "Tiny pet details that make me melt\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
         "music": "soft heartstring cute trending"
-      },
-      {
-        "slot": "v5_001_2026_05_07_am",
-        "scheduled_for": "2026-05-07 08:30",
-        "sched_date": "2026-05-07",
-        "posted": true,
-        "post_date": "2026-05-07",
-        "hook": "pets that soften your whole day",
-        "format": "v5_stitched_16s_4clips_letterbox",
-        "music": "Original sound",
-        "first_check_views": 101
-      },
-      {
-        "slot": "v5_002_2026_05_07_pm",
-        "scheduled_for": "2026-05-07 19:55",
-        "sched_date": "2026-05-07",
-        "posted": false,
-        "scheduled_in_tiktok_studio": true,
-        "hook": "5 reasons we have pets",
-        "format": "v5_stitched_20s_5clips_letterbox",
-        "music": "Animal baby — 上野遥"
-      },
-      {
-        "slot": "v5_003_2026_05_08_am",
-        "scheduled_for": "2026-05-08 10:15",
-        "sched_date": "2026-05-08",
-        "posted": false,
-        "scheduled_in_tiktok_studio": true,
-        "hook": "5 fluffballs to soften your morning",
-        "format": "v5_stitched_20s_letterbox",
-        "music": "Happy Dog — Liricus Instrumental"
-      },
-      {
-        "slot": "v6_004_2026_05_08_pm",
-        "scheduled_for": "2026-05-08 18:25",
-        "sched_date": "2026-05-08",
-        "posted": false,
-        "scheduled_in_tiktok_studio": true,
-        "hook": "pets that broke the cuteness scale",
-        "format": "v6_native_9_16",
-        "music": "Cute — Aurel Surya Lie"
-      },
-      {
-        "slot": "v6_005_2026_05_09_am",
-        "scheduled_for": "2026-05-09 11:40",
-        "sched_date": "2026-05-09",
-        "posted": false,
-        "scheduled_in_tiktok_studio": true,
-        "hook": "cottagecore pets are dangerous",
-        "format": "v6_native_9_16_text_fitted",
-        "music": "Little Things — Adrián Berenguer"
       }
     ],
     "totals": {
-      "posted": 1,
-      "scheduled": 14,
+      "posted": 0,
+      "scheduled": 10,
       "ready_no_date": 14
     },
-    "runway_days": 6,
-    "next_unposted": "2026-05-07T09:00:00",
+    "runway_days": 5,
+    "next_unposted": "2026-05-08T09:00:00",
     "last_scheduled": "2026-05-13T09:00:00"
   },
-  "last_synced": "2026-05-07T11:39:31"
+  "last_synced": "2026-05-08T09:17:48"
 }

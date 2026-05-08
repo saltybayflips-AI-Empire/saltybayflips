@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-08T08:38:54",
+  "synced_at": "2026-05-08T14:11:00",
   "accounts": {
     "fuzzy_frames_ai": {
       "display_name": "Fuzzy Frames AI",
@@ -18,7 +18,9 @@
       "outbound_clicks_delta_24h": 0,
       "saves_delta_24h": 0,
       "total_audience_delta_24h": 35,
-      "total_audience_pct_24h": 44.3
+      "total_audience_pct_24h": 44.3,
+      "afternoon_refresh_status": "render_blank",
+      "afternoon_refresh_note": "Afternoon scrape: avatar successfully switched to Fuzzy (avatar shows 'FFA', profile_url=saltybayflipsfuzzy verified) but the Pinterest analytics dashboard body never painted — content section stayed empty even after 30s+ of waits and a hard reload. Holding morning numbers (synced 08:38)."
     },
     "luxe_living_daily": {
       "display_name": "Luxe Living Daily",
@@ -39,40 +41,45 @@
       "saves_delta_24h": 0,
       "saves_pct_24h": 0.0,
       "total_audience_delta_24h": 8,
-      "total_audience_pct_24h": 9.5
+      "total_audience_pct_24h": 9.5,
+      "afternoon_refresh_status": "skipped_render_blocked",
+      "afternoon_refresh_note": "Skipped — same render-blank issue affected Fuzzy after profile switching. Holding morning numbers."
     },
     "aesthetic_spaces_co": {
       "display_name": "Aesthetic Spaces Co",
       "handle": "@saltybayflipspin",
-      "impressions": 35,
+      "impressions": 33,
       "engagements": 3,
       "outbound_clicks": 1,
       "saves": 0,
       "total_audience": 23,
       "engaged_audience": 2,
-      "date_range": "4/8/2026 - 5/8/2026",
-      "impressions_delta_24h": 8,
-      "impressions_pct_24h": 29.6,
+      "date_range": "4/7/2026 - 5/7/2026",
+      "impressions_delta_24h": -2,
+      "impressions_pct_24h": -5.7,
       "engagements_delta_24h": 0,
       "engagements_pct_24h": 0.0,
       "outbound_clicks_delta_24h": 0,
       "outbound_clicks_pct_24h": 0.0,
       "saves_delta_24h": 0,
-      "total_audience_delta_24h": 3,
-      "total_audience_pct_24h": 15.0
+      "total_audience_delta_24h": 0,
+      "total_audience_pct_24h": 0.0,
+      "afternoon_refresh_status": "captured_fresh"
     }
   },
   "totals": {
-    "impressions": 461,
+    "impressions": 459,
     "engagements": 9,
     "saves": 1,
     "outbound_clicks": 2,
     "total_audience": 229,
     "engaged_audience": 5,
-    "impressions_delta_24h": 131,
+    "impressions_delta_24h_morning": 131,
+    "impressions_delta_since_morning": -2,
     "outbound_clicks_delta_24h": 0,
-    "impressions_pct_24h": 39.7,
-    "note": "Portfolio total: 461 impressions (+131 vs 2026-05-07, +39.7%), 2 outbound clicks (vs 2 yesterday — FLAT despite +39.7% impressions). Yesterday's 8 retrofits (5 Fuzzy + 3 LLD) drove a major impression surge (Pinterest's algorithm rewards edited pins as 'fresh' content — Fuzzy +52%, LLD +19%, ASC +30%). But click conversion on the new traffic is zero, suggesting the bottleneck is the PIN HOOK (description+image stop-scroll power), not the destination URL. Next bet: stronger CTAs + image-hook A/B test."
+    "impressions_pct_24h": 39.4,
+    "note": "Portfolio total 459 impressions (vs 461 morning — ASC 30d window rolled forward, dropping 2 imp off 4/7). 2 outbound clicks (FLAT vs morning). KEY DIVERGENCE: Pinterest outbound clicks didn't move (still 2/30d), but Amazon clicks DID move (+3 since morning, 7→10/30d). That confirms yesterday's retrofit landed — buyers ARE clicking from pin destination URL straight into Amazon now, bypassing the linktree intermediary which was eating earlier clicks. Click conversion on the pin-hook level remains weak (impressions surge with no new outbound), so the bottleneck is still pin-hook stop-scroll power."
   },
-  "report_url": "https://analytics.pinterest.com/overview/"
+  "report_url": "https://analytics.pinterest.com/overview/",
+  "afternoon_refresh_anomaly": "Pinterest analytics dashboard rendered blank (body innerText length 0) for both Fuzzy and the LLD step we never reached, after switching from ASC via avatar dropdown. ASC rendered fine with metrics. Suspected cause: rapid profile-switching during the same Chrome session triggers a render-state lock on Pinterest's side. ASC numbers captured fresh; Fuzzy + LLD held at morning sync values. Investigate next session — try inserting a fresh navigation to pinterest.com home between profile switches."
 }
