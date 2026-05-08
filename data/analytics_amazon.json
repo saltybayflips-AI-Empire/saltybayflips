@@ -1,51 +1,23 @@
 {
-  "synced_at": "2026-05-07T14:08:00",
-  "store_id": "saltybayfli0c-20",
-  "last_updated": "May 06 2026",
+  "synced_at": "2026-05-08T08:46:18",
   "this_month": {
-    "earnings_usd": 0.0,
+    "clicks": 3,
     "ordered_items": 0,
     "items_shipped": 0,
-    "conversion_pct": 0.0,
-    "clicks": 0
+    "earnings_usd": 0.0,
+    "conversion_pct": 0.0
   },
   "last_30d": {
     "clicks": 7,
     "commissions_usd": 0.0,
     "bounties_usd": 0.0,
     "has_data": true,
-    "note": "30d clicks UNCHANGED at 7 vs both 2026-05-05 and 2026-05-06 check-ins. Third consecutive day flat. Phase 2 retrofit (live Pinterest pin URL edits to point at Amazon idea-lists) only 2/114 done; rate-limited to 2-3 edits/session. Image-rich Editor's Picks linktree pages live as of 2026-05-06 with ascsubtag attribution on all 153 Amazon links — too soon to read attribution but the LLD A/B test (lld_a_amzdirect vs lld_b_linktree) decision deadline is 2026-05-20."
+    "date_range": "Apr 08 2026 - May 07 2026",
+    "last_updated_per_amazon": "May 07 2026 00:00",
+    "note": "30d clicks STILL 7 (vs 7 yesterday — flat). All 7 from a single mid-April spike (~Apr 16-17 per chart). 0 visible clicks in May despite Pinterest 2 outbound clicks (LLD + ASC). LIKELY explanation: those 2 Pinterest outbound went to LINKTREE pages (fuzzy.html / lld.html / asc.html) NOT directly to Amazon (those pins were PRE-retrofit). Users hit linktree but didn't click through Amazon shop cards. TODAY's retrofits flipped 8 pins to direct-Amazon URLs — those should register 1:1 going forward. Watch for May click spike in next 24-48h scrape.",
+    "clicks_delta_24h": 0
   },
-  "lifetime_total_clicks": 7,
   "qualifying_sales": 0,
-  "deadline_days_remaining": 157,
-  "report_url": "https://affiliate-program.amazon.com/home/reports/global",
-  "delta_vs_prior_check": "FLAT - 0 click delta vs 2026-05-06. No new clicks in 24h. The 30d window keeps rolling forward; the mid-April spike has not yet fallen out so 30d still reads 7. Once it falls out the 30d count drops while lifetime stays at 7 — that's the signal we're back to baseline 0/day until pin retrofits or new content move the needle.",
-  "link_health": {
-    "lld_html_links": 58,
-    "lld_correctly_tagged": 58,
-    "fuzzy_html_links": 31,
-    "fuzzy_correctly_tagged": 31,
-    "asc_html_links": 45,
-    "asc_correctly_tagged": 45,
-    "total_links": 134,
-    "total_correctly_tagged": 134,
-    "expected_tag": "saltybayfli0c-20",
-    "audit_pass": true,
-    "ascsubtag_links": 153,
-    "ascsubtag_breakdown": {
-      "lld_b_linktree": 64,
-      "asc_linktree": 52,
-      "fuzzy_linktree": 37
-    }
-  },
-  "ab_test_status": {
-    "name": "LLD pin destination A/B (Amazon direct vs linktree)",
-    "started": "2026-05-06",
-    "decision_due": "2026-05-20",
-    "group_a_pins_flipped": 2,
-    "group_a_target": 22,
-    "group_b_pins_pending_subtag": 22,
-    "note": "2 of 22 Group A LLD pins live on Amazon URL. Group A pins still need ascsubtag=lld_a_amzdirect appended; current URL is bare Amazon idea-list."
-  }
+  "store_id": "saltybayfli0c-20",
+  "report_url": "https://affiliate-program.amazon.com/home"
 }

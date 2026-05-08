@@ -300,6 +300,7 @@
 <div class="funnel" id="funnel" style="display:none;">
   <h3>Revenue funnel <span style="color:var(--mut);font-weight:400;font-size:11px;">how reach turns into $</span></h3>
   <div class="funnelrow" id="funnelRow"></div>
+  <div id="funnelAttribution" style="margin-top:14px;padding:10px 14px;background:var(--card2);border:1px solid var(--line);border-radius:8px;font-size:11px;line-height:1.5;display:none;"></div>
 </div>
 
 <!-- ============== TOP STATS ================= -->
@@ -641,10 +642,29 @@ function renderPerformance(amazon, tiktok, pinterest) {
     document.getElementById('funnelRow').innerHTML = `
       <div class="step"><div class="n">${ttViews.toLocaleString()}</div><div class="l">TikTok views (28d)</div></div>
       <div class="step"><div class="n">${pinImps.toLocaleString()}</div><div class="l">Pinterest impressions (30d)</div></div>
-      <div class="step q"><div class="n">${pinClicks.toLocaleString()}</div><div class="l">Outbound clicks (30d)</div></div>
+      <div class="step q"><div class="n">${pinClicks.toLocaleString()}</div><div class="l">Pinterest outbound (30d)</div></div>
       <div class="step q"><div class="n">${amzClicks.toLocaleString()}</div><div class="l">Amazon clicks (30d)</div></div>
       <div class="step r"><div class="n">$${amzEarn.toFixed(2)}</div><div class="l">${amzOrders} orders this month</div></div>
     `;
+
+    // Funnel attribution panel — explains the gap between Pinterest outbound and Amazon clicks
+    const attribEl = document.getElementById('funnelAttribution');
+    if (attribEl) {
+      const gap = amzClicks - pinClicks;
+      const gapDirection = gap > 0
+        ? `Amazon shows <b>+${gap}</b> more clicks than Pinterest reports as outbound. Likely sources for the extra: TikTok bio-link taps, direct visits to linktree pages, organic search.`
+        : gap < 0
+        ? `Pinterest reports <b>+${-gap}</b> more outbound clicks than Amazon. Likely cause: those Pinterest visitors hit the linktree page (fuzzy.html / lld.html / asc.html) but didn't click through to an Amazon shop card. Bottleneck = linktree → Amazon conversion.`
+        : `Pinterest outbound and Amazon clicks match exactly — best-case 1:1 attribution.`;
+      attribEl.innerHTML = `
+        <div style="color:var(--fg);font-weight:600;margin-bottom:4px;">📊 Cross-platform attribution check</div>
+        <div style="color:var(--mut);">
+          ${gapDirection}<br>
+          <span style="opacity:.7">Note: 1 Pinterest outbound = 1 Amazon click ONLY if pin destination is directly an Amazon URL (post-retrofit). If pin → linktree → Amazon, both clicks count IF user proceeds. Older pre-retrofit pins (linktree destination) often produce Pinterest outbound without Amazon click.</span>
+        </div>
+      `;
+      attribEl.style.display = 'block';
+    }
   }
 }
 
