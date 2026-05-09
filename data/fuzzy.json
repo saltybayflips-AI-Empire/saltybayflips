@@ -1717,10 +1717,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 10,
-    "next_scheduled": "2026-05-08T10:00:00",
+    "runway_days": 9,
+    "next_scheduled": "2026-05-09T10:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
-    "count": 5
+    "count": 4
   },
   "tiktok": {
     "enabled": true,
@@ -1897,6 +1897,15 @@
         "music": "Ghibli orchestral edit trending"
       },
       {
+        "slot": "post_v04_native_5_8",
+        "scheduled_for": "2026-05-08 18:25",
+        "sched_date": "2026-05-08",
+        "posted": false,
+        "hook": "pets that broke the cuteness scale",
+        "caption_preview": "pets that broke the cuteness scale / save this for the worst day later 🤍",
+        "music": "Cute by Aurel Surya Lie"
+      },
+      {
         "slot": "post_v04_wan_2clip",
         "scheduled_for": "2026-05-09 09:00",
         "sched_date": "2026-05-09",
@@ -1904,6 +1913,141 @@
         "hook": "When pets take their job seriously",
         "caption_preview": "When pets take their job seriously\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
         "music": "wholesome curious lofi"
+      },
+      {
+        "slot": "post_v05_native_5_9_am",
+        "scheduled_for": "2026-05-09 11:40",
+        "sched_date": "2026-05-09",
+        "posted": false,
+        "hook": "cottagecore pets are dangerous",
+        "caption_preview": "cottagecore pets are dangerous / which life would you steal? 🦌",
+        "music": "Little Things by Adrián Berenguer"
+      },
+      {
+        "slot": "post_v06_native_5_9_pm",
+        "scheduled_for": "2026-05-09 18:15",
+        "sched_date": "2026-05-09",
+        "posted": false,
+        "hook": "softness ranked, scientifically",
+        "caption_preview": "softness ranked, scientifically / save this for the worst day later 🤍",
+        "music": "Aesthetic by BoominBeats"
+      },
+      {
+        "slot": "post_v07_native_5_10_pm",
+        "scheduled_for": "2026-05-10 18:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "pets youd commit crimes for",
+        "caption_preview": "pets youd commit crimes for / save this for the worst day later 🤍",
+        "music": "Chill Vibes by Febri Handika"
+      },
+      {
+        "slot": "post_v08_native_5_11_pm",
+        "scheduled_for": "2026-05-11 18:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "pets that pass the cuteness test",
+        "caption_preview": "pets that pass the cuteness test / save this for the worst day later 🤍",
+        "music": "existing - your warm arms"
+      },
+      {
+        "slot": "post_v09_01_5_12_pm",
+        "scheduled_for": "2026-05-10 09:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "save this for a hard day",
+        "caption_preview": "save this for a hard day\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v09_02_5_13_pm",
+        "scheduled_for": "2026-05-11 09:05",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "the snow forest cat I want",
+        "caption_preview": "the snow forest cat I want\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v09_03_5_14_am",
+        "scheduled_for": "2026-05-12 09:10",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "tiny bun making my day",
+        "caption_preview": "tiny bun making my day\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #wh",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v09_04_5_14_pm",
+        "scheduled_for": "2026-05-12 18:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "softness in a tiny scarf",
+        "caption_preview": "softness in a tiny scarf\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v09_05_5_15_am",
+        "scheduled_for": "2026-05-13 09:10",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "the smartest kitten alive",
+        "caption_preview": "the smartest kitten alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v10_5_15_pm",
+        "scheduled_for": "2026-05-13 18:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "the pet feature my therapist loves",
+        "caption_preview": "the pet feature my therapist loves\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_v11_01_5_14_am",
+        "scheduled_for": "2026-05-14 09:00",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "the world's happiest animal",
+        "caption_preview": "the world's happiest animal\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryo",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_v11_02_5_14_pm",
+        "scheduled_for": "2026-05-14 18:00",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "the tiny bear that broke the internet",
+        "caption_preview": "the tiny bear that broke the internet\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_v11_03_5_15_am",
+        "scheduled_for": "2026-05-15 09:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "wild fox kit I want to befriend",
+        "caption_preview": "wild fox kit I want to befriend\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #f",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_v11_04_5_15_pm",
+        "scheduled_for": "2026-05-15 18:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "this little guy understands fall",
+        "caption_preview": "this little guy understands fall\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_v11_05_5_16_am",
+        "scheduled_for": "2026-05-16 09:00",
+        "sched_date": "2026-05-16",
+        "posted": false,
+        "hook": "sleeping puppy energy, save this",
+        "caption_preview": "sleeping puppy energy, save this\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #",
+        "music": "TBD (apply on schedule day via editor)"
       },
       {
         "slot": "post_v3_v01_wan_2clip",
@@ -1944,12 +2088,12 @@
     ],
     "totals": {
       "posted": 0,
-      "scheduled": 10,
+      "scheduled": 26,
       "ready_no_date": 14
     },
-    "runway_days": 5,
-    "next_unposted": "2026-05-08T09:00:00",
-    "last_scheduled": "2026-05-13T09:00:00"
+    "runway_days": 7,
+    "next_unposted": "2026-05-09T09:00:00",
+    "last_scheduled": "2026-05-16T09:00:00"
   },
-  "last_synced": "2026-05-08T09:17:48"
+  "last_synced": "2026-05-09T09:13:01"
 }

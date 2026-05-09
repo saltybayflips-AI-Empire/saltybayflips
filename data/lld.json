@@ -1750,10 +1750,10 @@
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 9,
-    "next_scheduled": "2026-05-08T11:00:00",
+    "runway_days": 8,
+    "next_scheduled": "2026-05-09T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 10
+    "count": 9
   },
   "tiktok": {
     "enabled": true,
@@ -1919,16 +1919,88 @@
         "hook": "Bedrooms under the stars: literal version",
         "caption_preview": "Bedrooms under the stars: literal version\n\nwhich one would you buy? 🤍\n\n→ shop the look in bio 🛋️\n\n#l",
         "music": "Hans Zimmer Time"
+      },
+      {
+        "slot": "post_43_lld_v3_native",
+        "scheduled_for": "2026-05-12 18:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "Houses I show my therapist",
+        "caption_preview": "Houses I show my therapist / which one ruined your standards? 🏛️",
+        "music": "POSITIVE ENERGY by Camargguinho"
+      },
+      {
+        "slot": "post_44_lld_v4_native",
+        "scheduled_for": "2026-05-15 09:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "Houses with rooms I didnt know existed",
+        "caption_preview": "Houses with rooms I didnt know existed / which one would you move into? 🏛️",
+        "music": "BLOOM by Blaine Torel"
+      },
+      {
+        "slot": "post_45_lld_v5_01_rooftop_pool",
+        "scheduled_for": "2026-05-11 18:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "Houses I'm manifesting",
+        "caption_preview": "Houses I'm manifesting\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxury",
+        "music": "Vlog (wouldliker, 04:30) — applied via editor"
+      },
+      {
+        "slot": "post_46_lld_v5_02_barn_wine",
+        "scheduled_for": "2026-05-12 09:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "Where my therapist would meet me",
+        "caption_preview": "Where my therapist would meet me\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthet",
+        "music": "Ok I Like It (Milky Chance, 00:29) — applied via editor"
+      },
+      {
+        "slot": "post_47_lld_v5_03_putting_green",
+        "scheduled_for": "2026-05-13 18:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "POV: you finally made it",
+        "caption_preview": "POV: you finally made it\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
+        "music": "Aesthetic (BoominBeats, 01:00) — applied via editor"
+      },
+      {
+        "slot": "post_48_lld_v5_04_meditation",
+        "scheduled_for": "2026-05-14 09:55",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "Where rich people calm down",
+        "caption_preview": "Where rich people calm down\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #l",
+        "music": "original sound (default) — picker-precision dropped to ship"
+      },
+      {
+        "slot": "post_49_lld_v5_05_elevator_atrium",
+        "scheduled_for": "2026-05-14 18:00",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "Houses I dream about at night",
+        "caption_preview": "Houses I dream about at night\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic ",
+        "music": "original sound (default)"
+      },
+      {
+        "slot": "post_50_lld_v6_single",
+        "scheduled_for": "2026-05-15 18:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "My future address",
+        "caption_preview": "My future address\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryinter",
+        "music": "original sound (default)"
       }
     ],
     "totals": {
       "posted": 8,
-      "scheduled": 10,
+      "scheduled": 18,
       "ready_no_date": 0
     },
-    "runway_days": 2,
-    "next_unposted": "2026-05-08T09:00:00",
-    "last_scheduled": "2026-05-10T18:00:00"
+    "runway_days": 6,
+    "next_unposted": "2026-05-09T09:00:00",
+    "last_scheduled": "2026-05-15T18:00:00"
   },
-  "last_synced": "2026-05-08T09:17:48"
+  "last_synced": "2026-05-09T09:13:01"
 }
