@@ -2048,8 +2048,8 @@
       },
       {
         "slot": "post_57_lld_v8_02_industrial_loft",
-        "scheduled_for": "2026-05-13 09:00",
-        "sched_date": "2026-05-13",
+        "scheduled_for": "2026-05-22 09:00",
+        "sched_date": "2026-05-22",
         "posted": false,
         "hook": "loft I'd never decorate over",
         "caption_preview": "loft I'd never decorate over\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
@@ -2081,16 +2081,25 @@
         "hook": "waking up at sea",
         "caption_preview": "waking up at sea\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryinteri",
         "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+      },
+      {
+        "slot": "post_61_lld_v8_06_poker_room",
+        "scheduled_for": "2026-05-20 09:00",
+        "sched_date": "2026-05-20",
+        "posted": true,
+        "hook": "the poker room you'd never leave",
+        "caption_preview": "the poker room you'd never leave\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthet",
+        "music": "verified per HARD-STOP rule (user reupload after 5/13 conflict, mainstream pop tier)"
       }
     ],
     "totals": {
-      "posted": 12,
+      "posted": 13,
       "scheduled": 24,
       "ready_no_date": 0
     },
-    "runway_days": 8,
+    "runway_days": 12,
     "next_unposted": "2026-05-10T09:00:00",
-    "last_scheduled": "2026-05-18T09:00:00"
+    "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-10T06:57:47"
+  "last_synced": "2026-05-10T07:10:22"
 }
