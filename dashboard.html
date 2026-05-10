@@ -423,9 +423,12 @@ function pinCard(post) {
   </a>`;
 }
 
+// Cache-bust suffix — ensures every page load fetches the latest JSON, not browser/CDN cached
+const _CB = `?t=${Date.now()}`;
+
 async function loadOne(niche) {
   try {
-    const r = await fetch(`data/${niche.data_file}.json`, {cache:'no-cache'});
+    const r = await fetch(`data/${niche.data_file}.json${_CB}`, {cache:'no-store'});
     if (!r.ok) throw new Error(r.status);
     const data = await r.json();
     return { niche, data };
@@ -436,7 +439,7 @@ async function loadOne(niche) {
 
 async function loadAnalytics(name) {
   try {
-    const r = await fetch(`data/analytics_${name}.json`, {cache:'no-cache'});
+    const r = await fetch(`data/analytics_${name}.json${_CB}`, {cache:'no-store'});
     if (!r.ok) throw new Error(r.status);
     return await r.json();
   } catch (e) {
@@ -446,7 +449,7 @@ async function loadAnalytics(name) {
 
 async function loadActionItems() {
   try {
-    const r = await fetch('data/action_items.json', {cache:'no-cache'});
+    const r = await fetch(`data/action_items.json${_CB}`, {cache:'no-store'});
     if (!r.ok) throw new Error(r.status);
     return await r.json();
   } catch (e) {
