@@ -2095,16 +2095,61 @@
         "hook": "the poker room you'd never leave",
         "caption_preview": "the poker room you'd never leave\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthet",
         "music": "verified per HARD-STOP rule (user reupload after 5/13 conflict, mainstream pop tier)"
+      },
+      {
+        "slot": "post_62_lld_v9_01_lake_house",
+        "scheduled_for": "2026-05-20 18:00",
+        "sched_date": "2026-05-20",
+        "posted": false,
+        "hook": "the house that floats on a lake",
+        "caption_preview": "the house that floats on a lake\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaestheti",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_63_lld_v9_02_grotto_pool",
+        "scheduled_for": "2026-05-21 09:00",
+        "sched_date": "2026-05-21",
+        "posted": false,
+        "hook": "the pool inside the mountain",
+        "caption_preview": "the pool inside the mountain\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_64_lld_v9_03_cali_living",
+        "scheduled_for": "2026-05-21 18:00",
+        "sched_date": "2026-05-21",
+        "posted": false,
+        "hook": "California living, peak form",
+        "caption_preview": "California living, peak form\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_65_lld_v9_04_alpine_chalet",
+        "scheduled_for": "2026-05-22 09:00",
+        "sched_date": "2026-05-22",
+        "posted": false,
+        "hook": "the alps view I'd buy",
+        "caption_preview": "the alps view I'd buy\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryi",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_66_lld_v9_05_tuscan_villa",
+        "scheduled_for": "2026-05-22 18:00",
+        "sched_date": "2026-05-22",
+        "posted": false,
+        "hook": "Tuscan summer, every day",
+        "caption_preview": "Tuscan summer, every day\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
       }
     ],
     "totals": {
       "posted": 17,
-      "scheduled": 20,
+      "scheduled": 25,
       "ready_no_date": 0
     },
     "runway_days": 12,
     "next_unposted": "2026-05-10T09:00:00",
-    "last_scheduled": "2026-05-22T09:00:00"
+    "last_scheduled": "2026-05-22T18:00:00"
   },
-  "last_synced": "2026-05-10T09:09:57"
+  "last_synced": "2026-05-10T09:26:16"
 }

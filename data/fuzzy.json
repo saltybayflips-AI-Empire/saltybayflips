@@ -1674,6 +1674,56 @@
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
       "note": "Auto-promoted from 01_review on user QA approval"
+    },
+    {
+      "id": 64,
+      "slug": "fuzzy_frenchie_sunflowers_backfill",
+      "title": "French Bulldog Puppy In Sunflower Field Golden Hour Pet Aesthetic",
+      "board": "Pets & Flowers",
+      "status": "scheduled",
+      "scheduled_for": "2026-05-12 14:00",
+      "scheduled_at": "2026-05-10T09:17:11.450559",
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+    },
+    {
+      "id": 65,
+      "slug": "fuzzy_labrador_autumn_backfill",
+      "title": "Chocolate Labrador Puppy In Autumn Leaves Fall Pet Photography",
+      "board": "Seasonal Pets",
+      "status": "scheduled",
+      "scheduled_for": "2026-05-13 14:00",
+      "scheduled_at": "2026-05-10T09:17:11.450586",
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+    },
+    {
+      "id": 66,
+      "slug": "fuzzy_kitten_sweater_backfill",
+      "title": "Tabby Kitten In Knit Sweater With Pumpkin Cozy Cat Aesthetic",
+      "board": "Cozy Pets in Sweaters",
+      "status": "scheduled",
+      "scheduled_for": "2026-05-14 14:00",
+      "scheduled_at": "2026-05-10T09:17:11.450589",
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+    },
+    {
+      "id": 67,
+      "slug": "fuzzy_baby_deer_backfill",
+      "title": "Tiny Spotted Baby Deer Fawn In Mossy Forest Wild Cute Animal",
+      "board": "Baby Animals",
+      "status": "scheduled",
+      "scheduled_for": "2026-05-15 14:00",
+      "scheduled_at": "2026-05-10T09:17:11.450592",
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+    },
+    {
+      "id": 68,
+      "slug": "fuzzy_samoyed_meadow_backfill",
+      "title": "Fluffy White Samoyed Puppy In Wildflower Meadow Smiling Dog",
+      "board": "Fluffy Puppies",
+      "status": "scheduled",
+      "scheduled_for": "2026-05-16 14:00",
+      "scheduled_at": "2026-05-10T09:17:11.450593",
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
     }
   ],
   "rejected": [
@@ -1730,7 +1780,7 @@
     "runway_days": 8,
     "next_scheduled": "2026-05-10T10:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
-    "count": 8
+    "count": 13
   },
   "tiktok": {
     "enabled": true,
@@ -2150,6 +2200,51 @@
         "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
       },
       {
+        "slot": "post_v14_01_5_22_am",
+        "scheduled_for": "2026-05-22 09:00",
+        "sched_date": "2026-05-22",
+        "posted": false,
+        "hook": "the wisest baby alive",
+        "caption_preview": "the wisest baby alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #who",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_v14_02_5_22_pm",
+        "scheduled_for": "2026-05-22 18:00",
+        "sched_date": "2026-05-22",
+        "posted": false,
+        "hook": "the chaos goblin we love",
+        "caption_preview": "the chaos goblin we love\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_v14_03_5_23_am",
+        "scheduled_for": "2026-05-23 09:00",
+        "sched_date": "2026-05-23",
+        "posted": false,
+        "hook": "the softest spring baby",
+        "caption_preview": "the softest spring baby\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #w",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_v14_04_5_23_pm",
+        "scheduled_for": "2026-05-23 18:00",
+        "sched_date": "2026-05-23",
+        "posted": false,
+        "hook": "trio that runs the desert",
+        "caption_preview": "trio that runs the desert\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_v14_05_5_24_am",
+        "scheduled_for": "2026-05-24 09:00",
+        "sched_date": "2026-05-24",
+        "posted": false,
+        "hook": "nap goals in fur form",
+        "caption_preview": "nap goals in fur form\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #who",
+        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
         "slot": "post_v3_v01_wan_2clip",
         "scheduled_for": "2026-05-10 09:00",
         "sched_date": "2026-05-10",
@@ -2188,12 +2283,12 @@
     ],
     "totals": {
       "posted": 12,
-      "scheduled": 24,
+      "scheduled": 29,
       "ready_no_date": 14
     },
-    "runway_days": 8,
+    "runway_days": 14,
     "next_unposted": "2026-05-10T09:00:00",
-    "last_scheduled": "2026-05-18T18:00:00"
+    "last_scheduled": "2026-05-24T09:00:00"
   },
-  "last_synced": "2026-05-10T09:09:57"
+  "last_synced": "2026-05-10T09:26:16"
 }
