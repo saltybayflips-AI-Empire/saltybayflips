@@ -1750,10 +1750,10 @@
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 8,
-    "next_scheduled": "2026-05-09T11:00:00",
+    "runway_days": 7,
+    "next_scheduled": "2026-05-10T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 9
+    "count": 8
   },
   "tiktok": {
     "enabled": true,
@@ -1991,16 +1991,106 @@
         "hook": "My future address",
         "caption_preview": "My future address\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryinter",
         "music": "original sound (default)"
+      },
+      {
+        "slot": "post_51_lld_v7_01_roman_spa",
+        "scheduled_for": "2026-05-16 09:00",
+        "sched_date": "2026-05-16",
+        "posted": false,
+        "hook": "Private Roman spa I'd never leave",
+        "caption_preview": "Private Roman spa I'd never leave\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthe",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_52_lld_v7_02_overwater_bungalow",
+        "scheduled_for": "2026-05-16 18:00",
+        "sched_date": "2026-05-16",
+        "posted": false,
+        "hook": "Houses where the floor IS the view",
+        "caption_preview": "Houses where the floor IS the view\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesth",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_53_lld_v7_03_library_bedroom",
+        "scheduled_for": "2026-05-17 09:00",
+        "sched_date": "2026-05-17",
+        "posted": false,
+        "hook": "Bedroom inside a library",
+        "caption_preview": "Bedroom inside a library\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_54_lld_v7_04_ski_chalet",
+        "scheduled_for": "2026-05-17 18:00",
+        "sched_date": "2026-05-17",
+        "posted": false,
+        "hook": "Houses I'd ski to every weekend",
+        "caption_preview": "Houses I'd ski to every weekend\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaestheti",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_55_lld_v7_05_zen_garden",
+        "scheduled_for": "2026-05-18 09:00",
+        "sched_date": "2026-05-18",
+        "posted": false,
+        "hook": "My future morning ritual",
+        "caption_preview": "My future morning ritual\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_56_lld_v8_01_cycladic_kitchen",
+        "scheduled_for": "2026-05-11 09:00",
+        "sched_date": "2026-05-11",
+        "posted": true,
+        "hook": "kitchens I'd move into today",
+        "caption_preview": "kitchens I'd move into today\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+      },
+      {
+        "slot": "post_57_lld_v8_02_industrial_loft",
+        "scheduled_for": "2026-05-13 09:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "loft I'd never decorate over",
+        "caption_preview": "loft I'd never decorate over\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
+        "music": "TBD (apply on schedule day via editor)"
+      },
+      {
+        "slot": "post_58_lld_v8_03_safari_lodge",
+        "scheduled_for": "2026-05-18 18:00",
+        "sched_date": "2026-05-18",
+        "posted": true,
+        "hook": "wake up in the savanna",
+        "caption_preview": "wake up in the savanna\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxury",
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+      },
+      {
+        "slot": "post_59_lld_v8_04_moroccan_riad",
+        "scheduled_for": "2026-05-19 09:00",
+        "sched_date": "2026-05-19",
+        "posted": true,
+        "hook": "the riad you'd never leave",
+        "caption_preview": "the riad you'd never leave\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #lu",
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+      },
+      {
+        "slot": "post_60_lld_v8_05_yacht_cabin",
+        "scheduled_for": "2026-05-19 18:00",
+        "sched_date": "2026-05-19",
+        "posted": true,
+        "hook": "waking up at sea",
+        "caption_preview": "waking up at sea\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryinteri",
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
       }
     ],
     "totals": {
-      "posted": 8,
-      "scheduled": 18,
+      "posted": 12,
+      "scheduled": 24,
       "ready_no_date": 0
     },
-    "runway_days": 6,
-    "next_unposted": "2026-05-09T09:00:00",
-    "last_scheduled": "2026-05-15T18:00:00"
+    "runway_days": 8,
+    "next_unposted": "2026-05-10T09:00:00",
+    "last_scheduled": "2026-05-18T09:00:00"
   },
-  "last_synced": "2026-05-09T09:13:01"
+  "last_synced": "2026-05-10T06:57:47"
 }
