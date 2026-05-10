@@ -727,16 +727,29 @@ async function loadAll() {
   // Show the oldest (i.e. staleness floor) across all data sources, plus when the
   // browser last loaded the data. Helps the user see at a glance how fresh the
   // numbers below actually are.
-  const syncTimes = [
-    amazon?.synced_at, tiktok?.synced_at, pinterest?.synced_at, actionItems?.synced_at,
+  // Tracker data (the thing that updates every session via sync_dashboard_data.py)
+  const trackerTimes = [
+    actionItems?.synced_at,
     ...results.filter(r => r.data).map(r => r.data.last_synced),
   ].filter(Boolean).map(s => new Date(s)).filter(d => !isNaN(d));
-  const oldestSync = syncTimes.length ? new Date(Math.min(...syncTimes.map(d => d.getTime()))) : null;
+  const oldestTracker = trackerTimes.length ? new Date(Math.min(...trackerTimes.map(d => d.getTime()))) : null;
+
+  // Analytics data (Amazon / TikTok / Pinterest scrapes — refreshed manually via Chrome MCP, not on every dashboard sync)
+  const analyticsTimes = [
+    amazon?.synced_at, tiktok?.synced_at, pinterest?.synced_at,
+  ].filter(Boolean).map(s => new Date(s)).filter(d => !isNaN(d));
+  const oldestAnalytics = analyticsTimes.length ? new Date(Math.min(...analyticsTimes.map(d => d.getTime()))) : null;
+
   const refreshedAt = new Date();
   const refreshedStr = refreshedAt.toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit',second:'2-digit'});
-  document.getElementById('lastSynced').innerHTML = oldestSync
-    ? `Data synced: ${timeAgo(oldestSync.toISOString())} (${oldestSync.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}) · Browser refreshed: ${refreshedStr}`
-    : `Browser refreshed: ${refreshedStr}`;
+  const trackerStr = oldestTracker
+    ? `Tracker: ${timeAgo(oldestTracker.toISOString())} (${oldestTracker.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})})`
+    : 'Tracker: unknown';
+  const analyticsStr = oldestAnalytics
+    ? `· Analytics: ${timeAgo(oldestAnalytics.toISOString())}`
+    : '';
+  document.getElementById('lastSynced').innerHTML =
+    `${trackerStr} ${analyticsStr} · Browser refreshed: ${refreshedStr}`;
 
   document.getElementById('refreshBtn').disabled = false;
   document.getElementById('refreshBtn').textContent = '↻ Refresh';

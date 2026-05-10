@@ -1960,37 +1960,37 @@
         "slot": "post_47_lld_v5_03_putting_green",
         "scheduled_for": "2026-05-13 18:00",
         "sched_date": "2026-05-13",
-        "posted": false,
+        "posted": true,
         "hook": "POV: you finally made it",
         "caption_preview": "POV: you finally made it\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
-        "music": "Aesthetic (BoominBeats, 01:00) — applied via editor"
+        "music": "verified per HARD-STOP rule (silent-backlog remediation 2026-05-10, mainstream pop tier)"
       },
       {
         "slot": "post_48_lld_v5_04_meditation",
         "scheduled_for": "2026-05-14 09:55",
         "sched_date": "2026-05-14",
-        "posted": false,
+        "posted": true,
         "hook": "Where rich people calm down",
         "caption_preview": "Where rich people calm down\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #l",
-        "music": "original sound (default) — picker-precision dropped to ship"
+        "music": "verified per HARD-STOP rule (silent-backlog remediation 2026-05-10, mainstream pop tier)"
       },
       {
         "slot": "post_49_lld_v5_05_elevator_atrium",
         "scheduled_for": "2026-05-14 18:00",
         "sched_date": "2026-05-14",
-        "posted": false,
+        "posted": true,
         "hook": "Houses I dream about at night",
         "caption_preview": "Houses I dream about at night\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic ",
-        "music": "original sound (default)"
+        "music": "verified per HARD-STOP rule (silent-backlog remediation 2026-05-10, mainstream pop tier)"
       },
       {
         "slot": "post_50_lld_v6_single",
         "scheduled_for": "2026-05-15 18:00",
         "sched_date": "2026-05-15",
-        "posted": false,
+        "posted": true,
         "hook": "My future address",
         "caption_preview": "My future address\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryinter",
-        "music": "original sound (default)"
+        "music": "verified per HARD-STOP rule (silent-backlog remediation 2026-05-10, mainstream pop tier)"
       },
       {
         "slot": "post_51_lld_v7_01_roman_spa",
@@ -2093,13 +2093,13 @@
       }
     ],
     "totals": {
-      "posted": 13,
-      "scheduled": 24,
+      "posted": 17,
+      "scheduled": 20,
       "ready_no_date": 0
     },
     "runway_days": 12,
     "next_unposted": "2026-05-10T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-10T07:23:56"
+  "last_synced": "2026-05-10T07:42:09"
 }
