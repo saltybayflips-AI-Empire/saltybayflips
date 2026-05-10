@@ -1,23 +1,19 @@
 {
-  "synced_at": "2026-05-09T14:06:54",
-  "this_month": {
-    "clicks": 3,
-    "ordered_items": 0,
-    "items_shipped": 0,
-    "earnings_usd": 0.0,
-    "conversion_pct": 0.0
-  },
-  "last_30d": {
-    "clicks": 10,
-    "commissions_usd": 0.0,
-    "bounties_usd": 0.0,
-    "has_data": true,
-    "date_range": "Apr 09 2026 - May 08 2026",
-    "last_updated_per_amazon": "May 08 2026",
-    "note": "Day-over-day flat: 30d=10 clicks (unchanged vs yesterday evening), this_month=3 clicks (unchanged). Amazon data through May 8; today's clicks won't show until May 10 sync. The +3 surge on 5/8 evening from the Pinterest URL retrofits did not extend on 5/9 — single-day spike, not a sustained slope. Still 0 commissions, 0 ordered items. 154 days remain to qualifying-sale deadline (~2026-10-11).",
-    "clicks_delta_24h": 0
-  },
-  "qualifying_sales": 0,
+  "synced_at": "2026-05-10T07:48:57.352378",
   "store_id": "saltybayfli0c-20",
-  "report_url": "https://affiliate-program.amazon.com/home"
+  "report_url": "https://affiliate-program.amazon.com/home",
+  "last_updated_label": "May 09 2026",
+  "this_month": {
+    "Total Items Shipped": "0",
+    "Total Earnings": "$0.00",
+    "Total Ordered Items": "0",
+    "Clicks": "3",
+    "Conversion": "0.00%"
+  },
+  "last_30d": {},
+  "qualifying_sales": {
+    "deadline": "2026-10-11",
+    "needed": 3,
+    "current": 0
+  }
 }

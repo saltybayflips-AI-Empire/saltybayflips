@@ -1,55 +1,47 @@
 {
-  "synced_at": "2026-05-09T14:18:00",
+  "synced_at": "2026-05-10T07:48:57.352378",
+  "report_url": "https://analytics.pinterest.com/overview/",
   "accounts": {
     "fuzzy_frames_ai": {
-      "display_name": "Fuzzy Frames AI",
-      "handle": "@saltybayflipsfuzzy",
-      "impressions": 302,
-      "engagements": 2,
-      "outbound_clicks": 0,
-      "saves": 0,
-      "total_audience": 114,
-      "engaged_audience": 1,
-      "date_range": "4/8/2026 - 5/8/2026",
-      "afternoon_refresh_status": "stale_render_blank_today",
-      "afternoon_refresh_note": "Today's scrape (5/9 14:18) hit render-blank on Pinterest analytics dashboard — analytics.pinterest.com/overview/ returned __PWS_INITIAL_PROPS__ JSON in DOM but React app never hydrated, no visible analytics widgets. Same failure mode as yesterday afternoon. Holding morning numbers from 5/8."
+      "date_range": "4/9/2026 - 5/9/2026",
+      "metrics": {
+        "Impressions": "407",
+        "Engagements": "10",
+        "Outbound clicks": "0",
+        "Saves": "0",
+        "Total audience": "201",
+        "Engaged audience": "4"
+      }
     },
     "luxe_living_daily": {
-      "display_name": "Luxe Living Daily",
-      "handle": "@saltybayflipsluxe",
-      "impressions": 124,
-      "engagements": 4,
-      "outbound_clicks": 1,
-      "saves": 1,
-      "total_audience": 92,
-      "engaged_audience": 2,
-      "date_range": "4/8/2026 - 5/8/2026",
-      "afternoon_refresh_status": "stale_render_blank_today",
-      "afternoon_refresh_note": "Holding 5/8 morning numbers. Analytics dashboard render-blank on Pinterest today."
+      "date_range": "4/9/2026 - 5/9/2026",
+      "metrics": {
+        "Impressions": "147",
+        "Engagements": "5",
+        "Outbound clicks": "1",
+        "Saves": "2",
+        "Total audience": "118",
+        "Engaged audience": "3"
+      }
     },
     "aesthetic_spaces_co": {
-      "display_name": "Aesthetic Spaces Co",
-      "handle": "@saltybayflipspin",
-      "impressions": 33,
-      "engagements": 3,
-      "outbound_clicks": 1,
-      "saves": 0,
-      "total_audience": 23,
-      "engaged_audience": 2,
-      "date_range": "4/7/2026 - 5/7/2026",
-      "afternoon_refresh_status": "stale_render_blank_today",
-      "afternoon_refresh_note": "Holding 5/8 morning numbers. Analytics dashboard render-blank on Pinterest today."
+      "date_range": "4/9/2026 - 5/9/2026",
+      "metrics": {
+        "Impressions": "50",
+        "Engagements": "3",
+        "Outbound clicks": "1",
+        "Saves": "0",
+        "Total audience": "42",
+        "Engaged audience": "2"
+      }
     }
   },
   "totals": {
-    "impressions": 459,
-    "engagements": 9,
-    "saves": 1,
-    "outbound_clicks": 2,
-    "total_audience": 229,
-    "engaged_audience": 5,
-    "note": "Portfolio totals carried forward from 5/8 morning. Pinterest analytics page would not hydrate today on AI Empire Crome — react app rendered initial-props JSON but no visible widgets. Same failure as 5/8 afternoon. Investigate next session: try (a) Pinterest avatar dropdown profile switch sequence first then analytics, (b) test in fresh incognito window, (c) check if extension is in tier 'read' on Pinterest domain specifically. Cookies/session valid (we are logged in — user_id 1140747918022991956 in initial-props). Numbers remain accurate as of 5/8 morning."
-  },
-  "report_url": "https://analytics.pinterest.com/overview/",
-  "afternoon_refresh_anomaly": "Pinterest analytics dashboard rendered blank (body innerText length 0) on every navigation today. textContent has 99K of server-rendered initial state JSON but no React-hydrated visible widgets. This is the second consecutive day this pattern hit. Marking pinterest scrape as DEGRADED. Action item: spawn a debug task to figure out why Chrome MCP can't trigger Pinterest React hydration."
+    "Impressions": 604,
+    "Engagements": 18,
+    "Outbound clicks": 2,
+    "Saves": 2,
+    "Total audience": 361,
+    "Engaged audience": 9
+  }
 }

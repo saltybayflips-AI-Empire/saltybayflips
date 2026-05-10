@@ -1,91 +1,94 @@
 {
-  "synced_at": "2026-05-09T14:10:00",
+  "synced_at": "2026-05-10T07:48:57.352378",
+  "report_url": "https://www.tiktok.com/tiktokstudio/analytics",
   "accounts": {
     "luxe.living.daily": {
-      "handle": "@luxe.living.daily",
-      "display_name": "Luxe Living Daily (rebranded from purchased account)",
-      "followers": 16300,
-      "likes_total": 108600,
-      "url": "https://www.tiktok.com/@luxe.living.daily",
-      "last_7d": {
-        "video_views": 1600,
-        "video_views_delta": 1500,
-        "video_views_delta_pct": 1472.8,
-        "profile_views": 6,
-        "profile_views_delta": 2,
-        "profile_views_delta_pct": 50.0,
-        "likes": 8,
-        "likes_delta": 6,
-        "likes_delta_pct": 300.0,
-        "comments": 0,
-        "comments_delta": 5,
-        "shares": 1,
-        "shares_delta": 1,
-        "est_rewards_usd": 0,
-        "profile_view_ctr_pct": 0.4,
-        "data_freshness_note": "Studio session live as @luxe.living.daily on Skylar Chrome browser. Numbers fresh. The +1,472.8% view spike is the algorithm responding to the V1-V3 native 9:16 LLD posts that started firing 5/7 evening (V1 11:45 AM 5/7, V2 6 PM 5/7, V3 9 AM 5/8) plus the 12 newly-scheduled posts setting up consistent cadence."
-      },
-      "public_profile_check_2026_05_09": {
-        "checked_at": "2026-05-09T14:10:00",
-        "followers": "16.3K",
-        "likes": "108.6K",
-        "video_grid_loaded": false,
-        "bio": "Luxury home inspo daily ✨ kitchens · spas · closets 🕯️ shop below 👇",
-        "bio_link": "saltybayflips-ai-empire.github.io/saltybayflips/",
-        "note": "Followers + likes flat day-over-day at 16.3K / 108.6K despite +1,472% view spike in 7d window. Algorithm pushing impressions to non-followers but conversion to follow is still anemic. Bio link points to root index, not /lld.html — minor concern: could route LLD viewers to non-LLD content. Verify on next session."
+      "date_range": "Last 7 days",
+      "metrics": {
+        "Video views": {
+          "value": "1.8K",
+          "delta": "+1.7K",
+          "delta_pct": "(1,600.0%)"
+        },
+        "Profile views": {
+          "value": "6",
+          "delta": "+2",
+          "delta_pct": "(50.0%)"
+        },
+        "Likes": {
+          "value": "9",
+          "delta": "+7",
+          "delta_pct": "(350.0%)"
+        },
+        "Comments": {
+          "value": "0",
+          "delta": "+5",
+          "delta_pct": "(-100.0%)"
+        },
+        "Shares": {
+          "value": "1",
+          "delta": "+1",
+          "delta_pct": "(--)"
+        },
+        "Est. rewards": {
+          "value": "$0.00",
+          "delta": "0.00",
+          "delta_pct": "(0.0%)"
+        }
       },
       "traffic_sources_pct": {
-        "For You": 94.2,
-        "Search": 3.7,
+        "For You": 92.5,
+        "Search": 4.8,
+        "Following": 1.6,
         "Personal profile": 1.1,
-        "Following": 0.9,
-        "Sound": 0.0
-      },
-      "search_queries_pct": {
-        "luxury lifestyle decor": 1.7,
-        "dream home": 1.7,
-        "luxury bathroom": 1.7,
-        "man cave": 1.7,
-        "Mudroom decor": 1.7
-      },
-      "delta_vs_prior_check": "Video views 994 → 1,600 (+606 in 24h, +61% intraday). FYP share: 91.1% → 94.2% (+3.1pt — algo pushing harder to non-followers). Likes 6 → 8 (+2). Profile views 4 → 6 (+2). Followers + total likes UNCHANGED at 16.3K / 108.6K. The growth is in distribution not retention.",
-      "note": "MAJOR ALGO LIFT IN PROGRESS. 12 freshly-scheduled posts (5-day runway Mon 5/11 → Fri 5/15) will keep the FYP loop fed. Profile-view CTR still anemic at 0.40%. Bio link clicks ~zero. Risk: if cadence drops over weekend, the lift evaporates."
+        "Sound": 0
+      }
     },
     "fuzzy_frames_ai": {
-      "handle": "@fuzzy.frames.ai",
-      "display_name": "Fuzzy Frames AI",
-      "status": "posting_active",
-      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
-      "posting_active": true,
-      "studio_dashboard_2026_05_09": {
-        "session_active": true,
-        "active_account": "fuzzy.frames.ai",
-        "date_range": "Last 7 days",
-        "video_views": 112,
-        "video_views_delta": 112,
-        "video_views_delta_pct": null,
-        "profile_views": 0,
-        "likes": 1,
-        "likes_delta": 1,
-        "comments": 0,
-        "shares": 0,
-        "est_rewards_usd": 0,
-        "traffic_sources_pct": {"For You": 99.1, "Personal profile": 0.9, "Following": 0, "Search": 0, "Sound": 0},
-        "note": "First non-zero 7d window for Fuzzy. 112 views from V1-V2 native posts firing 5/7-5/8 + scheduled cadence. 99.1% FYP — TikTok algo testing this content cold from zero followers. Watch 24h delta — should accelerate as V3+ scheduled posts fire."
+      "date_range": "Last 7 days",
+      "metrics": {
+        "Video views": {
+          "value": "118",
+          "delta": "+118",
+          "delta_pct": "(--)"
+        },
+        "Profile views": {
+          "value": "0",
+          "delta": "0",
+          "delta_pct": "(--)"
+        },
+        "Likes": {
+          "value": "2",
+          "delta": "+2",
+          "delta_pct": "(--)"
+        },
+        "Comments": {
+          "value": "0",
+          "delta": "0",
+          "delta_pct": "(--)"
+        },
+        "Shares": {
+          "value": "0",
+          "delta": "0",
+          "delta_pct": "(--)"
+        },
+        "Est. rewards": {
+          "value": "$0.00",
+          "delta": "0.00",
+          "delta_pct": "(0.0%)"
+        }
       },
-      "public_profile_check_2026_05_09": {
-        "checked_at": "2026-05-09T14:09:30",
-        "followers": "0",
-        "likes": "2",
-        "bio": "Cute pets that don't exist (yet) 🐾 AI-made art · shop pet picks ↓",
-        "bio_link": "saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
-        "video_grid_loaded": false,
-        "note": "Followers still 0, likes still 2 — same as 5/8. Public profile unchanged but Studio shows 112 views materializing. Cold-start: impressions arriving, no conversion yet. Video grid still not rendering on public profile (TikTok intermittent issue, not a profile problem)."
-      },
-      "bio_link": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html",
-      "business_verification_status": "approved",
-      "delta_vs_prior_check": "7d Studio video views 0 → 112 (first non-zero window). Likes 0 → 1. Public profile followers + likes flat at 0 / 2."
+      "traffic_sources_pct": {
+        "For You": 98.3,
+        "Personal profile": 0.9,
+        "Search": 0.9,
+        "Following": 0,
+        "Sound": 0
+      }
     }
   },
-  "summary_today": "LLD: +1,472.8% 7d views (1.6K), 8 likes, but follower count flat — algo distribution surge with weak conversion. Fuzzy: first non-zero 7d window (112 views), proving content is reaching FYP from cold start."
+  "summary_today": {
+    "top_performer": "luxe.living.daily +1600% video views",
+    "fuzzy_growing": true
+  }
 }
