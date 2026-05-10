@@ -1611,7 +1611,7 @@
     {
       "id": 45,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 46,
       "source_image": "pinterest/luxe_living_daily/qa_pending/46_helipad_skyline_rooftop.png",
       "title": "Helipad Skyline Rooftop Living",
@@ -1633,13 +1633,14 @@
         "Rooftop"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-18 11:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-12 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:32:09.336481"
     },
     {
       "id": 46,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 47,
       "source_image": "pinterest/luxe_living_daily/qa_pending/47_redwood_treehouse_bedroom.png",
       "title": "Redwood Treehouse Bedroom Living",
@@ -1661,13 +1662,14 @@
         "Bedroom"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-19 11:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-13 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:32:09.336515"
     },
     {
       "id": 47,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 48,
       "source_image": "pinterest/luxe_living_daily/qa_pending/48_greenhouse_bedroom.png",
       "title": "Greenhouse Bedroom Garden Rooms",
@@ -1688,13 +1690,14 @@
         "Bedroom"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-20 11:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-14 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:32:09.336734"
     },
     {
       "id": 48,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 49,
       "source_image": "pinterest/luxe_living_daily/qa_pending/49_log_chalet_copper_bath.png",
       "title": "Log Chalet Copper Bath Mountain Cabins",
@@ -1716,13 +1719,14 @@
         "Copper"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-21 11:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-15 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:32:09.336740"
     },
     {
       "id": 49,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 50,
       "source_image": "pinterest/luxe_living_daily/qa_pending/50_moroccan_riad_courtyard.png",
       "title": "Moroccan Riad Courtyard Style",
@@ -1744,8 +1748,9 @@
         "Courtyard"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-22 11:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-16 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:32:09.336744"
     }
   ],
   "rejected": [],
@@ -1753,7 +1758,7 @@
     "runway_days": 7,
     "next_scheduled": "2026-05-10T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 8
+    "count": 13
   },
   "tiktok": {
     "enabled": true,
@@ -2101,5 +2106,5 @@
     "next_unposted": "2026-05-10T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-10T07:49:41"
+  "last_synced": "2026-05-10T09:09:57"
 }

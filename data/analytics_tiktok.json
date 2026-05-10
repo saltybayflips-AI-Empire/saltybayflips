@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-10T07:48:57.352378",
+  "synced_at": "2026-05-10T17:00:00",
   "report_url": "https://www.tiktok.com/tiktokstudio/analytics",
   "accounts": {
     "luxe.living.daily": {
@@ -37,10 +37,10 @@
         }
       },
       "traffic_sources_pct": {
-        "For You": 92.5,
-        "Search": 4.8,
         "Following": 1.6,
+        "For You": 92.5,
         "Personal profile": 1.1,
+        "Search": 4.8,
         "Sound": 0
       }
     },
@@ -79,16 +79,17 @@
         }
       },
       "traffic_sources_pct": {
+        "Following": 0,
         "For You": 98.3,
         "Personal profile": 0.9,
         "Search": 0.9,
-        "Following": 0,
         "Sound": 0
       }
     }
   },
   "summary_today": {
     "top_performer": "luxe.living.daily +1600% video views",
-    "fuzzy_growing": true
+    "fuzzy_growing": true,
+    "note": "TikTok analytics refresh daily — values match this morning's autosync; no intraday delta expected"
   }
 }

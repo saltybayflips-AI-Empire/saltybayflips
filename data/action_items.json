@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-10T07:49:41.421037",
+  "synced_at": "2026-05-10T09:09:57.983210",
   "item_count": 12,
   "items": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "overdue_aesthetic_spaces_co",
       "title": "ASC: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 67.8h ago), #36 (2026-05-08 12:00, 43.8h ago), #37 (2026-05-09 12:00, 19.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 69.2h ago), #36 (2026-05-08 12:00, 45.2h ago), #37 (2026-05-09 12:00, 21.2h ago).",
       "priority": "high",
       "estimated_min": 6,
       "category": "missed_slot"
@@ -63,7 +63,7 @@
     {
       "id": "overdue_luxe_living_daily",
       "title": "LLD: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 68.8h ago), #35 (2026-05-08 11:00, 44.8h ago), #36 (2026-05-09 11:00, 20.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 70.2h ago), #35 (2026-05-08 11:00, 46.2h ago), #36 (2026-05-09 11:00, 22.2h ago).",
       "priority": "high",
       "estimated_min": 6,
       "category": "missed_slot"
@@ -78,16 +78,16 @@
     },
     {
       "id": "gap_fuzzy_frames_ai",
-      "title": "Fuzzy has 12 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, … (+7 more)",
+      "title": "Fuzzy has 7 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+2 more)",
       "priority": "med",
-      "estimated_min": 60,
+      "estimated_min": 35,
       "category": "gap_warning"
     },
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 69.8h ago), #38 (2026-05-08 10:00, 45.8h ago), #39 (2026-05-09 10:00, 21.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 71.2h ago), #38 (2026-05-08 10:00, 47.2h ago), #39 (2026-05-09 10:00, 23.2h ago).",
       "priority": "high",
       "estimated_min": 6,
       "category": "missed_slot"

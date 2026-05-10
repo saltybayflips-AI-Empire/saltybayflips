@@ -1283,8 +1283,10 @@
       "title": "Adorable Scottish Fold Kitten In Vintage Teacup Cute Cat Aesthetic Photography",
       "description": "Tiny fluffy Scottish Fold kitten with folded ears and golden eyes peeking out of a vintage teacup - peak teacup kitten aesthetic. Save for your cat moodboard, Scottish Fold inspo, or vintage cottage core vibes. Tap profile to shop Scottish Fold-themed home decor, vintage teacup sets, cottage cat aesthetic prints, and adorable kitten art. #ScottishFold #FoldedEarCat #CuteKitten #CuteCats #TeacupKitten #VintageAesthetic #CottageCore #PetPhotography #CatAesthetic #CatLovers #KittenOfTheDay #VintageTeacup",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
-      "status": "queued",
-      "notes": "Originally planned for Mon 5/12 10 AM but user dragged a pug image to that tab instead. Image still in ready_to_post/ + _gemini_passed/, ready for next batch."
+      "status": "scheduled",
+      "notes": "Originally planned for Mon 5/12 10 AM but user dragged a pug image to that tab instead. Image still in ready_to_post/ + _gemini_passed/, ready for next batch.",
+      "scheduled_for": "2026-05-12 11:00",
+      "scheduled_at": "2026-05-10T08:23:06.983186"
     },
     {
       "id": 43,
@@ -1516,10 +1518,12 @@
       "description": "A wild brown bunny among daisies in golden hour - the cottagecore moment your feed needs. Save for your spring mood board, easter inspo, or any quiet rural aesthetic. Tap to shop tiny-pet finds: hay feeders, indoor playpens, and the cutest accessories for bunny moms. #bunnyofinstagram #cottagecore #bunnylove #springaesthetic #daisylove #wildlifeaesthetic #bunnymom #petportrait #countryliving #fuzzyfriends #wholesome #aestheticphotography",
       "hashtags": "#bunnyofinstagram #cottagecore #bunnylove #springaesthetic #daisylove #wildlifeaesthetic #bunnymom #petportrait #countryliving #fuzzyfriends #wholesome #aestheticphotography",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#wild-friends",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-13 11:00",
+      "scheduled_at": "2026-05-10T08:23:06.983216"
     },
     {
       "id": 55,
@@ -1532,10 +1536,12 @@
       "description": "Smiling shiba surrounded by pink sakura petals - the dreamiest spring dog moment. Save for cottagecore vibes, cherry blossom mood boards, or shiba lover energy. Tap to shop: leashes, harnesses, and the photo-pretty pup gear we love. #shibainu #shibalovers #cherryblossom #sakura #dogaesthetic #springdog #petphotography #shibasmile #dogsofpinterest #fuzzyfriends #springmood #wholesomedogs",
       "hashtags": "#shibainu #shibalovers #cherryblossom #sakura #dogaesthetic #springdog #petphotography #shibasmile #dogsofpinterest #fuzzyfriends #springmood #wholesomedogs",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-14 11:00",
+      "scheduled_at": "2026-05-10T08:23:06.983265"
     },
     {
       "id": 56,
@@ -1580,10 +1586,12 @@
       "description": "A baby panda chewing bamboo - peak wholesome wild-animal energy. Save this for cute-animal mood boards, baby panda fans, or just to brighten the feed. Tap to shop wild-friend plushies, panda-themed home decor, and gifts for animal lovers. #babypanda #pandalovers #wildlifephotography #pandaaesthetic #wildcuties #bamboo #wholesome #cuteanimals #petphotography #fuzzyfriends #animallover #wildlife",
       "hashtags": "#babypanda #pandalovers #wildlifephotography #pandaaesthetic #wildcuties #bamboo #wholesome #cuteanimals #petphotography #fuzzyfriends #animallover #wildlife",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#wild-friends",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-15 11:00",
+      "scheduled_at": "2026-05-10T08:23:06.983270"
     },
     {
       "id": 59,
@@ -1628,10 +1636,12 @@
       "description": "Fluffy white kitten posed on a zen garden stone - serene minimalist cat content. Save for japandi mood boards, peaceful pet aesthetics, or white cat lovers. Tap to shop minimalist cat essentials: ceramic bowls, sisal scratchers, and aesthetic litter boxes. #whitecat #zen #japandi #catsofpinterest #catportrait #minimalist #catlovers #zengarden #petphotography #cottagecore #fuzzyfriends #aestheticpet",
       "hashtags": "#whitecat #zen #japandi #catsofpinterest #catportrait #minimalist #catlovers #zengarden #petphotography #cottagecore #fuzzyfriends #aestheticpet",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#cats",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-16 11:00",
+      "scheduled_at": "2026-05-10T08:23:06.983274"
     },
     {
       "id": 62,
@@ -1720,7 +1730,7 @@
     "runway_days": 8,
     "next_scheduled": "2026-05-10T10:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
-    "count": 3
+    "count": 8
   },
   "tiktok": {
     "enabled": true,
@@ -2185,5 +2195,5 @@
     "next_unposted": "2026-05-10T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-10T07:49:41"
+  "last_synced": "2026-05-10T09:09:57"
 }

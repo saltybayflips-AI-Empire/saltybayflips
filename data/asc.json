@@ -1347,7 +1347,7 @@
     {
       "id": 50,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 11,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/11_home_office_full_room.png",
       "title": "Home Office Full Room Small Ideas",
@@ -1369,13 +1369,15 @@
         "Full"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-14 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-12 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:40:48.124435",
+      "board_actual": "Aesthetic Desk Setup"
     },
     {
       "id": 51,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 12,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/12_linen_closet_organized.png",
       "title": "Linen Closet Organized Closets",
@@ -1397,13 +1399,15 @@
         "Organized"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-15 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-13 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:40:48.124478",
+      "board_actual": "Aesthetic Bathrooms"
     },
     {
       "id": 52,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 13,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/13_bookshelf_styling_arch.png",
       "title": "Bookshelf Styling Arch",
@@ -1425,8 +1429,10 @@
         "Arch"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-16 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-14 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:40:48.124487",
+      "board_actual": "Reading Nook Ideas"
     },
     {
       "id": 53,
@@ -1459,7 +1465,7 @@
     {
       "id": 54,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 15,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/15_gallery_wall_eclectic.png",
       "title": "Gallery Wall Eclectic Ideas",
@@ -1481,13 +1487,15 @@
         "Eclectic"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-18 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-15 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:40:48.124495",
+      "board_actual": "Small Living Room Ideas"
     },
     {
       "id": 55,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 16,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/16_dorm_aesthetic_pinterest.png",
       "title": "Dorm Aesthetic Pinterest Room Inspiration",
@@ -1509,8 +1517,10 @@
         "Pinterest"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-19 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-16 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-10T08:40:48.124503",
+      "board_actual": "Small Bedroom Ideas"
     },
     {
       "id": 56,
@@ -1659,7 +1669,7 @@
     "runway_days": 6,
     "next_scheduled": "2026-05-10T12:00:00",
     "last_scheduled": "2026-05-16T12:00:00",
-    "count": 7
+    "count": 12
   },
   "tiktok": {
     "enabled": false,
@@ -1674,5 +1684,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-10T07:49:41"
+  "last_synced": "2026-05-10T09:09:57"
 }

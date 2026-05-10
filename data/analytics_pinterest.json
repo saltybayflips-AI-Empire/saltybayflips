@@ -1,6 +1,8 @@
 {
-  "synced_at": "2026-05-10T07:48:57.352378",
+  "synced_at": "2026-05-10T17:00:00",
   "report_url": "https://analytics.pinterest.com/overview/",
+  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 3rd consecutive day (body.innerText.length=0). Holding 5/9 morning numbers. Open issue tracked in DECISIONS_LOG 2026-05-09.",
+  "scrape_status": "stale_render_blocked",
   "accounts": {
     "fuzzy_frames_ai": {
       "date_range": "4/9/2026 - 5/9/2026",
