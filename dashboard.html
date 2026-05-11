@@ -639,14 +639,21 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const ttViews = (tiktok.accounts?.['luxe.living.daily'] || tiktok.accounts?.laurasunkist)?.last_28d?.video_views || 0;
     const pinImps = pinterest.totals?.impressions || 0;
     const pinClicks = pinterest.totals?.outbound_clicks || 0;
-    const amzClicks = amazon.last_30d?.clicks || 0;
+    // Amazon clicks: prefer last_30d.clicks; if last_30d.no_data (which happens when sales=0
+    // and Global Reporting returns nothing), fall back to this_month.Clicks from the home page.
+    let amzClicks = amazon.last_30d?.clicks || 0;
+    let amzClicksLabel = 'Amazon clicks (30d)';
+    if (amazon.last_30d?.no_data && amazon.this_month?.Clicks) {
+      amzClicks = parseInt(String(amazon.this_month.Clicks).replace(/[^0-9]/g, ''), 10) || 0;
+      amzClicksLabel = 'Amazon clicks (this month)';
+    }
     const amzOrders = amazon.this_month?.ordered_items || 0;
     const amzEarn = amazon.this_month?.earnings_usd || 0;
     document.getElementById('funnelRow').innerHTML = `
       <div class="step"><div class="n">${ttViews.toLocaleString()}</div><div class="l">TikTok views (28d)</div></div>
       <div class="step"><div class="n">${pinImps.toLocaleString()}</div><div class="l">Pinterest impressions (30d)</div></div>
       <div class="step q"><div class="n">${pinClicks.toLocaleString()}</div><div class="l">Pinterest outbound (30d)</div></div>
-      <div class="step q"><div class="n">${amzClicks.toLocaleString()}</div><div class="l">Amazon clicks (30d)</div></div>
+      <div class="step q"><div class="n">${amzClicks.toLocaleString()}</div><div class="l">${amzClicksLabel}</div></div>
       <div class="step r"><div class="n">$${amzEarn.toFixed(2)}</div><div class="l">${amzOrders} orders this month</div></div>
     `;
 
