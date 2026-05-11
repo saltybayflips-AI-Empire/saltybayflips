@@ -1231,7 +1231,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1242,7 +1242,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#entertainment",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_at": "2026-05-07 11:00",
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
     },
     {
       "id": 35,
@@ -1268,7 +1270,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1279,7 +1281,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#wellness",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_at": "2026-05-08 11:00",
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
     },
     {
       "id": 36,
@@ -1305,7 +1309,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1316,7 +1320,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#wellness",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_at": "2026-05-09 11:00",
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
     },
     {
       "id": 37,
@@ -1342,7 +1348,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1353,7 +1359,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#wellness",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_at": "2026-05-10 11:00",
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
     },
     {
       "id": 38,
@@ -1379,7 +1387,7 @@
         "DreamHomeInspo"
       ],
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/1SAT6MMOTH8J4?tag=saltybayfli0c-20",
-      "status": "scheduled",
+      "status": "posted",
       "queued_date": "2026-05-01",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "destination_url_updated_at": "2026-05-05",
@@ -1390,7 +1398,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
           "until": "20260505_085603"
         }
-      ]
+      ],
+      "posted_at": "2026-05-11 11:00",
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
     },
     {
       "id": 39,
@@ -1756,9 +1766,9 @@
   "rejected": [],
   "pinterest_runway": {
     "runway_days": 6,
-    "next_scheduled": "2026-05-11T11:00:00",
+    "next_scheduled": "2026-05-12T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 12
+    "count": 11
   },
   "tiktok": {
     "enabled": true,
@@ -2100,46 +2110,46 @@
         "slot": "post_62_lld_v9_01_lake_house",
         "scheduled_for": "2026-05-20 18:00",
         "sched_date": "2026-05-20",
-        "posted": false,
+        "posted": true,
         "hook": "the house that floats on a lake",
         "caption_preview": "the house that floats on a lake\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaestheti",
-        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected vibe match)"
       },
       {
         "slot": "post_63_lld_v9_02_grotto_pool",
         "scheduled_for": "2026-05-21 09:00",
         "sched_date": "2026-05-21",
-        "posted": false,
+        "posted": true,
         "hook": "the pool inside the mountain",
         "caption_preview": "the pool inside the mountain\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
-        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected vibe match)"
       },
       {
         "slot": "post_64_lld_v9_03_cali_living",
         "scheduled_for": "2026-05-21 18:00",
         "sched_date": "2026-05-21",
-        "posted": false,
+        "posted": true,
         "hook": "California living, peak form",
         "caption_preview": "California living, peak form\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #",
-        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected vibe match)"
       },
       {
         "slot": "post_65_lld_v9_04_alpine_chalet",
         "scheduled_for": "2026-05-22 09:00",
         "sched_date": "2026-05-22",
-        "posted": false,
+        "posted": true,
         "hook": "the alps view I'd buy",
         "caption_preview": "the alps view I'd buy\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxuryi",
-        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected vibe match)"
       },
       {
         "slot": "post_66_lld_v9_05_tuscan_villa",
         "scheduled_for": "2026-05-22 18:00",
         "sched_date": "2026-05-22",
-        "posted": false,
+        "posted": true,
         "hook": "Tuscan summer, every day",
         "caption_preview": "Tuscan summer, every day\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
-        "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected vibe match)"
       },
       {
         "slot": "post_R01_lld_wan_5_11_am_rooms_broke",
@@ -2179,13 +2189,13 @@
       }
     ],
     "totals": {
-      "posted": 17,
-      "scheduled": 29,
+      "posted": 22,
+      "scheduled": 24,
       "ready_no_date": 0
     },
     "runway_days": 11,
     "next_unposted": "2026-05-11T11:45:00",
-    "last_scheduled": "2026-05-22T18:00:00"
+    "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-11T10:09:58"
+  "last_synced": "2026-05-11T12:42:01"
 }
