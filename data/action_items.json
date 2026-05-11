@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-11T10:06:12.579531",
+  "synced_at": "2026-05-11T10:09:58.753895",
   "item_count": 12,
   "items": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "overdue_aesthetic_spaces_co",
       "title": "ASC: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 94.1h ago), #36 (2026-05-08 12:00, 70.1h ago), #37 (2026-05-09 12:00, 46.1h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 94.2h ago), #36 (2026-05-08 12:00, 70.2h ago), #37 (2026-05-09 12:00, 46.2h ago).",
       "priority": "high",
       "estimated_min": 8,
       "category": "missed_slot"
@@ -63,7 +63,7 @@
     {
       "id": "overdue_luxe_living_daily",
       "title": "LLD: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 95.1h ago), #35 (2026-05-08 11:00, 71.1h ago), #36 (2026-05-09 11:00, 47.1h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 95.2h ago), #35 (2026-05-08 11:00, 71.2h ago), #36 (2026-05-09 11:00, 47.2h ago).",
       "priority": "high",
       "estimated_min": 8,
       "category": "missed_slot"
@@ -87,7 +87,7 @@
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 5 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 96.1h ago), #38 (2026-05-08 10:00, 72.1h ago), #39 (2026-05-09 10:00, 48.1h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 96.2h ago), #38 (2026-05-08 10:00, 72.2h ago), #39 (2026-05-09 10:00, 48.2h ago).",
       "priority": "high",
       "estimated_min": 10,
       "category": "missed_slot"

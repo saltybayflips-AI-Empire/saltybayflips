@@ -2140,16 +2140,52 @@
         "hook": "Tuscan summer, every day",
         "caption_preview": "Tuscan summer, every day\nwhich one would you take? 🏛️\n\n#luxuryhomes #dreamhouse #homeaesthetic #luxu",
         "music": "TBD (apply on schedule day via editor — mainstream pop tier)"
+      },
+      {
+        "slot": "post_R01_lld_wan_5_11_am_rooms_broke",
+        "scheduled_for": "2026-05-11 11:45",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "Rooms that broke my apartment forever",
+        "caption_preview": "Rooms that broke my apartment forever (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+      },
+      {
+        "slot": "post_R02_lld_wan_5_12_pm_houses_therapist",
+        "scheduled_for": "2026-05-12 18:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "Houses I show my therapist",
+        "caption_preview": "Houses I show my therapist (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+      },
+      {
+        "slot": "post_R03_lld_5_15_am_houses_rooms",
+        "scheduled_for": "2026-05-15 09:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "Houses with rooms I didn't know existed",
+        "caption_preview": "Houses with rooms I didn't know existed (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+      },
+      {
+        "slot": "post_R04_lld_5_13_am_rent_illegal",
+        "scheduled_for": "2026-05-13 09:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "Houses that make rent feel illegal",
+        "caption_preview": "Houses that make rent feel illegal (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
       }
     ],
     "totals": {
       "posted": 17,
-      "scheduled": 25,
+      "scheduled": 29,
       "ready_no_date": 0
     },
     "runway_days": 11,
-    "next_unposted": "2026-05-11T18:00:00",
+    "next_unposted": "2026-05-11T11:45:00",
     "last_scheduled": "2026-05-22T18:00:00"
   },
-  "last_synced": "2026-05-11T10:06:12"
+  "last_synced": "2026-05-11T10:09:58"
 }

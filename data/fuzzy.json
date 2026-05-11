@@ -1930,6 +1930,24 @@
         "music": "Ghibli orchestral edit"
       },
       {
+        "slot": "post_R05_fuzzy_wan_5_10_pm_commit_crimes",
+        "scheduled_for": "2026-05-10 18:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "pets you'd commit crimes for",
+        "caption_preview": "pets you'd commit crimes for (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+      },
+      {
+        "slot": "post_R06_fuzzy_wan_5_11_pm_cuteness_test",
+        "scheduled_for": "2026-05-11 18:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "pets that pass the cuteness test",
+        "caption_preview": "pets that pass the cuteness test (Wan-stitched legacy post)",
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+      },
+      {
         "slot": "post_v01_wan_2clip",
         "scheduled_for": "2026-05-06 09:00",
         "sched_date": "2026-05-06",
@@ -2283,12 +2301,12 @@
     ],
     "totals": {
       "posted": 12,
-      "scheduled": 29,
+      "scheduled": 31,
       "ready_no_date": 14
     },
     "runway_days": 13,
     "next_unposted": "2026-05-11T09:00:00",
     "last_scheduled": "2026-05-24T09:00:00"
   },
-  "last_synced": "2026-05-11T10:06:12"
+  "last_synced": "2026-05-11T10:09:58"
 }
