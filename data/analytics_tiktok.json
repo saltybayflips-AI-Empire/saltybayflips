@@ -1,24 +1,24 @@
 {
-  "synced_at": "2026-05-10T17:00:00",
+  "synced_at": "2026-05-11T14:09:00",
   "report_url": "https://www.tiktok.com/tiktokstudio/analytics",
   "accounts": {
     "luxe.living.daily": {
       "date_range": "Last 7 days",
       "metrics": {
         "Video views": {
-          "value": "1.8K",
-          "delta": "+1.7K",
-          "delta_pct": "(1,600.0%)"
+          "value": "1.6K",
+          "delta": "+1.2K",
+          "delta_pct": "(274.0%)"
         },
         "Profile views": {
-          "value": "6",
-          "delta": "+2",
-          "delta_pct": "(50.0%)"
+          "value": "8",
+          "delta": "+6",
+          "delta_pct": "(300.0%)"
         },
         "Likes": {
-          "value": "9",
-          "delta": "+7",
-          "delta_pct": "(350.0%)"
+          "value": "10",
+          "delta": "+9",
+          "delta_pct": "(900.0%)"
         },
         "Comments": {
           "value": "0",
@@ -26,9 +26,9 @@
           "delta_pct": "(-100.0%)"
         },
         "Shares": {
-          "value": "1",
-          "delta": "+1",
-          "delta_pct": "(--)"
+          "value": "0",
+          "delta": "-1",
+          "delta_pct": "(-100.0%)"
         },
         "Est. rewards": {
           "value": "$0.00",
@@ -37,19 +37,26 @@
         }
       },
       "traffic_sources_pct": {
-        "Following": 1.6,
-        "For You": 92.5,
-        "Personal profile": 1.1,
-        "Search": 4.8,
+        "Following": 1.8,
+        "For You": 91.9,
+        "Personal profile": 0.3,
+        "Search": 6.0,
         "Sound": 0
-      }
+      },
+      "top_search_queries": [
+        "Powder room ideas japanese style",
+        "earthy mudroom",
+        "rich lux",
+        "powder room interior design",
+        "Luxury Home"
+      ]
     },
     "fuzzy_frames_ai": {
       "date_range": "Last 7 days",
       "metrics": {
         "Video views": {
-          "value": "118",
-          "delta": "+118",
+          "value": "120",
+          "delta": "+120",
           "delta_pct": "(--)"
         },
         "Profile views": {
@@ -84,12 +91,17 @@
         "Personal profile": 0.9,
         "Search": 0.9,
         "Sound": 0
-      }
+      },
+      "top_search_queries": [
+        "Pets"
+      ]
     }
   },
   "summary_today": {
-    "top_performer": "luxe.living.daily +1600% video views",
+    "top_performer": "luxe.living.daily 1.6K video views (+274%) 7d",
     "fuzzy_growing": true,
-    "note": "TikTok analytics refresh daily — values match this morning's autosync; no intraday delta expected"
+    "fuzzy_delta_vs_yesterday": "+2 views (118 → 120)",
+    "lld_delta_vs_yesterday": "-200 views (1.8K → 1.6K) — comparison window shifted; +274% vs prior 7d window still strong",
+    "note": "TikTok analytics refresh daily; both accounts still trending up in absolute volume vs baseline"
   }
 }

@@ -1,8 +1,9 @@
 {
-  "synced_at": "2026-05-10T17:00:00",
+  "synced_at": "2026-05-11T14:11:00",
   "report_url": "https://analytics.pinterest.com/overview/",
-  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 3rd consecutive day (body.innerText.length=0). Holding 5/9 morning numbers. Open issue tracked in DECISIONS_LOG 2026-05-09.",
+  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 4th consecutive day (body.innerText.length=0, page stuck on Loading skeleton after 35+ sec wait). Holding 5/9 morning numbers. Open issue tracked in DECISIONS_LOG 2026-05-09.",
   "scrape_status": "stale_render_blocked",
+  "stale_since": "2026-05-09",
   "accounts": {
     "fuzzy_frames_ai": {
       "date_range": "4/9/2026 - 5/9/2026",

@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-10T09:35:24.746933",
+  "synced_at": "2026-05-11T09:11:22.485261",
   "item_count": 12,
   "items": [
     {
@@ -30,72 +30,72 @@
     },
     {
       "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 8 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, … (+3 more)",
+      "title": "ASC has 9 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, … (+4 more)",
       "priority": "med",
-      "estimated_min": 40,
+      "estimated_min": 45,
       "category": "gap_warning"
     },
     {
       "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 69.6h ago), #36 (2026-05-08 12:00, 45.6h ago), #37 (2026-05-09 12:00, 21.6h ago).",
+      "title": "ASC: 4 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #35 (2026-05-07 12:00, 93.2h ago), #36 (2026-05-08 12:00, 69.2h ago), #37 (2026-05-09 12:00, 45.2h ago).",
       "priority": "high",
-      "estimated_min": 6,
+      "estimated_min": 8,
       "category": "missed_slot"
     },
     {
       "id": "stale_aesthetic_spaces_co",
-      "title": "ASC hasn't posted in 4 days",
-      "detail": "Last live ASC pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "title": "ASC hasn't posted in 5 days",
+      "detail": "Last live ASC pin posted 5 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
       "priority": "med",
       "estimated_min": 15,
       "category": "cadence_alert"
     },
     {
       "id": "gap_luxe_living_daily",
-      "title": "LLD has 7 unscheduled days in next 14d",
-      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+2 more)",
+      "title": "LLD has 8 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+3 more)",
       "priority": "med",
-      "estimated_min": 35,
+      "estimated_min": 40,
       "category": "gap_warning"
     },
     {
       "id": "overdue_luxe_living_daily",
-      "title": "LLD: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 70.6h ago), #35 (2026-05-08 11:00, 46.6h ago), #36 (2026-05-09 11:00, 22.6h ago).",
+      "title": "LLD: 4 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #34 (2026-05-07 11:00, 94.2h ago), #35 (2026-05-08 11:00, 70.2h ago), #36 (2026-05-09 11:00, 46.2h ago).",
       "priority": "high",
-      "estimated_min": 6,
+      "estimated_min": 8,
       "category": "missed_slot"
     },
     {
       "id": "stale_luxe_living_daily",
-      "title": "LLD hasn't posted in 4 days",
-      "detail": "Last live LLD pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "title": "LLD hasn't posted in 5 days",
+      "detail": "Last live LLD pin posted 5 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
       "priority": "med",
       "estimated_min": 15,
       "category": "cadence_alert"
     },
     {
       "id": "gap_fuzzy_frames_ai",
-      "title": "Fuzzy has 7 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+2 more)",
+      "title": "Fuzzy has 8 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+3 more)",
       "priority": "med",
-      "estimated_min": 35,
+      "estimated_min": 40,
       "category": "gap_warning"
     },
     {
       "id": "overdue_fuzzy_frames_ai",
-      "title": "Fuzzy: 3 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 71.6h ago), #38 (2026-05-08 10:00, 47.6h ago), #39 (2026-05-09 10:00, 23.6h ago).",
+      "title": "Fuzzy: 4 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #37 (2026-05-07 10:00, 95.2h ago), #38 (2026-05-08 10:00, 71.2h ago), #39 (2026-05-09 10:00, 47.2h ago).",
       "priority": "high",
-      "estimated_min": 6,
+      "estimated_min": 8,
       "category": "missed_slot"
     },
     {
       "id": "stale_fuzzy_frames_ai",
-      "title": "Fuzzy hasn't posted in 4 days",
-      "detail": "Last live Fuzzy pin posted 4 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
+      "title": "Fuzzy hasn't posted in 5 days",
+      "detail": "Last live Fuzzy pin posted 5 days ago. Cadence rule = at least 1 pin/day per niche. Check scheduled pipeline.",
       "priority": "med",
       "estimated_min": 15,
       "category": "cadence_alert"
