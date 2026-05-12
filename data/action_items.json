@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-12T09:20:44.620974",
-  "item_count": 3,
+  "synced_at": "2026-05-12T11:38:22.020185",
+  "item_count": 6,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
@@ -11,6 +11,14 @@
       "category": "gap_warning"
     },
     {
+      "id": "overdue_aesthetic_spaces_co",
+      "title": "ASC: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #50 (2026-05-12 11:00, 0.6h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
+    },
+    {
       "id": "gap_luxe_living_daily",
       "title": "LLD has 9 unscheduled days in next 14d",
       "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+4 more)",
@@ -19,12 +27,28 @@
       "category": "gap_warning"
     },
     {
+      "id": "overdue_luxe_living_daily",
+      "title": "LLD: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #39 (2026-05-12 11:00, 0.6h ago), #45 (2026-05-12 11:00, 0.6h ago).",
+      "priority": "high",
+      "estimated_min": 4,
+      "category": "missed_slot"
+    },
+    {
       "id": "gap_fuzzy_frames_ai",
       "title": "Fuzzy has 9 unscheduled days in next 14d",
       "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+4 more)",
       "priority": "med",
       "estimated_min": 45,
       "category": "gap_warning"
+    },
+    {
+      "id": "overdue_fuzzy_frames_ai",
+      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #42 (2026-05-12 11:00, 0.6h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot"
     }
   ]
 }

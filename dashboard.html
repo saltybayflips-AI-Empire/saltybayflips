@@ -633,22 +633,54 @@ function renderPerformance(amazon, tiktok, pinterest) {
   document.getElementById('performance').innerHTML = cards.join('') ||
     '<div class="empty" style="grid-column:1/-1">No analytics data yet &mdash; run <code>scripts/sync_analytics_*.py</code> to scrape Pinterest/TikTok/Amazon dashboards.</div>';
 
-  // Funnel: TikTok 28d views &rarr; Pinterest impressions &rarr; outbound clicks &rarr; Amazon 30d clicks &rarr; orders &rarr; earnings
+  // Helper: parse strings like "1.4K", "10", "$0.00" into numbers
+  function parseMetric(v) {
+    if (v == null) return 0;
+    if (typeof v === 'number') return v;
+    const s = String(v).replace(/[$,]/g, '').trim();
+    const m = s.match(/^(-?\d*\.?\d+)\s*([KMB])?$/i);
+    if (!m) return 0;
+    const num = parseFloat(m[1]);
+    const mult = m[2] ? {K:1e3, M:1e6, B:1e9}[m[2].toUpperCase()] : 1;
+    return Math.round(num * mult);
+  }
+
+  // Funnel: TikTok views (7d, sum both accounts) → Pinterest impressions (sum all 3 niches)
+  //   → outbound clicks → Amazon clicks → orders → earnings
   if (amazon && tiktok && pinterest) {
     document.getElementById('funnel').style.display = 'block';
-    const ttViews = (tiktok.accounts?.['luxe.living.daily'] || tiktok.accounts?.laurasunkist)?.last_28d?.video_views || 0;
-    const pinImps = pinterest.totals?.impressions || 0;
-    const pinClicks = pinterest.totals?.outbound_clicks || 0;
-    // Amazon clicks: prefer last_30d.clicks; if last_30d.no_data (which happens when sales=0
-    // and Global Reporting returns nothing), fall back to this_month.Clicks from the home page.
-    let amzClicks = amazon.last_30d?.clicks || 0;
+
+    // TikTok views: sum all accounts' Video views (handles 'Last 7 days' window from current scraper)
+    let ttViews = 0;
+    if (tiktok.accounts) {
+      for (const acct of Object.values(tiktok.accounts)) {
+        const vv = acct?.metrics?.['Video views']?.value ?? acct?.last_28d?.video_views;
+        ttViews += parseMetric(vv);
+      }
+    }
+
+    // Pinterest impressions/clicks: prefer top-level totals if present, else sum accounts
+    let pinImps = parseMetric(pinterest.totals?.impressions ?? pinterest.totals?.Impressions);
+    let pinClicks = parseMetric(pinterest.totals?.outbound_clicks ?? pinterest.totals?.['Outbound clicks']);
+    if ((!pinImps || !pinClicks) && pinterest.accounts) {
+      let sumImps = 0, sumClicks = 0;
+      for (const acct of Object.values(pinterest.accounts)) {
+        sumImps += parseMetric(acct?.metrics?.Impressions);
+        sumClicks += parseMetric(acct?.metrics?.['Outbound clicks']);
+      }
+      if (!pinImps) pinImps = sumImps;
+      if (!pinClicks) pinClicks = sumClicks;
+    }
+
+    // Amazon clicks: prefer last_30d.clicks; if last_30d.no_data, fall back to this_month.Clicks
+    let amzClicks = parseMetric(amazon.last_30d?.clicks);
     let amzClicksLabel = 'Amazon clicks (30d)';
-    if (amazon.last_30d?.no_data && amazon.this_month?.Clicks) {
-      amzClicks = parseInt(String(amazon.this_month.Clicks).replace(/[^0-9]/g, ''), 10) || 0;
+    if ((amzClicks === 0 || amazon.last_30d?.no_data) && amazon.this_month?.Clicks) {
+      amzClicks = parseMetric(amazon.this_month.Clicks);
       amzClicksLabel = 'Amazon clicks (this month)';
     }
-    const amzOrders = amazon.this_month?.ordered_items || 0;
-    const amzEarn = amazon.this_month?.earnings_usd || 0;
+    const amzOrders = parseMetric(amazon.this_month?.ordered_items ?? amazon.this_month?.['Total Ordered Items']);
+    const amzEarn = parseMetric(amazon.this_month?.earnings_usd ?? amazon.this_month?.['Total Earnings']);
     document.getElementById('funnelRow').innerHTML = `
       <div class="step"><div class="n">${ttViews.toLocaleString()}</div><div class="l">TikTok views (28d)</div></div>
       <div class="step"><div class="n">${pinImps.toLocaleString()}</div><div class="l">Pinterest impressions (30d)</div></div>
