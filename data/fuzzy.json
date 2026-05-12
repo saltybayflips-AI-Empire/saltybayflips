@@ -1837,7 +1837,7 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 7,
+    "runway_days": 6,
     "next_scheduled": "2026-05-12T11:00:00",
     "last_scheduled": "2026-05-18T10:00:00",
     "count": 16
@@ -2409,9 +2409,9 @@
       "scheduled": 26,
       "ready_no_date": 14
     },
-    "runway_days": 7,
-    "next_unposted": "2026-05-11T09:00:00",
+    "runway_days": 6,
+    "next_unposted": "2026-05-12T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-11T12:43:25"
+  "last_synced": "2026-05-12T09:11:27"
 }

@@ -1,9 +1,11 @@
 {
-  "synced_at": "2026-05-11T14:11:00",
+  "synced_at": "2026-05-12T14:11:00",
   "report_url": "https://analytics.pinterest.com/overview/",
-  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 4th consecutive day (body.innerText.length=0, page stuck on Loading skeleton after 35+ sec wait). Holding 5/9 morning numbers. Open issue tracked in DECISIONS_LOG 2026-05-09.",
+  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 5TH CONSECUTIVE DAY (body.innerText.length=0, only 6 of 218 elements visible, page stuck on Loading skeleton after 25+ sec wait). Hit the escalation threshold logged in 2026-05-11 DECISIONS_LOG. Holding 5/9 morning numbers. NEXT STEPS: (a) user manual screenshot during check-in, (b) try CSV export from analytics page, (c) Pinterest API via approved ASC dev app.",
   "scrape_status": "stale_render_blocked",
   "stale_since": "2026-05-09",
+  "stale_days": 5,
+  "escalation": "Hit 5-day threshold today. Needs user attention.",
   "accounts": {
     "fuzzy_frames_ai": {
       "date_range": "4/9/2026 - 5/9/2026",

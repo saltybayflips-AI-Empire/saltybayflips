@@ -1,8 +1,8 @@
 {
-  "synced_at": "2026-05-11T14:07:42",
+  "synced_at": "2026-05-12T14:07:00",
   "store_id": "saltybayfli0c-20",
   "report_url": "https://affiliate-program.amazon.com/home",
-  "last_updated_label": "May 10 2026",
+  "last_updated_label": "May 11 2026",
   "this_month": {
     "Total Items Shipped": "0",
     "Total Earnings": "$0.00",
@@ -23,6 +23,6 @@
     "Clicks": 0,
     "Total Earnings": "$0.00",
     "Total Ordered Items": 0,
-    "note": "Same as 2026-05-10 snapshot"
+    "note": "Flat vs 2026-05-11; still 3 clicks this month, 0 sales"
   }
 }

@@ -1,29 +1,29 @@
 {
-  "synced_at": "2026-05-11T12:43:25.975501",
+  "synced_at": "2026-05-12T09:11:27.757035",
   "item_count": 3,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 9 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, … (+4 more)",
+      "title": "ASC has 10 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, … (+5 more)",
+      "priority": "med",
+      "estimated_min": 50,
+      "category": "gap_warning"
+    },
+    {
+      "id": "gap_luxe_living_daily",
+      "title": "LLD has 9 unscheduled days in next 14d",
+      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+4 more)",
       "priority": "med",
       "estimated_min": 45,
       "category": "gap_warning"
     },
     {
-      "id": "gap_luxe_living_daily",
-      "title": "LLD has 8 unscheduled days in next 14d",
-      "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+3 more)",
-      "priority": "med",
-      "estimated_min": 40,
-      "category": "gap_warning"
-    },
-    {
       "id": "gap_fuzzy_frames_ai",
-      "title": "Fuzzy has 8 unscheduled days in next 14d",
-      "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+3 more)",
+      "title": "Fuzzy has 9 unscheduled days in next 14d",
+      "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+4 more)",
       "priority": "med",
-      "estimated_min": 40,
+      "estimated_min": 45,
       "category": "gap_warning"
     }
   ]

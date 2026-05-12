@@ -1,29 +1,29 @@
 {
-  "synced_at": "2026-05-11T14:09:00",
+  "synced_at": "2026-05-12T14:08:00",
   "report_url": "https://www.tiktok.com/tiktokstudio/analytics",
   "accounts": {
     "luxe.living.daily": {
       "date_range": "Last 7 days",
       "metrics": {
         "Video views": {
-          "value": "1.6K",
-          "delta": "+1.2K",
-          "delta_pct": "(274.0%)"
+          "value": "1.4K",
+          "delta": "+475",
+          "delta_pct": "(52.2%)"
         },
         "Profile views": {
-          "value": "8",
+          "value": "10",
           "delta": "+6",
-          "delta_pct": "(300.0%)"
+          "delta_pct": "(150.0%)"
         },
         "Likes": {
           "value": "10",
-          "delta": "+9",
-          "delta_pct": "(900.0%)"
+          "delta": "+5",
+          "delta_pct": "(100.0%)"
         },
         "Comments": {
-          "value": "0",
-          "delta": "+5",
-          "delta_pct": "(-100.0%)"
+          "value": "-1",
+          "delta": "+4",
+          "delta_pct": "(-80.0%)"
         },
         "Shares": {
           "value": "0",
@@ -37,22 +37,23 @@
         }
       },
       "traffic_sources_pct": {
-        "Following": 1.8,
-        "For You": 91.9,
-        "Personal profile": 0.3,
-        "Search": 6.0,
+        "Following": 1.7,
+        "For You": 91.6,
+        "Personal profile": 0.2,
+        "Search": 6.4,
         "Sound": 0
       },
       "top_search_queries": [
-        "Powder room ideas japanese style",
-        "earthy mudroom",
-        "rich lux",
-        "powder room interior design",
-        "Luxury Home"
+        "mud room decor",
+        "rich piana haircut",
+        "deco chỗ đánh đàn piano",
+        "rich homes with character",
+        "modelo de piscinas en casa"
       ]
     },
     "fuzzy_frames_ai": {
       "date_range": "Last 7 days",
+      "account_type": "Personal/Creator (post Pivot B 2026-05-11)",
       "metrics": {
         "Video views": {
           "value": "120",
@@ -98,10 +99,9 @@
     }
   },
   "summary_today": {
-    "top_performer": "luxe.living.daily 1.6K video views (+274%) 7d",
-    "fuzzy_growing": true,
-    "fuzzy_delta_vs_yesterday": "+2 views (118 → 120)",
-    "lld_delta_vs_yesterday": "-200 views (1.8K → 1.6K) — comparison window shifted; +274% vs prior 7d window still strong",
-    "note": "TikTok analytics refresh daily; both accounts still trending up in absolute volume vs baseline"
+    "top_performer": "luxe.living.daily 1.4K video views (+52.2%) 7d",
+    "lld_delta_vs_yesterday": "-200 abs (1.6K → 1.4K) — comparison window rolled; +475 vs prior 7d still strong; growth signal intact",
+    "fuzzy_delta_vs_yesterday": "0 (120 flat) — Pivot B 24h in; too early to measure reach lift",
+    "note": "LLD organic still strongest channel; Fuzzy in Pivot B observation window"
   }
 }
