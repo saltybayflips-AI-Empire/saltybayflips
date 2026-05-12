@@ -901,53 +901,26 @@ function render(totalRejected, results) {
 
   // ============ TIMELINE ============
   // Includes BOTH Pinterest AND TikTok scheduled posts (within next 14 days).
-  // For TODAY: distinguishes already-fired (scheduled_for < now) from upcoming.
   const days = [];
   let pinIn14 = 0, ttIn14 = 0;
-  const nowMs = Date.now();
   for (let i = 0; i < 14; i++) {
     const d = addDays(today, i);
     const dk = dayKey(d);
-    // Include both scheduled and posted-today (posted-today shows as "fired" half of today's count)
-    const dayPosts = [...allPosts].filter(p => dayKey(parseSched(p)) === dk);
+    const dayPosts = scheduled.filter(p => dayKey(parseSched(p)) === dk);
     const dayPin = dayPosts.filter(p => p.platform !== 'tiktok');
     const dayTT = dayPosts.filter(p => p.platform === 'tiktok');
     pinIn14 += dayPin.length;
     ttIn14 += dayTT.length;
     const isToday = i === 0;
-    // Split today's posts into FIRED (sched_for in past) vs UPCOMING (in future)
-    let firedCount = 0, upcomingCount = 0;
-    if (isToday) {
-      for (const p of dayPosts) {
-        const dt = parseSched(p);
-        if (!dt) continue;
-        if (dt.getTime() < nowMs) firedCount++;
-        else upcomingCount++;
-      }
-    }
     const isGap = !isToday && i > 0 && dayPosts.length === 0;
     const dotsHtml = [
-      ...dayPin.map(p => {
-        const dt = parseSched(p);
-        const fired = dt && dt.getTime() < nowMs;
-        const opacity = isToday && fired ? 'opacity:.35' : '';
-        return `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" style="${opacity}" title="📌 ${fired ? '✓ ' : ''}${p.title}"></div>`;
-      }),
-      ...dayTT.map(p => {
-        const dt = parseSched(p);
-        const fired = dt && dt.getTime() < nowMs;
-        const opacity = isToday && fired ? 'opacity:.35' : '';
-        return `<div class="d tt ${NICHES.find(n => n.slug === p.niche).color}" style="${opacity}" title="🎵 ${fired ? '✓ ' : ''}${p.title}"></div>`;
-      }),
+      ...dayPin.map(p => `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="📌 ${p.title}"></div>`),
+      ...dayTT.map(p => `<div class="d tt ${NICHES.find(n => n.slug === p.niche).color}" title="🎵 ${p.title}"></div>`),
     ].join('');
-    const countLabel = isGap ? 'gap'
-      : isToday ? `${firedCount}✓ / ${upcomingCount}↗`
-      : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'post':'posts'));
-    const tooltip = isToday ? `${firedCount} fired · ${upcomingCount} upcoming today` : (isGap ? 'No posts scheduled' : '');
-    days.push(`<div class="day ${isGap ? 'gap':''}" title="${tooltip}">
+    days.push(`<div class="day ${isGap ? 'gap':''}" title="${isGap ? 'No posts scheduled':''}">
       <div class="dow">${d.toLocaleDateString(undefined,{weekday:'short'})}</div>
       <div class="dnum ${isToday ? 'today':''}">${d.getDate()}</div>
-      <div class="dcount">${countLabel}</div>
+      <div class="dcount">${isGap ? 'gap' : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'post':'posts'))}</div>
       <div class="dots">${dotsHtml}</div>
     </div>`);
   }
