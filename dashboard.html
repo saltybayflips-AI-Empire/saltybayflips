@@ -230,6 +230,8 @@
   /* Timeline gap-day highlight */
   .day.gap { border-color:rgba(245,158,11,.4); background:rgba(245,158,11,.04); }
   .day.gap .dcount { color:var(--warn); }
+  .day.behind { border-color:rgba(245,158,11,.25); background:rgba(245,158,11,.02); }
+  .day.behind .dcount::after { content:' \26A0'; color:var(--warn); font-size:11px; opacity:.7; }
 
   /* ===== RUNWAY SECTION (Pinterest vs TikTok per niche) ===== */
   .runway { background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -932,27 +934,64 @@ function render(totalRejected, results) {
   ).join('');
 
   // ============ TIMELINE ============
-  // Includes BOTH Pinterest AND TikTok scheduled posts (within next 14 days).
+  // Shows next 14 days. For TODAY: "X✓ fired / Y↗ upcoming" (clear posted-vs-scheduled split).
+  // For future days: "X scheduled". Flags any day BEHIND the 4-post baseline (2 TikTok × 2 niches).
   const days = [];
   let pinIn14 = 0, ttIn14 = 0;
+  const nowMs = Date.now();
+  const MIN_DAILY_TIKTOK = 4;  // baseline = 2 posts/day × 2 active TikTok accounts
   for (let i = 0; i < 14; i++) {
     const d = addDays(today, i);
     const dk = dayKey(d);
-    const dayPosts = scheduled.filter(p => dayKey(parseSched(p)) === dk);
-    const dayPin = dayPosts.filter(p => p.platform !== 'tiktok');
-    const dayTT = dayPosts.filter(p => p.platform === 'tiktok');
+    const isToday = i === 0;
+    // Defensive: filter on valid parsed date BEFORE comparing
+    const allDayPosts = (allPosts || []).filter(p => {
+      const dt = parseSched(p);
+      return dt && dayKey(dt) === dk;
+    });
+    const dayPin = allDayPosts.filter(p => p.platform !== 'tiktok');
+    const dayTT = allDayPosts.filter(p => p.platform === 'tiktok');
     pinIn14 += dayPin.length;
     ttIn14 += dayTT.length;
-    const isToday = i === 0;
-    const isGap = !isToday && i > 0 && dayPosts.length === 0;
+    // For today: split fired vs upcoming
+    let firedCount = 0, upcomingCount = 0;
+    for (const p of allDayPosts) {
+      const dt = parseSched(p);
+      if (!dt) continue;
+      const isFired = (p.status === 'posted') || (dt.getTime() < nowMs);
+      if (isFired) firedCount++; else upcomingCount++;
+    }
+    const isGap = !isToday && allDayPosts.length === 0;
+    const isBehind = !isToday && dayTT.length < MIN_DAILY_TIKTOK && allDayPosts.length > 0;
     const dotsHtml = [
-      ...dayPin.map(p => `<div class="d ${NICHES.find(n => n.slug === p.niche).color}" title="📌 ${p.title}"></div>`),
-      ...dayTT.map(p => `<div class="d tt ${NICHES.find(n => n.slug === p.niche).color}" title="🎵 ${p.title}"></div>`),
+      ...dayPin.map(p => {
+        const dt = parseSched(p);
+        const fired = (p.status === 'posted') || (dt && dt.getTime() < nowMs);
+        const niche = NICHES.find(n => n.slug === p.niche);
+        const cls = niche ? niche.color : '';
+        return `<div class="d ${cls}" style="${fired ? 'opacity:.35':''}" title="📌 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
+      }),
+      ...dayTT.map(p => {
+        const dt = parseSched(p);
+        const fired = (p.status === 'posted') || (dt && dt.getTime() < nowMs);
+        const niche = NICHES.find(n => n.slug === p.niche);
+        const cls = niche ? niche.color : '';
+        return `<div class="d tt ${cls}" style="${fired ? 'opacity:.35':''}" title="🎵 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
+      }),
     ].join('');
-    days.push(`<div class="day ${isGap ? 'gap':''}" title="${isGap ? 'No posts scheduled':''}">
+    let countLabel;
+    if (isGap) countLabel = 'gap';
+    else if (isToday) countLabel = `${firedCount}✓ ${upcomingCount}↗`;
+    else countLabel = `${allDayPosts.length} ${allDayPosts.length === 1 ? 'post' : 'posts'}`;
+    const dayCls = isGap ? 'gap' : (isBehind ? 'behind' : '');
+    const tooltip = isToday ? `${firedCount} fired · ${upcomingCount} upcoming`
+                   : isGap ? 'No posts scheduled — GAP'
+                   : isBehind ? `Below ${MIN_DAILY_TIKTOK}-TikTok baseline (${dayTT.length} TT scheduled)`
+                   : '';
+    days.push(`<div class="day ${dayCls}" title="${tooltip}">
       <div class="dow">${d.toLocaleDateString(undefined,{weekday:'short'})}</div>
       <div class="dnum ${isToday ? 'today':''}">${d.getDate()}</div>
-      <div class="dcount">${isGap ? 'gap' : (dayPosts.length + ' ' + (dayPosts.length === 1 ? 'post':'posts'))}</div>
+      <div class="dcount">${countLabel}</div>
       <div class="dots">${dotsHtml}</div>
     </div>`);
   }
