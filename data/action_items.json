@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-12T11:43:07.108333",
+  "synced_at": "2026-05-12T11:54:00.036197",
   "item_count": 6,
   "items": [
     {
@@ -13,7 +13,7 @@
     {
       "id": "overdue_aesthetic_spaces_co",
       "title": "ASC: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #50 (2026-05-12 11:00, 0.7h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #50 (2026-05-12 11:00, 0.9h ago).",
       "priority": "high",
       "estimated_min": 2,
       "category": "missed_slot"
@@ -29,7 +29,7 @@
     {
       "id": "overdue_luxe_living_daily",
       "title": "LLD: 2 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #39 (2026-05-12 11:00, 0.7h ago), #45 (2026-05-12 11:00, 0.7h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #39 (2026-05-12 11:00, 0.9h ago), #45 (2026-05-12 11:00, 0.9h ago).",
       "priority": "high",
       "estimated_min": 4,
       "category": "missed_slot"
@@ -45,7 +45,7 @@
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #42 (2026-05-12 11:00, 0.7h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #42 (2026-05-12 11:00, 0.9h ago).",
       "priority": "high",
       "estimated_min": 2,
       "category": "missed_slot"

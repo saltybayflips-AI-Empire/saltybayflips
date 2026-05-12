@@ -555,27 +555,36 @@ function renderPerformance(amazon, tiktok, pinterest) {
 
   // TikTok card (shows luxe.living.daily — main account with reach;
   // key renamed from laurasunkist 2026-05-07; supports both during transition)
+  // Data shape: t.metrics['Video views'].value/delta/delta_pct (strings like "1.4K", "+475", "(52.2%)")
   const lldAccount = tiktok?.accounts?.['luxe.living.daily'] || tiktok?.accounts?.laurasunkist;
   if (tiktok && tiktok.accounts && lldAccount) {
     const t = lldAccount;
-    const w7 = t.last_7d || {};
-    const w28 = t.last_28d || {};
-    const delta = w7.video_views_delta;
-    const deltaPct = w7.video_views_delta_pct;
-    const deltaCls = delta > 0 ? 'up' : delta < 0 ? 'down' : '';
+    const m = t.metrics || {};
+    const views = parseMetric(m['Video views']?.value);
+    const viewsDelta = String(m['Video views']?.delta ?? '');
+    const viewsDeltaPct = String(m['Video views']?.delta_pct ?? '').replace(/[()]/g, '');
+    const deltaNum = parseFloat(viewsDelta.replace(/[+,]/g, '')) || 0;
+    const deltaCls = deltaNum > 0 ? 'up' : deltaNum < 0 ? 'down' : '';
+    const likes = parseMetric(m['Likes']?.value);
+    const profileViews = parseMetric(m['Profile views']?.value);
+    const rewardsStr = m['Est. rewards']?.value || '$0.00';
+    const rewards = parseFloat(String(rewardsStr).replace(/[$,]/g, '')) || 0;
+    const range = t.date_range || 'Last 7 days';
+    const displayName = t.display_name || 'Luxe Living Daily';
+    const handle = t.handle || '@luxe.living.daily';
+    const url = t.url || 'https://www.tiktok.com/@luxe.living.daily';
     cards.push(`
       <div class="perfcard tiktok">
         <span class="ptag">🎵 TikTok</span>
-        <h3>${t.display_name} <span class="platform">${t.handle}</span></h3>
-        <div class="big">${(w7.video_views ?? 0).toLocaleString()}<small>views (7d)</small></div>
-        <div class="sub">${(t.followers ?? 0).toLocaleString()} followers <span class="delta ${deltaCls}">${delta > 0 ? '+' : ''}${delta ?? 0} (${deltaPct ?? 0}%)</span></div>
-        <div class="row"><span class="l">Views (28d)</span><span class="v">${(w28.video_views ?? 0).toLocaleString()}</span></div>
-        <div class="row"><span class="l">Likes (7d)</span><span class="v">${w7.likes ?? 0}</span></div>
-        <div class="row"><span class="l">Profile views (7d)</span><span class="v">${w7.profile_views ?? 0}</span></div>
-        <div class="row"><span class="l">Est. rewards (7d)</span><span class="v ${(w7.est_rewards_usd ?? 0) > 0 ? 'good' : ''}">$${w7.est_rewards_usd ?? 0}</span></div>
+        <h3>${displayName} <span class="platform">${handle}</span></h3>
+        <div class="big">${views.toLocaleString()}<small>video views (${range.toLowerCase()})</small></div>
+        <div class="sub"><span class="delta ${deltaCls}">${viewsDelta} ${viewsDeltaPct ? '(' + viewsDeltaPct + ')' : ''}</span></div>
+        <div class="row"><span class="l">Likes</span><span class="v">${likes.toLocaleString()}</span></div>
+        <div class="row"><span class="l">Profile views</span><span class="v">${profileViews.toLocaleString()}</span></div>
+        <div class="row"><span class="l">Est. rewards</span><span class="v ${rewards > 0 ? 'good' : ''}">$${rewards.toFixed(2)}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(tiktok.synced_at)}</span>
-          <a href="${t.url}" target="_blank">Open &#x2197;</a>
+          <a href="${url}" target="_blank">Open &#x2197;</a>
         </div>
       </div>`);
   }
@@ -611,20 +620,34 @@ function renderPerformance(amazon, tiktok, pinterest) {
   }
 
   // Pinterest aggregate
+  // Data shape: tot.Impressions (capital I) and acct.metrics.Impressions (nested under metrics)
   if (pinterest && pinterest.totals) {
     const tot = pinterest.totals;
     const accts = pinterest.accounts || {};
-    const bestAcct = Object.entries(accts).sort((a,b) => (b[1].impressions||0) - (a[1].impressions||0))[0];
+    const bestAcct = Object.entries(accts).sort((a,b) =>
+      parseMetric(b[1]?.metrics?.Impressions ?? b[1]?.impressions) -
+      parseMetric(a[1]?.metrics?.Impressions ?? a[1]?.impressions))[0];
+    const impressions = parseMetric(tot.Impressions ?? tot.impressions);
+    const engagements = parseMetric(tot.Engagements ?? tot.engagements);
+    const saves = parseMetric(tot.Saves ?? tot.saves);
+    const outbound = parseMetric(tot['Outbound clicks'] ?? tot.outbound_clicks);
+    const audience = parseMetric(tot['Total audience'] ?? tot.total_audience);
+    const bestName = bestAcct ? (bestAcct[1].display_name || bestAcct[0].replace(/_/g, ' ')) : '';
+    const bestImps = bestAcct ? parseMetric(bestAcct[1]?.metrics?.Impressions ?? bestAcct[1]?.impressions) : 0;
+    const stale = pinterest.scrape_status === 'stale_render_blocked';
+    const staleBadge = stale
+      ? ` <small style="font-weight:400;color:var(--warn,#d97706)">stale ${pinterest.stale_days || '?'}d</small>`
+      : '';
     cards.push(`
       <div class="perfcard pinterest">
-        <span class="ptag">📌 Pinterest</span>
+        <span class="ptag">📌 Pinterest${staleBadge}</span>
         <h3>Pinterest <span class="platform">3 accounts</span></h3>
-        <div class="big">${(tot.impressions ?? 0).toLocaleString()}<small>impressions (30d)</small></div>
-        <div class="sub">Top: ${bestAcct ? bestAcct[1].display_name + ' (' + bestAcct[1].impressions + ')' : '&mdash;'}</div>
-        <div class="row"><span class="l">Engagements (30d)</span><span class="v">${tot.engagements ?? 0}</span></div>
-        <div class="row"><span class="l">Saves (30d)</span><span class="v ${(tot.saves ?? 0) > 0 ? 'good' : ''}">${tot.saves ?? 0}</span></div>
-        <div class="row"><span class="l">Outbound clicks (30d)</span><span class="v ${(tot.outbound_clicks ?? 0) > 0 ? 'good' : 'warn'}">${tot.outbound_clicks ?? 0}</span></div>
-        <div class="row"><span class="l">Total audience (30d)</span><span class="v">${tot.total_audience ?? 0}</span></div>
+        <div class="big">${impressions.toLocaleString()}<small>impressions (30d)</small></div>
+        <div class="sub">Top: ${bestAcct ? bestName + ' (' + bestImps + ')' : '&mdash;'}</div>
+        <div class="row"><span class="l">Engagements (30d)</span><span class="v">${engagements.toLocaleString()}</span></div>
+        <div class="row"><span class="l">Saves (30d)</span><span class="v ${saves > 0 ? 'good' : ''}">${saves.toLocaleString()}</span></div>
+        <div class="row"><span class="l">Outbound clicks (30d)</span><span class="v ${outbound > 0 ? 'good' : 'warn'}">${outbound.toLocaleString()}</span></div>
+        <div class="row"><span class="l">Total audience (30d)</span><span class="v">${audience.toLocaleString()}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(pinterest.synced_at)}</span>
           <a href="${pinterest.report_url}" target="_blank">Open &#x2197;</a>
