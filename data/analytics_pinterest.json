@@ -1,8 +1,8 @@
 {
-  "synced_at": "2026-05-12T14:11:00",
+  "synced_at": "2026-05-13T16:49:56",
   "report_url": "https://analytics.pinterest.com/overview/",
-  "note": "analytics.pinterest.com dashboard failed to hydrate via Chrome MCP for the 5TH CONSECUTIVE DAY (body.innerText.length=0, only 6 of 218 elements visible, page stuck on Loading skeleton after 25+ sec wait). Hit the escalation threshold logged in 2026-05-11 DECISIONS_LOG. Holding 5/9 morning numbers. NEXT STEPS: (a) user manual screenshot during check-in, (b) try CSV export from analytics page, (c) Pinterest API via approved ASC dev app.",
-  "scrape_status": "stale_render_blocked",
+  "note": "1/3 niches from Pinterest API v5; others fall back to last scrape.",
+  "scrape_status": "partial_api",
   "stale_since": "2026-05-09",
   "stale_days": 5,
   "escalation": "Hit 5-day threshold today. Needs user attention.",
@@ -30,23 +30,26 @@
       }
     },
     "aesthetic_spaces_co": {
-      "date_range": "4/9/2026 - 5/9/2026",
+      "date_range": "2026-04-13 to 2026-05-13",
+      "window_days": 30,
+      "source": "pinterest_api_v5",
+      "synced_at": "2026-05-13T16:49:56",
       "metrics": {
-        "Impressions": "50",
-        "Engagements": "3",
+        "Impressions": "54",
+        "Engagements": "2",
         "Outbound clicks": "1",
         "Saves": "0",
-        "Total audience": "42",
-        "Engaged audience": "2"
+        "Total audience": "51",
+        "Engaged audience": "?"
       }
     }
   },
   "totals": {
-    "Impressions": 604,
-    "Engagements": 18,
+    "Impressions": 608,
+    "Engagements": 17,
     "Outbound clicks": 2,
     "Saves": 2,
-    "Total audience": 361,
-    "Engaged audience": 9
+    "Total audience": 370,
+    "Engaged audience": 7
   }
 }
