@@ -996,7 +996,9 @@
       "scheduled_for": "2026-05-07 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "posted_at": "2026-05-07 12:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1140747780637809294",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780637809294/"
     },
     {
       "id": 36,
@@ -1012,7 +1014,9 @@
       "scheduled_for": "2026-05-08 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "posted_at": "2026-05-08 12:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1140747780637873702",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780637873702/"
     },
     {
       "id": 37,
@@ -1028,7 +1032,9 @@
       "scheduled_for": "2026-05-09 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "posted_at": "2026-05-09 12:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1140747780637944180",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780637944180/"
     },
     {
       "id": 38,
@@ -1045,7 +1051,9 @@
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "notes": "Title softened from plan's 'stackable' to 'bifold closet' since image shows single front-load unit.",
       "posted_at": "2026-05-10 12:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1140747780638008945",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638008945/"
     },
     {
       "id": 39,
@@ -1061,7 +1069,9 @@
       "scheduled_for": "2026-05-11 12:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
       "posted_at": "2026-05-11 12:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1140747780638072973",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638072973/"
     },
     {
       "id": 40,
@@ -1090,7 +1100,9 @@
       "image_url": null,
       "scheduled_for": "2026-05-12 12:00",
       "qa_passed_at": "2026-05-04",
-      "scheduled_at_pinterest": "2026-05-04T13:50:00"
+      "scheduled_at_pinterest": "2026-05-04T13:50:00",
+      "pinterest_pin_id": "1140747780638138316",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638138316/"
     },
     {
       "id": 41,
@@ -1120,7 +1132,9 @@
       "scheduled_for": "2026-05-13 12:00",
       "qa_passed_at": "2026-05-04",
       "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
-      "scheduled_at_pinterest": "2026-05-04T13:50:00"
+      "scheduled_at_pinterest": "2026-05-04T13:50:00",
+      "pinterest_pin_id": "1140747780638206730",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638206730/"
     },
     {
       "id": 42,
@@ -1382,7 +1396,9 @@
       "scheduled_for": "2026-05-12 11:00",
       "qa_passed_at": "2026-05-04",
       "scheduled_at": "2026-05-10T08:40:48.124435",
-      "board_actual": "Aesthetic Desk Setup"
+      "board_actual": "Aesthetic Desk Setup",
+      "pinterest_pin_id": "1140747780638134934",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638134934/"
     },
     {
       "id": 51,
@@ -1797,5 +1813,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-13T16:31:54"
+  "last_synced": "2026-05-13T16:47:47"
 }
