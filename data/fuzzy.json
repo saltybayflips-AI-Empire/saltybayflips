@@ -1784,6 +1784,130 @@
       "scheduled_for": "2026-05-16 14:00",
       "scheduled_at": "2026-05-11T11:11:43.168682",
       "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins)."
+    },
+    {
+      "id": 74,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "file": "fuzzy_bernese_alpine_krea_00001_.png",
+      "slug": "fuzzy_bernese_alpine_krea",
+      "source_image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_bernese_alpine_krea_00001_.png",
+      "title": "Bernese Mountain Puppy In Alpine Meadow Aesthetic",
+      "description": "A bernese mountain puppy nestled in an alpine wildflower meadow — peak fluffy goodness.\n\nSave for your fluffy puppy moodboard or cozy pet feed.\n\nTap link in bio to shop the look.\n\n#BerneseMountainDog #FluffyPuppy #PuppyAesthetic #CozyPet #MountainDog #AlpineMeadow #CutePuppy #DogPhotography #FluffyDogs #CottagecorePets #DogMom #PuppyLove",
+      "hashtags": [
+        "BerneseMountainDog",
+        "FluffyPuppy",
+        "PuppyAesthetic",
+        "CozyPet",
+        "MountainDog",
+        "AlpineMeadow",
+        "CutePuppy",
+        "DogPhotography",
+        "FluffyDogs",
+        "CottagecorePets",
+        "DogMom",
+        "PuppyLove"
+      ],
+      "board": "Fluffy Puppies",
+      "board_actual": "Fluffy Puppies",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
+      "image_url": null,
+      "scheduled_for": "2026-05-19 11:00",
+      "scheduled_at": "2026-05-13T16:31:49.271018",
+      "notes": "Empty-board seed — first pin on Fluffy Puppies board"
+    },
+    {
+      "id": 75,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "file": "fuzzy_chinchilla_nest_16gb_00001_.png",
+      "slug": "fuzzy_chinchilla_nest_16gb",
+      "source_image": "pinterest/fuzzy_frames_ai/03_posted/fuzzy_chinchilla_nest_16gb_00001_.png",
+      "title": "Tiny Chinchilla In A Cozy Nest Adorable Baby Animal",
+      "description": "A tiny chinchilla curled in a soft nest of hay and wool — pure baby-animal serotonin.\n\nSave for your cute critter feed or baby-animal moodboard.\n\nTap link in bio to shop the look.\n\n#BabyAnimals #Chinchilla #TinyPets #BabyAnimal #ChinchillaLove #CutePet #FluffyAnimal #ExoticPets #CozyNest #PetAesthetic #CottagecorePets #SmallPets",
+      "hashtags": [
+        "BabyAnimals",
+        "Chinchilla",
+        "TinyPets",
+        "BabyAnimal",
+        "ChinchillaLove",
+        "CutePet",
+        "FluffyAnimal",
+        "ExoticPets",
+        "CozyNest",
+        "PetAesthetic",
+        "CottagecorePets",
+        "SmallPets"
+      ],
+      "board": "Baby Animals",
+      "board_actual": "Baby Animals",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
+      "image_url": null,
+      "scheduled_for": "2026-05-20 11:00",
+      "scheduled_at": "2026-05-13T16:31:49.271018",
+      "notes": "Empty-board seed — cross-pin from Tiny Wild Friends (concept also on id=3)"
+    },
+    {
+      "id": 76,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "file": "fuzzy_munchkin_basket_16gb_00001_.png",
+      "slug": "fuzzy_munchkin_basket_16gb",
+      "source_image": "pinterest/fuzzy_frames_ai/03_posted/fuzzy_munchkin_basket_16gb_00001_.png",
+      "title": "Tiny Munchkin Kitten In Wicker Basket Cottagecore",
+      "description": "A teacup-tiny munchkin kitten peeking from a wicker basket — the softest eyes you'll see today.\n\nSave for your kitten feed or cottagecore moodboard.\n\nTap link in bio to shop the look.\n\n#TeacupKitten #MunchkinKitten #TinyKitten #KittenAesthetic #BabyKitten #CutePets #CottagecorePets #KittenLove #SmallCats #FluffyKitten #PetPhotography #CatMom",
+      "hashtags": [
+        "TeacupKitten",
+        "MunchkinKitten",
+        "TinyKitten",
+        "KittenAesthetic",
+        "BabyKitten",
+        "CutePets",
+        "CottagecorePets",
+        "KittenLove",
+        "SmallCats",
+        "FluffyKitten",
+        "PetPhotography",
+        "CatMom"
+      ],
+      "board": "Teacup Kittens",
+      "board_actual": "Teacup Kittens",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
+      "image_url": null,
+      "scheduled_for": "2026-05-21 11:00",
+      "scheduled_at": "2026-05-13T16:31:49.271018",
+      "notes": "Empty-board seed — cross-pin from Cute Cats (concept also on id=12)"
+    },
+    {
+      "id": 77,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "file": "fuzzy_kitten_knit_sweater_00001_.png",
+      "slug": "fuzzy_kitten_knit_sweater",
+      "source_image": "pinterest/fuzzy_frames_ai/03_posted/fuzzy_kitten_knit_sweater_00001_.png",
+      "title": "Adorable Kitten In Knit Sweater Cozy Pet Aesthetic",
+      "description": "A tiny kitten bundled in a hand-knit cream sweater — pure cottagecore cozy.\n\nSave for your cozy-pet feed or fall mood board.\n\nTap link in bio to shop the look.\n\n#PetSweater #KittenInSweater #CozyPet #CutePets #CottagecorePets #KnitSweater #KittenAesthetic #FallVibes #CozyVibes #PetFashion #CatMom #PetPhotography",
+      "hashtags": [
+        "PetSweater",
+        "KittenInSweater",
+        "CozyPet",
+        "CutePets",
+        "CottagecorePets",
+        "KnitSweater",
+        "KittenAesthetic",
+        "FallVibes",
+        "CozyVibes",
+        "PetFashion",
+        "CatMom",
+        "PetPhotography"
+      ],
+      "board": "Cozy Pets in Sweaters",
+      "board_actual": "Cozy Pets in Sweaters",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=saltybayfli0c-20",
+      "image_url": null,
+      "scheduled_for": "2026-05-22 11:00",
+      "scheduled_at": "2026-05-13T16:31:49.271018",
+      "notes": "Empty-board seed — cross-pin from Cute Cats (concept also on id=9)"
     }
   ],
   "rejected": [
@@ -1837,10 +1961,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 5,
+    "runway_days": 9,
     "next_scheduled": "2026-05-13T11:00:00",
-    "last_scheduled": "2026-05-18T10:00:00",
-    "count": 13
+    "last_scheduled": "2026-05-22T11:00:00",
+    "count": 17
   },
   "tiktok": {
     "enabled": true,
@@ -2413,5 +2537,5 @@
     "next_unposted": "2026-05-13T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-13T16:19:31"
+  "last_synced": "2026-05-13T16:31:54"
 }
