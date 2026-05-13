@@ -1447,13 +1447,13 @@
     {
       "id": 53,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 14,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/14_window_treatments_linen.png",
       "title": "Window Treatments Linen Curtain Ideas",
       "description": "Window Treatments Linen. small apartment window with floor-to-ceiling natural linen curtains hanging from a no-drill tension rod, breezy gauze sheers underneath, soft late afternoon golden sunlight streaming through.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
-      "board": "Curtain Ideas",
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#storage",
+      "board": "Small Living Room Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "hashtags": [
         "SmallSpaceLiving",
         "ApartmentDecor",
@@ -1469,8 +1469,10 @@
         "Linen"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-17 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-23 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "board_actual": "Small Living Room Ideas"
     },
     {
       "id": 54,
@@ -1535,13 +1537,13 @@
     {
       "id": 56,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 17,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/17_home_gym_corner.png",
       "title": "Home Gym Corner Small Space Workout",
       "description": "Home Gym Corner. small apartment home gym corner, neat foldable yoga mat on a textured area rug, mounted no-drill mirror leaning against the wall, small wooden weight rack with neatly arranged dumbbells in light pastel colors.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
-      "board": "Small Space Workout",
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#renter-magic",
+      "board": "Studio Apartment Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "hashtags": [
         "SmallSpaceLiving",
         "ApartmentDecor",
@@ -1557,19 +1559,21 @@
         "Corner"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-20 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-20 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "board_actual": "Studio Apartment Ideas"
     },
     {
       "id": 57,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 18,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/18_apartment_patio_small.png",
       "title": "Apartment Patio Small Ideas",
       "description": "Apartment Patio Small. editorial interior-exterior photograph of a small apartment private patio, single oak slat bistro chair with cream cushion, tiny round travertine bistro table, terracotta planter with herb garden.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
-      "board": "Small Patio Ideas",
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#balcony",
+      "board": "Tiny Balcony Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "hashtags": [
         "SmallSpaceLiving",
         "ApartmentDecor",
@@ -1585,19 +1589,21 @@
         "Small"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-21 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-24 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "board_actual": "Tiny Balcony Ideas"
     },
     {
       "id": 58,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 19,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/19_mood_lighting_setup.png",
       "title": "Mood Lighting Setup",
       "description": "Mood Lighting Setup. small apartment evening living room with layered warm mood lighting, brass arc floor lamp casting warm glow over a velvet boucle armchair, small table lamp with linen shade, hidden warm-white LED strip lights tucked behind the floating shelf.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
-      "board": "Mood Lighting",
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#renter-magic",
+      "board": "Small Living Room Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "hashtags": [
         "SmallSpaceLiving",
         "ApartmentDecor",
@@ -1613,19 +1619,21 @@
         "Setup"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-22 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-21 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "board_actual": "Small Living Room Ideas"
     },
     {
       "id": 59,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 20,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/20_kitchenette_coffee_bar.png",
       "title": "Kitchenette Coffee Bar Ideas",
       "description": "Kitchenette Coffee Bar. small apartment coffee bar nook on a kitchenette counter, polished marble countertop, vintage brass espresso machine, ceramic stoneware mug rack, glass jars of coffee beans and tea, small floating walnut shelf with mugs lined up.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
-      "board": "Coffee Bar Ideas",
-      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#kitchen",
+      "board": "Small Kitchen Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
       "hashtags": [
         "SmallSpaceLiving",
         "ApartmentDecor",
@@ -1641,8 +1649,103 @@
         "Bar"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-23 12:00",
-      "qa_passed_at": "2026-05-04"
+      "scheduled_for": "2026-05-22 11:00",
+      "qa_passed_at": "2026-05-04",
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "board_actual": "Small Kitchen Ideas"
+    },
+    {
+      "id": 60,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "pillar": "Desk",
+      "file": "aesthetic_office_under_loft_bed_16gb_00001_.png",
+      "slug": "aesthetic_office_under_loft_bed",
+      "source_image": "pinterest/aesthetic_spaces_co/02_ready_to_post/aesthetic_office_under_loft_bed_16gb_00001_.png",
+      "title": "This Loft Bed Office Setup Is Pure Genius",
+      "description": "Tiny home office under a loft bed — proof that vertical living works.\n\nFloating desk, task lamp, and zero wasted space. Save this for your studio apartment inspo!\n\nTap link in bio to shop the look.\n\n#LoftBedOffice #StudioApartment #SmallSpaceOffice #VerticalLiving #TinyDesk #ApartmentDecor #HomeOfficeIdeas #SmallSpaceHack #RenterFriendly #CompactLiving #WorkFromHome #AestheticDesk",
+      "hashtags": [
+        "LoftBedOffice",
+        "StudioApartment",
+        "SmallSpaceOffice",
+        "VerticalLiving",
+        "TinyDesk",
+        "ApartmentDecor",
+        "HomeOfficeIdeas",
+        "SmallSpaceHack",
+        "RenterFriendly",
+        "CompactLiving",
+        "WorkFromHome",
+        "AestheticDesk"
+      ],
+      "board": "Aesthetic Desk Setup",
+      "board_actual": "Aesthetic Desk Setup",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
+      "image_url": null,
+      "scheduled_for": "2026-05-17 11:00",
+      "scheduled_at": "2026-05-13T16:19:26.795861"
+    },
+    {
+      "id": 61,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "pillar": "Entryway",
+      "file": "aesthetic_entry_tiny_hooks_bench_16gb_00001_.png",
+      "slug": "aesthetic_entry_tiny_hooks_bench",
+      "source_image": "pinterest/aesthetic_spaces_co/02_ready_to_post/aesthetic_entry_tiny_hooks_bench_16gb_00001_.png",
+      "title": "Tiny Apartment Entryway With Hooks And Bench Renter Friendly",
+      "description": "Tiny entryway, big function — wall hooks plus a slim bench turn the smallest nook into a real mudroom.\n\nSave for your renter-friendly entry upgrade!\n\nTap link in bio to shop the look.\n\n#SmallEntryway #EntryHooks #RenterFriendly #TinyApartment #MudroomIdeas #ApartmentDecor #SmallSpaceHack #CozyEntry #EntrywayDecor #MinimalistHome #HookWall #OrganizedHome",
+      "hashtags": [
+        "SmallEntryway",
+        "EntryHooks",
+        "RenterFriendly",
+        "TinyApartment",
+        "MudroomIdeas",
+        "ApartmentDecor",
+        "SmallSpaceHack",
+        "CozyEntry",
+        "EntrywayDecor",
+        "MinimalistHome",
+        "HookWall",
+        "OrganizedHome"
+      ],
+      "board": "Entryway Aesthetic",
+      "board_actual": "Entryway Aesthetic",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
+      "image_url": null,
+      "scheduled_for": "2026-05-18 11:00",
+      "scheduled_at": "2026-05-13T16:19:26.795861"
+    },
+    {
+      "id": 62,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "pillar": "Kitchen",
+      "file": "aesthetic_kitchen_subway_peel_stick_16gb_00001_.png",
+      "slug": "aesthetic_kitchen_subway_peel_stick",
+      "source_image": "pinterest/aesthetic_spaces_co/02_ready_to_post/aesthetic_kitchen_subway_peel_stick_16gb_00001_.png",
+      "title": "Renter-Friendly Kitchen With Peel-Stick Subway Tile Backsplash",
+      "description": "Peel-and-stick subway tile is a renter's best friend.\n\nThis tiny kitchen looks completely transformed with just a backsplash swap.\n\nTap link in bio to shop the look.\n\n#PeelAndStick #SubwayTile #RenterFriendly #SmallKitchen #KitchenMakeover #ApartmentDecor #BacksplashIdeas #TinyKitchen #KitchenInspo #BudgetDecor #SmallSpaceKitchen #AestheticKitchen",
+      "hashtags": [
+        "PeelAndStick",
+        "SubwayTile",
+        "RenterFriendly",
+        "SmallKitchen",
+        "KitchenMakeover",
+        "ApartmentDecor",
+        "BacksplashIdeas",
+        "TinyKitchen",
+        "KitchenInspo",
+        "BudgetDecor",
+        "SmallSpaceKitchen",
+        "AestheticKitchen"
+      ],
+      "board": "Small Kitchen Ideas",
+      "board_actual": "Small Kitchen Ideas",
+      "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH",
+      "image_url": null,
+      "scheduled_for": "2026-05-19 11:00",
+      "scheduled_at": "2026-05-13T16:19:26.795861"
     }
   ],
   "rejected": [
@@ -1676,10 +1779,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 3,
+    "runway_days": 11,
     "next_scheduled": "2026-05-13T11:00:00",
-    "last_scheduled": "2026-05-16T12:00:00",
-    "count": 8
+    "last_scheduled": "2026-05-24T11:00:00",
+    "count": 16
   },
   "tiktok": {
     "enabled": false,
@@ -1694,5 +1797,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-13T15:04:02"
+  "last_synced": "2026-05-13T16:19:31"
 }
