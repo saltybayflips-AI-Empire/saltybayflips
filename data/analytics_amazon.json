@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-12T14:07:00",
+  "synced_at": "2026-05-13T15:10:00",
   "store_id": "saltybayfli0c-20",
   "report_url": "https://affiliate-program.amazon.com/home",
   "last_updated_label": "May 11 2026",
@@ -7,12 +7,12 @@
     "Total Items Shipped": "0",
     "Total Earnings": "$0.00",
     "Total Ordered Items": "0",
-    "Clicks": "3",
+    "Clicks": "5",
     "Conversion": "0.00%"
   },
   "last_30d": {
     "no_data": true,
-    "note": "Global reporting page reports no data for Last 30 Days; home cards show this-month clicks=3"
+    "note": "Global reporting page reports no data for Last 30 Days; home cards show this-month clicks=5"
   },
   "qualifying_sales": {
     "deadline": "2026-10-11",
@@ -20,9 +20,9 @@
     "current": 0
   },
   "delta_vs_prior_day": {
-    "Clicks": 0,
+    "Clicks": 2,
     "Total Earnings": "$0.00",
     "Total Ordered Items": 0,
-    "note": "Flat vs 2026-05-11; still 3 clicks this month, 0 sales"
+    "note": "+2 clicks vs 2026-05-12; now 5 clicks this month, 0 sales"
   }
 }

@@ -536,15 +536,24 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const tm = a.this_month || {};
     const m30 = a.last_30d || {};
     const daysLeft = a.deadline_days_remaining ?? '';
+    const earnings = parseMetric(tm['Total Earnings'] ?? tm.earnings_usd);
+    const orders = parseMetric(tm['Total Ordered Items'] ?? tm.ordered_items);
+    const shipped = parseMetric(tm['Total Items Shipped'] ?? tm.items_shipped);
+    const conv = tm.Conversion ?? tm.conversion_pct ?? '0.00%';
+    const clicks = m30.no_data ? parseMetric(tm.Clicks ?? tm.clicks) : parseMetric(m30.clicks);
+    const clicksLabel = m30.no_data ? 'Clicks (this month)' : 'Clicks (30d)';
+    const earningsM30 = m30.no_data ? earnings : parseMetric(m30.commissions_usd);
+    const earningsM30Label = m30.no_data ? 'Earnings (this month)' : 'Earnings (30d)';
+    const qsCurrent = typeof a.qualifying_sales === 'object' ? (a.qualifying_sales.current ?? 0) : (a.qualifying_sales ?? 0);
     cards.push(`
       <div class="perfcard amazon">
         <span class="ptag">💰 Amazon Associates</span>
         <h3>Amazon Associates <span class="platform">$$</span></h3>
-        <div class="big">$${(tm.earnings_usd ?? 0).toFixed(2)}<small>this month</small></div>
-        <div class="sub">${tm.ordered_items ?? 0} orders &middot; ${tm.items_shipped ?? 0} shipped &middot; ${tm.conversion_pct ?? 0}% conv</div>
-        <div class="row"><span class="l">Clicks (30d)</span><span class="v ${m30.clicks > 0 ? 'good' : ''}">${m30.clicks ?? 0}</span></div>
-        <div class="row"><span class="l">Earnings (30d)</span><span class="v">$${(m30.commissions_usd ?? 0).toFixed(2)}</span></div>
-        <div class="row"><span class="l">Qualifying sales</span><span class="v ${a.qualifying_sales >= 3 ? 'good' : 'warn'}">${a.qualifying_sales ?? 0} / 3</span></div>
+        <div class="big">$${earnings.toFixed(2)}<small>this month</small></div>
+        <div class="sub">${orders} orders &middot; ${shipped} shipped &middot; ${conv} conv</div>
+        <div class="row"><span class="l">${clicksLabel}</span><span class="v ${clicks > 0 ? 'good' : ''}">${clicks}</span></div>
+        <div class="row"><span class="l">${earningsM30Label}</span><span class="v">$${earningsM30.toFixed(2)}</span></div>
+        <div class="row"><span class="l">Qualifying sales</span><span class="v ${qsCurrent >= 3 ? 'good' : 'warn'}">${qsCurrent} / 3</span></div>
         <div class="row"><span class="l">Days to deadline</span><span class="v ${daysLeft < 60 ? 'bad' : daysLeft < 120 ? 'warn' : ''}">${daysLeft}</span></div>
         <div class="footer">
           <span>Synced ${timeAgo(a.synced_at)}</span>
