@@ -1409,7 +1409,7 @@
     {
       "id": 51,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 12,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/12_linen_closet_organized.png",
       "title": "Linen Closet Organized Closets",
@@ -1434,7 +1434,11 @@
       "scheduled_for": "2026-05-13 11:00",
       "qa_passed_at": "2026-05-04",
       "scheduled_at": "2026-05-10T08:40:48.124478",
-      "board_actual": "Aesthetic Bathrooms"
+      "board_actual": "Aesthetic Bathrooms",
+      "posted_date": "2026-05-13",
+      "pinterest_pin_id": "1140747780638203812",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638203812/",
+      "notes": "Manually reconciled — Pinterest title edited to \"Linen Closet Organized Aesthetic Bathroom Storage\" so fuzzy match missed it."
     },
     {
       "id": 52,
@@ -1819,5 +1823,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-14T06:21:33"
+  "last_synced": "2026-05-14T06:22:38"
 }

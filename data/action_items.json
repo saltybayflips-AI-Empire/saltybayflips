@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-14T06:21:33.611136",
-  "item_count": 4,
+  "synced_at": "2026-05-14T06:22:38.871192",
+  "item_count": 3,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
@@ -9,14 +9,6 @@
       "priority": "med",
       "estimated_min": 20,
       "category": "gap_warning"
-    },
-    {
-      "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. Verify on Pinterest whether these actually went live, then flip status -> 'posted' (or re-queue if they failed). First few: #51 (2026-05-13 11:00, 19.4h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot"
     },
     {
       "id": "gap_luxe_living_daily",
