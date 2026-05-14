@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-14T06:24:56.189648",
+  "synced_at": "2026-05-14T06:40:32.146033",
   "item_count": 3,
   "items": [
     {
@@ -8,23 +8,29 @@
       "detail": "Days with no scheduled ASC pin: 2026-05-25, 2026-05-26, 2026-05-27, 2026-05-28",
       "priority": "med",
       "estimated_min": 20,
-      "category": "gap_warning"
+      "category": "gap_warning",
+      "url": "https://www.pinterest.com/saltybayflipspin/_created/",
+      "deadline_at": "2026-05-25"
     },
     {
       "id": "gap_luxe_living_daily",
       "title": "LLD has 11 unscheduled days in next 14d",
       "detail": "Days with no scheduled LLD pin: 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, … (+6 more)",
-      "priority": "med",
+      "priority": "high",
       "estimated_min": 55,
-      "category": "gap_warning"
+      "category": "gap_warning",
+      "url": "https://www.pinterest.com/saltybayflipsluxe/_created/",
+      "deadline_at": "2026-05-18"
     },
     {
       "id": "gap_fuzzy_frames_ai",
       "title": "Fuzzy has 7 unscheduled days in next 14d",
       "detail": "Days with no scheduled Fuzzy pin: 2026-05-17, 2026-05-23, 2026-05-24, 2026-05-25, 2026-05-26, … (+2 more)",
-      "priority": "med",
+      "priority": "high",
       "estimated_min": 35,
-      "category": "gap_warning"
+      "category": "gap_warning",
+      "url": "https://www.pinterest.com/saltybayflipsfuzzy/_created/",
+      "deadline_at": "2026-05-17"
     }
   ]
 }

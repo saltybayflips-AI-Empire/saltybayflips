@@ -1,0 +1,282 @@
+{
+  "synced_at": "2026-05-14T06:40:36",
+  "channels": [
+    {
+      "id": "asc_pinterest",
+      "kind": "pinterest",
+      "niche_slug": "asc",
+      "label": "ASC",
+      "handle": "@saltybayflipspin",
+      "url": "https://www.pinterest.com/saltybayflipspin/",
+      "color": "asc",
+      "window_days": 30,
+      "window_label": "30d",
+      "totals": {
+        "impressions": 54,
+        "pin_clicks": 2,
+        "outbound_clicks": 1,
+        "saves": 0
+      },
+      "top_pins": [
+        {
+          "title": "Cozy Small Space Bathroom Coastal Aesthetic Renter Friendly Decor",
+          "pin_id": "1140747780636838478",
+          "impressions": 13,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780636838478/"
+        },
+        {
+          "title": "Peelstick Terrazzo Bath Ideas | Small Space Aesthetic Decor",
+          "pin_id": "1140747780636901917",
+          "impressions": 9,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 1,
+          "pin_url": "https://www.pinterest.com/pin/1140747780636901917/"
+        },
+        {
+          "title": "White Subway Tile Kitchen Ideas: Small Space Aesthetic & Renter-Friendly",
+          "pin_id": "1140747780637250900",
+          "impressions": 8,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780637250900/"
+        },
+        {
+          "title": "Cozy Nook Ideas for Small Spaces, Renter-Friendly Decor",
+          "pin_id": "1140747780637313469",
+          "impressions": 4,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780637313469/"
+        },
+        {
+          "title": "Scandi Bathroom Ideas: Small Space Aesthetic",
+          "pin_id": "1140747780636927065",
+          "impressions": 4,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780636927065/"
+        }
+      ],
+      "monthly_views": 51,
+      "follower_count": 0,
+      "pin_count": 43,
+      "board_count": 15,
+      "synced_at": "2026-05-14T06:40:34"
+    },
+    {
+      "id": "fuzzy_pinterest",
+      "kind": "pinterest",
+      "niche_slug": "fuzzy",
+      "label": "Fuzzy",
+      "handle": "@saltybayflipsfuzzy",
+      "url": "https://www.pinterest.com/saltybayflipsfuzzy/",
+      "color": "fuzzy",
+      "window_days": 30,
+      "window_label": "30d",
+      "totals": {
+        "impressions": 881,
+        "pin_clicks": 17,
+        "outbound_clicks": 0,
+        "saves": 0
+      },
+      "top_pins": [
+        {
+          "title": "Cottagecore cat finds my therapist needs to see",
+          "pin_id": "1128573987894056570",
+          "impressions": 197,
+          "clicks": 7,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987894056570/"
+        },
+        {
+          "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
+          "pin_id": "1128573987893762400",
+          "impressions": 157,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987893762400/"
+        },
+        {
+          "title": "Wholesome forest pet finds I bought twice",
+          "pin_id": "1128573987894022557",
+          "impressions": 98,
+          "clicks": 2,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987894022557/"
+        },
+        {
+          "title": "The doodle raincoat my groomer keeps recommending",
+          "pin_id": "1128573987893734735",
+          "impressions": 71,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987893734735/"
+        },
+        {
+          "title": "Adorable Pet Aesthetic Cute Fluffy Animal Basket Cozy Pet Bed",
+          "pin_id": "1128573987893927416",
+          "impressions": 46,
+          "clicks": 2,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987893927416/"
+        }
+      ],
+      "monthly_views": 751,
+      "follower_count": 0,
+      "pin_count": 32,
+      "board_count": 10,
+      "synced_at": "2026-05-14T06:40:35"
+    },
+    {
+      "id": "lld_pinterest",
+      "kind": "pinterest",
+      "niche_slug": "lld",
+      "label": "LLD",
+      "handle": "@saltybayflipsluxe",
+      "url": "https://www.pinterest.com/saltybayflipsluxe/",
+      "color": "lld",
+      "window_days": 30,
+      "window_label": "30d",
+      "totals": {
+        "impressions": 281,
+        "pin_clicks": 4,
+        "outbound_clicks": 1,
+        "saves": 2
+      },
+      "top_pins": [
+        {
+          "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
+          "pin_id": "1087056428837010124",
+          "impressions": 43,
+          "clicks": 1,
+          "saves": 1,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428837010124/"
+        },
+        {
+          "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
+          "pin_id": "1087056428837307709",
+          "impressions": 31,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428837307709/"
+        },
+        {
+          "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
+          "pin_id": "1087056428836950419",
+          "impressions": 28,
+          "clicks": 1,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428836950419/"
+        },
+        {
+          "title": "Game Room Ideas Bourbon Bar Luxury Home",
+          "pin_id": "1087056428837073179",
+          "impressions": 27,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428837073179/"
+        },
+        {
+          "title": "Luxe Living Daily — Shop the Aesthetic",
+          "pin_id": "1087056428836856117",
+          "impressions": 24,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428836856117/"
+        }
+      ],
+      "monthly_views": 183,
+      "follower_count": 0,
+      "pin_count": 42,
+      "board_count": 25,
+      "synced_at": "2026-05-14T06:40:36"
+    },
+    {
+      "id": "lld_tiktok",
+      "kind": "tiktok",
+      "niche_slug": "luxe_living_daily",
+      "label": "LLD",
+      "handle": "@luxe.living.daily",
+      "url": "https://www.tiktok.com/@luxe.living.daily",
+      "color": "lld",
+      "window_days": 7,
+      "window_label": "Last 7 days",
+      "totals": {
+        "video_views": 1400,
+        "profile_views": 10,
+        "likes": 10,
+        "comments": -1,
+        "shares": 0
+      },
+      "delta": {
+        "video_views_raw": "+475",
+        "video_views_pct": "(52.2%)"
+      },
+      "traffic_sources_pct": {
+        "Following": 1.7,
+        "For You": 91.6,
+        "Personal profile": 0.2,
+        "Search": 6.4,
+        "Sound": 0
+      },
+      "top_searches": [
+        "mud room decor",
+        "rich piana haircut",
+        "deco chỗ đánh đàn piano",
+        "rich homes with character",
+        "modelo de piscinas en casa"
+      ],
+      "synced_at": "2026-05-12T14:08:00"
+    },
+    {
+      "id": "fuzzy_tiktok",
+      "kind": "tiktok",
+      "niche_slug": "fuzzy_frames_ai",
+      "label": "Fuzzy",
+      "handle": "@fuzzy.frames.ai",
+      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
+      "color": "fuzzy",
+      "window_days": 7,
+      "window_label": "Last 7 days",
+      "totals": {
+        "video_views": 120,
+        "profile_views": 0,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "delta": {
+        "video_views_raw": "+120",
+        "video_views_pct": "(--)"
+      },
+      "traffic_sources_pct": {
+        "Following": 0,
+        "For You": 98.3,
+        "Personal profile": 0.9,
+        "Search": 0.9,
+        "Sound": 0
+      },
+      "top_searches": [
+        "Pets"
+      ],
+      "synced_at": "2026-05-12T14:08:00"
+    }
+  ]
+}
