@@ -11,6 +11,38 @@
     --fg:#e7ecf3; --mut:#9aa3b2; --accent:#e60023; --good:#22c55e;
     --warn:#f59e0b; --info:#3b82f6; --purp:#a855f7; --teal:#14b8a6;
     --asc:#b56d50; --lld:#9b7e3a; --fuzzy:#d472a2;
+
+    /* CHANNEL COLORS — one unique color per (niche × platform) combination.
+       Pinterest channels share a WARM family (amber / red / pink).
+       TikTok channels share a COOL family (cyan / violet).
+       Each channel has its own distinct hue so a "Pinterest ASC" data point
+       always looks the same color wherever it shows up on the dashboard.
+       Adding a new channel: add the strong color, soft border tint, soft bg
+       tint, and the light text shade for headline numbers. */
+    --ch-asc-pinterest:        #d97706;            /* amber-600 — warm earth, matches ASC */
+    --ch-asc-pinterest-text:   #fbbf24;            /* amber-300 — light readable on dark */
+    --ch-asc-pinterest-soft:   rgba(217,119,6,.35);
+    --ch-asc-pinterest-bg:     rgba(217,119,6,.07);
+
+    --ch-lld-pinterest:        #dc2626;            /* red-600 — deep wine, matches LLD luxury */
+    --ch-lld-pinterest-text:   #fca5a5;            /* red-300 */
+    --ch-lld-pinterest-soft:   rgba(220,38,38,.35);
+    --ch-lld-pinterest-bg:     rgba(220,38,38,.07);
+
+    --ch-fuzzy-pinterest:      #ec4899;            /* pink-500 — bright pink, matches Fuzzy */
+    --ch-fuzzy-pinterest-text: #f9a8d4;            /* pink-300 */
+    --ch-fuzzy-pinterest-soft: rgba(236,72,153,.35);
+    --ch-fuzzy-pinterest-bg:   rgba(236,72,153,.07);
+
+    --ch-lld-tiktok:           #06b6d4;            /* cyan-500 */
+    --ch-lld-tiktok-text:      #67e8f9;            /* cyan-300 */
+    --ch-lld-tiktok-soft:      rgba(6,182,212,.35);
+    --ch-lld-tiktok-bg:        rgba(6,182,212,.07);
+
+    --ch-fuzzy-tiktok:         #8b5cf6;            /* violet-500 */
+    --ch-fuzzy-tiktok-text:    #c4b5fd;            /* violet-300 */
+    --ch-fuzzy-tiktok-soft:    rgba(139,92,246,.35);
+    --ch-fuzzy-tiktok-bg:      rgba(139,92,246,.07);
   }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
   html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
@@ -111,29 +143,63 @@
   .nichecard .links a { font-size:11px; padding:5px 9px; background:var(--card2);
     border:1px solid var(--line); border-radius:6px; color:var(--fg); }
 
-  /* Platform-specific styling for top-performers cards.
-     Pinterest = Pinterest red (#e60023). TikTok = TikTok pink (#ff0050).
-     Strong, consistent platform color across the entire card so it reads as
-     "this is a Pinterest card" / "this is a TikTok card" at a glance,
-     independent of which niche it represents. */
-  .nichecard.platform-pinterest { border:1px solid rgba(230,0,35,.35);
-    border-top:4px solid #e60023;
-    background:rgba(230,0,35,.06); }
-  .nichecard.platform-tiktok { border:1px solid rgba(255,0,80,.35);
-    border-top:4px solid #ff0050;
-    background:rgba(255,0,80,.06); }
+  /* Channel-specific styling for top-performers cards.
+     Each card gets its channel's unique color (border-top, border, soft bg
+     tint, badge, headline number). The channel color is looked up via
+     [data-channel] from the :root variables above. */
+  .nichecard.channel-card { transition:transform .15s, border-color .15s; }
+  .nichecard.channel-card:hover { transform:translateY(-2px); }
   .nichecard .platform-badge { display:inline-flex; align-items:center; gap:5px;
     font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.7px;
     padding:4px 10px; border-radius:999px; }
-  .platform-badge.pinterest-badge { background:rgba(230,0,35,.25); color:#ffb3c0; }
-  .platform-badge.tiktok-badge { background:rgba(255,0,80,.25); color:#ffb0c8; }
-  .nichecard.platform-pinterest h3,
-  .nichecard.platform-tiktok h3 { gap:8px; flex-wrap:wrap; }
-  .nichecard.platform-pinterest .niche-name,
-  .nichecard.platform-tiktok .niche-name { color:var(--fg); font-size:13px; font-weight:600; }
-  /* Card2 (inner blocks) tinted to match parent platform color */
-  .nichecard.platform-pinterest .br { background:rgba(230,0,35,.10); }
-  .nichecard.platform-tiktok .br { background:rgba(255,0,80,.10); }
+  .nichecard.channel-card h3 { gap:8px; flex-wrap:wrap; }
+  .nichecard.channel-card .niche-name { color:var(--fg); font-size:13px; font-weight:600; }
+
+  /* Per-channel color application (border, background, badge, headline). */
+  .channel-card[data-channel="asc_pinterest"] {
+    border:1px solid var(--ch-asc-pinterest-soft);
+    border-top:4px solid var(--ch-asc-pinterest);
+    background:var(--ch-asc-pinterest-bg); }
+  .channel-card[data-channel="asc_pinterest"] .platform-badge {
+    background:rgba(217,119,6,.25); color:var(--ch-asc-pinterest-text); }
+  .channel-card[data-channel="asc_pinterest"] .headline-num {
+    color:var(--ch-asc-pinterest-text); }
+
+  .channel-card[data-channel="lld_pinterest"] {
+    border:1px solid var(--ch-lld-pinterest-soft);
+    border-top:4px solid var(--ch-lld-pinterest);
+    background:var(--ch-lld-pinterest-bg); }
+  .channel-card[data-channel="lld_pinterest"] .platform-badge {
+    background:rgba(220,38,38,.25); color:var(--ch-lld-pinterest-text); }
+  .channel-card[data-channel="lld_pinterest"] .headline-num {
+    color:var(--ch-lld-pinterest-text); }
+
+  .channel-card[data-channel="fuzzy_pinterest"] {
+    border:1px solid var(--ch-fuzzy-pinterest-soft);
+    border-top:4px solid var(--ch-fuzzy-pinterest);
+    background:var(--ch-fuzzy-pinterest-bg); }
+  .channel-card[data-channel="fuzzy_pinterest"] .platform-badge {
+    background:rgba(236,72,153,.25); color:var(--ch-fuzzy-pinterest-text); }
+  .channel-card[data-channel="fuzzy_pinterest"] .headline-num {
+    color:var(--ch-fuzzy-pinterest-text); }
+
+  .channel-card[data-channel="lld_tiktok"] {
+    border:1px solid var(--ch-lld-tiktok-soft);
+    border-top:4px solid var(--ch-lld-tiktok);
+    background:var(--ch-lld-tiktok-bg); }
+  .channel-card[data-channel="lld_tiktok"] .platform-badge {
+    background:rgba(6,182,212,.25); color:var(--ch-lld-tiktok-text); }
+  .channel-card[data-channel="lld_tiktok"] .headline-num {
+    color:var(--ch-lld-tiktok-text); }
+
+  .channel-card[data-channel="fuzzy_tiktok"] {
+    border:1px solid var(--ch-fuzzy-tiktok-soft);
+    border-top:4px solid var(--ch-fuzzy-tiktok);
+    background:var(--ch-fuzzy-tiktok-bg); }
+  .channel-card[data-channel="fuzzy_tiktok"] .platform-badge {
+    background:rgba(139,92,246,.25); color:var(--ch-fuzzy-tiktok-text); }
+  .channel-card[data-channel="fuzzy_tiktok"] .headline-num {
+    color:var(--ch-fuzzy-tiktok-text); }
 
   .empty { text-align:center; color:var(--mut); padding:40px 20px; font-size:13px;
     background:var(--card); border:1px dashed var(--line); border-radius:12px; }
@@ -156,11 +222,15 @@
   .day .dcount { font-size:11px; color:var(--mut); }
   .day .dots { display:flex; justify-content:center; gap:3px; margin-top:6px; min-height:8px; }
   .day .dots .d { width:6px; height:6px; border-radius:50%; }
-  .day .dots .d.asc { background:var(--asc); }
-  .day .dots .d.lld { background:var(--lld); }
-  .day .dots .d.fuzzy { background:var(--fuzzy); }
   /* Platform shape: Pinterest = circle (default), TikTok = square */
   .day .dots .d.tt { border-radius:1px; }
+  /* Channel-specific dot colors — same color the Top Performers card uses. */
+  .day .dots .d[data-channel="asc_pinterest"]   { background:var(--ch-asc-pinterest); }
+  .day .dots .d[data-channel="lld_pinterest"]   { background:var(--ch-lld-pinterest); }
+  .day .dots .d[data-channel="fuzzy_pinterest"] { background:var(--ch-fuzzy-pinterest); }
+  .day .dots .d[data-channel="lld_tiktok"]      { background:var(--ch-lld-tiktok); }
+  .day .dots .d[data-channel="fuzzy_tiktok"]    { background:var(--ch-fuzzy-tiktok); }
+  /* Legend dots in the small key below the timeline */
   .legend-dot { display:inline-block; width:8px; height:8px; vertical-align:middle;
     margin-right:4px; background:var(--mut); }
   .legend-dot.legend-pin { border-radius:50%; }
@@ -565,17 +635,17 @@ const CHANNEL_RENDERERS = {
           <div style="padding:6px 0;border-top:1px dashed var(--line);font-size:11px;">
             <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;">
               <a href="${p.pin_url || '#'}" target="_blank" rel="noopener" style="flex:1;min-width:0;color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;">${p.title}</a>
-              <span style="color:#ff7a8c;font-weight:600;font-size:13px;flex-shrink:0;">${p.impressions}</span>
+              <span class="headline-num" style="font-weight:700;font-size:13px;flex-shrink:0;">${p.impressions}</span>
             </div>
             <div style="color:var(--mut);font-size:10px;margin-top:1px;">${p.clicks} clicks · ${p.saves} saves · ${p.outbound} outbound</div>
           </div>`).join('');
-    return `<div class="nichecard platform-pinterest">
+    return `<div class="nichecard channel-card" data-channel="${c.id}">
       <h3>
-        <span class="platform-badge pinterest-badge">📌 Pinterest</span>
+        <span class="platform-badge">📌 Pinterest</span>
         <span class="niche-name">${c.label}</span>
       </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
-        <span>${c.totals.impressions} impressions / ${c.window_label}</span>
+        <span><span class="headline-num" style="font-weight:700;">${c.totals.impressions}</span> impressions / ${c.window_label}</span>
         <span>${c.monthly_views ?? '?'} monthly views</span>
       </div>
       <div style="font-size:11px;color:var(--mut);margin-bottom:6px;">
@@ -600,13 +670,13 @@ const CHANNEL_RENDERERS = {
         searches.map(s => `<li>"${s}"</li>`).join('') + '</ul>';
     const delta = c.delta?.video_views_raw || '';
     const deltaCls = String(delta).startsWith('+') ? 'good' : '';
-    return `<div class="nichecard platform-tiktok">
+    return `<div class="nichecard channel-card" data-channel="${c.id}">
       <h3>
-        <span class="platform-badge tiktok-badge">🎵 TikTok</span>
+        <span class="platform-badge">🎵 TikTok</span>
         <span class="niche-name">${c.label}</span>
       </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
-        <span><span class="${deltaCls}" style="color:#ff5b8c;font-weight:600;">${c.totals.video_views.toLocaleString()}</span> views / ${c.window_label}</span>
+        <span><span class="headline-num" style="font-weight:700;">${c.totals.video_views.toLocaleString()}</span> views / ${c.window_label}</span>
         <span>${delta || '—'}</span>
       </div>
       <div style="font-size:11px;color:var(--mut);margin-bottom:6px;">
@@ -1195,20 +1265,23 @@ function render(totalRejected, results) {
     }
     const isGap = !isToday && allDayPosts.length === 0;
     const isBehind = !isToday && dayTT.length < MIN_DAILY_TIKTOK && allDayPosts.length > 0;
+    // Each timeline dot tagged with its channel id (e.g. asc_pinterest, lld_tiktok)
+    // — colors are looked up via [data-channel] in CSS so they match the
+    // Top Performers cards exactly. Pinterest = circle, TikTok = square via .tt class.
     const dotsHtml = [
       ...dayPin.map(p => {
         const dt = parseSched(p);
         const fired = (p.status === 'posted') || (dt && dt.getTime() < nowMs);
         const niche = NICHES.find(n => n.slug === p.niche);
-        const cls = niche ? niche.color : '';
-        return `<div class="d ${cls}" style="${fired ? 'opacity:.35':''}" title="📌 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
+        const channelId = niche ? `${niche.data_file}_pinterest` : '';
+        return `<div class="d" data-channel="${channelId}" style="${fired ? 'opacity:.35':''}" title="📌 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
       }),
       ...dayTT.map(p => {
         const dt = parseSched(p);
         const fired = (p.status === 'posted') || (dt && dt.getTime() < nowMs);
         const niche = NICHES.find(n => n.slug === p.niche);
-        const cls = niche ? niche.color : '';
-        return `<div class="d tt ${cls}" style="${fired ? 'opacity:.35':''}" title="🎵 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
+        const channelId = niche ? `${niche.data_file}_tiktok` : '';
+        return `<div class="d tt" data-channel="${channelId}" style="${fired ? 'opacity:.35':''}" title="🎵 ${fired ? '✓ ' : ''}${p.title || ''}"></div>`;
       }),
     ].join('');
     let countLabel;

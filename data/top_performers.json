@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-14T07:03:08",
+  "synced_at": "2026-05-14T07:08:27",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -68,7 +68,7 @@
       "follower_count": 0,
       "pin_count": 43,
       "board_count": 15,
-      "synced_at": "2026-05-14T07:03:05"
+      "synced_at": "2026-05-14T07:08:23"
     },
     {
       "id": "fuzzy_pinterest",
@@ -137,7 +137,7 @@
       "follower_count": 0,
       "pin_count": 32,
       "board_count": 10,
-      "synced_at": "2026-05-14T07:03:06"
+      "synced_at": "2026-05-14T07:08:25"
     },
     {
       "id": "lld_pinterest",
@@ -206,7 +206,7 @@
       "follower_count": 0,
       "pin_count": 42,
       "board_count": 25,
-      "synced_at": "2026-05-14T07:03:08"
+      "synced_at": "2026-05-14T07:08:27"
     },
     {
       "id": "lld_tiktok",
