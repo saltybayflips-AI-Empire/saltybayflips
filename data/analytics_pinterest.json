@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-14T07:08:27",
+  "synced_at": "2026-05-14T11:28:58",
   "report_url": "https://analytics.pinterest.com/overview/",
   "note": "All 3 niches now sourced from Pinterest API v5.",
   "scrape_status": "api_live",
@@ -8,13 +8,13 @@
       "date_range": "2026-04-14 to 2026-05-14",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T07:08:25",
+      "synced_at": "2026-05-14T11:28:56",
       "metrics": {
         "Impressions": "881",
         "Engagements": "17",
         "Outbound clicks": "0",
         "Saves": "0",
-        "Total audience": "751",
+        "Total audience": "873",
         "Engaged audience": "?"
       }
     },
@@ -22,7 +22,7 @@
       "date_range": "2026-04-14 to 2026-05-14",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T07:08:27",
+      "synced_at": "2026-05-14T11:28:58",
       "metrics": {
         "Impressions": "281",
         "Engagements": "4",
@@ -36,7 +36,7 @@
       "date_range": "2026-04-14 to 2026-05-14",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T07:08:23",
+      "synced_at": "2026-05-14T11:28:54",
       "metrics": {
         "Impressions": "54",
         "Engagements": "2",
@@ -52,7 +52,7 @@
     "Engagements": 23,
     "Outbound clicks": 2,
     "Saves": 2,
-    "Total audience": 985,
+    "Total audience": 1107,
     "Engaged audience": 0
   }
 }
