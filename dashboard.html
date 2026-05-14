@@ -113,20 +113,27 @@
 
   /* Platform-specific styling for top-performers cards.
      Pinterest = Pinterest red (#e60023). TikTok = TikTok pink (#ff0050).
-     Both get a thicker top border + a colored platform badge in the header. */
-  .nichecard.platform-pinterest { border-top:3px solid #e60023;
-    background:linear-gradient(180deg, rgba(230,0,35,.04) 0%, var(--card) 60px); }
-  .nichecard.platform-tiktok { border-top:3px solid #ff0050;
-    background:linear-gradient(180deg, rgba(255,0,80,.04) 0%, var(--card) 60px); }
+     Strong, consistent platform color across the entire card so it reads as
+     "this is a Pinterest card" / "this is a TikTok card" at a glance,
+     independent of which niche it represents. */
+  .nichecard.platform-pinterest { border:1px solid rgba(230,0,35,.35);
+    border-top:4px solid #e60023;
+    background:rgba(230,0,35,.06); }
+  .nichecard.platform-tiktok { border:1px solid rgba(255,0,80,.35);
+    border-top:4px solid #ff0050;
+    background:rgba(255,0,80,.06); }
   .nichecard .platform-badge { display:inline-flex; align-items:center; gap:5px;
-    font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.6px;
-    padding:3px 9px; border-radius:999px; margin-right:6px; }
-  .platform-badge.pinterest-badge { background:rgba(230,0,35,.18); color:#ff7a8c; }
-  .platform-badge.tiktok-badge { background:rgba(255,0,80,.18); color:#ff5b8c; }
+    font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.7px;
+    padding:4px 10px; border-radius:999px; }
+  .platform-badge.pinterest-badge { background:rgba(230,0,35,.25); color:#ffb3c0; }
+  .platform-badge.tiktok-badge { background:rgba(255,0,80,.25); color:#ffb0c8; }
   .nichecard.platform-pinterest h3,
   .nichecard.platform-tiktok h3 { gap:8px; flex-wrap:wrap; }
-  .nichecard.platform-pinterest .niche-name { color:#ffb3c0; }
-  .nichecard.platform-tiktok .niche-name { color:#ffb0c8; }
+  .nichecard.platform-pinterest .niche-name,
+  .nichecard.platform-tiktok .niche-name { color:var(--fg); font-size:13px; font-weight:600; }
+  /* Card2 (inner blocks) tinted to match parent platform color */
+  .nichecard.platform-pinterest .br { background:rgba(230,0,35,.10); }
+  .nichecard.platform-tiktok .br { background:rgba(255,0,80,.10); }
 
   .empty { text-align:center; color:var(--mut); padding:40px 20px; font-size:13px;
     background:var(--card); border:1px dashed var(--line); border-radius:12px; }
@@ -566,7 +573,6 @@ const CHANNEL_RENDERERS = {
       <h3>
         <span class="platform-badge pinterest-badge">📌 Pinterest</span>
         <span class="niche-name">${c.label}</span>
-        <span class="pill ${c.color}" style="margin-left:auto;">${c.label}</span>
       </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
         <span>${c.totals.impressions} impressions / ${c.window_label}</span>
@@ -598,7 +604,6 @@ const CHANNEL_RENDERERS = {
       <h3>
         <span class="platform-badge tiktok-badge">🎵 TikTok</span>
         <span class="niche-name">${c.label}</span>
-        <span class="pill ${c.color}" style="margin-left:auto;">${c.label}</span>
       </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
         <span><span class="${deltaCls}" style="color:#ff5b8c;font-weight:600;">${c.totals.video_views.toLocaleString()}</span> views / ${c.window_label}</span>
