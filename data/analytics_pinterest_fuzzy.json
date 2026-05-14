@@ -1,0 +1,194 @@
+{
+  "niche": "fuzzy",
+  "handle": "saltybayflipsfuzzy",
+  "display_name": "Fuzzy Frames AI",
+  "synced_at": "2026-05-14T06:20:15",
+  "window_days": 30,
+  "window_start": "2026-04-14",
+  "window_end": "2026-05-14",
+  "account": {
+    "monthly_views": 751,
+    "follower_count": 0,
+    "board_count": 10,
+    "pin_count": 32,
+    "account_type": "BUSINESS"
+  },
+  "aggregate": {
+    "totals": {
+      "IMPRESSION": 881,
+      "SAVE": 0,
+      "PIN_CLICK": 17,
+      "OUTBOUND_CLICK": 0
+    },
+    "ready_days": 28,
+    "blocked_days": 3
+  },
+  "top_pins": [
+    {
+      "pin_id": "1128573987894519546",
+      "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
+      "created_at": "2026-05-05T15:05:50",
+      "totals": {
+        "IMPRESSION": 29,
+        "SAVE": 0,
+        "PIN_CLICK": 2,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894455303",
+      "title": "Mochi Cat In A Zen Garden Adorable Japanese Aesthetic Pet Photography",
+      "created_at": "2026-05-04T15:00:48",
+      "totals": {
+        "IMPRESSION": 12,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894720820",
+      "title": "Fluffy Persian Kitten Cozy Cream Aesthetic Adorable Cat Photography",
+      "created_at": "2026-05-08T15:06:45",
+      "totals": {
+        "IMPRESSION": 9,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894588707",
+      "title": "Golden Retriever Puppy In A Daisy Field Adorable Wholesome Pet Photography",
+      "created_at": "2026-05-06T15:01:02",
+      "totals": {
+        "IMPRESSION": 8,
+        "SAVE": 0,
+        "PIN_CLICK": 1,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894655717",
+      "title": "Husky Puppy In Snowy Forest Adorable Winter Pet Photography Aesthetic",
+      "created_at": "2026-05-07T15:07:25",
+      "totals": {
+        "IMPRESSION": 6,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894786014",
+      "title": "Baby Bunny Rabbit In Spring Wildflower Meadow Adorable Wildlife Photography",
+      "created_at": "2026-05-09T15:03:49",
+      "totals": {
+        "IMPRESSION": 5,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894986578",
+      "title": "Adorable Scottish Fold Kitten In Vintage Teacup Cute Cat Aesthetic Photography",
+      "created_at": "2026-05-12T16:05:16",
+      "totals": {
+        "IMPRESSION": 1,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894919319",
+      "title": "Beagle Puppy On Checkered Picnic Blanket Adorable Summer Pet Photography",
+      "created_at": "2026-05-11T15:00:34",
+      "totals": {
+        "IMPRESSION": 1,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894852938",
+      "title": "Maine Coon Cat By Cabin Fireplace Adorable Cozy Winter Pet Aesthetic",
+      "created_at": "2026-05-10T15:01:30",
+      "totals": {
+        "IMPRESSION": 1,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987895091350",
+      "title": "Tabby Kitten In Knit Sweater With Pumpkin Cozy Cat Aesthetic",
+      "created_at": "2026-05-14T07:00:32",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987895058949",
+      "title": "Siberian Husky Puppy In Snowy Forest Winter Pet Photography",
+      "created_at": "2026-05-13T19:04:28",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987895049184",
+      "title": "Sweet Brown Bunny In A Daisy Meadow Spring Garden Wholesome Pet Photography",
+      "created_at": "2026-05-13T16:02:24",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987895026115",
+      "title": "Chocolate Labrador Puppy In Autumn Leaves Fall Pet Photography",
+      "created_at": "2026-05-13T07:00:31",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894995637",
+      "title": "French Bulldog Puppy In Sunflower Field Golden Hour Pet Aesthetic",
+      "created_at": "2026-05-12T19:02:40",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894995576",
+      "title": "Wild Brown Bunny In Daisy Meadow Cottagecore Spring Pet Aesthetic",
+      "created_at": "2026-05-12T19:01:35",
+      "totals": {
+        "IMPRESSION": 0,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    }
+  ],
+  "status": "ok"
+}

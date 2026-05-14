@@ -1765,10 +1765,10 @@
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 4,
-    "next_scheduled": "2026-05-13T11:00:00",
+    "runway_days": 3,
+    "next_scheduled": "2026-05-14T11:00:00",
     "last_scheduled": "2026-05-17T11:00:00",
-    "count": 9
+    "count": 7
   },
   "tiktok": {
     "enabled": true,
@@ -2193,9 +2193,9 @@
       "scheduled": 24,
       "ready_no_date": 0
     },
-    "runway_days": 9,
-    "next_unposted": "2026-05-13T09:00:00",
+    "runway_days": 8,
+    "next_unposted": "2026-05-15T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-13T16:49:50"
+  "last_synced": "2026-05-14T06:20:02"
 }

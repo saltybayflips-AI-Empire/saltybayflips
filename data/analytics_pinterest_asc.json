@@ -2,10 +2,10 @@
   "niche": "asc",
   "handle": "saltybayflipspin",
   "display_name": "Aesthetic Spaces Co",
-  "synced_at": "2026-05-13T16:49:56",
+  "synced_at": "2026-05-14T06:20:09",
   "window_days": 30,
-  "window_start": "2026-04-13",
-  "window_end": "2026-05-13",
+  "window_start": "2026-04-14",
+  "window_end": "2026-05-14",
   "account": {
     "monthly_views": 51,
     "follower_count": 0,
@@ -20,8 +20,8 @@
       "PIN_CLICK": 2,
       "OUTBOUND_CLICK": 1
     },
-    "ready_days": 27,
-    "blocked_days": 4
+    "ready_days": 28,
+    "blocked_days": 3
   },
   "top_pins": [
     {
