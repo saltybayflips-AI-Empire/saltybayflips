@@ -111,6 +111,23 @@
   .nichecard .links a { font-size:11px; padding:5px 9px; background:var(--card2);
     border:1px solid var(--line); border-radius:6px; color:var(--fg); }
 
+  /* Platform-specific styling for top-performers cards.
+     Pinterest = Pinterest red (#e60023). TikTok = TikTok pink (#ff0050).
+     Both get a thicker top border + a colored platform badge in the header. */
+  .nichecard.platform-pinterest { border-top:3px solid #e60023;
+    background:linear-gradient(180deg, rgba(230,0,35,.04) 0%, var(--card) 60px); }
+  .nichecard.platform-tiktok { border-top:3px solid #ff0050;
+    background:linear-gradient(180deg, rgba(255,0,80,.04) 0%, var(--card) 60px); }
+  .nichecard .platform-badge { display:inline-flex; align-items:center; gap:5px;
+    font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.6px;
+    padding:3px 9px; border-radius:999px; margin-right:6px; }
+  .platform-badge.pinterest-badge { background:rgba(230,0,35,.18); color:#ff7a8c; }
+  .platform-badge.tiktok-badge { background:rgba(255,0,80,.18); color:#ff5b8c; }
+  .nichecard.platform-pinterest h3,
+  .nichecard.platform-tiktok h3 { gap:8px; flex-wrap:wrap; }
+  .nichecard.platform-pinterest .niche-name { color:#ffb3c0; }
+  .nichecard.platform-tiktok .niche-name { color:#ffb0c8; }
+
   .empty { text-align:center; color:var(--mut); padding:40px 20px; font-size:13px;
     background:var(--card); border:1px dashed var(--line); border-radius:12px; }
 
@@ -541,12 +558,16 @@ const CHANNEL_RENDERERS = {
           <div style="padding:6px 0;border-top:1px dashed var(--line);font-size:11px;">
             <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;">
               <a href="${p.pin_url || '#'}" target="_blank" rel="noopener" style="flex:1;min-width:0;color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;">${p.title}</a>
-              <span style="color:var(--info);font-weight:600;font-size:13px;flex-shrink:0;">${p.impressions}</span>
+              <span style="color:#ff7a8c;font-weight:600;font-size:13px;flex-shrink:0;">${p.impressions}</span>
             </div>
             <div style="color:var(--mut);font-size:10px;margin-top:1px;">${p.clicks} clicks · ${p.saves} saves · ${p.outbound} outbound</div>
           </div>`).join('');
-    return `<div class="nichecard">
-      <h3>${c.label} Pinterest <span class="pill ${c.color}">📌</span></h3>
+    return `<div class="nichecard platform-pinterest">
+      <h3>
+        <span class="platform-badge pinterest-badge">📌 Pinterest</span>
+        <span class="niche-name">${c.label}</span>
+        <span class="pill ${c.color}" style="margin-left:auto;">${c.label}</span>
+      </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
         <span>${c.totals.impressions} impressions / ${c.window_label}</span>
         <span>${c.monthly_views ?? '?'} monthly views</span>
@@ -573,10 +594,14 @@ const CHANNEL_RENDERERS = {
         searches.map(s => `<li>"${s}"</li>`).join('') + '</ul>';
     const delta = c.delta?.video_views_raw || '';
     const deltaCls = String(delta).startsWith('+') ? 'good' : '';
-    return `<div class="nichecard">
-      <h3>${c.label} TikTok <span class="pill ${c.color}">🎵</span></h3>
+    return `<div class="nichecard platform-tiktok">
+      <h3>
+        <span class="platform-badge tiktok-badge">🎵 TikTok</span>
+        <span class="niche-name">${c.label}</span>
+        <span class="pill ${c.color}" style="margin-left:auto;">${c.label}</span>
+      </h3>
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:6px;">
-        <span><span class="${deltaCls}" style="color:var(--fg);font-weight:600;">${c.totals.video_views.toLocaleString()}</span> views / ${c.window_label}</span>
+        <span><span class="${deltaCls}" style="color:#ff5b8c;font-weight:600;">${c.totals.video_views.toLocaleString()}</span> views / ${c.window_label}</span>
         <span>${delta || '—'}</span>
       </div>
       <div style="font-size:11px;color:var(--mut);margin-bottom:6px;">
