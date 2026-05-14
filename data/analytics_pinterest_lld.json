@@ -2,7 +2,7 @@
   "niche": "lld",
   "handle": "saltybayflipsluxe",
   "display_name": "Luxe Living Daily",
-  "synced_at": "2026-05-14T06:22:52",
+  "synced_at": "2026-05-14T06:25:01",
   "window_days": 30,
   "window_start": "2026-04-14",
   "window_end": "2026-05-14",
@@ -25,165 +25,110 @@
   },
   "top_pins": [
     {
-      "pin_id": "1087056428837823970",
-      "title": "Grand Foyer With A Sweeping Double Staircase + Crystal Chandelier Old Money Entr",
-      "created_at": "2026-05-05T16:05:33",
+      "pin_id": "1087056428837010124",
+      "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
+      "created_at": "2026-04-22T23:03:21",
       "totals": {
-        "IMPRESSION": 6,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
+        "IMPRESSION": 43,
+        "SAVE": 1,
+        "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428837699207",
-      "title": "Private Indoor Basketball Court With A Crystal Chandelier Luxury Home Gym Inspir",
-      "created_at": "2026-05-03T16:05:02",
+      "pin_id": "1087056428837307709",
+      "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
+      "created_at": "2026-04-27T14:05:36",
       "totals": {
-        "IMPRESSION": 4,
+        "IMPRESSION": 31,
         "SAVE": 0,
         "PIN_CLICK": 1,
-        "OUTBOUND_CLICK": 1
+        "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428837893070",
-      "title": "Formal Music Room With A Grand Piano + Harp + Hand-Painted Mural",
-      "created_at": "2026-05-06T16:04:52",
+      "pin_id": "1087056428836950419",
+      "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
+      "created_at": "2026-04-21T23:05:22",
       "totals": {
-        "IMPRESSION": 2,
+        "IMPRESSION": 28,
+        "SAVE": 0,
+        "PIN_CLICK": 1,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428837073179",
+      "title": "Game Room Ideas Bourbon Bar Luxury Home",
+      "created_at": "2026-04-23T23:05:51",
+      "totals": {
+        "IMPRESSION": 27,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428838366894",
-      "title": "Brutalist Concrete Penthouse Inspiration",
-      "created_at": "2026-05-13T16:05:05",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838366864",
-      "title": "Redwood Treehouse Bedroom Living",
-      "created_at": "2026-05-13T16:04:31",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838299635",
-      "title": "Private Rooftop Observatory With A Domed Glass Ceiling Stargazing At Home",
-      "created_at": "2026-05-12T16:05:39",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838299371",
-      "title": "Helipad Skyline Rooftop Living",
-      "created_at": "2026-05-12T16:01:14",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838233714",
-      "title": "Luxury Equestrian Stable Interior Hamptons Old Money Barn",
-      "created_at": "2026-05-11T16:06:31",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838166398",
-      "title": "Cedar Sauna With A Panoramic Snowy Forest Window Nordic Wellness At Home",
-      "created_at": "2026-05-10T16:04:08",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838096194",
-      "title": "Private Meditation Sanctuary With A Stone Altar + Bamboo Window",
-      "created_at": "2026-05-09T16:07:07",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428838025982",
-      "title": "Indoor Pool Under A Glass Vaulted Skylight Cathedral Pool Pavilion",
-      "created_at": "2026-05-08T16:03:11",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428837962278",
-      "title": "Private Home Bowling Alley In Walnut + Brass Vintage Lounge Vibes",
-      "created_at": "2026-05-07T16:04:05",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428837762416",
-      "title": "Victorian Orangery Conservatory With Lemon Trees + Marble Floor Glass Cathedral ",
-      "created_at": "2026-05-04T16:01:45",
-      "totals": {
-        "IMPRESSION": 0,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428837581709",
+      "pin_id": "1087056428836856117",
       "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-05-01T20:22:40",
+      "created_at": "2026-04-20T11:59:16",
       "totals": {
-        "IMPRESSION": 0,
+        "IMPRESSION": 24,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428837581192",
+      "pin_id": "1087056428836855565",
       "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-05-01T20:14:36",
+      "created_at": "2026-04-20T11:48:59",
       "totals": {
-        "IMPRESSION": 0,
+        "IMPRESSION": 20,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836855981",
+      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
+      "created_at": "2026-04-20T11:56:34",
+      "totals": {
+        "IMPRESSION": 20,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836983789",
+      "title": "Two-Story Library Luxury Home Interior Design",
+      "created_at": "2026-04-22T14:05:28",
+      "totals": {
+        "IMPRESSION": 16,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428837045624",
+      "title": "Luxury Formal Dining Chandelier Ideas",
+      "created_at": "2026-04-23T14:08:06",
+      "totals": {
+        "IMPRESSION": 16,
+        "SAVE": 1,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836933115",
+      "title": "Luxury Art Gallery Hall Interior Design Ideas",
+      "created_at": "2026-04-21T17:05:07",
+      "totals": {
+        "IMPRESSION": 13,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
