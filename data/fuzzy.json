@@ -75,7 +75,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1128573987893618248",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893618248/"
     },
     {
       "id": 3,
@@ -111,7 +113,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1128573987893636173",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893636173/"
     },
     {
       "id": 4,
@@ -147,7 +151,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1128573987893680704",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893680704/"
     },
     {
       "id": 5,
@@ -182,7 +188,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1128573987893698606",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893698606/"
     },
     {
       "id": 6,
@@ -328,7 +336,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893825254",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893825254/"
     },
     {
       "id": 10,
@@ -365,7 +375,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893861102",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893861102/"
     },
     {
       "id": 11,
@@ -400,7 +412,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#seasonal",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893891607",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893891607/"
     },
     {
       "id": 12,
@@ -476,7 +490,9 @@
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#wild-friends",
           "until": "20260505_083101"
         }
-      ]
+      ],
+      "pinterest_pin_id": "1128573987893958607",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987893958607/"
     },
     {
       "id": 14,
@@ -802,7 +818,9 @@
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1128573987894322990",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894322990/"
     },
     {
       "id": 23,
@@ -1143,7 +1161,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_date": "2026-05-05",
-      "auto_reconciled": "2026-05-06 11:53"
+      "auto_reconciled": "2026-05-06 11:53",
+      "pinterest_pin_id": "1128573987894519546",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894519546/"
     },
     {
       "id": 36,
@@ -1189,7 +1209,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_at": "2026-05-07 10:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1128573987894655717",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894655717/"
     },
     {
       "id": 38,
@@ -1212,7 +1234,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_at": "2026-05-08 10:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1128573987894720820",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894720820/"
     },
     {
       "id": 39,
@@ -1235,7 +1259,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_at": "2026-05-09 10:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1128573987894786014",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894786014/"
     },
     {
       "id": 40,
@@ -1258,7 +1284,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_at": "2026-05-10 10:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1128573987894852938",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894852938/"
     },
     {
       "id": 41,
@@ -1281,7 +1309,9 @@
       ],
       "destination_url_updated_at": "2026-05-05",
       "posted_at": "2026-05-11 10:00",
-      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time"
+      "note": "tracker-reconciled 2026-05-11: Pinterest auto-fired at scheduled time",
+      "pinterest_pin_id": "1128573987894919319",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894919319/"
     },
     {
       "id": 42,
@@ -1293,10 +1323,13 @@
       "title": "Adorable Scottish Fold Kitten In Vintage Teacup Cute Cat Aesthetic Photography",
       "description": "Tiny fluffy Scottish Fold kitten with folded ears and golden eyes peeking out of a vintage teacup - peak teacup kitten aesthetic. Save for your cat moodboard, Scottish Fold inspo, or vintage cottage core vibes. Tap profile to shop Scottish Fold-themed home decor, vintage teacup sets, cottage cat aesthetic prints, and adorable kitten art. #ScottishFold #FoldedEarCat #CuteKitten #CuteCats #TeacupKitten #VintageAesthetic #CottageCore #PetPhotography #CatAesthetic #CatLovers #KittenOfTheDay #VintageTeacup",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
-      "status": "scheduled",
-      "notes": "Originally planned for Mon 5/12 10 AM but user dragged a pug image to that tab instead. Image still in ready_to_post/ + _gemini_passed/, ready for next batch.",
+      "status": "posted",
+      "notes": "Originally planned for Mon 5/12 10 AM but user dragged a pug image to that tab instead. Image still in ready_to_post/ + _gemini_passed/, ready for next batch. | Auto-reconciled via API after pinterest_pin_id match.",
       "scheduled_for": "2026-05-12 11:00",
-      "scheduled_at": "2026-05-10T08:23:06.983186"
+      "scheduled_at": "2026-05-10T08:23:06.983186",
+      "pinterest_pin_id": "1128573987894986578",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894986578/",
+      "posted_date": "2026-05-12"
     },
     {
       "id": 43,
@@ -1528,12 +1561,16 @@
       "description": "A wild brown bunny among daisies in golden hour - the cottagecore moment your feed needs. Save for your spring mood board, easter inspo, or any quiet rural aesthetic. Tap to shop tiny-pet finds: hay feeders, indoor playpens, and the cutest accessories for bunny moms. #bunnyofinstagram #cottagecore #bunnylove #springaesthetic #daisylove #wildlifeaesthetic #bunnymom #petportrait #countryliving #fuzzyfriends #wholesome #aestheticphotography",
       "hashtags": "#bunnyofinstagram #cottagecore #bunnylove #springaesthetic #daisylove #wildlifeaesthetic #bunnymom #petportrait #countryliving #fuzzyfriends #wholesome #aestheticphotography",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#wild-friends",
-      "status": "scheduled",
+      "status": "posted",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
       "note": "Auto-promoted from 01_review on user QA approval",
       "scheduled_for": "2026-05-13 11:00",
-      "scheduled_at": "2026-05-10T08:23:06.983216"
+      "scheduled_at": "2026-05-10T08:23:06.983216",
+      "pinterest_pin_id": "1128573987895049184",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895049184/",
+      "posted_date": "2026-05-13",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 55,
@@ -1690,20 +1727,28 @@
       "slug": "fuzzy_frenchie_sunflowers_backfill",
       "title": "French Bulldog Puppy In Sunflower Field Golden Hour Pet Aesthetic",
       "board": "Pets & Flowers",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-12 14:00",
       "scheduled_at": "2026-05-10T09:17:11.450559",
-      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy).",
+      "pinterest_pin_id": "1128573987894995637",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894995637/",
+      "posted_date": "2026-05-12",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 65,
       "slug": "fuzzy_labrador_autumn_backfill",
       "title": "Chocolate Labrador Puppy In Autumn Leaves Fall Pet Photography",
       "board": "Seasonal Pets",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-13 14:00",
       "scheduled_at": "2026-05-10T09:17:11.450586",
-      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy).",
+      "pinterest_pin_id": "1128573987895026115",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895026115/",
+      "posted_date": "2026-05-13",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 66,
@@ -1713,7 +1758,9 @@
       "status": "scheduled",
       "scheduled_for": "2026-05-14 14:00",
       "scheduled_at": "2026-05-10T09:17:11.450589",
-      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy).",
+      "pinterest_pin_id": "1128573987895091350",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895091350/"
     },
     {
       "id": 67,
@@ -1740,20 +1787,28 @@
       "slug": "fuzzy_bunny_meadow_session2",
       "title": "Wild Brown Bunny In Daisy Meadow Cottagecore Spring Pet Aesthetic",
       "board": "Pets & Flowers",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-12 14:00",
       "scheduled_at": "2026-05-11T11:11:43.168646",
-      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins)."
+      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins).",
+      "pinterest_pin_id": "1128573987894995576",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987894995576/",
+      "posted_date": "2026-05-12",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 70,
       "slug": "fuzzy_husky_snow_session2",
       "title": "Siberian Husky Puppy In Snowy Forest Winter Pet Photography",
       "board": "Seasonal Pets",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-13 14:00",
       "scheduled_at": "2026-05-11T11:11:43.168675",
-      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins)."
+      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins).",
+      "pinterest_pin_id": "1128573987895058949",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895058949/",
+      "posted_date": "2026-05-13",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 71,
@@ -2537,5 +2592,5 @@
     "next_unposted": "2026-05-14T18:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-14T06:20:02"
+  "last_synced": "2026-05-14T06:21:33"
 }

@@ -1076,7 +1076,7 @@
     {
       "id": 40,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 1,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/01_living_boho_minimalist.png",
       "title": "Living Boho Minimalist Small Apartment Room",
@@ -1102,12 +1102,14 @@
       "qa_passed_at": "2026-05-04",
       "scheduled_at_pinterest": "2026-05-04T13:50:00",
       "pinterest_pin_id": "1140747780638138316",
-      "pinterest_url": "https://www.pinterest.com/pin/1140747780638138316/"
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638138316/",
+      "posted_date": "2026-05-12",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 41,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 2,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/02_living_coastal_blue.png",
       "title": "Living Coastal Blue Small Apartment Room",
@@ -1134,7 +1136,9 @@
       "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
       "scheduled_at_pinterest": "2026-05-04T13:50:00",
       "pinterest_pin_id": "1140747780638206730",
-      "pinterest_url": "https://www.pinterest.com/pin/1140747780638206730/"
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638206730/",
+      "posted_date": "2026-05-13",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 42,
@@ -1371,7 +1375,7 @@
     {
       "id": 50,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 11,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/11_home_office_full_room.png",
       "title": "Home Office Full Room Small Ideas",
@@ -1398,7 +1402,9 @@
       "scheduled_at": "2026-05-10T08:40:48.124435",
       "board_actual": "Aesthetic Desk Setup",
       "pinterest_pin_id": "1140747780638134934",
-      "pinterest_url": "https://www.pinterest.com/pin/1140747780638134934/"
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638134934/",
+      "posted_date": "2026-05-12",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 51,
@@ -1813,5 +1819,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-14T06:20:02"
+  "last_synced": "2026-05-14T06:21:33"
 }
