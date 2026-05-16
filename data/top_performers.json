@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-16T07:14:34",
+  "synced_at": "2026-05-16T08:56:53",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -64,11 +64,11 @@
           "pin_url": "https://www.pinterest.com/pin/1140747780636927065/"
         }
       ],
-      "monthly_views": 51,
+      "monthly_views": 53,
       "follower_count": 0,
       "pin_count": 47,
       "board_count": 15,
-      "synced_at": "2026-05-16T07:14:31"
+      "synced_at": "2026-05-16T08:56:49"
     },
     {
       "id": "fuzzy_pinterest",
@@ -133,11 +133,11 @@
           "pin_url": "https://www.pinterest.com/pin/1128573987893958607/"
         }
       ],
-      "monthly_views": 873,
+      "monthly_views": 1068,
       "follower_count": 0,
       "pin_count": 37,
       "board_count": 10,
-      "synced_at": "2026-05-16T07:14:32"
+      "synced_at": "2026-05-16T08:56:51"
     },
     {
       "id": "lld_pinterest",
@@ -193,7 +193,7 @@
           "pin_url": "https://www.pinterest.com/pin/1087056428837073179/"
         },
         {
-          "title": "(untitled)",
+          "title": "Luxe Living Daily — Shop the Aesthetic",
           "pin_id": "1087056428836856117",
           "impressions": 24,
           "clicks": 0,
@@ -206,7 +206,7 @@
       "follower_count": 0,
       "pin_count": 44,
       "board_count": 25,
-      "synced_at": "2026-05-16T07:14:34"
+      "synced_at": "2026-05-16T08:56:52"
     },
     {
       "id": "lld_tiktok",
