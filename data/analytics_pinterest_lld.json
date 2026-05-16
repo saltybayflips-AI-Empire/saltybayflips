@@ -2,20 +2,20 @@
   "niche": "lld",
   "handle": "saltybayflipsluxe",
   "display_name": "Luxe Living Daily",
-  "synced_at": "2026-05-14T11:28:58",
+  "synced_at": "2026-05-16T06:46:12",
   "window_days": 30,
-  "window_start": "2026-04-14",
-  "window_end": "2026-05-14",
+  "window_start": "2026-04-16",
+  "window_end": "2026-05-16",
   "account": {
-    "monthly_views": 183,
+    "monthly_views": 226,
     "follower_count": 0,
     "board_count": 25,
-    "pin_count": 42,
+    "pin_count": 44,
     "account_type": "BUSINESS"
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 281,
+      "IMPRESSION": 300,
       "SAVE": 2,
       "PIN_CLICK": 4,
       "OUTBOUND_CLICK": 1
@@ -26,10 +26,10 @@
   "top_pins": [
     {
       "pin_id": "1087056428837010124",
-      "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
-      "created_at": "2026-04-22T23:03:21",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 43,
+        "IMPRESSION": 48,
         "SAVE": 1,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -37,10 +37,10 @@
     },
     {
       "pin_id": "1087056428837307709",
-      "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
-      "created_at": "2026-04-27T14:05:36",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 31,
+        "IMPRESSION": 35,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -48,10 +48,10 @@
     },
     {
       "pin_id": "1087056428836950419",
-      "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
-      "created_at": "2026-04-21T23:05:22",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 28,
+        "IMPRESSION": 30,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -59,8 +59,8 @@
     },
     {
       "pin_id": "1087056428837073179",
-      "title": "Game Room Ideas Bourbon Bar Luxury Home",
-      "created_at": "2026-04-23T23:05:51",
+      "title": "",
+      "created_at": null,
       "totals": {
         "IMPRESSION": 27,
         "SAVE": 0,
@@ -70,8 +70,8 @@
     },
     {
       "pin_id": "1087056428836856117",
-      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-04-20T11:59:16",
+      "title": "",
+      "created_at": null,
       "totals": {
         "IMPRESSION": 24,
         "SAVE": 0,
@@ -80,20 +80,9 @@
       }
     },
     {
-      "pin_id": "1087056428836855565",
-      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-04-20T11:48:59",
-      "totals": {
-        "IMPRESSION": 20,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
       "pin_id": "1087056428836855981",
-      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-04-20T11:56:34",
+      "title": "",
+      "created_at": null,
       "totals": {
         "IMPRESSION": 20,
         "SAVE": 0,
@@ -102,11 +91,11 @@
       }
     },
     {
-      "pin_id": "1087056428836983789",
-      "title": "Two-Story Library Luxury Home Interior Design",
-      "created_at": "2026-04-22T14:05:28",
+      "pin_id": "1087056428836855565",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 16,
+        "IMPRESSION": 20,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -114,21 +103,32 @@
     },
     {
       "pin_id": "1087056428837045624",
-      "title": "Luxury Formal Dining Chandelier Ideas",
-      "created_at": "2026-04-23T14:08:06",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 16,
+        "IMPRESSION": 17,
         "SAVE": 1,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428836933115",
-      "title": "Luxury Art Gallery Hall Interior Design Ideas",
-      "created_at": "2026-04-21T17:05:07",
+      "pin_id": "1087056428836983789",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 13,
+        "IMPRESSION": 16,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428837138689",
+      "title": "",
+      "created_at": null,
+      "totals": {
+        "IMPRESSION": 14,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

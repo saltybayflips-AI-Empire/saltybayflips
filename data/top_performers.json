@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-14T11:28:58",
+  "synced_at": "2026-05-16T06:46:12",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -12,7 +12,7 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 54,
+        "impressions": 56,
         "pin_clicks": 2,
         "outbound_clicks": 1,
         "saves": 0
@@ -66,9 +66,9 @@
       ],
       "monthly_views": 51,
       "follower_count": 0,
-      "pin_count": 43,
+      "pin_count": 47,
       "board_count": 15,
-      "synced_at": "2026-05-14T11:28:54"
+      "synced_at": "2026-05-16T06:46:09"
     },
     {
       "id": "fuzzy_pinterest",
@@ -81,41 +81,41 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 881,
-        "pin_clicks": 17,
+        "impressions": 979,
+        "pin_clicks": 22,
         "outbound_clicks": 0,
-        "saves": 0
+        "saves": 2
       },
       "top_pins": [
         {
-          "title": "Cottagecore cat finds my therapist needs to see",
+          "title": "(untitled)",
           "pin_id": "1128573987894056570",
-          "impressions": 197,
-          "clicks": 7,
-          "saves": 0,
+          "impressions": 239,
+          "clicks": 8,
+          "saves": 1,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987894056570/"
         },
         {
-          "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
+          "title": "(untitled)",
           "pin_id": "1128573987893762400",
-          "impressions": 157,
+          "impressions": 165,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987893762400/"
         },
         {
-          "title": "Wholesome forest pet finds I bought twice",
+          "title": "(untitled)",
           "pin_id": "1128573987894022557",
-          "impressions": 98,
+          "impressions": 103,
           "clicks": 2,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987894022557/"
         },
         {
-          "title": "The doodle raincoat my groomer keeps recommending",
+          "title": "(untitled)",
           "pin_id": "1128573987893734735",
           "impressions": 71,
           "clicks": 1,
@@ -124,20 +124,20 @@
           "pin_url": "https://www.pinterest.com/pin/1128573987893734735/"
         },
         {
-          "title": "Adorable Pet Aesthetic Cute Fluffy Animal Basket Cozy Pet Bed",
-          "pin_id": "1128573987893927416",
-          "impressions": 46,
-          "clicks": 2,
+          "title": "(untitled)",
+          "pin_id": "1128573987893958607",
+          "impressions": 55,
+          "clicks": 0,
           "saves": 0,
           "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1128573987893927416/"
+          "pin_url": "https://www.pinterest.com/pin/1128573987893958607/"
         }
       ],
       "monthly_views": 873,
       "follower_count": 0,
-      "pin_count": 33,
+      "pin_count": 37,
       "board_count": 10,
-      "synced_at": "2026-05-14T11:28:56"
+      "synced_at": "2026-05-16T06:46:11"
     },
     {
       "id": "lld_pinterest",
@@ -150,41 +150,41 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 281,
+        "impressions": 300,
         "pin_clicks": 4,
         "outbound_clicks": 1,
         "saves": 2
       },
       "top_pins": [
         {
-          "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
+          "title": "(untitled)",
           "pin_id": "1087056428837010124",
-          "impressions": 43,
+          "impressions": 48,
           "clicks": 1,
           "saves": 1,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1087056428837010124/"
         },
         {
-          "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
+          "title": "(untitled)",
           "pin_id": "1087056428837307709",
-          "impressions": 31,
+          "impressions": 35,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1087056428837307709/"
         },
         {
-          "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
+          "title": "(untitled)",
           "pin_id": "1087056428836950419",
-          "impressions": 28,
+          "impressions": 30,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1087056428836950419/"
         },
         {
-          "title": "Game Room Ideas Bourbon Bar Luxury Home",
+          "title": "(untitled)",
           "pin_id": "1087056428837073179",
           "impressions": 27,
           "clicks": 0,
@@ -193,7 +193,7 @@
           "pin_url": "https://www.pinterest.com/pin/1087056428837073179/"
         },
         {
-          "title": "Luxe Living Daily — Shop the Aesthetic",
+          "title": "(untitled)",
           "pin_id": "1087056428836856117",
           "impressions": 24,
           "clicks": 0,
@@ -202,11 +202,11 @@
           "pin_url": "https://www.pinterest.com/pin/1087056428836856117/"
         }
       ],
-      "monthly_views": 183,
+      "monthly_views": 226,
       "follower_count": 0,
-      "pin_count": 42,
+      "pin_count": 44,
       "board_count": 25,
-      "synced_at": "2026-05-14T11:28:58"
+      "synced_at": "2026-05-16T06:46:12"
     },
     {
       "id": "lld_tiktok",

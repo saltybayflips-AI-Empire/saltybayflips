@@ -2,22 +2,22 @@
   "niche": "fuzzy",
   "handle": "saltybayflipsfuzzy",
   "display_name": "Fuzzy Frames AI",
-  "synced_at": "2026-05-14T11:28:56",
+  "synced_at": "2026-05-16T06:46:11",
   "window_days": 30,
-  "window_start": "2026-04-14",
-  "window_end": "2026-05-14",
+  "window_start": "2026-04-16",
+  "window_end": "2026-05-16",
   "account": {
     "monthly_views": 873,
     "follower_count": 0,
     "board_count": 10,
-    "pin_count": 33,
+    "pin_count": 37,
     "account_type": "BUSINESS"
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 881,
-      "SAVE": 0,
-      "PIN_CLICK": 17,
+      "IMPRESSION": 979,
+      "SAVE": 2,
+      "PIN_CLICK": 22,
       "OUTBOUND_CLICK": 0
     },
     "ready_days": 28,
@@ -26,21 +26,21 @@
   "top_pins": [
     {
       "pin_id": "1128573987894056570",
-      "title": "Cottagecore cat finds my therapist needs to see",
-      "created_at": "2026-04-28T14:05:08",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 197,
-        "SAVE": 0,
-        "PIN_CLICK": 7,
+        "IMPRESSION": 239,
+        "SAVE": 1,
+        "PIN_CLICK": 8,
         "OUTBOUND_CLICK": 0
       }
     },
     {
       "pin_id": "1128573987893762400",
-      "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
-      "created_at": "2026-04-23T23:06:23",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 157,
+        "IMPRESSION": 165,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -48,10 +48,10 @@
     },
     {
       "pin_id": "1128573987894022557",
-      "title": "Wholesome forest pet finds I bought twice",
-      "created_at": "2026-04-27T23:03:53",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 98,
+        "IMPRESSION": 103,
         "SAVE": 0,
         "PIN_CLICK": 2,
         "OUTBOUND_CLICK": 0
@@ -59,8 +59,8 @@
     },
     {
       "pin_id": "1128573987893734735",
-      "title": "The doodle raincoat my groomer keeps recommending",
-      "created_at": "2026-04-23T14:05:38",
+      "title": "",
+      "created_at": null,
       "totals": {
         "IMPRESSION": 71,
         "SAVE": 0,
@@ -69,31 +69,31 @@
       }
     },
     {
-      "pin_id": "1128573987893927416",
-      "title": "Adorable Pet Aesthetic Cute Fluffy Animal Basket Cozy Pet Bed",
-      "created_at": "2026-04-26T14:03:02",
-      "totals": {
-        "IMPRESSION": 46,
-        "SAVE": 0,
-        "PIN_CLICK": 2,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
       "pin_id": "1128573987893958607",
-      "title": "Cute Pet Flower Otter Toy",
-      "created_at": "2026-04-26T23:00:26",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 45,
+        "IMPRESSION": 55,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
+      "pin_id": "1128573987893927416",
+      "title": "",
+      "created_at": null,
+      "totals": {
+        "IMPRESSION": 54,
+        "SAVE": 1,
+        "PIN_CLICK": 3,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
       "pin_id": "1128573987893796627",
-      "title": "Cottagecore pet decor that lives rent-free in my head",
-      "created_at": "2026-04-24T14:01:06",
+      "title": "",
+      "created_at": null,
       "totals": {
         "IMPRESSION": 44,
         "SAVE": 0,
@@ -102,33 +102,33 @@
       }
     },
     {
-      "pin_id": "1128573987893994009",
-      "title": "Cute Ragdoll Fairy Lights Pet Room - Cozy Cat Haven Ideas",
-      "created_at": "2026-04-27T14:01:54",
+      "pin_id": "1128573987894519546",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 34,
+        "IMPRESSION": 42,
         "SAVE": 0,
-        "PIN_CLICK": 0,
+        "PIN_CLICK": 3,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1128573987894519546",
-      "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
-      "created_at": "2026-05-05T15:05:50",
+      "pin_id": "1128573987893994009",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 29,
+        "IMPRESSION": 40,
         "SAVE": 0,
-        "PIN_CLICK": 2,
+        "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
       }
     },
     {
       "pin_id": "1128573987893891607",
-      "title": "Cute Kitten Witch Hat Fluffy Pet Costume Prop",
-      "created_at": "2026-04-25T23:07:06",
+      "title": "",
+      "created_at": null,
       "totals": {
-        "IMPRESSION": 25,
+        "IMPRESSION": 27,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

@@ -1,44 +1,44 @@
 {
-  "synced_at": "2026-05-14T11:28:58",
+  "synced_at": "2026-05-16T06:46:12",
   "report_url": "https://analytics.pinterest.com/overview/",
   "note": "All 3 niches now sourced from Pinterest API v5.",
   "scrape_status": "api_live",
   "accounts": {
     "fuzzy_frames_ai": {
-      "date_range": "2026-04-14 to 2026-05-14",
+      "date_range": "2026-04-16 to 2026-05-16",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T11:28:56",
+      "synced_at": "2026-05-16T06:46:11",
       "metrics": {
-        "Impressions": "881",
-        "Engagements": "17",
+        "Impressions": "979",
+        "Engagements": "22",
         "Outbound clicks": "0",
-        "Saves": "0",
+        "Saves": "2",
         "Total audience": "873",
         "Engaged audience": "?"
       }
     },
     "luxe_living_daily": {
-      "date_range": "2026-04-14 to 2026-05-14",
+      "date_range": "2026-04-16 to 2026-05-16",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T11:28:58",
+      "synced_at": "2026-05-16T06:46:12",
       "metrics": {
-        "Impressions": "281",
+        "Impressions": "300",
         "Engagements": "4",
         "Outbound clicks": "1",
         "Saves": "2",
-        "Total audience": "183",
+        "Total audience": "226",
         "Engaged audience": "?"
       }
     },
     "aesthetic_spaces_co": {
-      "date_range": "2026-04-14 to 2026-05-14",
+      "date_range": "2026-04-16 to 2026-05-16",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-14T11:28:54",
+      "synced_at": "2026-05-16T06:46:09",
       "metrics": {
-        "Impressions": "54",
+        "Impressions": "56",
         "Engagements": "2",
         "Outbound clicks": "1",
         "Saves": "0",
@@ -48,11 +48,11 @@
     }
   },
   "totals": {
-    "Impressions": 1216,
-    "Engagements": 23,
+    "Impressions": 1335,
+    "Engagements": 28,
     "Outbound clicks": 2,
-    "Saves": 2,
-    "Total audience": 1107,
+    "Saves": 4,
+    "Total audience": 1150,
     "Engaged audience": 0
   }
 }
