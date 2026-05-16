@@ -792,7 +792,22 @@ function renderPerformance(amazon, tiktok, pinterest) {
   if (amazon) {
     const a = amazon;
     const tm = a.this_month || {};
-    const daysLeft = a.deadline_days_remaining ?? '';
+    // Compute days-to-deadline live from qualifying_sales.deadline (e.g. "2026-10-11")
+    // so we don't depend on a precomputed deadline_days_remaining field that the
+    // scraper may not write. Fallback to the legacy field if present.
+    let daysLeft = a.deadline_days_remaining;
+    if (daysLeft == null) {
+      const deadlineStr = a.qualifying_sales?.deadline;
+      if (deadlineStr) {
+        const deadline = new Date(deadlineStr + 'T00:00:00');
+        if (!isNaN(deadline)) {
+          const todayMidnight = new Date();
+          todayMidnight.setHours(0, 0, 0, 0);
+          daysLeft = Math.round((deadline - todayMidnight) / 86400000);
+        }
+      }
+    }
+    if (daysLeft == null || daysLeft === '') daysLeft = '—';
     const earnings = parseMetric(tm['Total Earnings'] ?? tm.earnings_usd);
     const orders = parseMetric(tm['Total Ordered Items'] ?? tm.ordered_items);
     const shipped = parseMetric(tm['Total Items Shipped'] ?? tm.items_shipped);
