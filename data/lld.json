@@ -1526,7 +1526,7 @@
     {
       "id": 41,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 42,
       "source_image": "pinterest/luxe_living_daily/qa_pending/42_midcentury_conversation_pit.png",
       "title": "Midcentury Conversation Pit Sunken Living Room",
@@ -1557,7 +1557,11 @@
           "until": "20260505_085603"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1087056428838437347",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428838437347/",
+      "posted_date": "2026-05-14",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 42,
@@ -1763,7 +1767,7 @@
     {
       "id": 48,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 49,
       "source_image": "pinterest/luxe_living_daily/qa_pending/49_log_chalet_copper_bath.png",
       "title": "Log Chalet Copper Bath Mountain Cabins",
@@ -1787,7 +1791,11 @@
       "image_url": null,
       "scheduled_for": "2026-05-15 11:00",
       "qa_passed_at": "2026-05-04",
-      "scheduled_at": "2026-05-10T08:32:09.336740"
+      "scheduled_at": "2026-05-10T08:32:09.336740",
+      "pinterest_pin_id": "1087056428838505076",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428838505076/",
+      "posted_date": "2026-05-15",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 49,
@@ -2253,5 +2261,5 @@
     "next_unposted": "2026-05-16T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-16T08:56:45"
+  "last_synced": "2026-05-16T09:02:17"
 }

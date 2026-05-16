@@ -1143,7 +1143,7 @@
     {
       "id": 42,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 3,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/03_living_dark_moody.png",
       "title": "Living Dark Moody Small Apartment Room",
@@ -1168,12 +1168,16 @@
       "scheduled_for": "2026-05-14 12:00",
       "qa_passed_at": "2026-05-04",
       "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
-      "scheduled_at_pinterest": "2026-05-04T13:50:00"
+      "scheduled_at_pinterest": "2026-05-04T13:50:00",
+      "pinterest_pin_id": "1140747780638274759",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638274759/",
+      "posted_date": "2026-05-14",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 43,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 4,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/04_dining_banquette_window.png",
       "title": "Dining Banquette Window Small Apartment Nook",
@@ -1197,7 +1201,11 @@
       "image_url": null,
       "scheduled_for": "2026-05-15 12:00",
       "qa_passed_at": "2026-05-04",
-      "scheduled_at_pinterest": "2026-05-04T13:50:00"
+      "scheduled_at_pinterest": "2026-05-04T13:50:00",
+      "pinterest_pin_id": "1140747780638338303",
+      "pinterest_url": "https://www.pinterest.com/pin/1140747780638338303/",
+      "posted_date": "2026-05-15",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 44,
@@ -1823,5 +1831,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-16T08:56:45"
+  "last_synced": "2026-05-16T09:02:17"
 }

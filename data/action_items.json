@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-16T08:56:45.790537",
-  "item_count": 6,
+  "synced_at": "2026-05-16T09:02:17.765799",
+  "item_count": 5,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
@@ -14,10 +14,10 @@
     },
     {
       "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #42 (2026-05-14 12:00, 44.9h ago), #43 (2026-05-15 12:00, 20.9h ago), #52 (2026-05-14 11:00, 45.9h ago).",
+      "title": "ASC: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #52 (2026-05-14 11:00, 46.0h ago), #54 (2026-05-15 11:00, 22.0h ago).",
       "priority": "high",
-      "estimated_min": 8,
+      "estimated_min": 4,
       "category": "missed_slot",
       "url": "https://www.pinterest.com/saltybayflipspin/_created/"
     },
@@ -33,10 +33,10 @@
     },
     {
       "id": "overdue_luxe_living_daily",
-      "title": "LLD: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche lld` to auto-fix. First few: #41 (2026-05-14 11:00, 45.9h ago), #42 (2026-05-15 11:00, 21.9h ago), #47 (2026-05-14 11:00, 45.9h ago).",
+      "title": "LLD: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche lld` to auto-fix. First few: #42 (2026-05-15 11:00, 22.0h ago), #47 (2026-05-14 11:00, 46.0h ago).",
       "priority": "high",
-      "estimated_min": 8,
+      "estimated_min": 4,
       "category": "missed_slot",
       "url": "https://www.pinterest.com/saltybayflipsluxe/_created/"
     },
@@ -49,15 +49,6 @@
       "category": "gap_warning",
       "url": "https://www.pinterest.com/saltybayflipsfuzzy/_created/",
       "deadline_at": "2026-05-17"
-    },
-    {
-      "id": "overdue_fuzzy_frames_ai",
-      "title": "Fuzzy: 6 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #55 (2026-05-14 11:00, 45.9h ago), #58 (2026-05-15 11:00, 21.9h ago), #66 (2026-05-14 14:00, 42.9h ago).",
-      "priority": "high",
-      "estimated_min": 12,
-      "category": "missed_slot",
-      "url": "https://www.pinterest.com/saltybayflipsfuzzy/_created/"
     }
   ]
 }
