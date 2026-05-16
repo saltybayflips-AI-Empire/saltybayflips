@@ -2,7 +2,7 @@
   "niche": "lld",
   "handle": "saltybayflipsluxe",
   "display_name": "Luxe Living Daily",
-  "synced_at": "2026-05-16T06:46:12",
+  "synced_at": "2026-05-16T07:07:45",
   "window_days": 30,
   "window_start": "2026-04-16",
   "window_end": "2026-05-16",
@@ -15,43 +15,43 @@
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 300,
-      "SAVE": 2,
-      "PIN_CLICK": 4,
-      "OUTBOUND_CLICK": 1
+      "IMPRESSION": 354,
+      "SAVE": 3,
+      "PIN_CLICK": 6,
+      "OUTBOUND_CLICK": 2
     },
-    "ready_days": 28,
-    "blocked_days": 3
+    "ready_days": 29,
+    "blocked_days": 2
   },
   "top_pins": [
     {
-      "pin_id": "1087056428837010124",
-      "title": "",
-      "created_at": null,
-      "totals": {
-        "IMPRESSION": 48,
-        "SAVE": 1,
-        "PIN_CLICK": 1,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
       "pin_id": "1087056428837307709",
-      "title": "",
-      "created_at": null,
+      "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
+      "created_at": "2026-04-27T14:05:36",
       "totals": {
-        "IMPRESSION": 35,
+        "IMPRESSION": 60,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428836950419",
-      "title": "",
-      "created_at": null,
+      "pin_id": "1087056428837010124",
+      "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
+      "created_at": "2026-04-22T23:03:21",
       "totals": {
-        "IMPRESSION": 30,
+        "IMPRESSION": 49,
+        "SAVE": 1,
+        "PIN_CLICK": 1,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836950419",
+      "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
+      "created_at": "2026-04-21T23:05:22",
+      "totals": {
+        "IMPRESSION": 31,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -59,8 +59,8 @@
     },
     {
       "pin_id": "1087056428837073179",
-      "title": "",
-      "created_at": null,
+      "title": "Game Room Ideas Bourbon Bar Luxury Home",
+      "created_at": "2026-04-23T23:05:51",
       "totals": {
         "IMPRESSION": 27,
         "SAVE": 0,
@@ -71,7 +71,7 @@
     {
       "pin_id": "1087056428836856117",
       "title": "",
-      "created_at": null,
+      "created_at": "2026-04-20T11:59:16",
       "totals": {
         "IMPRESSION": 24,
         "SAVE": 0,
@@ -80,20 +80,20 @@
       }
     },
     {
-      "pin_id": "1087056428836855981",
-      "title": "",
-      "created_at": null,
+      "pin_id": "1087056428837823970",
+      "title": "Grand Foyer With A Sweeping Double Staircase + Crystal Chandelier Old Money Entr",
+      "created_at": "2026-05-05T16:05:33",
       "totals": {
-        "IMPRESSION": 20,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
+        "IMPRESSION": 21,
+        "SAVE": 1,
+        "PIN_CLICK": 2,
+        "OUTBOUND_CLICK": 1
       }
     },
     {
       "pin_id": "1087056428836855565",
       "title": "",
-      "created_at": null,
+      "created_at": "2026-04-20T11:48:59",
       "totals": {
         "IMPRESSION": 20,
         "SAVE": 0,
@@ -102,22 +102,11 @@
       }
     },
     {
-      "pin_id": "1087056428837045624",
+      "pin_id": "1087056428836855981",
       "title": "",
-      "created_at": null,
+      "created_at": "2026-04-20T11:56:34",
       "totals": {
-        "IMPRESSION": 17,
-        "SAVE": 1,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428836983789",
-      "title": "",
-      "created_at": null,
-      "totals": {
-        "IMPRESSION": 16,
+        "IMPRESSION": 20,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -125,10 +114,21 @@
     },
     {
       "pin_id": "1087056428837138689",
-      "title": "",
-      "created_at": null,
+      "title": "Hamptons Living: Coastal Luxury Home Inspiration",
+      "created_at": "2026-04-24T23:04:29",
       "totals": {
-        "IMPRESSION": 14,
+        "IMPRESSION": 18,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836983789",
+      "title": "Two-Story Library Luxury Home Interior Design",
+      "created_at": "2026-04-22T14:05:28",
+      "totals": {
+        "IMPRESSION": 17,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

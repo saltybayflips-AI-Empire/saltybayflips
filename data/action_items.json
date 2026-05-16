@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-16T06:46:06.897630",
+  "synced_at": "2026-05-16T07:07:39.329030",
   "item_count": 6,
   "items": [
     {
@@ -15,7 +15,7 @@
     {
       "id": "overdue_aesthetic_spaces_co",
       "title": "ASC: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #42 (2026-05-14 12:00, 42.8h ago), #43 (2026-05-15 12:00, 18.8h ago), #52 (2026-05-14 11:00, 43.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #42 (2026-05-14 12:00, 43.1h ago), #43 (2026-05-15 12:00, 19.1h ago), #52 (2026-05-14 11:00, 44.1h ago).",
       "priority": "high",
       "estimated_min": 8,
       "category": "missed_slot",
@@ -34,7 +34,7 @@
     {
       "id": "overdue_luxe_living_daily",
       "title": "LLD: 4 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche lld` to auto-fix. First few: #41 (2026-05-14 11:00, 43.8h ago), #42 (2026-05-15 11:00, 19.8h ago), #47 (2026-05-14 11:00, 43.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche lld` to auto-fix. First few: #41 (2026-05-14 11:00, 44.1h ago), #42 (2026-05-15 11:00, 20.1h ago), #47 (2026-05-14 11:00, 44.1h ago).",
       "priority": "high",
       "estimated_min": 8,
       "category": "missed_slot",
@@ -53,7 +53,7 @@
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 2 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #55 (2026-05-14 11:00, 43.8h ago), #58 (2026-05-15 11:00, 19.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #55 (2026-05-14 11:00, 44.1h ago), #58 (2026-05-15 11:00, 20.1h ago).",
       "priority": "high",
       "estimated_min": 4,
       "category": "missed_slot",
