@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-18T11:46:05.399696",
-  "item_count": 4,
+  "synced_at": "2026-05-18T11:48:47.843041",
+  "item_count": 3,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
@@ -20,16 +20,6 @@
       "estimated_min": 2,
       "category": "missed_slot",
       "url": "https://www.pinterest.com/saltybayflipspin/_created/"
-    },
-    {
-      "id": "gap_luxe_living_daily",
-      "title": "LLD has 14 unscheduled days in next 14d",
-      "detail": "Days with no scheduled LLD pin: 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, 2026-05-23, … (+9 more)",
-      "priority": "high",
-      "estimated_min": 70,
-      "category": "gap_warning",
-      "url": "https://www.pinterest.com/saltybayflipsluxe/_created/",
-      "deadline_at": "2026-05-19"
     },
     {
       "id": "overdue_fuzzy_frames_ai",

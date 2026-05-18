@@ -1566,7 +1566,7 @@
     {
       "id": 42,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 43,
       "source_image": "pinterest/luxe_living_daily/qa_pending/43_tropical_jungle_outdoor_shower.png",
       "title": "Tropical Jungle Outdoor Shower Goals",
@@ -1597,7 +1597,9 @@
         }
       ],
       "destination_url_updated_at": "2026-05-05",
-      "previous_scheduled_for": "2026-05-15 11:00"
+      "previous_scheduled_for": "2026-05-15 11:00",
+      "scheduled_for": "2026-05-24 11:00",
+      "image": "pinterest/luxe_living_daily/02_ready_to_post/luxe_tropical_jungle_outdoor_shower_00001_.png"
     },
     {
       "id": 43,
@@ -1745,7 +1747,7 @@
     {
       "id": 47,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "source_prompt_id": 48,
       "source_image": "pinterest/luxe_living_daily/qa_pending/48_greenhouse_bedroom.png",
       "title": "Greenhouse Bedroom Garden Rooms",
@@ -1768,7 +1770,9 @@
       "image_url": null,
       "qa_passed_at": "2026-05-04",
       "scheduled_at": "2026-05-10T08:32:09.336734",
-      "previous_scheduled_for": "2026-05-14 11:00"
+      "previous_scheduled_for": "2026-05-14 11:00",
+      "scheduled_for": "2026-05-22 11:00",
+      "image": "pinterest/luxe_living_daily/02_ready_to_post/luxe_greenhouse_bedroom_00001_.png"
     },
     {
       "id": 48,
@@ -1839,7 +1843,7 @@
     {
       "id": 50,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Two-story home library my book hoarder friends keep begging for",
       "board": "Home Library",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_01_library_spiral.png",
@@ -1847,12 +1851,13 @@
       "prompt_id": 6,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-25 11:00"
     },
     {
       "id": 51,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "The bourbon lounge my husband would never leave if I let him",
       "board": "Game Room",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_03_bourbon_lounge.png",
@@ -1860,12 +1865,13 @@
       "prompt_id": 11,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-20 11:00"
     },
     {
       "id": 52,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Hallway gallery wall my interior designer friend says is chefs kiss",
       "board": "Art Gallery Halls",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_04_art_hallway.png",
@@ -1873,12 +1879,13 @@
       "prompt_id": 14,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-29 11:00"
     },
     {
       "id": 53,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Dark academia office I would never come out of (my therapist agrees)",
       "board": "Dark Academia Office",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_05_dark_academia.png",
@@ -1886,12 +1893,13 @@
       "prompt_id": 17,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-23 11:00"
     },
     {
       "id": 54,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "The Tuscan kitchen that made me want to learn Italian",
       "board": "Dream Kitchens",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_06_tuscan_kitchen.png",
@@ -1899,12 +1907,13 @@
       "prompt_id": 20,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-28 11:00"
     },
     {
       "id": 55,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Garage workshop so clean my engineer husband actually keeps it tidy",
       "board": "Dream Garages & Showrooms",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_07_showroom_garage.png",
@@ -1912,12 +1921,13 @@
       "prompt_id": 22,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-27 11:00"
     },
     {
       "id": 56,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "The zen courtyard with a koi pond I dream about every night",
       "board": "Zen Gardens",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_08_zen_koi.png",
@@ -1925,12 +1935,13 @@
       "prompt_id": 26,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V11_2026_05_18"
+      "batch": "V11_2026_05_18",
+      "scheduled_for": "2026-05-30 11:00"
     },
     {
       "id": 57,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Boutique-style walk-in closet that made me get rid of my dresser",
       "board": "Walk-In Closets",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_09_boutique_closet.png",
@@ -1938,12 +1949,13 @@
       "prompt_id": 69,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T09:25:00",
-      "batch": "V11_extra_2026_05_18"
+      "batch": "V11_extra_2026_05_18",
+      "scheduled_for": "2026-05-26 11:00"
     },
     {
       "id": 58,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Spiral staircase wrapped in a reef aquarium — the most show-off room I have ever seen",
       "board": "Specialty",
       "image": "pinterest/luxe_living_daily/02_ready_to_post/lld_v11_10_aquarium_stair.png",
@@ -1951,15 +1963,55 @@
       "prompt_id": 71,
       "tracking_id": "pinlld-20",
       "added_at": "2026-05-18T09:25:00",
-      "batch": "V11_extra_2026_05_18"
+      "batch": "V11_extra_2026_05_18",
+      "scheduled_for": "2026-06-01 11:00"
+    },
+    {
+      "id": 59,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Japandi spa bathroom",
+      "board": "Spa Bathrooms",
+      "image": "pinterest/luxe_living_daily/02_ready_to_post/10_luxe_japandi_spa_bath_16gb.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#bathroom",
+      "tracking_id": "pinlld-20",
+      "scheduled_for": "2026-05-19 11:00",
+      "added_at": "2026-05-18T18:30:00",
+      "batch": "V11_2026_05_18_legacy_reuse"
+    },
+    {
+      "id": 60,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Modernist art studio",
+      "board": "Penthouse Living",
+      "image": "pinterest/luxe_living_daily/02_ready_to_post/55_luxe_modernist_art_studio_16gb.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#specialty",
+      "tracking_id": "pinlld-20",
+      "scheduled_for": "2026-05-21 11:00",
+      "added_at": "2026-05-18T18:30:00",
+      "batch": "V11_2026_05_18_legacy_reuse"
+    },
+    {
+      "id": 61,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Underground wine cellar",
+      "board": "Wine Cellars & Home Bars",
+      "image": "pinterest/luxe_living_daily/02_ready_to_post/51_luxe_underground_wine_cellar_16gb.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/lld.html#wine-bar",
+      "tracking_id": "pinlld-20",
+      "scheduled_for": "2026-05-31 11:00",
+      "added_at": "2026-05-18T18:30:00",
+      "batch": "V11_2026_05_18_legacy_reuse"
     }
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 0,
-    "next_scheduled": null,
-    "last_scheduled": null,
-    "count": 0
+    "runway_days": 14,
+    "next_scheduled": "2026-05-19T11:00:00",
+    "last_scheduled": "2026-06-01T11:00:00",
+    "count": 14
   },
   "tiktok": {
     "enabled": true,
@@ -2388,5 +2440,5 @@
     "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-18T11:46:05"
+  "last_synced": "2026-05-18T11:48:47"
 }
