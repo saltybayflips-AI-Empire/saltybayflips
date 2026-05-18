@@ -1341,17 +1341,18 @@
       "title": "Pug Puppy On Cozy Sheepskin Rug Adorable Wrinkly Pet Photography",
       "description": "Adorable fawn pug puppy with wrinkly face and big soulful eyes on a cozy white sheepskin rug - peak wholesome pet aesthetic. Save for your puppy moodboard, pug inspo, or cozy cream interior vibes. Tap profile to shop pug-themed home decor, sheepskin rugs, cozy pet aesthetic prints, and adorable puppy art. #Pug #PugPuppy #CutePuppy #CuteDogs #WrinklyDog #PetPhotography #PugLife #CozyAesthetic #PuppyAesthetic #PuppyOfTheDay #DogLovers #PugLove",
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/5RB44WI33ISZ?tag=pinfuzzy-20",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-18 10:00",
       "method": "pin-creation-tool drag-drop + Chrome MCP automation",
-      "notes": "Calendar widget glitched - meant for Mon 5/12 but click landed on Mon 5/18 in calendar. Pin still scheduled successfully. Creates a gap on 5/12-5/17.",
+      "notes": "Calendar widget glitched - meant for Mon 5/12 but click landed on Mon 5/18 in calendar. Pin still scheduled successfully. Creates a gap on 5/12-5/17. | Auto-flipped 2026-05-18: Pug Puppy 5/18 10AM scheduled in past",
       "destination_url_history": [
         {
           "url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
           "until": "20260505_083101"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "posted_date": "2026-05-18"
     },
     {
       "id": 44,
@@ -2112,7 +2113,7 @@
     {
       "id": 86,
       "platform": "pinterest",
-      "status": "ready_to_post",
+      "status": "scheduled",
       "title": "My Cavalier King Charles puppy in bluebells is the cottagecore moment I needed",
       "board": "Fluffy Puppies",
       "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v14_01_cavalier_bluebells.png",
@@ -2176,9 +2177,9 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 13,
-    "next_scheduled": "2026-05-18T10:00:00",
-    "last_scheduled": "2026-05-31T11:00:00",
+    "runway_days": 14,
+    "next_scheduled": "2026-05-19T11:00:00",
+    "last_scheduled": "2026-06-01T11:00:00",
     "count": 15
   },
   "tiktok": {
@@ -2752,5 +2753,5 @@
     "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-18T16:17:42"
+  "last_synced": "2026-05-18T16:36:50"
 }

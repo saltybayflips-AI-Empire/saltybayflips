@@ -272,6 +272,67 @@
   .perfcard .footer { font-size:10px; color:var(--mut); margin-top:10px;
     padding-top:8px; border-top:1px dashed var(--line); display:flex; justify-content:space-between; }
   .perfcard a { color:var(--info); }
+  .perfcard .stale-badge { display:inline-block; font-size:9px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.6px; padding:2px 7px;
+    border-radius:999px; background:rgba(255,153,0,.22); color:#ffba66;
+    margin-left:6px; }
+  .perfcard.stale { opacity:.92; border-top-style:dashed; }
+  .perfcard.stale .big small::after { content:" · stale"; color:#ffba66; }
+
+  /* ============== CONTENT CALENDAR ============== */
+  .cal-controls { display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+  .cal-nav { background:var(--card2); border:1px solid var(--line); color:var(--fg);
+    width:30px; height:30px; border-radius:6px; cursor:pointer; font-size:18px; line-height:1; padding:0; }
+  .cal-nav:hover { background:#2a2f3a; }
+  .cal-today { background:var(--card2); border:1px solid var(--line); color:var(--fg);
+    padding:6px 12px; border-radius:6px; cursor:pointer; font-size:12px; }
+  .cal-today:hover { background:#2a2f3a; }
+  .cal-month { font-size:16px; font-weight:600; min-width:160px; text-align:center; }
+  .cal-legend { display:flex; gap:14px; margin-left:auto; flex-wrap:wrap; font-size:11px; color:var(--mut); align-items:center; }
+  .cal-leg { display:inline-flex; align-items:center; gap:5px; }
+  .cal-leg-dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--mut); }
+  .cal-leg-dot.solid { background:var(--good); }
+  .cal-leg-dot.ring { background:transparent; border:2px solid #ffba66; box-sizing:border-box; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px;
+    background:var(--card2); border:1px solid var(--line); border-radius:8px; padding:8px; }
+  .cal-day-header { font-size:10px; text-transform:uppercase; color:var(--mut); text-align:center;
+    padding:6px 2px; font-weight:600; letter-spacing:.5px; }
+  .cal-cell { min-height:78px; padding:6px; border-radius:6px; background:var(--card);
+    border:1px solid transparent; cursor:pointer; position:relative;
+    display:flex; flex-direction:column; gap:3px; transition:background .12s; }
+  .cal-cell.empty { background:transparent; cursor:default; opacity:.4; }
+  .cal-cell:not(.empty):hover { background:#2a2f3a; }
+  .cal-cell.selected { border-color:var(--info); background:#2a2f3a; }
+  .cal-cell.today { border-color:var(--accent); }
+  .cal-cell.past { opacity:.7; }
+  .cal-cell-num { font-size:12px; font-weight:600; color:var(--fg); }
+  .cal-cell.today .cal-cell-num { color:var(--accent); }
+  .cal-cell.past .cal-cell-num { color:var(--mut); }
+  .cal-cell-pins { display:flex; flex-wrap:wrap; gap:2px; margin-top:2px; align-content:flex-start; }
+  .cal-pin-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .cal-pin-dot.scheduled { background:transparent; box-shadow:inset 0 0 0 2px currentColor; }
+  .cal-cell-count { font-size:9px; color:var(--mut); margin-top:auto; align-self:flex-end; }
+  .cal-details { margin-top:12px; min-height:60px; padding:12px;
+    background:var(--card); border:1px solid var(--line); border-radius:8px;
+    font-size:12px; }
+  .cal-details.empty { display:flex; align-items:center; justify-content:center;
+    color:var(--mut); font-style:italic; min-height:60px; }
+  .cal-details-header { font-size:14px; font-weight:600; margin-bottom:8px;
+    display:flex; justify-content:space-between; align-items:center; }
+  .cal-details-list { display:flex; flex-direction:column; gap:6px; }
+  .cal-details-item { display:flex; gap:8px; align-items:flex-start; padding:6px;
+    background:var(--card2); border-radius:6px; }
+  .cal-details-item .cal-niche-tag { display:inline-block; width:6px; align-self:stretch;
+    border-radius:3px; flex-shrink:0; }
+  .cal-details-item .cal-item-body { flex:1; min-width:0; }
+  .cal-details-item .cal-item-title { font-weight:500; color:var(--fg);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .cal-details-item .cal-item-meta { font-size:10px; color:var(--mut); margin-top:2px; }
+  .cal-status-pill { display:inline-block; font-size:9px; font-weight:600;
+    text-transform:uppercase; padding:1px 6px; border-radius:999px;
+    margin-right:4px; letter-spacing:.4px; }
+  .cal-status-pill.scheduled { background:rgba(255,186,102,.2); color:#ffba66; }
+  .cal-status-pill.posted { background:rgba(127,176,105,.22); color:#7fb069; }
 
   /* Funnel summary card */
   .funnel { background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -422,6 +483,26 @@
 <div class="section" id="topPerformersSection" style="display:none;">
   <h2>Top performers <span class="count" id="topPerformersSubtitle"></span></h2>
   <div class="nicherow" id="topPerformers"></div>
+</div>
+
+<!-- ============== CONTENT CALENDAR (interactive month view) ================= -->
+<div class="section" id="calendarSection">
+  <h2>Content calendar <span class="count" id="calendarSubtitle"></span></h2>
+  <div class="cal-controls">
+    <button class="cal-nav" id="calPrev">‹</button>
+    <span class="cal-month" id="calMonthLabel"></span>
+    <button class="cal-nav" id="calNext">›</button>
+    <button class="cal-today" id="calToday">Today</button>
+    <span class="cal-legend">
+      <span class="cal-leg"><span class="cal-leg-dot" style="background:#7fb069"></span> ASC</span>
+      <span class="cal-leg"><span class="cal-leg-dot" style="background:#d472a2"></span> Fuzzy</span>
+      <span class="cal-leg"><span class="cal-leg-dot" style="background:#9d8189"></span> LLD</span>
+      <span class="cal-leg"><span class="cal-leg-dot solid"></span> posted</span>
+      <span class="cal-leg"><span class="cal-leg-dot ring"></span> scheduled</span>
+    </span>
+  </div>
+  <div class="cal-grid" id="calendarGrid"></div>
+  <div class="cal-details" id="calendarDetails"></div>
 </div>
 
 <!-- ============== FUNNEL (collapsible, below the fold) ================= -->
@@ -618,6 +699,152 @@ async function loadTopPerformers() {
     return null;
   }
 }
+
+async function fetchCalendar() {
+  try {
+    const r = await fetch(`data/calendar.json${_CB}`, {cache:'no-store'});
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+// =========== CONTENT CALENDAR (interactive month view) ===========
+let _calData = null;
+let _calMonthOffset = 0; // 0 = current month, +1 = next, -1 = prev
+let _calSelectedDate = null;
+
+function _calFormatYMD(d) {
+  const yr = d.getFullYear();
+  const mo = String(d.getMonth() + 1).padStart(2, '0');
+  const da = String(d.getDate()).padStart(2, '0');
+  return `${yr}-${mo}-${da}`;
+}
+
+function renderCalendar(data) {
+  if (!data) {
+    document.getElementById('calendarSection').style.display = 'none';
+    return;
+  }
+  _calData = data;
+  // Default selected = today if it has entries, else today anyway
+  if (!_calSelectedDate) _calSelectedDate = data.today;
+  document.getElementById('calendarSubtitle').textContent =
+    `${data.summary.scheduled_future} scheduled · ${data.summary.posted_last_7d} posted in last 7d`;
+
+  // Compute target month
+  const now = new Date();
+  const target = new Date(now.getFullYear(), now.getMonth() + _calMonthOffset, 1);
+  const year = target.getFullYear();
+  const month = target.getMonth();
+  const monthLabel = target.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  document.getElementById('calMonthLabel').textContent = monthLabel;
+
+  // Build the cell list. Start from the Sunday before/on the 1st.
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const startCell = new Date(firstDay);
+  startCell.setDate(firstDay.getDate() - firstDay.getDay()); // Sunday = 0
+  const endCell = new Date(lastDay);
+  endCell.setDate(lastDay.getDate() + (6 - lastDay.getDay()));
+
+  const grid = [];
+  // Header row
+  for (const d of ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']) {
+    grid.push(`<div class="cal-day-header">${d}</div>`);
+  }
+  const today = new Date(); today.setHours(0,0,0,0);
+  const cur = new Date(startCell);
+  while (cur <= endCell) {
+    const ymd = _calFormatYMD(cur);
+    const isOtherMonth = cur.getMonth() !== month;
+    const isToday = ymd === data.today;
+    const isPast = cur < today && !isToday;
+    const isSelected = ymd === _calSelectedDate;
+    const dayInfo = data.by_date[ymd] || { posted: [], scheduled: [] };
+    const totalCount = dayInfo.posted.length + dayInfo.scheduled.length;
+    // Build pin dots — group by niche, show solid for posted, ring for scheduled
+    const dots = [];
+    for (const item of dayInfo.posted) {
+      dots.push(`<span class="cal-pin-dot" style="background:${item.niche_color}" title="${item.niche_label}: posted ${item.title.replace(/"/g,'&quot;')}"></span>`);
+    }
+    for (const item of dayInfo.scheduled) {
+      dots.push(`<span class="cal-pin-dot scheduled" style="color:${item.niche_color}" title="${item.niche_label}: scheduled ${item.title.replace(/"/g,'&quot;')}"></span>`);
+    }
+    const cellCls = [
+      'cal-cell',
+      isOtherMonth ? 'empty' : '',
+      isToday ? 'today' : '',
+      isPast ? 'past' : '',
+      isSelected ? 'selected' : '',
+    ].filter(Boolean).join(' ');
+    const cellAttrs = isOtherMonth ? '' : ` onclick="selectCalendarDate('${ymd}')"`;
+    grid.push(`<div class="${cellCls}"${cellAttrs}>
+      <div class="cal-cell-num">${cur.getDate()}</div>
+      <div class="cal-cell-pins">${dots.join('')}</div>
+      ${totalCount > 0 ? `<div class="cal-cell-count">${totalCount}</div>` : ''}
+    </div>`);
+    cur.setDate(cur.getDate() + 1);
+  }
+  document.getElementById('calendarGrid').innerHTML = grid.join('');
+  renderCalendarDetails(_calSelectedDate);
+}
+
+function renderCalendarDetails(ymd) {
+  const el = document.getElementById('calendarDetails');
+  if (!ymd || !_calData) {
+    el.className = 'cal-details empty';
+    el.textContent = 'Click a day to see posts.';
+    return;
+  }
+  const info = _calData.by_date[ymd] || { posted: [], scheduled: [] };
+  const all = info.posted.map(p => ({ ...p, status: 'posted' }))
+    .concat(info.scheduled.map(p => ({ ...p, status: 'scheduled' })));
+  if (all.length === 0) {
+    el.className = 'cal-details empty';
+    el.textContent = `No pins on ${ymd}.`;
+    return;
+  }
+  el.className = 'cal-details';
+  const dateLabel = new Date(ymd + 'T00:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  const items = all.map(p => `
+    <div class="cal-details-item">
+      <span class="cal-niche-tag" style="background:${p.niche_color}"></span>
+      <div class="cal-item-body">
+        <div class="cal-item-title">
+          <span class="cal-status-pill ${p.status}">${p.status}</span>
+          ${p.title.replace(/</g,'&lt;')}
+        </div>
+        <div class="cal-item-meta">
+          ${p.niche_label} · ${p.platform} ${p.time ? '· ' + p.time : ''} ${p.board ? '· ' + p.board : ''}
+        </div>
+      </div>
+    </div>
+  `).join('');
+  el.innerHTML = `
+    <div class="cal-details-header">
+      <span>${dateLabel}</span>
+      <span style="font-size:11px;color:var(--mut);font-weight:400">
+        ${info.posted.length} posted · ${info.scheduled.length} scheduled
+      </span>
+    </div>
+    <div class="cal-details-list">${items}</div>
+  `;
+}
+
+function selectCalendarDate(ymd) {
+  _calSelectedDate = ymd;
+  renderCalendar(_calData);
+}
+
+document.getElementById('calPrev')?.addEventListener('click', () => { _calMonthOffset--; renderCalendar(_calData); });
+document.getElementById('calNext')?.addEventListener('click', () => { _calMonthOffset++; renderCalendar(_calData); });
+document.getElementById('calToday')?.addEventListener('click', () => {
+  _calMonthOffset = 0;
+  _calSelectedDate = _calData?.today;
+  renderCalendar(_calData);
+});
 
 // CHANNEL_RENDERERS — extensibility hook. Each kind (pinterest, tiktok, future
 // shopify/fanvue/etc) registers a renderer that takes a channel object from
@@ -817,14 +1044,22 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const clicksDelta = typeof clicksDeltaRaw === 'number' ? clicksDeltaRaw : parseMetric(clicksDeltaRaw);
     const clicksDeltaStr = clicksDelta > 0 ? `+${clicksDelta} today` : clicksDelta < 0 ? `${clicksDelta} today` : '';
     const qsCurrent = typeof a.qualifying_sales === 'object' ? (a.qualifying_sales.current ?? 0) : (a.qualifying_sales ?? 0);
+    // Staleness check: any analytics data > 24h old is suspect for "today" comparisons
+    const syncedMs = a.synced_at ? new Date(a.synced_at).getTime() : 0;
+    const ageHours = syncedMs ? (Date.now() - syncedMs) / 3600000 : Infinity;
+    const isStale = ageHours > 24 || a.stale_warning?.is_stale;
+    const staleBadge = isStale ? `<span class="stale-badge" title="Data has not been refreshed in ${Math.round(ageHours)}h. The daily delta is not from today.">⚠ stale</span>` : '';
+    // Suppress the "today" delta if data is stale — it's misleading
+    const safeDeltaStr = isStale ? '' : clicksDeltaStr;
     cards.push(`
-      <div class="perfcard amazon">
-        <span class="ptag">💰 Amazon Associates</span>
+      <div class="perfcard amazon${isStale ? ' stale' : ''}">
+        <span class="ptag">💰 Amazon Associates${staleBadge}</span>
         <h3>Amazon Associates <span class="platform">this month</span></h3>
         <div class="big">$${earnings.toFixed(2)}<small>earnings</small></div>
-        <div class="sub">${clicks} clicks${clicksDeltaStr ? ' <span class="delta ' + (clicksDelta > 0 ? 'up' : 'down') + '">' + clicksDeltaStr + '</span>' : ''} &middot; ${orders} orders &middot; ${shipped} shipped &middot; ${conv} conv</div>
+        <div class="sub">${clicks} clicks${safeDeltaStr ? ' <span class="delta ' + (clicksDelta > 0 ? 'up' : 'down') + '">' + safeDeltaStr + '</span>' : ''} &middot; ${orders} orders &middot; ${shipped} shipped &middot; ${conv} conv</div>
         <div class="row"><span class="l">Qualifying sales</span><span class="v ${qsCurrent >= 3 ? 'good' : 'warn'}">${qsCurrent} / 3</span></div>
         <div class="row"><span class="l">Days to deadline</span><span class="v ${daysLeft < 60 ? 'bad' : daysLeft < 120 ? 'warn' : ''}">${daysLeft}</span></div>
+        ${isStale ? `<div class="row" style="border-top:1px solid #ff9900;color:#ffba66;font-size:11px;padding:6px 0 2px"><span class="l" style="color:#ffba66">⚠ Last refreshed</span><span class="v">${timeAgo(a.synced_at)}</span></div>` : ''}
         <div class="footer">
           <span>Synced ${timeAgo(a.synced_at)}</span>
           <a href="${a.report_url}" target="_blank">Open &#x2197;</a>
@@ -862,17 +1097,22 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const searchHtml = searches.length
       ? `<div class="row"><span class="l">Top searches</span><span class="v" style="font-size:11px;font-weight:400;color:var(--mut);text-align:right;line-height:1.3;">${searches.map(s => '"' + s + '"').join('<br>')}</span></div>`
       : '';
+    const ttSyncedMs = tiktok.synced_at ? new Date(tiktok.synced_at).getTime() : 0;
+    const ttAgeHours = ttSyncedMs ? (Date.now() - ttSyncedMs) / 3600000 : Infinity;
+    const ttIsStale = ttAgeHours > 24;
+    const ttStaleBadge = ttIsStale ? `<span class="stale-badge" title="${Math.round(ttAgeHours)}h since last sync">⚠ stale</span>` : '';
     cards.push(`
-      <div class="perfcard tiktok">
-        <span class="ptag">🎵 TikTok</span>
+      <div class="perfcard tiktok${ttIsStale ? ' stale' : ''}">
+        <span class="ptag">🎵 TikTok${ttStaleBadge}</span>
         <h3>${displayName} <span class="platform">${handle}</span></h3>
         <div class="big">${views.toLocaleString()}<small>video views (${range.toLowerCase()})</small></div>
-        <div class="sub"><span class="delta ${deltaCls}">${viewsDelta} ${viewsDeltaPct ? '(' + viewsDeltaPct + ')' : ''}</span></div>
+        <div class="sub">${ttIsStale ? '' : `<span class="delta ${deltaCls}">${viewsDelta} ${viewsDeltaPct ? '(' + viewsDeltaPct + ')' : ''}</span>`}</div>
         <div class="row"><span class="l">Likes</span><span class="v">${likes.toLocaleString()}</span></div>
         <div class="row"><span class="l">Profile views</span><span class="v">${profileViews.toLocaleString()}</span></div>
         ${topSources ? `<div class="row"><span class="l">Traffic</span><span class="v" style="font-size:10px;font-weight:400;color:var(--mut)">${topSources}</span></div>` : ''}
         ${searchHtml}
         <div class="row"><span class="l">Est. rewards</span><span class="v ${rewards > 0 ? 'good' : ''}">$${rewards.toFixed(2)}</span></div>
+        ${ttIsStale ? `<div class="row" style="border-top:1px solid #ff9900;color:#ffba66;font-size:11px;padding:6px 0 2px"><span class="l" style="color:#ffba66">⚠ Last refreshed</span><span class="v">${timeAgo(tiktok.synced_at)}</span></div>` : ''}
         <div class="footer">
           <span>Synced ${timeAgo(tiktok.synced_at)}</span>
           <a href="${url}" target="_blank">Open &#x2197;</a>
@@ -931,9 +1171,13 @@ function renderPerformance(amazon, tiktok, pinterest) {
     const apiBadge = apiLive
       ? ` <small style="font-weight:400;color:var(--good)">API</small>`
       : '';
+    const pinSyncedMs = pinterest.synced_at ? new Date(pinterest.synced_at).getTime() : 0;
+    const pinAgeHours = pinSyncedMs ? (Date.now() - pinSyncedMs) / 3600000 : Infinity;
+    const pinIsStale = pinAgeHours > 24;
+    const pinStaleBadge = pinIsStale ? `<span class="stale-badge" title="${Math.round(pinAgeHours)}h since last sync">⚠ stale</span>` : '';
     cards.push(`
-      <div class="perfcard pinterest">
-        <span class="ptag">📌 Pinterest${apiBadge}</span>
+      <div class="perfcard pinterest${pinIsStale ? ' stale' : ''}">
+        <span class="ptag">📌 Pinterest${apiBadge}${pinStaleBadge}</span>
         <h3>Pinterest <span class="platform">3 accounts</span></h3>
         <div class="big">${impressions.toLocaleString()}<small>impressions (30d)</small></div>
         <div class="sub">Top: ${bestAcct ? bestName + ' (' + bestImps + ')' : '&mdash;'}</div>
@@ -941,6 +1185,7 @@ function renderPerformance(amazon, tiktok, pinterest) {
         <div class="row"><span class="l">Saves (30d)</span><span class="v ${saves > 0 ? 'good' : ''}">${saves.toLocaleString()}</span></div>
         <div class="row"><span class="l">Outbound clicks (30d)</span><span class="v ${outbound > 0 ? 'good' : 'warn'}">${outbound.toLocaleString()}</span></div>
         <div class="row"><span class="l">Total audience (30d)</span><span class="v">${audience.toLocaleString()}</span></div>
+        ${pinIsStale ? `<div class="row" style="border-top:1px solid #ff9900;color:#ffba66;font-size:11px;padding:6px 0 2px"><span class="l" style="color:#ffba66">⚠ Last refreshed</span><span class="v">${timeAgo(pinterest.synced_at)}</span></div>` : ''}
         <div class="footer">
           <span>Synced ${timeAgo(pinterest.synced_at)}</span>
           <a href="${pinterest.report_url}" target="_blank">Open &#x2197;</a>
@@ -1032,17 +1277,19 @@ async function loadAll() {
   document.getElementById('refreshBtn').disabled = true;
   document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
-  // Tracker data + analytics + action items + top_performers in parallel
-  const [results, amazon, tiktok, pinterest, actionItems, topPerformers] = await Promise.all([
+  // Tracker data + analytics + action items + top_performers + calendar in parallel
+  const [results, amazon, tiktok, pinterest, actionItems, topPerformers, calendar] = await Promise.all([
     Promise.all(NICHES.map(loadOne)),
     loadAnalytics('amazon'),
     loadAnalytics('tiktok'),
     loadAnalytics('pinterest'),
     loadActionItems(),
     loadTopPerformers(),
+    fetchCalendar(),
   ]);
   renderActionItems(actionItems);
   renderTopPerformers(topPerformers);
+  renderCalendar(calendar);
 
   const errs = results.filter(r => !r.data).map(r =>
     `Couldn't load ${r.niche.title}: ${r.error}`);

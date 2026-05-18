@@ -1734,7 +1734,7 @@
     {
       "id": 61,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "pillar": "Entryway",
       "file": "aesthetic_entry_tiny_hooks_bench_16gb_00001_.png",
       "slug": "aesthetic_entry_tiny_hooks_bench",
@@ -1760,7 +1760,10 @@
       "destination_url": "https://www.amazon.com/hz/wishlist/ls/21BQSKV6S3ZTH?tag=pinasc-20",
       "image_url": null,
       "scheduled_for": "2026-05-18 11:00",
-      "scheduled_at": "2026-05-13T16:19:26.795861"
+      "scheduled_at": "2026-05-13T16:19:26.795861",
+      "posted_date": "2026-05-18",
+      "pinterest_pin_id": "1140747780638541440",
+      "notes": " | Auto-flipped 2026-05-18: API matched Tiny Entryway -> Hooks + Bench"
     },
     {
       "id": 62,
@@ -1942,9 +1945,9 @@
   ],
   "pinterest_runway": {
     "runway_days": 14,
-    "next_scheduled": "2026-05-18T11:00:00",
+    "next_scheduled": "2026-05-19T11:00:00",
     "last_scheduled": "2026-06-01T11:00:00",
-    "count": 15
+    "count": 14
   },
   "tiktok": {
     "enabled": false,
@@ -1959,5 +1962,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-18T16:17:42"
+  "last_synced": "2026-05-18T16:36:50"
 }

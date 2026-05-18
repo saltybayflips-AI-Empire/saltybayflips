@@ -20,9 +20,14 @@
     "current": 0
   },
   "delta_vs_prior_day": {
-    "Clicks": 2,
+    "Clicks": 0,
     "Total Earnings": "$0.00",
     "Total Ordered Items": 0,
-    "note": "+2 clicks vs 2026-05-12; now 5 clicks this month, 0 sales"
+    "note": "Cleared 2026-05-18: stale data from 5/13 sync. Refresh via Chrome MCP to recompute daily delta."
+  },
+  "stale_warning": {
+    "is_stale": true,
+    "as_of": "2026-05-13T15:10:00",
+    "note": "Data has not been refreshed since 2026-05-13. Click 'Refresh Amazon' to re-scrape."
   }
 }

@@ -1,24 +1,5 @@
 {
-  "synced_at": "2026-05-18T16:17:42.628112",
-  "item_count": 2,
-  "items": [
-    {
-      "id": "overdue_aesthetic_spaces_co",
-      "title": "ASC: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #61 (2026-05-18 11:00, 5.3h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot",
-      "url": "https://www.pinterest.com/saltybayflipspin/_created/"
-    },
-    {
-      "id": "overdue_fuzzy_frames_ai",
-      "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #43 (2026-05-18 10:00, 6.3h ago).",
-      "priority": "high",
-      "estimated_min": 2,
-      "category": "missed_slot",
-      "url": "https://www.pinterest.com/saltybayflipsfuzzy/_created/"
-    }
-  ]
+  "synced_at": "2026-05-18T16:36:51.057622",
+  "item_count": 0,
+  "items": []
 }
