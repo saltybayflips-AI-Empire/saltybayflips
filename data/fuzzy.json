@@ -2094,6 +2094,20 @@
       "scheduled_for": "2026-05-31 11:00",
       "added_at": "2026-05-18T18:00:00",
       "batch": "V12_2026_05_18_legacy_reuse"
+    },
+    {
+      "id": 85,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "My goldendoodle in his yellow raincoat is the only reason I love rainy days",
+      "board": "Fluffy Puppies",
+      "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v13_01_goldendoodle_rain.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
+      "tracking_id": "pinfuzzy-20",
+      "scheduled_for": "2026-05-29 11:00",
+      "added_at": "2026-05-18T13:06:19",
+      "batch": "plan_b_2026_05_18",
+      "description": "My goldendoodle in his yellow raincoat is the only reason I love rainy days. Curly cream coat, signature head tilt, wet cobblestones, autumn rain — pure cottagecore puppy magic. Save this for your rainy-day mood board, dog-mom feed, or fall pet inspiration. Tap profile to shop yellow pet raincoats, paw-friendly umbrella sets, cottagecore puppy gear.\n\n#goldendoodle #goldendoodlepuppy #yellowraincoat #rainydaydog #petraincoat #cottagecorepets #cutepuppy #doggear #petphotography #rainyday #falldog #puppylove"
     }
   ],
   "rejected": [
@@ -2150,7 +2164,7 @@
     "runway_days": 13,
     "next_scheduled": "2026-05-18T10:00:00",
     "last_scheduled": "2026-05-31T11:00:00",
-    "count": 14
+    "count": 15
   },
   "tiktok": {
     "enabled": true,
@@ -2723,5 +2737,5 @@
     "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-18T11:48:47"
+  "last_synced": "2026-05-18T13:23:15"
 }

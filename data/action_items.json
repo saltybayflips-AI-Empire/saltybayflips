@@ -1,21 +1,21 @@
 {
-  "synced_at": "2026-05-18T11:48:47.843041",
+  "synced_at": "2026-05-18T13:23:15.304846",
   "item_count": 3,
   "items": [
     {
       "id": "gap_aesthetic_spaces_co",
-      "title": "ASC has 8 unscheduled days in next 14d",
-      "detail": "Days with no scheduled ASC pin: 2026-05-25, 2026-05-26, 2026-05-27, 2026-05-28, 2026-05-29, … (+3 more)",
-      "priority": "high",
-      "estimated_min": 40,
+      "title": "ASC has 4 unscheduled days in next 14d",
+      "detail": "Days with no scheduled ASC pin: 2026-05-29, 2026-05-30, 2026-05-31, 2026-06-01",
+      "priority": "med",
+      "estimated_min": 20,
       "category": "gap_warning",
       "url": "https://www.pinterest.com/saltybayflipspin/_created/",
-      "deadline_at": "2026-05-25"
+      "deadline_at": "2026-05-29"
     },
     {
       "id": "overdue_aesthetic_spaces_co",
       "title": "ASC: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #61 (2026-05-18 11:00, 0.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #61 (2026-05-18 11:00, 2.4h ago).",
       "priority": "high",
       "estimated_min": 2,
       "category": "missed_slot",
@@ -24,7 +24,7 @@
     {
       "id": "overdue_fuzzy_frames_ai",
       "title": "Fuzzy: 1 scheduled slot(s) past their fire time",
-      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #43 (2026-05-18 10:00, 1.8h ago).",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #43 (2026-05-18 10:00, 3.4h ago).",
       "priority": "high",
       "estimated_min": 2,
       "category": "missed_slot",

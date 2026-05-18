@@ -1792,6 +1792,122 @@
       "image_url": null,
       "scheduled_for": "2026-05-19 11:00",
       "scheduled_at": "2026-05-13T16:19:26.795861"
+    },
+    {
+      "id": 63,
+      "platform": "pinterest",
+      "status": "ready_to_post",
+      "title": "Vinyl listening corners that turn my apartment into a wine bar at golden hour",
+      "board": "Mood Lighting Setup",
+      "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_01_vinyl_corner.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#living",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-06-01 11:00",
+      "added_at": "2026-05-18T13:06:48",
+      "batch": "plan_b_2026_05_18",
+      "slug": "aesthetic_vinyl_listening_corner",
+      "description": "Vinyl listening corners that turn my apartment into a wine bar at golden hour. Walnut credenza on splayed brass legs, vintage turntable, framed circular art, olive velvet armchair with brass tipped feet, woven jute rug, warm glow from a brass floor lamp. Save for the next living room reset. Credenzas + turntables + chairs + lamps linked.\n\n#vinyllistening #vinylcorner #recordplayer #midcenturymodern #cozyapartment #livingroomdecor #livingroominspo #moodylighting #organicmodern #aestheticliving #homedecor #cozyaesthetic"
+    },
+    {
+      "id": 64,
+      "platform": "pinterest",
+      "status": "ready_to_post",
+      "title": "Sage green kitchen ideas my grandma's farmhouse vibe could only dream of",
+      "board": "Kitchen Inspiration",
+      "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_02_sage_kitchen.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#kitchen",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-29 11:00",
+      "added_at": "2026-05-18T13:12:45",
+      "batch": "asc_batch2_2026_05_18",
+      "slug": "asc_v3_02_sage_kitchen",
+      "description": "Sage green kitchen ideas my grandma's farmhouse vibe could only dream of. Sage flat-front lower cabinets, brass gooseneck faucet, white subway tile backsplash, satin brass pendant lights, walnut floating shelf with ceramic jars, terracotta planter with trailing pothos, creamy quartz counter, oak hardwood floor. Save for the next kitchen reset. Faucet + pendants + shelves + planters linked.\n\n#sagekitchen #sagegreenkitchen #kitchendecor #kitcheninspo #greenkitchen #modernfarmhouse #organicmodern #kitchengoals #brasshardware #subwaytile #aesthetickitchen #homedecor"
+    },
+    {
+      "id": 65,
+      "platform": "pinterest",
+      "status": "ready_to_post",
+      "title": "Scandi bedroom finds that make my apartment feel like a Stockholm Airbnb",
+      "board": "Bedroom Aesthetic",
+      "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_03_scandi_bedroom.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-30 11:00",
+      "added_at": "2026-05-18T13:12:45",
+      "batch": "asc_batch2_2026_05_18",
+      "slug": "asc_v3_03_scandi_bedroom",
+      "description": "Scandi bedroom finds that make my apartment feel like a Stockholm Airbnb. Pale birch platform bed, white linen bedding with chunky cream wool throw, pale grey knit pillow, light oak nightstand with white ceramic table lamp, framed black-and-white line drawing, pale grey wide-plank floor, ivory flatweave wool rug, tall white ceramic vase with dried pampas. Save for the next reset. Bedding + lamps + nightstands + rugs linked.\n\n#scandinavianbedroom #scandibedroom #scandihome #hygge #nordicstyle #minimalistbedroom #bedroomdecor #bedroominspo #bedroomgoals #aestheticbedroom #organicmodern #homedecor"
+    },
+    {
+      "id": 66,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Japandi bedroom ideas my apartment got way too comfortable with overnight",
+      "board": "Small Bedroom Ideas",
+      "image": "pinterest/aesthetic_spaces_co/_upload_now_5pins/01_japandi_bed.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-25 11:00",
+      "added_at": "2026-05-18T13:20:27",
+      "batch": "split_workflow_practice_2026_05_18",
+      "slug": "asc_japandi_bedroom_practice"
+    },
+    {
+      "id": 67,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Warm minimalist bedroom ideas my therapist would probably prescribe",
+      "board": "Small Bedroom Ideas",
+      "image": "pinterest/aesthetic_spaces_co/_upload_now_5pins/03_warm_minimal_bed.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-26 11:00",
+      "added_at": "2026-05-18T13:20:27",
+      "batch": "split_workflow_practice_2026_05_18",
+      "slug": "asc_warm_minimal_bedroom_practice"
+    },
+    {
+      "id": 68,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Airy white kitchen ideas that make me actually want to cook",
+      "board": "Kitchen Inspiration",
+      "image": "pinterest/aesthetic_spaces_co/_upload_now_5pins/04_airy_white_kitchen.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#kitchen",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-27 11:00",
+      "added_at": "2026-05-18T13:20:27",
+      "batch": "split_workflow_practice_2026_05_18",
+      "slug": "asc_airy_white_kitchen_practice"
+    },
+    {
+      "id": 69,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Dark moody bedroom finds that turn my rental into a Brooklyn loft",
+      "board": "Small Bedroom Ideas",
+      "image": "pinterest/aesthetic_spaces_co/_upload_now_5pins/05_dark_moody_bed.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-28 11:00",
+      "added_at": "2026-05-18T13:20:27",
+      "batch": "split_workflow_practice_2026_05_18",
+      "slug": "asc_dark_moody_bedroom_practice"
+    },
+    {
+      "id": 70,
+      "platform": "pinterest",
+      "status": "ready_to_post",
+      "title": "Coastal bedroom finds that turn my rental into a Hamptons cottage",
+      "board": "Bedroom Aesthetic",
+      "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_04_coastal_bedroom.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
+      "tracking_id": "pinasc-20",
+      "scheduled_for": "2026-05-31 11:00",
+      "added_at": "2026-05-18T13:21:09",
+      "batch": "asc_batch2_2026_05_18",
+      "slug": "asc_v3_04_coastal_bedroom",
+      "description": "Coastal bedroom finds that turn my rental into a Hamptons cottage. Whitewashed shiplap, rattan caned headboard, natural oak bed frame, crisp white linen duvet with sandy beige textured pillows and a blue striped lumbar, jute rope wreath, framed botanical prints, weathered driftwood nightstand with white ceramic lamp, woven jute basket with folded cream linen, whitewashed oak floor, layered sisal rug. Save for the next bedroom reset. Headboards + bedding + nightstands + baskets linked.\n\n#coastalbedroom #coastalstyle #hamptonsstyle #beachhouse #bedroomdecor #bedroominspo #coastalliving #beachhousedecor #aestheticbedroom #organicmodern #cottagecore #homedecor"
     }
   ],
   "rejected": [
@@ -1825,10 +1941,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 6,
+    "runway_days": 10,
     "next_scheduled": "2026-05-18T11:00:00",
-    "last_scheduled": "2026-05-24T11:00:00",
-    "count": 7
+    "last_scheduled": "2026-05-28T11:00:00",
+    "count": 11
   },
   "tiktok": {
     "enabled": false,
@@ -1843,5 +1959,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-18T11:48:47"
+  "last_synced": "2026-05-18T13:23:15"
 }
