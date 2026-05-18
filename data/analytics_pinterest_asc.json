@@ -2,22 +2,22 @@
   "niche": "asc",
   "handle": "saltybayflipspin",
   "display_name": "Aesthetic Spaces Co",
-  "synced_at": "2026-05-16T09:02:19",
+  "synced_at": "2026-05-18T08:21:56",
   "window_days": 30,
-  "window_start": "2026-04-16",
-  "window_end": "2026-05-16",
+  "window_start": "2026-04-18",
+  "window_end": "2026-05-18",
   "account": {
-    "monthly_views": 53,
+    "monthly_views": 55,
     "follower_count": 0,
     "board_count": 15,
-    "pin_count": 47,
+    "pin_count": 49,
     "account_type": "BUSINESS"
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 56,
+      "IMPRESSION": 78,
       "SAVE": 0,
-      "PIN_CLICK": 2,
+      "PIN_CLICK": 3,
       "OUTBOUND_CLICK": 1
     },
     "ready_days": 29,
@@ -29,7 +29,7 @@
       "title": "Cozy Small Space Bathroom Coastal Aesthetic Renter Friendly Decor",
       "created_at": "2026-04-22T14:05:43",
       "totals": {
-        "IMPRESSION": 13,
+        "IMPRESSION": 15,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -40,7 +40,7 @@
       "title": "Peelstick Terrazzo Bath Ideas | Small Space Aesthetic Decor",
       "created_at": "2026-04-23T14:00:36",
       "totals": {
-        "IMPRESSION": 9,
+        "IMPRESSION": 12,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 1
@@ -51,7 +51,29 @@
       "title": "White Subway Tile Kitchen Ideas: Small Space Aesthetic & Renter-Friendly",
       "created_at": "2026-04-28T23:00:47",
       "totals": {
+        "IMPRESSION": 9,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1140747780637809294",
+      "title": "Studio Apartment Combined Living Bedroom Aesthetic Multifunctional Renter Layout",
+      "created_at": "2026-05-07T17:08:11",
+      "totals": {
         "IMPRESSION": 8,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1140747780636927065",
+      "title": "Scandi Bathroom Ideas: Small Space Aesthetic",
+      "created_at": "2026-04-23T23:06:14",
+      "totals": {
+        "IMPRESSION": 6,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -62,20 +84,9 @@
       "title": "Cozy Nook Ideas for Small Spaces, Renter-Friendly Decor",
       "created_at": "2026-04-29T23:01:18",
       "totals": {
-        "IMPRESSION": 4,
+        "IMPRESSION": 5,
         "SAVE": 0,
         "PIN_CLICK": 1,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1140747780636927065",
-      "title": "Scandi Bathroom Ideas: Small Space Aesthetic",
-      "created_at": "2026-04-23T23:06:14",
-      "totals": {
-        "IMPRESSION": 4,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
@@ -91,44 +102,33 @@
       }
     },
     {
-      "pin_id": "1140747780638206730",
-      "title": "Living Coastal Blue Small Apartment Room",
-      "created_at": "2026-05-13T17:03:33",
+      "pin_id": "1140747780637873702",
+      "title": "Murphy Bed Wall Multifunctional Bedroom Office Aesthetic Studio Renter",
+      "created_at": "2026-05-08T17:04:37",
       "totals": {
-        "IMPRESSION": 1,
+        "IMPRESSION": 2,
+        "SAVE": 0,
+        "PIN_CLICK": 1,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1140747780637944180",
+      "title": "Small Walk In Closet Affordable Wood Organizer Aesthetic Renter Friendly Setup",
+      "created_at": "2026-05-09T17:02:50",
+      "totals": {
+        "IMPRESSION": 2,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1140747780637286805",
-      "title": "Small Space Japanese-Inspired Nook Bay Window Retreat",
-      "created_at": "2026-04-29T14:02:00",
+      "pin_id": "1140747780637741205",
+      "title": "Small Apartment Round Bistro Dining Set Aesthetic Renter Friendly Studio",
+      "created_at": "2026-05-06T17:02:48",
       "totals": {
-        "IMPRESSION": 1,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1140747780636471461",
-      "title": "Airy White Apartment Kitchen",
-      "created_at": "2026-04-16T20:48:29",
-      "totals": {
-        "IMPRESSION": 1,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1140747780638203812",
-      "title": "Linen Closet Organized Aesthetic Bathroom Storage",
-      "created_at": "2026-05-13T16:02:12",
-      "totals": {
-        "IMPRESSION": 1,
+        "IMPRESSION": 2,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

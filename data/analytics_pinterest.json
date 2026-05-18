@@ -1,58 +1,58 @@
 {
-  "synced_at": "2026-05-16T09:02:22",
+  "synced_at": "2026-05-18T08:21:59",
   "report_url": "https://analytics.pinterest.com/overview/",
   "note": "All 3 niches now sourced from Pinterest API v5.",
   "scrape_status": "api_live",
   "accounts": {
     "fuzzy_frames_ai": {
-      "date_range": "2026-04-16 to 2026-05-16",
+      "date_range": "2026-04-18 to 2026-05-18",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-16T09:02:21",
+      "synced_at": "2026-05-18T08:21:57",
       "metrics": {
-        "Impressions": "1076",
-        "Engagements": "24",
+        "Impressions": "1303",
+        "Engagements": "28",
         "Outbound clicks": "0",
-        "Saves": "2",
-        "Total audience": "1068",
+        "Saves": "3",
+        "Total audience": "1149",
         "Engaged audience": "?"
       }
     },
     "luxe_living_daily": {
-      "date_range": "2026-04-16 to 2026-05-16",
+      "date_range": "2026-04-18 to 2026-05-18",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-16T09:02:22",
+      "synced_at": "2026-05-18T08:21:59",
       "metrics": {
-        "Impressions": "354",
+        "Impressions": "480",
         "Engagements": "6",
         "Outbound clicks": "2",
         "Saves": "3",
-        "Total audience": "226",
+        "Total audience": "404",
         "Engaged audience": "?"
       }
     },
     "aesthetic_spaces_co": {
-      "date_range": "2026-04-16 to 2026-05-16",
+      "date_range": "2026-04-18 to 2026-05-18",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-16T09:02:19",
+      "synced_at": "2026-05-18T08:21:56",
       "metrics": {
-        "Impressions": "56",
-        "Engagements": "2",
+        "Impressions": "78",
+        "Engagements": "3",
         "Outbound clicks": "1",
         "Saves": "0",
-        "Total audience": "53",
+        "Total audience": "55",
         "Engaged audience": "?"
       }
     }
   },
   "totals": {
-    "Impressions": 1486,
-    "Engagements": 32,
+    "Impressions": 1861,
+    "Engagements": 37,
     "Outbound clicks": 3,
-    "Saves": 5,
-    "Total audience": 1347,
+    "Saves": 6,
+    "Total audience": 1608,
     "Engaged audience": 0
   }
 }

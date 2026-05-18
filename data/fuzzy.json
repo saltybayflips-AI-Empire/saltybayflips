@@ -1691,12 +1691,16 @@
       "description": "Fluffy white kitten posed on a zen garden stone - serene minimalist cat content. Save for japandi mood boards, peaceful pet aesthetics, or white cat lovers. Tap to shop minimalist cat essentials: ceramic bowls, sisal scratchers, and aesthetic litter boxes. #whitecat #zen #japandi #catsofpinterest #catportrait #minimalist #catlovers #zengarden #petphotography #cottagecore #fuzzyfriends #aestheticpet",
       "hashtags": "#whitecat #zen #japandi #catsofpinterest #catportrait #minimalist #catlovers #zengarden #petphotography #cottagecore #fuzzyfriends #aestheticpet",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#cats",
-      "status": "scheduled",
+      "status": "posted",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
       "note": "Auto-promoted from 01_review on user QA approval",
       "scheduled_for": "2026-05-16 11:00",
-      "scheduled_at": "2026-05-10T08:23:06.983274"
+      "scheduled_at": "2026-05-10T08:23:06.983274",
+      "pinterest_pin_id": "1128573987895250974",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895250974/",
+      "posted_date": "2026-05-16",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 62,
@@ -1791,10 +1795,14 @@
       "slug": "fuzzy_samoyed_meadow_backfill",
       "title": "Fluffy White Samoyed Puppy In Wildflower Meadow Smiling Dog",
       "board": "Fluffy Puppies",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-16 14:00",
       "scheduled_at": "2026-05-10T09:17:11.450593",
-      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy)."
+      "note": "Backfill session 1 — from existing inventory, fills orphan boards toward 5+ pins (healthy).",
+      "pinterest_pin_id": "1128573987895262796",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895262796/",
+      "posted_date": "2026-05-16",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 69,
@@ -1857,10 +1865,14 @@
       "slug": "fuzzy_pomeranian_smile_session2",
       "title": "Fluffy Cream Pomeranian Puppy Smiling Cute Dog Aesthetic Photography",
       "board": "Fluffy Puppies",
-      "status": "scheduled",
+      "status": "posted",
       "scheduled_for": "2026-05-16 14:00",
       "scheduled_at": "2026-05-11T11:11:43.168682",
-      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins)."
+      "note": "Backfill Session 2 — 2nd pin to each orphan board (1→2 pins).",
+      "pinterest_pin_id": "1128573987895262987",
+      "pinterest_url": "https://www.pinterest.com/pin/1128573987895262987/",
+      "posted_date": "2026-05-16",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 74,
@@ -2038,10 +2050,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 6,
-    "next_scheduled": "2026-05-16T11:00:00",
+    "runway_days": 4,
+    "next_scheduled": "2026-05-18T10:00:00",
     "last_scheduled": "2026-05-22T11:00:00",
-    "count": 8
+    "count": 5
   },
   "tiktok": {
     "enabled": true,
@@ -2610,9 +2622,9 @@
       "scheduled": 26,
       "ready_no_date": 14
     },
-    "runway_days": 2,
-    "next_unposted": "2026-05-16T09:00:00",
+    "runway_days": 0,
+    "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-16T09:02:17"
+  "last_synced": "2026-05-18T08:21:53"
 }

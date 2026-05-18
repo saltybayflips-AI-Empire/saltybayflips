@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-16T09:02:22",
+  "synced_at": "2026-05-18T08:22:00",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -12,8 +12,8 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 56,
-        "pin_clicks": 2,
+        "impressions": 78,
+        "pin_clicks": 3,
         "outbound_clicks": 1,
         "saves": 0
       },
@@ -21,7 +21,7 @@
         {
           "title": "Cozy Small Space Bathroom Coastal Aesthetic Renter Friendly Decor",
           "pin_id": "1140747780636838478",
-          "impressions": 13,
+          "impressions": 15,
           "clicks": 0,
           "saves": 0,
           "outbound": 0,
@@ -30,7 +30,7 @@
         {
           "title": "Peelstick Terrazzo Bath Ideas | Small Space Aesthetic Decor",
           "pin_id": "1140747780636901917",
-          "impressions": 9,
+          "impressions": 12,
           "clicks": 1,
           "saves": 0,
           "outbound": 1,
@@ -39,36 +39,36 @@
         {
           "title": "White Subway Tile Kitchen Ideas: Small Space Aesthetic & Renter-Friendly",
           "pin_id": "1140747780637250900",
-          "impressions": 8,
+          "impressions": 9,
           "clicks": 0,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1140747780637250900/"
         },
         {
-          "title": "Cozy Nook Ideas for Small Spaces, Renter-Friendly Decor",
-          "pin_id": "1140747780637313469",
-          "impressions": 4,
-          "clicks": 1,
+          "title": "Studio Apartment Combined Living Bedroom Aesthetic Multifunctional Renter Layout",
+          "pin_id": "1140747780637809294",
+          "impressions": 8,
+          "clicks": 0,
           "saves": 0,
           "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1140747780637313469/"
+          "pin_url": "https://www.pinterest.com/pin/1140747780637809294/"
         },
         {
           "title": "Scandi Bathroom Ideas: Small Space Aesthetic",
           "pin_id": "1140747780636927065",
-          "impressions": 4,
+          "impressions": 6,
           "clicks": 0,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1140747780636927065/"
         }
       ],
-      "monthly_views": 53,
+      "monthly_views": 55,
       "follower_count": 0,
-      "pin_count": 47,
+      "pin_count": 49,
       "board_count": 15,
-      "synced_at": "2026-05-16T09:02:19"
+      "synced_at": "2026-05-18T08:21:56"
     },
     {
       "id": "fuzzy_pinterest",
@@ -81,25 +81,34 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 1076,
-        "pin_clicks": 24,
+        "impressions": 1303,
+        "pin_clicks": 28,
         "outbound_clicks": 0,
-        "saves": 2
+        "saves": 3
       },
       "top_pins": [
         {
           "title": "Cottagecore cat finds my therapist needs to see",
           "pin_id": "1128573987894056570",
-          "impressions": 258,
+          "impressions": 294,
           "clicks": 9,
           "saves": 1,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987894056570/"
         },
         {
+          "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
+          "pin_id": "1128573987894519546",
+          "impressions": 186,
+          "clicks": 8,
+          "saves": 1,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1128573987894519546/"
+        },
+        {
           "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
           "pin_id": "1128573987893762400",
-          "impressions": 173,
+          "impressions": 185,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
@@ -108,7 +117,7 @@
         {
           "title": "Wholesome forest pet finds I bought twice",
           "pin_id": "1128573987894022557",
-          "impressions": 112,
+          "impressions": 117,
           "clicks": 2,
           "saves": 0,
           "outbound": 0,
@@ -117,27 +126,18 @@
         {
           "title": "The doodle raincoat my groomer keeps recommending",
           "pin_id": "1128573987893734735",
-          "impressions": 76,
+          "impressions": 78,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987893734735/"
-        },
-        {
-          "title": "Cute Pet Flower Otter Toy",
-          "pin_id": "1128573987893958607",
-          "impressions": 59,
-          "clicks": 0,
-          "saves": 0,
-          "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1128573987893958607/"
         }
       ],
-      "monthly_views": 1068,
+      "monthly_views": 1149,
       "follower_count": 0,
-      "pin_count": 37,
+      "pin_count": 40,
       "board_count": 10,
-      "synced_at": "2026-05-16T09:02:21"
+      "synced_at": "2026-05-18T08:21:57"
     },
     {
       "id": "lld_pinterest",
@@ -150,7 +150,7 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 354,
+        "impressions": 480,
         "pin_clicks": 6,
         "outbound_clicks": 2,
         "saves": 3
@@ -159,7 +159,7 @@
         {
           "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
           "pin_id": "1087056428837307709",
-          "impressions": 60,
+          "impressions": 103,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
@@ -168,7 +168,7 @@
         {
           "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
           "pin_id": "1087056428837010124",
-          "impressions": 49,
+          "impressions": 55,
           "clicks": 1,
           "saves": 1,
           "outbound": 0,
@@ -177,7 +177,7 @@
         {
           "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
           "pin_id": "1087056428836950419",
-          "impressions": 31,
+          "impressions": 35,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
@@ -186,27 +186,27 @@
         {
           "title": "Game Room Ideas Bourbon Bar Luxury Home",
           "pin_id": "1087056428837073179",
-          "impressions": 27,
+          "impressions": 29,
           "clicks": 0,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1087056428837073179/"
         },
         {
-          "title": "Luxe Living Daily — Shop the Aesthetic",
-          "pin_id": "1087056428836856117",
-          "impressions": 24,
-          "clicks": 0,
-          "saves": 0,
-          "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1087056428836856117/"
+          "title": "Grand Foyer With A Sweeping Double Staircase + Crystal Chandelier Old Money Entr",
+          "pin_id": "1087056428837823970",
+          "impressions": 27,
+          "clicks": 2,
+          "saves": 1,
+          "outbound": 1,
+          "pin_url": "https://www.pinterest.com/pin/1087056428837823970/"
         }
       ],
-      "monthly_views": 226,
+      "monthly_views": 404,
       "follower_count": 0,
-      "pin_count": 44,
+      "pin_count": 47,
       "board_count": 25,
-      "synced_at": "2026-05-16T09:02:22"
+      "synced_at": "2026-05-18T08:21:59"
     },
     {
       "id": "lld_tiktok",

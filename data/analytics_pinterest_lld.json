@@ -2,20 +2,20 @@
   "niche": "lld",
   "handle": "saltybayflipsluxe",
   "display_name": "Luxe Living Daily",
-  "synced_at": "2026-05-16T09:02:22",
+  "synced_at": "2026-05-18T08:21:59",
   "window_days": 30,
-  "window_start": "2026-04-16",
-  "window_end": "2026-05-16",
+  "window_start": "2026-04-18",
+  "window_end": "2026-05-18",
   "account": {
-    "monthly_views": 226,
+    "monthly_views": 404,
     "follower_count": 0,
     "board_count": 25,
-    "pin_count": 44,
+    "pin_count": 47,
     "account_type": "BUSINESS"
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 354,
+      "IMPRESSION": 480,
       "SAVE": 3,
       "PIN_CLICK": 6,
       "OUTBOUND_CLICK": 2
@@ -29,7 +29,7 @@
       "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
       "created_at": "2026-04-27T14:05:36",
       "totals": {
-        "IMPRESSION": 60,
+        "IMPRESSION": 103,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -40,7 +40,7 @@
       "title": "Luxury Dark Academia Office: Sophisticated Study Design Ideas",
       "created_at": "2026-04-22T23:03:21",
       "totals": {
-        "IMPRESSION": 49,
+        "IMPRESSION": 55,
         "SAVE": 1,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -51,7 +51,7 @@
       "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
       "created_at": "2026-04-21T23:05:22",
       "totals": {
-        "IMPRESSION": 31,
+        "IMPRESSION": 35,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -62,18 +62,7 @@
       "title": "Game Room Ideas Bourbon Bar Luxury Home",
       "created_at": "2026-04-23T23:05:51",
       "totals": {
-        "IMPRESSION": 27,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1087056428836856117",
-      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-04-20T11:59:16",
-      "totals": {
-        "IMPRESSION": 24,
+        "IMPRESSION": 29,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -84,18 +73,29 @@
       "title": "Grand Foyer With A Sweeping Double Staircase + Crystal Chandelier Old Money Entr",
       "created_at": "2026-05-05T16:05:33",
       "totals": {
-        "IMPRESSION": 21,
+        "IMPRESSION": 27,
         "SAVE": 1,
         "PIN_CLICK": 2,
         "OUTBOUND_CLICK": 1
       }
     },
     {
-      "pin_id": "1087056428836855565",
-      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
-      "created_at": "2026-04-20T11:48:59",
+      "pin_id": "1087056428837138689",
+      "title": "Hamptons Living: Coastal Luxury Home Inspiration",
+      "created_at": "2026-04-24T23:04:29",
       "totals": {
-        "IMPRESSION": 20,
+        "IMPRESSION": 26,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1087056428836856117",
+      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
+      "created_at": "2026-04-20T11:59:16",
+      "totals": {
+        "IMPRESSION": 26,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -113,22 +113,22 @@
       }
     },
     {
-      "pin_id": "1087056428837138689",
-      "title": "Hamptons Living: Coastal Luxury Home Inspiration",
-      "created_at": "2026-04-24T23:04:29",
+      "pin_id": "1087056428836855565",
+      "title": "Luxe Living Daily \u2014 Shop the Aesthetic",
+      "created_at": "2026-04-20T11:48:59",
       "totals": {
-        "IMPRESSION": 18,
+        "IMPRESSION": 20,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
     {
-      "pin_id": "1087056428836983789",
-      "title": "Two-Story Library Luxury Home Interior Design",
-      "created_at": "2026-04-22T14:05:28",
+      "pin_id": "1087056428837962278",
+      "title": "Private Home Bowling Alley In Walnut + Brass Vintage Lounge Vibes",
+      "created_at": "2026-05-07T16:04:05",
       "totals": {
-        "IMPRESSION": 17,
+        "IMPRESSION": 19,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

@@ -2,22 +2,22 @@
   "niche": "fuzzy",
   "handle": "saltybayflipsfuzzy",
   "display_name": "Fuzzy Frames AI",
-  "synced_at": "2026-05-16T09:02:21",
+  "synced_at": "2026-05-18T08:21:57",
   "window_days": 30,
-  "window_start": "2026-04-16",
-  "window_end": "2026-05-16",
+  "window_start": "2026-04-18",
+  "window_end": "2026-05-18",
   "account": {
-    "monthly_views": 1068,
+    "monthly_views": 1149,
     "follower_count": 0,
     "board_count": 10,
-    "pin_count": 37,
+    "pin_count": 40,
     "account_type": "BUSINESS"
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 1076,
-      "SAVE": 2,
-      "PIN_CLICK": 24,
+      "IMPRESSION": 1303,
+      "SAVE": 3,
+      "PIN_CLICK": 28,
       "OUTBOUND_CLICK": 0
     },
     "ready_days": 29,
@@ -29,9 +29,20 @@
       "title": "Cottagecore cat finds my therapist needs to see",
       "created_at": "2026-04-28T14:05:08",
       "totals": {
-        "IMPRESSION": 258,
+        "IMPRESSION": 294,
         "SAVE": 1,
         "PIN_CLICK": 9,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987894519546",
+      "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
+      "created_at": "2026-05-05T15:05:50",
+      "totals": {
+        "IMPRESSION": 186,
+        "SAVE": 1,
+        "PIN_CLICK": 8,
         "OUTBOUND_CLICK": 0
       }
     },
@@ -40,7 +51,7 @@
       "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
       "created_at": "2026-04-23T23:06:23",
       "totals": {
-        "IMPRESSION": 173,
+        "IMPRESSION": 185,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -51,7 +62,7 @@
       "title": "Wholesome forest pet finds I bought twice",
       "created_at": "2026-04-27T23:03:53",
       "totals": {
-        "IMPRESSION": 112,
+        "IMPRESSION": 117,
         "SAVE": 0,
         "PIN_CLICK": 2,
         "OUTBOUND_CLICK": 0
@@ -62,31 +73,9 @@
       "title": "The doodle raincoat my groomer keeps recommending",
       "created_at": "2026-04-23T14:05:38",
       "totals": {
-        "IMPRESSION": 76,
+        "IMPRESSION": 78,
         "SAVE": 0,
         "PIN_CLICK": 1,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1128573987893958607",
-      "title": "Cute Pet Flower Otter Toy",
-      "created_at": "2026-04-26T23:00:26",
-      "totals": {
-        "IMPRESSION": 59,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1128573987894519546",
-      "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
-      "created_at": "2026-05-05T15:05:50",
-      "totals": {
-        "IMPRESSION": 59,
-        "SAVE": 0,
-        "PIN_CLICK": 4,
         "OUTBOUND_CLICK": 0
       }
     },
@@ -95,9 +84,20 @@
       "title": "Adorable Pet Aesthetic Cute Fluffy Animal Basket Cozy Pet Bed",
       "created_at": "2026-04-26T14:03:02",
       "totals": {
-        "IMPRESSION": 59,
+        "IMPRESSION": 62,
         "SAVE": 1,
         "PIN_CLICK": 3,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1128573987893958607",
+      "title": "Cute Pet Flower Otter Toy",
+      "created_at": "2026-04-26T23:00:26",
+      "totals": {
+        "IMPRESSION": 61,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
       }
     },
@@ -106,7 +106,7 @@
       "title": "Cute Ragdoll Fairy Lights Pet Room - Cozy Cat Haven Ideas",
       "created_at": "2026-04-27T14:01:54",
       "totals": {
-        "IMPRESSION": 52,
+        "IMPRESSION": 56,
         "SAVE": 0,
         "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
@@ -124,13 +124,13 @@
       }
     },
     {
-      "pin_id": "1128573987893891607",
-      "title": "Cute Kitten Witch Hat Fluffy Pet Costume Prop",
-      "created_at": "2026-04-25T23:07:06",
+      "pin_id": "1128573987894322990",
+      "title": "Husky Puppy Catching Snowflakes Adorable Winter Pet Photography Aesthetic",
+      "created_at": "2026-05-02T15:01:13",
       "totals": {
-        "IMPRESSION": 30,
+        "IMPRESSION": 36,
         "SAVE": 0,
-        "PIN_CLICK": 0,
+        "PIN_CLICK": 1,
         "OUTBOUND_CLICK": 0
       }
     }

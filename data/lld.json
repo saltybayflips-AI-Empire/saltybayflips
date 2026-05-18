@@ -1638,7 +1638,7 @@
     {
       "id": 44,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 45,
       "source_image": "pinterest/luxe_living_daily/qa_pending/45_prohibition_speakeasy.png",
       "title": "Prohibition Speakeasy Hidden Vibes",
@@ -1668,7 +1668,11 @@
           "until": "20260505_085603"
         }
       ],
-      "destination_url_updated_at": "2026-05-05"
+      "destination_url_updated_at": "2026-05-05",
+      "pinterest_pin_id": "1087056428838650185",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428838650185/",
+      "posted_date": "2026-05-17",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     },
     {
       "id": 45,
@@ -1800,7 +1804,7 @@
     {
       "id": 49,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 50,
       "source_image": "pinterest/luxe_living_daily/qa_pending/50_moroccan_riad_courtyard.png",
       "title": "Moroccan Riad Courtyard Style",
@@ -1824,15 +1828,19 @@
       "image_url": null,
       "scheduled_for": "2026-05-16 11:00",
       "qa_passed_at": "2026-05-04",
-      "scheduled_at": "2026-05-10T08:32:09.336744"
+      "scheduled_at": "2026-05-10T08:32:09.336744",
+      "pinterest_pin_id": "1087056428838577300",
+      "pinterest_url": "https://www.pinterest.com/pin/1087056428838577300/",
+      "posted_date": "2026-05-16",
+      "notes": "Auto-reconciled via API after pinterest_pin_id match."
     }
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 1,
-    "next_scheduled": "2026-05-16T11:00:00",
-    "last_scheduled": "2026-05-17T11:00:00",
-    "count": 3
+    "runway_days": 0,
+    "next_scheduled": null,
+    "last_scheduled": null,
+    "count": 0
   },
   "tiktok": {
     "enabled": true,
@@ -2257,9 +2265,9 @@
       "scheduled": 24,
       "ready_no_date": 0
     },
-    "runway_days": 6,
-    "next_unposted": "2026-05-16T09:00:00",
+    "runway_days": 4,
+    "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-16T09:02:17"
+  "last_synced": "2026-05-18T08:21:53"
 }
