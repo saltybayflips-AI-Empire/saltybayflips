@@ -1210,7 +1210,7 @@
     {
       "id": 44,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "queued",
       "source_prompt_id": 5,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/05_dining_bistro_round.png",
       "title": "Dining Bistro Round Small Apartment Nook",
@@ -1232,11 +1232,11 @@
         "Round"
       ],
       "image_url": null,
-      "scheduled_for": "2026-05-16 12:00",
       "qa_passed_at": "2026-05-04",
       "defer_reason": "theme overlap with already-scheduled ASC pin (5/4-5/11). May-4 anti-painterly render is on disk if user wants to swap later.",
       "scheduled_at_pinterest": "2026-05-04T13:50:00",
-      "needs_spot_check": "Description has Small Dining suffix appended (typing went to wrong field during scheduling). Board likely set via auto-pick. Spot-check this pin on profile to confirm."
+      "needs_spot_check": "Description has Small Dining suffix appended (typing went to wrong field during scheduling). Board likely set via auto-pick. Spot-check this pin on profile to confirm.",
+      "previous_scheduled_for": "2026-05-16 12:00"
     },
     {
       "id": 45,
@@ -1451,10 +1451,10 @@
     {
       "id": 52,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 13,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/13_bookshelf_styling_arch.png",
-      "title": "Bookshelf Styling Arch",
+      "title": "Bookshelf Styling Arched Shelves Reading Nook",
       "description": "Bookshelf Styling Arch. small apartment built-in arched bookshelf styled aesthetically, stacks of vintage hardback books arranged horizontally and vertically by color, terracotta-potted small plants on multiple shelves, single white ceramic vase with dried pampas.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
       "board": "Bookshelf Styling",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#reading-nook",
@@ -1476,7 +1476,9 @@
       "scheduled_for": "2026-05-14 11:00",
       "qa_passed_at": "2026-05-04",
       "scheduled_at": "2026-05-10T08:40:48.124487",
-      "board_actual": "Reading Nook Ideas"
+      "board_actual": "Reading Nook Ideas",
+      "pinterest_pin_id": "1140747780638269264",
+      "posted_date": "2026-05-14"
     },
     {
       "id": 53,
@@ -1511,10 +1513,10 @@
     {
       "id": 54,
       "platform": "pinterest",
-      "status": "scheduled",
+      "status": "posted",
       "source_prompt_id": 15,
       "source_image": "pinterest/aesthetic_spaces_co/qa_pending/15_gallery_wall_eclectic.png",
-      "title": "Gallery Wall Eclectic Ideas",
+      "title": "Gallery Wall Eclectic Small Living Room Ideas",
       "description": "Gallery Wall Eclectic. small apartment gallery wall using command-strip-mounted frames, eclectic mix of vintage gilt frames and matte black frames in varied sizes, mix of botanical prints, abstract canvases, and small mirrored pieces, single brass picture light at the top.... Save for your dream home moodboard or interior inspiration feed. → Tap link in bio to shop the look 🪞",
       "board": "Gallery Wall Ideas",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#renter-magic",
@@ -1536,7 +1538,9 @@
       "scheduled_for": "2026-05-15 11:00",
       "qa_passed_at": "2026-05-04",
       "scheduled_at": "2026-05-10T08:40:48.124495",
-      "board_actual": "Small Living Room Ideas"
+      "board_actual": "Small Living Room Ideas",
+      "pinterest_pin_id": "1140747780638334925",
+      "posted_date": "2026-05-15"
     },
     {
       "id": 55,
@@ -1839,5 +1843,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-18T08:21:53"
+  "last_synced": "2026-05-18T08:59:07"
 }
