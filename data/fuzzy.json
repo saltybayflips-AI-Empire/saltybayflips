@@ -2108,6 +2108,21 @@
       "added_at": "2026-05-18T13:06:19",
       "batch": "plan_b_2026_05_18",
       "description": "My goldendoodle in his yellow raincoat is the only reason I love rainy days. Curly cream coat, signature head tilt, wet cobblestones, autumn rain — pure cottagecore puppy magic. Save this for your rainy-day mood board, dog-mom feed, or fall pet inspiration. Tap profile to shop yellow pet raincoats, paw-friendly umbrella sets, cottagecore puppy gear.\n\n#goldendoodle #goldendoodlepuppy #yellowraincoat #rainydaydog #petraincoat #cottagecorepets #cutepuppy #doggear #petphotography #rainyday #falldog #puppylove"
+    },
+    {
+      "id": 86,
+      "platform": "pinterest",
+      "status": "ready_to_post",
+      "title": "My Cavalier King Charles puppy in bluebells is the cottagecore moment I needed",
+      "board": "Fluffy Puppies",
+      "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v14_01_cavalier_bluebells.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
+      "tracking_id": "pinfuzzy-20",
+      "scheduled_for": "2026-06-01 11:00",
+      "added_at": "2026-05-18T15:31:29",
+      "batch": "fuzzy_v14_2026_05_18",
+      "slug": "fuzzy_v14_01_cavalier_bluebells",
+      "description": "My Cavalier King Charles puppy in bluebells is the cottagecore moment I needed. Tricolor spaniel pup with soulful eyes and feathered ears sitting in a violet bluebell forest at golden hour — pure spring-pup fairycore magic. Save this for your cottagecore mood board, dog-mom feed, or spring pet inspiration. Tap profile to shop cottagecore pet beds, soft puppy toys, paw-friendly garden gear.\n\n#cavalierkingcharles #cavalierpuppy #springpuppy #bluebells #cottagecorepets #cutepuppy #petphotography #spaniel #cavspaniel #cottagecore #fairycore #puppylove"
     }
   ],
   "rejected": [
@@ -2737,5 +2752,5 @@
     "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-18T13:23:15"
+  "last_synced": "2026-05-18T15:31:36"
 }
