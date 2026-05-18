@@ -1659,10 +1659,11 @@
       "description": "Tiny tabby kitten among bright orange pumpkins in golden hour - peak fall cat content. Save for halloween cat mood boards, autumn nursery inspo, or pumpkin-patch photoshoot ideas. Tap to shop fall-pet finds: cozy beds, pumpkin toys, and tiny aesthetic accessories. #tabbycat #kittensofpinterest #pumpkinpatch #fallaesthetic #halloweencat #catphotography #autumncat #cottagecore #kittenmom #fuzzyfriends #orangecat #cozyfall",
       "hashtags": "#tabbycat #kittensofpinterest #pumpkinpatch #fallaesthetic #halloweencat #catphotography #autumncat #cottagecore #kittenmom #fuzzyfriends #orangecat #cozyfall",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-26 11:00"
     },
     {
       "id": 60,
@@ -1675,10 +1676,11 @@
       "description": "Black-and-tan dachshund grinning in a pink tulle tutu - the dapper-pup energy your feed needs. Save for dog birthday photoshoot inspo, pink mood boards, or tiny-dog love. Tap to shop dachshund essentials: bowtie collars, sweaters, and photo props. #dachshundsofpinterest #dachshundpuppy #weeniedog #pinkaesthetic #dogphotography #doxie #petportrait #dogsmile #puppyfashion #fuzzyfriends #pupinatutu #wholesomepets",
       "hashtags": "#dachshundsofpinterest #dachshundpuppy #weeniedog #pinkaesthetic #dogphotography #doxie #petportrait #dogsmile #puppyfashion #fuzzyfriends #pupinatutu #wholesomepets",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
-      "status": "queued",
+      "status": "scheduled",
       "method": "krea_batch3",
       "staged_at": "2026-05-07",
-      "note": "Auto-promoted from 01_review on user QA approval"
+      "note": "Auto-promoted from 01_review on user QA approval",
+      "scheduled_for": "2026-05-25 11:00"
     },
     {
       "id": 61,
@@ -2001,7 +2003,7 @@
     {
       "id": 78,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Hedgehog in a flower crown — the most stop-scrolling thing on my feed",
       "board": "Pets & Flowers",
       "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v12_01_hedgehog_crown.png",
@@ -2009,12 +2011,13 @@
       "prompt_id": 5,
       "tracking_id": "pinfuzzy-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V12_2026_05_18"
+      "batch": "V12_2026_05_18",
+      "scheduled_for": "2026-05-23 11:00"
     },
     {
       "id": 79,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Red panda in cherry blossoms made me ugly-cry it is so beautiful",
       "board": "Tiny Wild Friends",
       "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v12_02_red_panda.png",
@@ -2022,12 +2025,13 @@
       "prompt_id": 4,
       "tracking_id": "pinfuzzy-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V12_2026_05_18"
+      "batch": "V12_2026_05_18",
+      "scheduled_for": "2026-05-24 11:00"
     },
     {
       "id": 80,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Fennec fox kit in the desert is the wholesomeness I keep coming back to",
       "board": "Tiny Wild Friends",
       "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v12_03_fennec_fox.png",
@@ -2035,12 +2039,13 @@
       "prompt_id": 9,
       "tracking_id": "pinfuzzy-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V12_2026_05_18"
+      "batch": "V12_2026_05_18",
+      "scheduled_for": "2026-05-27 11:00"
     },
     {
       "id": 81,
       "platform": "pinterest",
-      "status": "queued",
+      "status": "scheduled",
       "title": "Corgi puppy in a tiny bowtie has me feral with cuteness",
       "board": "Cute Dogs",
       "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_v12_04_corgi_bowtie.png",
@@ -2048,7 +2053,47 @@
       "prompt_id": 3,
       "tracking_id": "pinfuzzy-20",
       "added_at": "2026-05-18T08:55:00",
-      "batch": "V12_2026_05_18"
+      "batch": "V12_2026_05_18",
+      "scheduled_for": "2026-05-19 11:00"
+    },
+    {
+      "id": 82,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Border collie autumn",
+      "board": "Seasonal Pets",
+      "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_border_collie_autumn_krea_00001_.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#seasonal",
+      "tracking_id": "pinfuzzy-20",
+      "scheduled_for": "2026-05-28 11:00",
+      "added_at": "2026-05-18T18:00:00",
+      "batch": "V12_2026_05_18_legacy_reuse"
+    },
+    {
+      "id": 83,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "British shorthair books",
+      "board": "Cute Cats",
+      "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_british_shorthair_books_krea_00001_.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#kittens",
+      "tracking_id": "pinfuzzy-20",
+      "scheduled_for": "2026-05-30 11:00",
+      "added_at": "2026-05-18T18:00:00",
+      "batch": "V12_2026_05_18_legacy_reuse"
+    },
+    {
+      "id": 84,
+      "platform": "pinterest",
+      "status": "scheduled",
+      "title": "Pomeranian dandelion",
+      "board": "Pets & Flowers",
+      "image": "pinterest/fuzzy_frames_ai/02_ready_to_post/fuzzy_pom_dandelion_00001_.png",
+      "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/fuzzy.html#puppies",
+      "tracking_id": "pinfuzzy-20",
+      "scheduled_for": "2026-05-31 11:00",
+      "added_at": "2026-05-18T18:00:00",
+      "batch": "V12_2026_05_18_legacy_reuse"
     }
   ],
   "rejected": [
@@ -2102,10 +2147,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 4,
+    "runway_days": 13,
     "next_scheduled": "2026-05-18T10:00:00",
-    "last_scheduled": "2026-05-22T11:00:00",
-    "count": 5
+    "last_scheduled": "2026-05-31T11:00:00",
+    "count": 14
   },
   "tiktok": {
     "enabled": true,
@@ -2678,5 +2723,5 @@
     "next_unposted": "2026-05-18T09:00:00",
     "last_scheduled": "2026-05-18T18:00:00"
   },
-  "last_synced": "2026-05-18T09:27:41"
+  "last_synced": "2026-05-18T11:46:05"
 }
