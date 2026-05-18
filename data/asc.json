@@ -1796,9 +1796,9 @@
     {
       "id": 63,
       "platform": "pinterest",
-      "status": "ready_to_post",
+      "status": "scheduled",
       "title": "Vinyl listening corners that turn my apartment into a wine bar at golden hour",
-      "board": "Mood Lighting Setup",
+      "board": "Small Living Room Ideas",
       "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_01_vinyl_corner.png",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#living",
       "tracking_id": "pinasc-20",
@@ -1811,9 +1811,9 @@
     {
       "id": 64,
       "platform": "pinterest",
-      "status": "ready_to_post",
+      "status": "scheduled",
       "title": "Sage green kitchen ideas my grandma's farmhouse vibe could only dream of",
-      "board": "Kitchen Inspiration",
+      "board": "Small Kitchen Ideas",
       "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_02_sage_kitchen.png",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#kitchen",
       "tracking_id": "pinasc-20",
@@ -1826,9 +1826,9 @@
     {
       "id": 65,
       "platform": "pinterest",
-      "status": "ready_to_post",
+      "status": "scheduled",
       "title": "Scandi bedroom finds that make my apartment feel like a Stockholm Airbnb",
-      "board": "Bedroom Aesthetic",
+      "board": "Small Bedroom Ideas",
       "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_03_scandi_bedroom.png",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
       "tracking_id": "pinasc-20",
@@ -1871,7 +1871,7 @@
       "platform": "pinterest",
       "status": "scheduled",
       "title": "Airy white kitchen ideas that make me actually want to cook",
-      "board": "Kitchen Inspiration",
+      "board": "Small Kitchen Ideas",
       "image": "pinterest/aesthetic_spaces_co/_upload_now_5pins/04_airy_white_kitchen.png",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#kitchen",
       "tracking_id": "pinasc-20",
@@ -1897,9 +1897,9 @@
     {
       "id": 70,
       "platform": "pinterest",
-      "status": "ready_to_post",
+      "status": "scheduled",
       "title": "Coastal bedroom finds that turn my rental into a Hamptons cottage",
-      "board": "Bedroom Aesthetic",
+      "board": "Small Bedroom Ideas",
       "image": "pinterest/aesthetic_spaces_co/02_ready_to_post/asc_v3_04_coastal_bedroom.png",
       "destination_url": "https://saltybayflips-ai-empire.github.io/saltybayflips/asc.html#bedroom",
       "tracking_id": "pinasc-20",
@@ -1941,10 +1941,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 10,
+    "runway_days": 14,
     "next_scheduled": "2026-05-18T11:00:00",
-    "last_scheduled": "2026-05-28T11:00:00",
-    "count": 11
+    "last_scheduled": "2026-06-01T11:00:00",
+    "count": 15
   },
   "tiktok": {
     "enabled": false,
@@ -1959,5 +1959,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-18T15:31:36"
+  "last_synced": "2026-05-18T16:17:42"
 }
