@@ -1,101 +1,112 @@
 {
-  "synced_at": "2026-05-12T14:08:00",
+  "synced_at": "2026-05-18T16:47:33",
   "report_url": "https://www.tiktok.com/tiktokstudio/analytics",
   "accounts": {
     "luxe.living.daily": {
       "date_range": "Last 7 days",
       "metrics": {
         "Video views": {
-          "value": "1.4K",
-          "delta": "+475",
-          "delta_pct": "(52.2%)"
+          "value": "1.9K",
+          "delta": "+248",
+          "delta_pct": "+15.2%"
         },
         "Profile views": {
-          "value": "10",
-          "delta": "+6",
-          "delta_pct": "(150.0%)"
+          "value": "18",
+          "delta": "+10",
+          "delta_pct": "+125.0%"
         },
         "Likes": {
-          "value": "10",
+          "value": "15",
           "delta": "+5",
-          "delta_pct": "(100.0%)"
+          "delta_pct": "+50.0%"
         },
         "Comments": {
           "value": "-1",
-          "delta": "+4",
-          "delta_pct": "(-80.0%)"
+          "delta": "-1",
+          "delta_pct": "--"
         },
         "Shares": {
           "value": "0",
-          "delta": "-1",
-          "delta_pct": "(-100.0%)"
+          "delta": "0",
+          "delta_pct": "--"
         },
         "Est. rewards": {
           "value": "$0.00",
           "delta": "0.00",
-          "delta_pct": "(0.0%)"
+          "delta_pct": "0.0%"
         }
       },
       "traffic_sources_pct": {
-        "Following": 1.7,
-        "For You": 91.6,
-        "Personal profile": 0.2,
-        "Search": 6.4,
+        "For You": 90.4,
+        "Search": 5.3,
+        "Following": 4.2,
+        "Personal profile": 0.1,
         "Sound": 0
       },
       "top_search_queries": [
-        "mud room decor",
-        "rich piana haircut",
-        "deco chỗ đánh đàn piano",
-        "rich homes with character",
-        "modelo de piscinas en casa"
-      ]
+        "Maison",
+        "Decoate.a indoor pool house",
+        "interior design inspo",
+        "Speakesy casa",
+        "mudroom interior design"
+      ],
+      "display_name": "Luxe Living Daily",
+      "handle": "@luxe.living.daily",
+      "url": "https://www.tiktok.com/@luxe.living.daily"
     },
     "fuzzy_frames_ai": {
       "date_range": "Last 7 days",
       "account_type": "Personal/Creator (post Pivot B 2026-05-11)",
       "metrics": {
         "Video views": {
-          "value": "120",
-          "delta": "+120",
-          "delta_pct": "(--)"
+          "value": "556",
+          "delta": "+436",
+          "delta_pct": "+363.3%"
         },
         "Profile views": {
-          "value": "0",
-          "delta": "0",
-          "delta_pct": "(--)"
+          "value": "3",
+          "delta": "+3",
+          "delta_pct": ""
         },
         "Likes": {
-          "value": "2",
+          "value": "4",
           "delta": "+2",
-          "delta_pct": "(--)"
+          "delta_pct": "+100.0%"
         },
         "Comments": {
           "value": "0",
           "delta": "0",
-          "delta_pct": "(--)"
+          "delta_pct": "--"
         },
         "Shares": {
           "value": "0",
           "delta": "0",
-          "delta_pct": "(--)"
+          "delta_pct": "--"
         },
         "Est. rewards": {
           "value": "$0.00",
           "delta": "0.00",
-          "delta_pct": "(0.0%)"
+          "delta_pct": "0.0%"
         }
       },
       "traffic_sources_pct": {
+        "For You": 93,
+        "Search": 7,
         "Following": 0,
-        "For You": 98.3,
-        "Personal profile": 0.9,
-        "Search": 0.9,
+        "Personal profile": 0,
         "Sound": 0
       },
       "top_search_queries": [
-        "Pets"
-      ]
+        "happy pet",
+        "Pet lovers",
+        "baby owl videos",
+        "Cu Te st animals",
+        "Giant pets ai"
+      ],
+      "display_name": "Fuzzy Frames AI",
+      "handle": "@fuzzy.frames.ai",
+      "url": "https://www.tiktok.com/@fuzzy.frames.ai",
+      "posting_active": true
     }
   },
   "summary_today": {

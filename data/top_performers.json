@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-18T16:36:56",
+  "synced_at": "2026-05-18T16:48:32",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -68,7 +68,7 @@
       "follower_count": 0,
       "pin_count": 50,
       "board_count": 15,
-      "synced_at": "2026-05-18T16:36:53"
+      "synced_at": "2026-05-18T16:48:28"
     },
     {
       "id": "fuzzy_pinterest",
@@ -137,7 +137,7 @@
       "follower_count": 0,
       "pin_count": 41,
       "board_count": 10,
-      "synced_at": "2026-05-18T16:36:54"
+      "synced_at": "2026-05-18T16:48:30"
     },
     {
       "id": "lld_pinterest",
@@ -206,7 +206,7 @@
       "follower_count": 0,
       "pin_count": 47,
       "board_count": 25,
-      "synced_at": "2026-05-18T16:36:55"
+      "synced_at": "2026-05-18T16:48:32"
     },
     {
       "id": "lld_tiktok",
@@ -219,31 +219,31 @@
       "window_days": 7,
       "window_label": "Last 7 days",
       "totals": {
-        "video_views": 1400,
-        "profile_views": 10,
-        "likes": 10,
+        "video_views": 1900,
+        "profile_views": 18,
+        "likes": 15,
         "comments": -1,
         "shares": 0
       },
       "delta": {
-        "video_views_raw": "+475",
-        "video_views_pct": "(52.2%)"
+        "video_views_raw": "+248",
+        "video_views_pct": "+15.2%"
       },
       "traffic_sources_pct": {
-        "Following": 1.7,
-        "For You": 91.6,
-        "Personal profile": 0.2,
-        "Search": 6.4,
+        "For You": 90.4,
+        "Search": 5.3,
+        "Following": 4.2,
+        "Personal profile": 0.1,
         "Sound": 0
       },
       "top_searches": [
-        "mud room decor",
-        "rich piana haircut",
-        "deco chỗ đánh đàn piano",
-        "rich homes with character",
-        "modelo de piscinas en casa"
+        "Maison",
+        "Decoate.a indoor pool house",
+        "interior design inspo",
+        "Speakesy casa",
+        "mudroom interior design"
       ],
-      "synced_at": "2026-05-12T14:08:00"
+      "synced_at": "2026-05-18T16:47:33"
     },
     {
       "id": "fuzzy_tiktok",
@@ -256,27 +256,31 @@
       "window_days": 7,
       "window_label": "Last 7 days",
       "totals": {
-        "video_views": 120,
-        "profile_views": 0,
-        "likes": 2,
+        "video_views": 556,
+        "profile_views": 3,
+        "likes": 4,
         "comments": 0,
         "shares": 0
       },
       "delta": {
-        "video_views_raw": "+120",
-        "video_views_pct": "(--)"
+        "video_views_raw": "+436",
+        "video_views_pct": "+363.3%"
       },
       "traffic_sources_pct": {
+        "For You": 93,
+        "Search": 7,
         "Following": 0,
-        "For You": 98.3,
-        "Personal profile": 0.9,
-        "Search": 0.9,
+        "Personal profile": 0,
         "Sound": 0
       },
       "top_searches": [
-        "Pets"
+        "happy pet",
+        "Pet lovers",
+        "baby owl videos",
+        "Cu Te st animals",
+        "Giant pets ai"
       ],
-      "synced_at": "2026-05-12T14:08:00"
+      "synced_at": "2026-05-18T16:47:33"
     }
   ]
 }
