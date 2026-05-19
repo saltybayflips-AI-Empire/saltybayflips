@@ -1,33 +1,33 @@
 {
-  "synced_at": "2026-05-19T09:01:21",
+  "synced_at": "2026-05-19T09:23:21",
   "project_name": "SaltyBayFlips Etsy Fuzzy Launch",
   "project_start": "2026-05-19",
-  "phase": "pre_launch_drafting",
-  "phase_label": "Pre-launch: drafting listings",
-  "next_user_action": "When you have ~10 minutes: (1) confirm FuzzyFramesAI is available on Etsy (or pick alternative), (2) create Etsy shop with LLC info + banking + AI-disclosed About page, (3) sign up for Printful + connect to Etsy.",
-  "next_claude_action": "Wait for bandana renders to land + QA them. Then build Canva templates for sympathy + sticker overlays.",
-  "overall_progress_pct": 14.7,
-  "overall_done": 5,
+  "phase": "pre_launch_shop_customization",
+  "phase_label": "Pre-launch: shop branding + first listings",
+  "next_user_action": "When you can focus AI Empire Chrome window: (1) paste tagline + About story into Settings > Your shop (content drafted at shop_content_ready_to_paste.md), (2) upload a logo + banner image (I can draft from Fuzzy renders if you give me focus), (3) order 1 Printful pillow cover sample.",
+  "next_claude_action": "Awaiting browser focus to finish shop branding fields. Also: draft Canva templates for sympathy card + sticker pack overlays.",
+  "overall_progress_pct": 23.5,
+  "overall_done": 8,
   "overall_total": 34,
   "groups": {
     "etsy_shop_setup": {
       "label": "Etsy shop setup",
       "owner": "user",
-      "done": 1,
+      "done": 2,
       "total": 8,
-      "pct": 12.5,
+      "pct": 25.0,
       "items": [
         {
           "id": "shop_account",
           "label": "Etsy seller account exists",
           "done": true,
-          "note": "User confirmed 2026-05-19"
+          "note": "Shop is LIVE (Etsy Plus plan, billing completed)"
         },
         {
           "id": "shop_handle",
           "label": "Set shop handle to FuzzyFramesAI (or alternative)",
-          "done": false,
-          "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
+          "done": true,
+          "note": "User renamed shop to FuzzyFramesAI 2026-05-19. URL: fuzzyframesai.etsy.com"
         },
         {
           "id": "shop_banner",
@@ -61,10 +61,9 @@
         }
       ],
       "next_pending": {
-        "id": "shop_handle",
-        "label": "Set shop handle to FuzzyFramesAI (or alternative)",
-        "done": false,
-        "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
+        "id": "shop_banner",
+        "label": "Upload shop banner + logo (Fuzzy aesthetic)",
+        "done": false
       },
       "blocked": false
     },
@@ -138,15 +137,15 @@
     "asset_prep": {
       "label": "Asset prep (source images + design templates)",
       "owner": "claude",
-      "done": 1,
+      "done": 2,
       "total": 5,
-      "pct": 20.0,
+      "pct": 40.0,
       "items": [
         {
           "id": "render_bandana_patterns",
           "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
-          "done": false,
-          "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
+          "done": true,
+          "note": "4 patterns rendered + staged to etsy_fuzzy_launch/mockups/. 3 PASS (wildflower, mushroom, strawberry). 1 borderline (honeybee — denser bottom, sparser top; acceptable for v1)"
         },
         {
           "id": "canva_sympathy_template",
@@ -171,10 +170,9 @@
         }
       ],
       "next_pending": {
-        "id": "render_bandana_patterns",
-        "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
-        "done": false,
-        "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
+        "id": "canva_sympathy_template",
+        "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
+        "done": false
       },
       "blocked": false
     },
@@ -231,9 +229,9 @@
     "pinterest_ads": {
       "label": "Pinterest Promoted Pins setup",
       "owner": "claude_then_user_approval",
-      "done": 0,
+      "done": 1,
       "total": 4,
-      "pct": 0.0,
+      "pct": 25.0,
       "items": [
         {
           "id": "ad_account",
@@ -243,7 +241,8 @@
         {
           "id": "ad_creative_brief",
           "label": "Brief 3 organic pins to boost (with destination Etsy URLs)",
-          "done": false
+          "done": true,
+          "note": "Brief at pinterest_ads/ad_creative_brief.md — 3 pins picked (cottagecore cat, baby panda, cavalier bluebells) with destination Etsy URLs slotted. Awaits listing URLs once published."
         },
         {
           "id": "ad_user_approval",
@@ -612,14 +611,6 @@
     {
       "group": "etsy_shop_setup",
       "group_label": "Etsy shop setup",
-      "label": "Set shop handle to FuzzyFramesAI (or alternative)",
-      "blocking": false,
-      "blocked_by": null,
-      "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
-    },
-    {
-      "group": "etsy_shop_setup",
-      "group_label": "Etsy shop setup",
       "label": "Upload shop banner + logo (Fuzzy aesthetic)",
       "blocking": false,
       "blocked_by": null,
@@ -688,17 +679,17 @@
       "blocking": false,
       "blocked_by": null,
       "note": null
+    },
+    {
+      "group": "printful_setup",
+      "group_label": "Printful account + Etsy integration",
+      "label": "Add Printful billing method (auto-charge on order)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
     }
   ],
   "claude_action_items": [
-    {
-      "group": "asset_prep",
-      "group_label": "Asset prep (source images + design templates)",
-      "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
-      "blocking": false,
-      "blocked_by": null,
-      "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
-    },
     {
       "group": "asset_prep",
       "group_label": "Asset prep (source images + design templates)",
@@ -758,7 +749,7 @@
     {
       "group": "pinterest_ads",
       "group_label": "Pinterest Promoted Pins setup",
-      "label": "Brief 3 organic pins to boost (with destination Etsy URLs)",
+      "label": "USER QA: approve ad creative briefs",
       "blocking": false,
       "blocked_by": null,
       "note": null
@@ -766,7 +757,15 @@
     {
       "group": "pinterest_ads",
       "group_label": "Pinterest Promoted Pins setup",
-      "label": "USER QA: approve ad creative briefs",
+      "label": "Campaign launched",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "launch_readiness",
+      "group_label": "Launch readiness final checks",
+      "label": "Audit all 20 listings for AI disclosure compliance",
       "blocking": false,
       "blocked_by": null,
       "note": null
