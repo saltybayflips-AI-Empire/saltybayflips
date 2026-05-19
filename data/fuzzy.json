@@ -2192,7 +2192,8 @@
         "posted": false,
         "hook": "Puppies I'd commit crimes for",
         "caption_preview": "Puppies I'd commit crimes for\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_02_day1_pm",
@@ -2201,7 +2202,8 @@
         "posted": false,
         "hook": "Kittens that would fit in a teacup",
         "caption_preview": "Kittens that would fit in a teacup\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_03_day2_am",
@@ -2210,7 +2212,8 @@
         "posted": false,
         "hook": "Pets that belong in a fairytale",
         "caption_preview": "Pets that belong in a fairytale\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_04_day2_pm",
@@ -2219,7 +2222,8 @@
         "posted": false,
         "hook": "Exotic babies you shouldn't legally be able to own",
         "caption_preview": "Exotic babies you shouldn't legally be able to own\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio ",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_05_day3_am",
@@ -2228,7 +2232,8 @@
         "posted": false,
         "hook": "Dogs dressed better than you",
         "caption_preview": "Dogs dressed better than you\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_06_day3_pm",
@@ -2237,7 +2242,8 @@
         "posted": false,
         "hook": "Winter pets at their absolute peak",
         "caption_preview": "Winter pets at their absolute peak\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_07_day4_am",
@@ -2246,7 +2252,8 @@
         "posted": false,
         "hook": "Spring-core animals that stopped my scroll",
         "caption_preview": "Spring-core animals that stopped my scroll\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_08_day4_pm",
@@ -2255,7 +2262,8 @@
         "posted": false,
         "hook": "Kittens I'd adopt on sight",
         "caption_preview": "Kittens I'd adopt on sight\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#cu",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_09_day5_am",
@@ -2264,7 +2272,8 @@
         "posted": false,
         "hook": "Studio Ghibli main characters, irl",
         "caption_preview": "Studio Ghibli main characters, irl\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_10_day5_pm",
@@ -2273,7 +2282,8 @@
         "posted": false,
         "hook": "Halloween pets you need to see",
         "caption_preview": "Halloween pets you need to see\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_11_day6_am",
@@ -2282,7 +2292,8 @@
         "posted": false,
         "hook": "Pets with better photoshoots than us",
         "caption_preview": "Pets with better photoshoots than us\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet fi",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_12_day6_pm",
@@ -2291,7 +2302,8 @@
         "posted": false,
         "hook": "Fall-core pets that cured my seasonal depression",
         "caption_preview": "Fall-core pets that cured my seasonal depression\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_13_day7_am",
@@ -2300,7 +2312,8 @@
         "posted": false,
         "hook": "The ultimate 'I need a pet' compilation",
         "caption_preview": "The ultimate 'I need a pet' compilation\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_14_day7_pm",
@@ -2309,7 +2322,8 @@
         "posted": false,
         "hook": "Bunnies > dogs, fight me",
         "caption_preview": "Bunnies > dogs, fight me\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#cute",
-        "music": ""
+        "music": "",
+        "source": "post_json"
       },
       {
         "slot": "post_g01_day1_am",
@@ -2318,7 +2332,8 @@
         "posted": false,
         "hook": "Pets that single-handedly cured my bad mood",
         "caption_preview": "Pets that single-handedly cured my bad mood\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop",
-        "music": "lofi pet ambience trending"
+        "music": "lofi pet ambience trending",
+        "source": "post_json"
       },
       {
         "slot": "post_g02_day2_am",
@@ -2327,7 +2342,8 @@
         "posted": false,
         "hook": "Studio Ghibli main characters, IRL edition",
         "caption_preview": "Studio Ghibli main characters, IRL edition\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
-        "music": "Ghibli orchestral edit"
+        "music": "Ghibli orchestral edit",
+        "source": "post_json"
       },
       {
         "slot": "post_R05_fuzzy_wan_5_10_pm_commit_crimes",
@@ -2336,7 +2352,8 @@
         "posted": false,
         "hook": "pets you'd commit crimes for",
         "caption_preview": "pets you'd commit crimes for (Wan-stitched legacy post)",
-        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)",
+        "source": "post_json"
       },
       {
         "slot": "post_R06_fuzzy_wan_5_11_pm_cuteness_test",
@@ -2345,7 +2362,8 @@
         "posted": false,
         "hook": "pets that pass the cuteness test",
         "caption_preview": "pets that pass the cuteness test (Wan-stitched legacy post)",
-        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)"
+        "music": "verified per HARD-STOP rule (legacy Wan-stitched, observed live)",
+        "source": "post_json"
       },
       {
         "slot": "post_v01_wan_2clip",
@@ -2354,7 +2372,8 @@
         "posted": false,
         "hook": "Pets that single-handedly cured my Monday",
         "caption_preview": "Pets that single-handedly cured my Monday\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop p",
-        "music": "lofi pet ambience trending"
+        "music": "lofi pet ambience trending",
+        "source": "post_json"
       },
       {
         "slot": "post_v02_wan_2clip",
@@ -2363,7 +2382,8 @@
         "posted": false,
         "hook": "Cold-weather pets at peak vibes",
         "caption_preview": "Cold-weather pets at peak vibes\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾",
-        "music": "winter cozy lofi trending"
+        "music": "winter cozy lofi trending",
+        "source": "post_json"
       },
       {
         "slot": "post_v03_wan_2clip",
@@ -2372,7 +2392,8 @@
         "posted": false,
         "hook": "Studio Ghibli main characters, IRL edition",
         "caption_preview": "Studio Ghibli main characters, IRL edition\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop ",
-        "music": "Ghibli orchestral edit trending"
+        "music": "Ghibli orchestral edit trending",
+        "source": "post_json"
       },
       {
         "slot": "post_v04_native_5_8",
@@ -2381,7 +2402,8 @@
         "posted": false,
         "hook": "pets that broke the cuteness scale",
         "caption_preview": "pets that broke the cuteness scale / save this for the worst day later 🤍",
-        "music": "Cute by Aurel Surya Lie"
+        "music": "Cute by Aurel Surya Lie",
+        "source": "post_json"
       },
       {
         "slot": "post_v04_wan_2clip",
@@ -2390,7 +2412,8 @@
         "posted": false,
         "hook": "When pets take their job seriously",
         "caption_preview": "When pets take their job seriously\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
-        "music": "wholesome curious lofi"
+        "music": "wholesome curious lofi",
+        "source": "post_json"
       },
       {
         "slot": "post_v05_native_5_9_am",
@@ -2399,7 +2422,8 @@
         "posted": false,
         "hook": "cottagecore pets are dangerous",
         "caption_preview": "cottagecore pets are dangerous / which life would you steal? 🦌",
-        "music": "Little Things by Adrián Berenguer"
+        "music": "Little Things by Adrián Berenguer",
+        "source": "post_json"
       },
       {
         "slot": "post_v06_native_5_9_pm",
@@ -2408,7 +2432,8 @@
         "posted": false,
         "hook": "softness ranked, scientifically",
         "caption_preview": "softness ranked, scientifically / save this for the worst day later 🤍",
-        "music": "Aesthetic by BoominBeats"
+        "music": "Aesthetic by BoominBeats",
+        "source": "post_json"
       },
       {
         "slot": "post_v07_native_5_10_pm",
@@ -2417,7 +2442,8 @@
         "posted": false,
         "hook": "pets youd commit crimes for",
         "caption_preview": "pets youd commit crimes for / save this for the worst day later 🤍",
-        "music": "Chill Vibes by Febri Handika"
+        "music": "Chill Vibes by Febri Handika",
+        "source": "post_json"
       },
       {
         "slot": "post_v08_native_5_11_pm",
@@ -2426,7 +2452,8 @@
         "posted": false,
         "hook": "pets that pass the cuteness test",
         "caption_preview": "pets that pass the cuteness test / save this for the worst day later 🤍",
-        "music": "existing - your warm arms"
+        "music": "existing - your warm arms",
+        "source": "post_json"
       },
       {
         "slot": "post_v09_01_5_12_pm",
@@ -2435,7 +2462,8 @@
         "posted": true,
         "hook": "save this for a hard day",
         "caption_preview": "save this for a hard day\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v09_02_5_13_pm",
@@ -2444,7 +2472,8 @@
         "posted": true,
         "hook": "the snow forest cat I want",
         "caption_preview": "the snow forest cat I want\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v09_03_5_14_am",
@@ -2453,7 +2482,8 @@
         "posted": true,
         "hook": "tiny bun making my day",
         "caption_preview": "tiny bun making my day\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #wh",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v09_04_5_14_pm",
@@ -2462,7 +2492,8 @@
         "posted": true,
         "hook": "softness in a tiny scarf",
         "caption_preview": "softness in a tiny scarf\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v09_05_5_15_am",
@@ -2471,7 +2502,8 @@
         "posted": true,
         "hook": "the smartest kitten alive",
         "caption_preview": "the smartest kitten alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v10_5_15_pm",
@@ -2480,7 +2512,8 @@
         "posted": true,
         "hook": "the pet feature my therapist loves",
         "caption_preview": "the pet feature my therapist loves\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v11_01_5_14_am",
@@ -2489,7 +2522,8 @@
         "posted": true,
         "hook": "the world's happiest animal",
         "caption_preview": "the world's happiest animal\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryo",
-        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)"
+        "music": "verified per HARD-STOP rule (refill batch 2026-05-09)",
+        "source": "post_json"
       },
       {
         "slot": "post_v11_02_5_14_pm",
@@ -2498,7 +2532,8 @@
         "posted": false,
         "hook": "the tiny internet bear",
         "caption_preview": "the tiny internet bear\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #wh",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v11_03_5_15_am",
@@ -2507,7 +2542,8 @@
         "posted": false,
         "hook": "wild fox kit I want to befriend",
         "caption_preview": "wild fox kit I want to befriend\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #f",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v11_04_5_15_pm",
@@ -2516,7 +2552,8 @@
         "posted": false,
         "hook": "this little guy understands fall",
         "caption_preview": "this little guy understands fall\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v11_05_5_16_am",
@@ -2525,7 +2562,8 @@
         "posted": false,
         "hook": "sleeping puppy energy, save this",
         "caption_preview": "sleeping puppy energy, save this\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v12_01_5_16_pm",
@@ -2534,7 +2572,8 @@
         "posted": false,
         "hook": "the chillest animal alive",
         "caption_preview": "the chillest animal alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v12_02_5_17_am",
@@ -2543,7 +2582,8 @@
         "posted": false,
         "hook": "baby goat energy, save this",
         "caption_preview": "baby goat energy, save this\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryo",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v12_03_5_17_pm",
@@ -2552,7 +2592,8 @@
         "posted": false,
         "hook": "the cow that owns me",
         "caption_preview": "the cow that owns me\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #whol",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v12_04_5_18_am",
@@ -2561,7 +2602,8 @@
         "posted": false,
         "hook": "softest fluff on earth",
         "caption_preview": "softest fluff on earth\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #wh",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v12_05_5_18_pm",
@@ -2570,7 +2612,8 @@
         "posted": false,
         "hook": "royalty in cat form",
         "caption_preview": "royalty in cat form\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #whole",
-        "music": "TBD (apply on schedule day via editor)"
+        "music": "TBD (apply on schedule day via editor)",
+        "source": "post_json"
       },
       {
         "slot": "post_v13_01_5_19_am",
@@ -2579,7 +2622,8 @@
         "posted": true,
         "hook": "tiny legs big personality",
         "caption_preview": "tiny legs big personality\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
-        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)",
+        "source": "post_json"
       },
       {
         "slot": "post_v13_02_5_19_pm",
@@ -2588,7 +2632,8 @@
         "posted": true,
         "hook": "the snortiest baby alive",
         "caption_preview": "the snortiest baby alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
-        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)",
+        "source": "post_json"
       },
       {
         "slot": "post_v13_03_5_20_am",
@@ -2597,7 +2642,8 @@
         "posted": true,
         "hook": "trouble in fur form",
         "caption_preview": "trouble in fur form\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #whole",
-        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)",
+        "source": "post_json"
       },
       {
         "slot": "post_v13_04_5_20_pm",
@@ -2606,7 +2652,8 @@
         "posted": true,
         "hook": "smallest pink in existence",
         "caption_preview": "smallest pink in existence\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou",
-        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)",
+        "source": "post_json"
       },
       {
         "slot": "post_v13_05_5_21_am",
@@ -2615,7 +2662,8 @@
         "posted": true,
         "hook": "the pet that fits in your palm",
         "caption_preview": "the pet that fits in your palm\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #fo",
-        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)"
+        "music": "verified per HARD-STOP rule (V13+V8 batch 2026-05-10)",
+        "source": "post_json"
       },
       {
         "slot": "post_v14_01_5_22_am",
@@ -2624,7 +2672,8 @@
         "posted": true,
         "hook": "the wisest baby alive",
         "caption_preview": "the wisest baby alive\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #who",
-        "music": "verified per HARD-STOP rule (Business account library, user-selected)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected)",
+        "source": "post_json"
       },
       {
         "slot": "post_v14_02_5_22_pm",
@@ -2633,7 +2682,8 @@
         "posted": true,
         "hook": "the chaos goblin we love",
         "caption_preview": "the chaos goblin we love\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #",
-        "music": "verified per HARD-STOP rule (Business account library, user-selected)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected)",
+        "source": "post_json"
       },
       {
         "slot": "post_v14_03_5_23_am",
@@ -2642,7 +2692,8 @@
         "posted": true,
         "hook": "the softest spring baby",
         "caption_preview": "the softest spring baby\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #w",
-        "music": "verified per HARD-STOP rule (Business account library, user-selected)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected)",
+        "source": "post_json"
       },
       {
         "slot": "post_v14_04_5_23_pm",
@@ -2651,7 +2702,8 @@
         "posted": true,
         "hook": "trio that runs the desert",
         "caption_preview": "trio that runs the desert\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou ",
-        "music": "verified per HARD-STOP rule (Business account library, user-selected)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected)",
+        "source": "post_json"
       },
       {
         "slot": "post_v14_05_5_24_am",
@@ -2660,7 +2712,8 @@
         "posted": true,
         "hook": "nap goals in fur form",
         "caption_preview": "nap goals in fur form\nsave this for the worst day later 🤍\n\n#cutepets #petsoftiktok #fyp #foryou #who",
-        "music": "verified per HARD-STOP rule (Business account library, user-selected)"
+        "music": "verified per HARD-STOP rule (Business account library, user-selected)",
+        "source": "post_json"
       },
       {
         "slot": "post_v15_01_5_11_pm",
@@ -2669,7 +2722,8 @@
         "posted": true,
         "hook": "the wisest baby",
         "caption_preview": "the wisest baby\nsave this for the worst day later 🤍",
-        "music": "verified per HARD-STOP rule (Personal account - full library)"
+        "music": "verified per HARD-STOP rule (Personal account - full library)",
+        "source": "post_json"
       },
       {
         "slot": "post_v15_02_5_11_night",
@@ -2678,7 +2732,8 @@
         "posted": true,
         "hook": "tiny chaos goblin",
         "caption_preview": "tiny chaos goblin\nsave this for the worst day later 🤍",
-        "music": "verified per HARD-STOP rule (Personal account - full library)"
+        "music": "verified per HARD-STOP rule (Personal account - full library)",
+        "source": "post_json"
       },
       {
         "slot": "post_v15_03_5_12_pm",
@@ -2687,7 +2742,8 @@
         "posted": true,
         "hook": "softest spring baby",
         "caption_preview": "softest spring baby\nsave this for the worst day later 🤍",
-        "music": "verified per HARD-STOP rule (Personal account - full library)"
+        "music": "verified per HARD-STOP rule (Personal account - full library)",
+        "source": "post_json"
       },
       {
         "slot": "post_v15_04_5_12_night",
@@ -2696,7 +2752,8 @@
         "posted": true,
         "hook": "trio runs the desert",
         "caption_preview": "trio runs the desert\nsave this for the worst day later 🤍",
-        "music": "verified per HARD-STOP rule (Personal account - full library)"
+        "music": "verified per HARD-STOP rule (Personal account - full library)",
+        "source": "post_json"
       },
       {
         "slot": "post_v15_05_5_13_pm",
@@ -2705,7 +2762,8 @@
         "posted": true,
         "hook": "nap goals in fur",
         "caption_preview": "nap goals in fur\nsave this for the worst day later 🤍",
-        "music": "verified per HARD-STOP rule (Personal account - full library)"
+        "music": "verified per HARD-STOP rule (Personal account - full library)",
+        "source": "post_json"
       },
       {
         "slot": "post_v3_v01_wan_2clip",
@@ -2714,7 +2772,8 @@
         "posted": false,
         "hook": "Pets too sleepy to function",
         "caption_preview": "Pets too sleepy to function\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds 🐾\n\n#c",
-        "music": "lazy lofi sleepy trending"
+        "music": "lazy lofi sleepy trending",
+        "source": "post_json"
       },
       {
         "slot": "post_v3_v02_wan_2clip",
@@ -2723,7 +2782,8 @@
         "posted": false,
         "hook": "Sleepy puppy meets curious kitten",
         "caption_preview": "Sleepy puppy meets curious kitten\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet finds",
-        "music": "wholesome cute trending"
+        "music": "wholesome cute trending",
+        "source": "post_json"
       },
       {
         "slot": "post_v3_v03_wan_2clip",
@@ -2732,7 +2792,8 @@
         "posted": false,
         "hook": "Pets hearing the snack bag from another room",
         "caption_preview": "Pets hearing the snack bag from another room\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to sho",
-        "music": "trending suspense lofi"
+        "music": "trending suspense lofi",
+        "source": "post_json"
       },
       {
         "slot": "post_v3_v04_wan_2clip",
@@ -2741,17 +2802,248 @@
         "posted": false,
         "hook": "Tiny pet details that make me melt",
         "caption_preview": "Tiny pet details that make me melt\n\nwhich one would you adopt? 🐾\n\n→ tap link in bio to shop pet find",
-        "music": "soft heartstring cute trending"
+        "music": "soft heartstring cute trending",
+        "source": "post_json"
+      },
+      {
+        "slot": "v13_05_sugar_glider",
+        "scheduled_for": "2026-05-21 09:00",
+        "sched_date": "2026-05-21",
+        "posted": false,
+        "hook": "the pet that fits in your palm",
+        "caption_preview": "the pet that fits in your palm",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v13_04_mini_piglet",
+        "scheduled_for": "2026-05-20 18:00",
+        "sched_date": "2026-05-20",
+        "posted": false,
+        "hook": "smallest pink in existence",
+        "caption_preview": "smallest pink in existence",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v13_03_baby_ferret",
+        "scheduled_for": "2026-05-20 09:00",
+        "sched_date": "2026-05-20",
+        "posted": false,
+        "hook": "trouble in fur form",
+        "caption_preview": "trouble in fur form",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v13_02_frenchie_puppy",
+        "scheduled_for": "2026-05-19 18:00",
+        "sched_date": "2026-05-19",
+        "posted": false,
+        "hook": "the snortiest baby alive",
+        "caption_preview": "the snortiest baby alive",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v13_01_munchkin_kitten",
+        "scheduled_for": "2026-05-19 09:00",
+        "sched_date": "2026-05-19",
+        "posted": false,
+        "hook": "tiny legs big personality",
+        "caption_preview": "tiny legs big personality",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v12_05_persian_kitten",
+        "scheduled_for": "2026-05-18 18:00",
+        "sched_date": "2026-05-18",
+        "posted": false,
+        "hook": "royalty in cat form",
+        "caption_preview": "royalty in cat form",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v12_04_chinchilla",
+        "scheduled_for": "2026-05-18 09:00",
+        "sched_date": "2026-05-18",
+        "posted": false,
+        "hook": "softest fluff on earth",
+        "caption_preview": "softest fluff on earth",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v12_03_highland_calf",
+        "scheduled_for": "2026-05-17 18:00",
+        "sched_date": "2026-05-17",
+        "posted": false,
+        "hook": "the cow that owns me",
+        "caption_preview": "the cow that owns me",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v12_02_pygmy_goat",
+        "scheduled_for": "2026-05-17 09:00",
+        "sched_date": "2026-05-17",
+        "posted": false,
+        "hook": "baby goat energy",
+        "caption_preview": "baby goat energy",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v12_01_capybara",
+        "scheduled_for": "2026-05-16 18:00",
+        "sched_date": "2026-05-16",
+        "posted": false,
+        "hook": "the chillest animal alive",
+        "caption_preview": "the chillest animal alive",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v11_05_sleeping_pup",
+        "scheduled_for": "2026-05-16 09:00",
+        "sched_date": "2026-05-16",
+        "posted": false,
+        "hook": "sleeping puppy energy",
+        "caption_preview": "sleeping puppy energy",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v11_04_hedgehog",
+        "scheduled_for": "2026-05-15 18:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "this little guy understands fall",
+        "caption_preview": "this little guy understands fall",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v11_03_fox_kit",
+        "scheduled_for": "2026-05-15 09:00",
+        "sched_date": "2026-05-15",
+        "posted": false,
+        "hook": "wild fox kit I want to befriend",
+        "caption_preview": "wild fox kit I want to befriend",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v11_02_red_panda",
+        "scheduled_for": "2026-05-14 18:00",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "the tiny internet bear",
+        "caption_preview": "the tiny internet bear",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v11_01_quokka",
+        "scheduled_for": "2026-05-14 09:00",
+        "sched_date": "2026-05-14",
+        "posted": false,
+        "hook": "the world's happiest animal",
+        "caption_preview": "the world's happiest animal",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v10_01_baby_otter",
+        "scheduled_for": "2026-05-13 18:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "the pet feature my therapist loves",
+        "caption_preview": "the pet feature my therapist loves",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v09_05_scholar_kitten",
+        "scheduled_for": "2026-05-13 09:00",
+        "sched_date": "2026-05-13",
+        "posted": false,
+        "hook": "the smartest kitten alive",
+        "caption_preview": "the smartest kitten alive",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v09_04_pomsky",
+        "scheduled_for": "2026-05-12 18:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "softness in a tiny scarf",
+        "caption_preview": "softness in a tiny scarf",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v09_03_bunny_garden",
+        "scheduled_for": "2026-05-12 09:00",
+        "sched_date": "2026-05-12",
+        "posted": false,
+        "hook": "tiny bun making my day",
+        "caption_preview": "tiny bun making my day",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v8_cuteness_test_wan_stitched",
+        "scheduled_for": "2026-05-11 18:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "pets that pass the cuteness test",
+        "caption_preview": "pets that pass the cuteness test",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v09_02_norwegian_cat",
+        "scheduled_for": "2026-05-11 09:00",
+        "sched_date": "2026-05-11",
+        "posted": false,
+        "hook": "the snow forest cat I want",
+        "caption_preview": "the snow forest cat I want",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v07_native_5_10_pm_commit_crimes",
+        "scheduled_for": "2026-05-10 18:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "pets you'd commit crimes for",
+        "caption_preview": "pets you'd commit crimes for",
+        "music": "",
+        "source": "live_verified"
+      },
+      {
+        "slot": "v09_01_orange_kitten",
+        "scheduled_for": "2026-05-10 09:00",
+        "sched_date": "2026-05-10",
+        "posted": false,
+        "hook": "save this for a hard day",
+        "caption_preview": "save this for a hard day",
+        "music": "",
+        "source": "live_verified"
       }
     ],
     "totals": {
       "posted": 22,
-      "scheduled": 26,
+      "scheduled": 49,
       "ready_no_date": 14
     },
-    "runway_days": null,
-    "next_unposted": null,
-    "last_scheduled": null
+    "runway_days": 2,
+    "next_unposted": "2026-05-19T09:00:00",
+    "last_scheduled": "2026-05-21T09:00:00"
   },
-  "last_synced": "2026-05-19T06:19:15"
+  "last_synced": "2026-05-19T07:04:14"
 }
