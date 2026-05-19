@@ -1,13 +1,13 @@
 {
-  "synced_at": "2026-05-19T08:33:54",
+  "synced_at": "2026-05-19T09:01:21",
   "project_name": "SaltyBayFlips Etsy Fuzzy Launch",
   "project_start": "2026-05-19",
   "phase": "pre_launch_drafting",
   "phase_label": "Pre-launch: drafting listings",
-  "next_user_action": "QA listings #1 and #7 (sympathy card + pillow cover proof-of-concept)",
-  "next_claude_action": "After user approves listing format, draft remaining 18 listings",
-  "overall_progress_pct": 8.8,
-  "overall_done": 3,
+  "next_user_action": "When you have ~10 minutes: (1) confirm FuzzyFramesAI is available on Etsy (or pick alternative), (2) create Etsy shop with LLC info + banking + AI-disclosed About page, (3) sign up for Printful + connect to Etsy.",
+  "next_claude_action": "Wait for bandana renders to land + QA them. Then build Canva templates for sympathy + sticker overlays.",
+  "overall_progress_pct": 14.7,
+  "overall_done": 5,
   "overall_total": 34,
   "groups": {
     "etsy_shop_setup": {
@@ -26,7 +26,8 @@
         {
           "id": "shop_handle",
           "label": "Set shop handle to FuzzyFramesAI (or alternative)",
-          "done": false
+          "done": false,
+          "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
         },
         {
           "id": "shop_banner",
@@ -62,7 +63,8 @@
       "next_pending": {
         "id": "shop_handle",
         "label": "Set shop handle to FuzzyFramesAI (or alternative)",
-        "done": false
+        "done": false,
+        "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
       },
       "blocked": false
     },
@@ -143,7 +145,8 @@
         {
           "id": "render_bandana_patterns",
           "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
-          "done": false
+          "done": false,
+          "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
         },
         {
           "id": "canva_sympathy_template",
@@ -170,16 +173,17 @@
       "next_pending": {
         "id": "render_bandana_patterns",
         "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
-        "done": false
+        "done": false,
+        "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
       },
       "blocked": false
     },
     "listing_drafts": {
       "label": "Listing drafts (20 total) — QA gate before any go live",
       "owner": "claude_then_user_qa",
-      "done": 1,
+      "done": 3,
       "total": 6,
-      "pct": 16.7,
+      "pct": 50.0,
       "items": [
         {
           "id": "draft_proof_of_concept",
@@ -190,14 +194,16 @@
         {
           "id": "user_qa_proof_of_concept",
           "label": "USER QA: approve template/format on listings #01 + #07",
-          "done": false,
-          "blocking": true
+          "done": true,
+          "blocking": true,
+          "note": "User approved listing format/voice/pricing 2026-05-19 (sympathy cards OK, FuzzyFramesAI handle, AI disclosure approved)"
         },
         {
           "id": "draft_remaining_18",
           "label": "Draft remaining 18 listings (after format approved)",
-          "done": false,
-          "blocked_by": "user_qa_proof_of_concept"
+          "done": true,
+          "blocked_by": "user_qa_proof_of_concept",
+          "note": "All 18 remaining listings drafted as compact MD files 2026-05-19"
         },
         {
           "id": "user_qa_all_20",
@@ -216,12 +222,11 @@
         }
       ],
       "next_pending": {
-        "id": "user_qa_proof_of_concept",
-        "label": "USER QA: approve template/format on listings #01 + #07",
-        "done": false,
-        "blocking": true
+        "id": "user_qa_all_20",
+        "label": "USER QA: review all 20 drafted listings",
+        "done": false
       },
-      "blocked": true
+      "blocked": false
     },
     "pinterest_ads": {
       "label": "Pinterest Promoted Pins setup",
@@ -297,42 +302,41 @@
   "listings_summary": {
     "total": 20,
     "by_status": {
-      "drafted_pending_qa": 2,
-      "not_drafted": 18
+      "drafted_pending_qa": 20
     },
     "by_category": {
       "sympathy_card": {
         "total": 6,
-        "drafted": 1,
+        "drafted": 6,
         "approved": 0,
         "live": 0
       },
       "pillow_cover": {
         "total": 6,
-        "drafted": 1,
+        "drafted": 6,
         "approved": 0,
         "live": 0
       },
       "bandana": {
         "total": 4,
-        "drafted": 0,
+        "drafted": 4,
         "approved": 0,
         "live": 0
       },
       "sticker_pack": {
         "total": 3,
-        "drafted": 0,
+        "drafted": 3,
         "approved": 0,
         "live": 0
       },
       "sweatshirt": {
         "total": 1,
-        "drafted": 0,
+        "drafted": 1,
         "approved": 0,
         "live": 0
       }
     },
-    "drafted_count": 2,
+    "drafted_count": 20,
     "approved_count": 0,
     "live_count": 0
   },
@@ -352,10 +356,10 @@
     {
       "id": 2,
       "category": "sympathy_card",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Golden Retriever Daisies Sympathy",
+      "source_image": "fuzzy_golden_retriever_daisies.png",
       "primary_competitor": "FoxCardCo",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -364,10 +368,10 @@
     {
       "id": 3,
       "category": "sympathy_card",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Ragdoll Fairy Lights Sympathy",
+      "source_image": "fuzzy_ragdoll_fairylights.png",
       "primary_competitor": "FoxCardCo",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -376,10 +380,10 @@
     {
       "id": 4,
       "category": "sympathy_card",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Bernese Alpine Sympathy",
+      "source_image": "fuzzy_bernese_alpine_krea.png",
       "primary_competitor": "OscarFinks",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -388,10 +392,10 @@
     {
       "id": 5,
       "category": "sympathy_card",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "British Shorthair Sympathy",
+      "source_image": "fuzzy_british_shorthair_books_krea.png",
       "primary_competitor": "ThePawpShopCo",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -400,10 +404,10 @@
     {
       "id": 6,
       "category": "sympathy_card",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Universal Rainbow Bridge",
+      "source_image": "composite_dog_cat_silhouette",
       "primary_competitor": "BarkingtailsCo",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -424,10 +428,10 @@
     {
       "id": 8,
       "category": "pillow_cover",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Golden Retriever Daisies Pillow",
+      "source_image": "fuzzy_golden_retriever_daisies.png",
       "primary_competitor": "DrawYourPortrait",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -436,10 +440,10 @@
     {
       "id": 9,
       "category": "pillow_cover",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Bernese Alpine Pillow",
+      "source_image": "fuzzy_bernese_alpine_krea.png",
       "primary_competitor": "DrawYourPortrait",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -448,10 +452,10 @@
     {
       "id": 10,
       "category": "pillow_cover",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Husky Snow Pillow",
+      "source_image": "fuzzy_husky_snow.png",
       "primary_competitor": "DrawYourPortrait",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -460,10 +464,10 @@
     {
       "id": 11,
       "category": "pillow_cover",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Mochi Cat Zen Pillow",
+      "source_image": "fuzzy_mochi_cat_zen.png",
       "primary_competitor": "DrawYourPortrait",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -472,10 +476,10 @@
     {
       "id": 12,
       "category": "pillow_cover",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Pomeranian Dandelion Pillow",
+      "source_image": "fuzzy_pom_dandelion.png",
       "primary_competitor": "DrawYourPortrait",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -484,10 +488,10 @@
     {
       "id": 13,
       "category": "bandana",
-      "title_short": "TBD",
-      "source_image": "TBD_new_pattern_render",
+      "title_short": "Wildflower Meadow Bandana",
+      "source_image": "fuzzy_bandana_wildflower_meadow.png",
       "primary_competitor": "TheMinimalistPup",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -497,10 +501,10 @@
     {
       "id": 14,
       "category": "bandana",
-      "title_short": "TBD",
-      "source_image": "TBD_new_pattern_render",
+      "title_short": "Mushroom Forest Bandana",
+      "source_image": "fuzzy_bandana_mushroom_forest.png",
       "primary_competitor": "TheMinimalistPup",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -510,10 +514,10 @@
     {
       "id": 15,
       "category": "bandana",
-      "title_short": "TBD",
-      "source_image": "TBD_new_pattern_render",
+      "title_short": "Strawberry Fields Bandana",
+      "source_image": "fuzzy_bandana_strawberry_fields.png",
       "primary_competitor": "TheWhimsyDog",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -523,10 +527,10 @@
     {
       "id": 16,
       "category": "bandana",
-      "title_short": "TBD",
-      "source_image": "TBD_new_pattern_render",
+      "title_short": "Honeybee Lavender Bandana",
+      "source_image": "fuzzy_bandana_honeybee_lavender.png",
       "primary_competitor": "TheWhimsyDog",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -536,10 +540,10 @@
     {
       "id": 17,
       "category": "sticker_pack",
-      "title_short": "TBD",
-      "source_image": "TBD_pack_assembly",
+      "title_short": "Cottagecore Cats Pack",
+      "source_image": "sticker_pack_6_cat_designs",
       "primary_competitor": "AcornandCrowStudio",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -548,10 +552,10 @@
     {
       "id": 18,
       "category": "sticker_pack",
-      "title_short": "TBD",
-      "source_image": "TBD_pack_assembly",
+      "title_short": "Cottagecore Dogs Pack",
+      "source_image": "sticker_pack_6_dog_designs",
       "primary_competitor": "AcornandCrowStudio",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -560,10 +564,10 @@
     {
       "id": 19,
       "category": "sticker_pack",
-      "title_short": "TBD",
-      "source_image": "TBD_pack_assembly",
+      "title_short": "Whimsical Wildlife Pack",
+      "source_image": "sticker_pack_6_wildlife_designs",
       "primary_competitor": "AbbyDiamondDraws",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -572,10 +576,10 @@
     {
       "id": 20,
       "category": "sweatshirt",
-      "title_short": "TBD",
-      "source_image": null,
+      "title_short": "Cavalier Cottagecore Sweatshirt",
+      "source_image": "fuzzy_v14_01_cavalier_bluebells.png",
       "primary_competitor": "TheDogMomCo",
-      "status": "not_drafted",
+      "status": "drafted_pending_qa",
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
@@ -611,7 +615,7 @@
       "label": "Set shop handle to FuzzyFramesAI (or alternative)",
       "blocking": false,
       "blocked_by": null,
-      "note": null
+      "note": "Locked: FuzzyFramesAI (user approved 2026-05-19). User to create on Etsy."
     },
     {
       "group": "etsy_shop_setup",
@@ -693,7 +697,7 @@
       "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
       "blocking": false,
       "blocked_by": null,
-      "note": null
+      "note": "QUEUED — 4 patterns rendering on ComfyUI 2026-05-19 (wildflower, mushroom, strawberry, honeybee+lavender). ETA 3-6 min."
     },
     {
       "group": "asset_prep",
@@ -717,22 +721,6 @@
       "label": "All 20 source images prepped for upload",
       "blocking": false,
       "blocked_by": null,
-      "note": null
-    },
-    {
-      "group": "listing_drafts",
-      "group_label": "Listing drafts (20 total) — QA gate before any go live",
-      "label": "USER QA: approve template/format on listings #01 + #07",
-      "blocking": true,
-      "blocked_by": null,
-      "note": null
-    },
-    {
-      "group": "listing_drafts",
-      "group_label": "Listing drafts (20 total) — QA gate before any go live",
-      "label": "Draft remaining 18 listings (after format approved)",
-      "blocking": false,
-      "blocked_by": "user_qa_proof_of_concept",
       "note": null
     },
     {
@@ -763,6 +751,22 @@
       "group": "pinterest_ads",
       "group_label": "Pinterest Promoted Pins setup",
       "label": "Pinterest Ads account funded ($60 month 1)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "pinterest_ads",
+      "group_label": "Pinterest Promoted Pins setup",
+      "label": "Brief 3 organic pins to boost (with destination Etsy URLs)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "pinterest_ads",
+      "group_label": "Pinterest Promoted Pins setup",
+      "label": "USER QA: approve ad creative briefs",
       "blocking": false,
       "blocked_by": null,
       "note": null
