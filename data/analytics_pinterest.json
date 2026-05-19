@@ -1,17 +1,17 @@
 {
-  "synced_at": "2026-05-18T16:48:32",
+  "synced_at": "2026-05-19T06:19:22",
   "report_url": "https://analytics.pinterest.com/overview/",
   "note": "All 3 niches now sourced from Pinterest API v5.",
   "scrape_status": "api_live",
   "accounts": {
     "fuzzy_frames_ai": {
-      "date_range": "2026-04-18 to 2026-05-18",
+      "date_range": "2026-04-19 to 2026-05-19",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-18T16:48:30",
+      "synced_at": "2026-05-19T06:19:20",
       "metrics": {
-        "Impressions": "1303",
-        "Engagements": "28",
+        "Impressions": "1431",
+        "Engagements": "33",
         "Outbound clicks": "0",
         "Saves": "3",
         "Total audience": "1295",
@@ -19,13 +19,13 @@
       }
     },
     "luxe_living_daily": {
-      "date_range": "2026-04-18 to 2026-05-18",
+      "date_range": "2026-04-19 to 2026-05-19",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-18T16:48:32",
+      "synced_at": "2026-05-19T06:19:22",
       "metrics": {
-        "Impressions": "480",
-        "Engagements": "6",
+        "Impressions": "563",
+        "Engagements": "8",
         "Outbound clicks": "2",
         "Saves": "3",
         "Total audience": "404",
@@ -33,26 +33,26 @@
       }
     },
     "aesthetic_spaces_co": {
-      "date_range": "2026-04-18 to 2026-05-18",
+      "date_range": "2026-04-19 to 2026-05-19",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-18T16:48:28",
+      "synced_at": "2026-05-19T06:19:18",
       "metrics": {
-        "Impressions": "78",
-        "Engagements": "3",
+        "Impressions": "99",
+        "Engagements": "4",
         "Outbound clicks": "1",
         "Saves": "0",
-        "Total audience": "55",
+        "Total audience": "96",
         "Engaged audience": "?"
       }
     }
   },
   "totals": {
-    "Impressions": 1861,
-    "Engagements": 37,
+    "Impressions": 2093,
+    "Engagements": 45,
     "Outbound clicks": 3,
     "Saves": 6,
-    "Total audience": 1754,
+    "Total audience": 1795,
     "Engaged audience": 0
   }
 }

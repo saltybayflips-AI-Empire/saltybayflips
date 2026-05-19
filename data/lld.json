@@ -2008,7 +2008,7 @@
   ],
   "rejected": [],
   "pinterest_runway": {
-    "runway_days": 14,
+    "runway_days": 13,
     "next_scheduled": "2026-05-19T11:00:00",
     "last_scheduled": "2026-06-01T11:00:00",
     "count": 14
@@ -2436,9 +2436,9 @@
       "scheduled": 24,
       "ready_no_date": 0
     },
-    "runway_days": 4,
-    "next_unposted": "2026-05-18T09:00:00",
+    "runway_days": 3,
+    "next_unposted": "2026-05-22T09:00:00",
     "last_scheduled": "2026-05-22T09:00:00"
   },
-  "last_synced": "2026-05-18T16:48:22"
+  "last_synced": "2026-05-19T06:19:15"
 }

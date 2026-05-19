@@ -1944,7 +1944,7 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 14,
+    "runway_days": 13,
     "next_scheduled": "2026-05-19T11:00:00",
     "last_scheduled": "2026-06-01T11:00:00",
     "count": 14
@@ -1962,5 +1962,5 @@
     "next_unposted": null,
     "last_scheduled": null
   },
-  "last_synced": "2026-05-18T16:48:22"
+  "last_synced": "2026-05-19T06:19:15"
 }

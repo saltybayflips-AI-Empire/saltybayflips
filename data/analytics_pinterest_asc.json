@@ -2,12 +2,12 @@
   "niche": "asc",
   "handle": "saltybayflipspin",
   "display_name": "Aesthetic Spaces Co",
-  "synced_at": "2026-05-18T16:48:28",
+  "synced_at": "2026-05-19T06:19:18",
   "window_days": 30,
-  "window_start": "2026-04-18",
-  "window_end": "2026-05-18",
+  "window_start": "2026-04-19",
+  "window_end": "2026-05-19",
   "account": {
-    "monthly_views": 55,
+    "monthly_views": 96,
     "follower_count": 0,
     "board_count": 15,
     "pin_count": 50,
@@ -15,9 +15,9 @@
   },
   "aggregate": {
     "totals": {
-      "IMPRESSION": 78,
+      "IMPRESSION": 99,
       "SAVE": 0,
-      "PIN_CLICK": 3,
+      "PIN_CLICK": 4,
       "OUTBOUND_CLICK": 1
     },
     "ready_days": 29,
@@ -32,6 +32,28 @@
         "IMPRESSION": 15,
         "SAVE": 0,
         "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1140747780637809294",
+      "title": "Studio apartment layouts my designer cousin keeps asking about",
+      "created_at": "2026-05-07T17:08:11",
+      "totals": {
+        "IMPRESSION": 13,
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "OUTBOUND_CLICK": 0
+      }
+    },
+    {
+      "pin_id": "1140747780637873702",
+      "title": "Murphy bed setups that turn studios into one-bedrooms (for real)",
+      "created_at": "2026-05-08T17:04:37",
+      "totals": {
+        "IMPRESSION": 12,
+        "SAVE": 0,
+        "PIN_CLICK": 2,
         "OUTBOUND_CLICK": 0
       }
     },
@@ -58,11 +80,11 @@
       }
     },
     {
-      "pin_id": "1140747780637809294",
-      "title": "Studio apartment layouts my designer cousin keeps asking about",
-      "created_at": "2026-05-07T17:08:11",
+      "pin_id": "1140747780637944180",
+      "title": "Walk-in closet hacks I learned from renting in tiny apartments",
+      "created_at": "2026-05-09T17:02:50",
       "totals": {
-        "IMPRESSION": 8,
+        "IMPRESSION": 6,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0
@@ -96,28 +118,6 @@
       "created_at": "2026-04-25T14:01:48",
       "totals": {
         "IMPRESSION": 4,
-        "SAVE": 0,
-        "PIN_CLICK": 0,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1140747780637873702",
-      "title": "Murphy bed setups that turn studios into one-bedrooms (for real)",
-      "created_at": "2026-05-08T17:04:37",
-      "totals": {
-        "IMPRESSION": 2,
-        "SAVE": 0,
-        "PIN_CLICK": 1,
-        "OUTBOUND_CLICK": 0
-      }
-    },
-    {
-      "pin_id": "1140747780637944180",
-      "title": "Walk-in closet hacks I learned from renting in tiny apartments",
-      "created_at": "2026-05-09T17:02:50",
-      "totals": {
-        "IMPRESSION": 2,
         "SAVE": 0,
         "PIN_CLICK": 0,
         "OUTBOUND_CLICK": 0

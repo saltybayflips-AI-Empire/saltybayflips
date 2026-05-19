@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-05-18T16:48:32",
+  "synced_at": "2026-05-19T06:19:23",
   "channels": [
     {
       "id": "asc_pinterest",
@@ -12,8 +12,8 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 78,
-        "pin_clicks": 3,
+        "impressions": 99,
+        "pin_clicks": 4,
         "outbound_clicks": 1,
         "saves": 0
       },
@@ -26,6 +26,24 @@
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1140747780636838478/"
+        },
+        {
+          "title": "Studio apartment layouts my designer cousin keeps asking about",
+          "pin_id": "1140747780637809294",
+          "impressions": 13,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780637809294/"
+        },
+        {
+          "title": "Murphy bed setups that turn studios into one-bedrooms (for real)",
+          "pin_id": "1140747780637873702",
+          "impressions": 12,
+          "clicks": 2,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1140747780637873702/"
         },
         {
           "title": "Peelstick Terrazzo Bath Ideas | Small Space Aesthetic Decor",
@@ -44,31 +62,13 @@
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1140747780637250900/"
-        },
-        {
-          "title": "Studio apartment layouts my designer cousin keeps asking about",
-          "pin_id": "1140747780637809294",
-          "impressions": 8,
-          "clicks": 0,
-          "saves": 0,
-          "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1140747780637809294/"
-        },
-        {
-          "title": "Scandi Bathroom Ideas: Small Space Aesthetic",
-          "pin_id": "1140747780636927065",
-          "impressions": 6,
-          "clicks": 0,
-          "saves": 0,
-          "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1140747780636927065/"
         }
       ],
-      "monthly_views": 55,
+      "monthly_views": 96,
       "follower_count": 0,
       "pin_count": 50,
       "board_count": 15,
-      "synced_at": "2026-05-18T16:48:28"
+      "synced_at": "2026-05-19T06:19:18"
     },
     {
       "id": "fuzzy_pinterest",
@@ -81,8 +81,8 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 1303,
-        "pin_clicks": 28,
+        "impressions": 1431,
+        "pin_clicks": 33,
         "outbound_clicks": 0,
         "saves": 3
       },
@@ -90,7 +90,7 @@
         {
           "title": "Cottagecore cat finds my therapist needs to see",
           "pin_id": "1128573987894056570",
-          "impressions": 294,
+          "impressions": 312,
           "clicks": 9,
           "saves": 1,
           "outbound": 0,
@@ -99,8 +99,8 @@
         {
           "title": "Baby Panda Cub With Bamboo Adorable Wildlife Photography Aesthetic",
           "pin_id": "1128573987894519546",
-          "impressions": 186,
-          "clicks": 8,
+          "impressions": 253,
+          "clicks": 10,
           "saves": 1,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1128573987894519546/"
@@ -108,7 +108,7 @@
         {
           "title": "Tiny pet aesthetic that turns any shelf into a fairy garden",
           "pin_id": "1128573987893762400",
-          "impressions": 185,
+          "impressions": 192,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
@@ -137,7 +137,7 @@
       "follower_count": 0,
       "pin_count": 41,
       "board_count": 10,
-      "synced_at": "2026-05-18T16:48:30"
+      "synced_at": "2026-05-19T06:19:20"
     },
     {
       "id": "lld_pinterest",
@@ -150,8 +150,8 @@
       "window_days": 30,
       "window_label": "30d",
       "totals": {
-        "impressions": 480,
-        "pin_clicks": 6,
+        "impressions": 563,
+        "pin_clicks": 8,
         "outbound_clicks": 2,
         "saves": 3
       },
@@ -159,7 +159,7 @@
         {
           "title": "Outdoor Kitchen Pergola: Elegant Luxury Home Design",
           "pin_id": "1087056428837307709",
-          "impressions": 103,
+          "impressions": 113,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
@@ -177,36 +177,36 @@
         {
           "title": "Butlers Pantry Wine Storage Luxury Home Ideas",
           "pin_id": "1087056428836950419",
-          "impressions": 35,
+          "impressions": 39,
           "clicks": 1,
           "saves": 0,
           "outbound": 0,
           "pin_url": "https://www.pinterest.com/pin/1087056428836950419/"
         },
         {
-          "title": "Game Room Ideas Bourbon Bar Luxury Home",
-          "pin_id": "1087056428837073179",
-          "impressions": 29,
+          "title": "Indoor Pool Under A Glass Vaulted Skylight Cathedral Pool Pavilion",
+          "pin_id": "1087056428838025982",
+          "impressions": 38,
           "clicks": 0,
           "saves": 0,
           "outbound": 0,
-          "pin_url": "https://www.pinterest.com/pin/1087056428837073179/"
+          "pin_url": "https://www.pinterest.com/pin/1087056428838025982/"
         },
         {
-          "title": "Grand Foyer With A Sweeping Double Staircase + Crystal Chandelier Old Money Entr",
-          "pin_id": "1087056428837823970",
-          "impressions": 27,
-          "clicks": 2,
-          "saves": 1,
-          "outbound": 1,
-          "pin_url": "https://www.pinterest.com/pin/1087056428837823970/"
+          "title": "Private Home Bowling Alley In Walnut + Brass Vintage Lounge Vibes",
+          "pin_id": "1087056428837962278",
+          "impressions": 35,
+          "clicks": 0,
+          "saves": 0,
+          "outbound": 0,
+          "pin_url": "https://www.pinterest.com/pin/1087056428837962278/"
         }
       ],
       "monthly_views": 404,
       "follower_count": 0,
       "pin_count": 47,
       "board_count": 25,
-      "synced_at": "2026-05-18T16:48:32"
+      "synced_at": "2026-05-19T06:19:22"
     },
     {
       "id": "lld_tiktok",

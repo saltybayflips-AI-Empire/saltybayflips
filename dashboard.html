@@ -288,11 +288,19 @@
     padding:6px 12px; border-radius:6px; cursor:pointer; font-size:12px; }
   .cal-today:hover { background:#2a2f3a; }
   .cal-month { font-size:16px; font-weight:600; min-width:160px; text-align:center; }
-  .cal-legend { display:flex; gap:14px; margin-left:auto; flex-wrap:wrap; font-size:11px; color:var(--mut); align-items:center; }
-  .cal-leg { display:inline-flex; align-items:center; gap:5px; }
-  .cal-leg-dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--mut); }
+  .cal-filters { display:flex; gap:4px; }
+  .cal-filter-btn { background:var(--card2); border:1px solid var(--line); color:var(--mut);
+    padding:4px 10px; border-radius:6px; cursor:pointer; font-size:11px;
+    text-transform:uppercase; letter-spacing:.5px; font-weight:600; }
+  .cal-filter-btn.active { background:var(--info); color:#fff; border-color:var(--info); }
+  .cal-legend { display:flex; gap:12px; margin-left:auto; flex-wrap:wrap; font-size:10px; color:var(--mut); align-items:center; }
+  .cal-leg { display:inline-flex; align-items:center; gap:4px; }
+  .cal-leg-dot { display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--mut); }
   .cal-leg-dot.solid { background:var(--good); }
   .cal-leg-dot.ring { background:transparent; border:2px solid #ffba66; box-sizing:border-box; }
+  .cal-leg-dot.dashed { background:transparent; border:1px dashed var(--mut); box-sizing:border-box; }
+  .cal-leg-shape { display:inline-block; width:9px; height:9px; background:var(--mut); }
+  .cal-leg-shape.square { border-radius:1px; }
   .cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px;
     background:var(--card2); border:1px solid var(--line); border-radius:8px; padding:8px; }
   .cal-day-header { font-size:10px; text-transform:uppercase; color:var(--mut); text-align:center;
@@ -309,8 +317,14 @@
   .cal-cell.today .cal-cell-num { color:var(--accent); }
   .cal-cell.past .cal-cell-num { color:var(--mut); }
   .cal-cell-pins { display:flex; flex-wrap:wrap; gap:2px; margin-top:2px; align-content:flex-start; }
-  .cal-pin-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-  .cal-pin-dot.scheduled { background:transparent; box-shadow:inset 0 0 0 2px currentColor; }
+  .cal-pin-dot { width:8px; height:8px; flex-shrink:0; box-sizing:border-box; }
+  /* Pinterest = circle, TikTok = square (rounded) — visual platform separator */
+  .cal-pin-dot.pinterest { border-radius:50%; }
+  .cal-pin-dot.tiktok { border-radius:2px; }
+  /* posted = solid fill (uses background). scheduled = ring/outline. planned = dashed outline. */
+  .cal-pin-dot.posted { /* solid is default — uses inline background-color */ }
+  .cal-pin-dot.scheduled { background:transparent !important; box-shadow:inset 0 0 0 2px currentColor; }
+  .cal-pin-dot.planned { background:transparent !important; border:1px dashed currentColor; opacity:.7; }
   .cal-cell-count { font-size:9px; color:var(--mut); margin-top:auto; align-self:flex-end; }
   .cal-details { margin-top:12px; min-height:60px; padding:12px;
     background:var(--card); border:1px solid var(--line); border-radius:8px;
@@ -493,12 +507,19 @@
     <span class="cal-month" id="calMonthLabel"></span>
     <button class="cal-nav" id="calNext">›</button>
     <button class="cal-today" id="calToday">Today</button>
+    <span class="cal-filters">
+      <button class="cal-filter-btn active" data-cal-filter="all">All</button>
+      <button class="cal-filter-btn" data-cal-filter="pinterest">📌 Pinterest</button>
+      <button class="cal-filter-btn" data-cal-filter="tiktok">🎵 TikTok</button>
+    </span>
     <span class="cal-legend">
       <span class="cal-leg"><span class="cal-leg-dot" style="background:#7fb069"></span> ASC</span>
       <span class="cal-leg"><span class="cal-leg-dot" style="background:#d472a2"></span> Fuzzy</span>
       <span class="cal-leg"><span class="cal-leg-dot" style="background:#9d8189"></span> LLD</span>
       <span class="cal-leg"><span class="cal-leg-dot solid"></span> posted</span>
       <span class="cal-leg"><span class="cal-leg-dot ring"></span> scheduled</span>
+      <span class="cal-leg"><span class="cal-leg-dot dashed"></span> planned</span>
+      <span class="cal-leg" style="margin-left:6px;"><span class="cal-leg-dot"></span> Pin · <span class="cal-leg-shape square"></span> TT</span>
     </span>
   </div>
   <div class="cal-grid" id="calendarGrid"></div>
@@ -714,6 +735,7 @@ async function fetchCalendar() {
 let _calData = null;
 let _calMonthOffset = 0; // 0 = current month, +1 = next, -1 = prev
 let _calSelectedDate = null;
+let _calFilter = 'all'; // 'all' | 'pinterest' | 'tiktok'
 
 function _calFormatYMD(d) {
   const yr = d.getFullYear();
@@ -722,35 +744,51 @@ function _calFormatYMD(d) {
   return `${yr}-${mo}-${da}`;
 }
 
+function _calFilterItems(items) {
+  if (_calFilter === 'all') return items;
+  return items.filter(it => it.platform === _calFilter);
+}
+
+function _calDotHtml(item, status) {
+  const plat = item.platform || 'pinterest';
+  const titleSafe = (item.title || '').replace(/"/g, '&quot;');
+  const tip = `${item.niche_label} · ${plat} · ${status}${item.time ? ' · ' + item.time : ''}: ${titleSafe}`;
+  const styleProp = status === 'posted' ? 'background' : 'color';
+  return `<span class="cal-pin-dot ${plat} ${status}" style="${styleProp}:${item.niche_color}" title="${tip}"></span>`;
+}
+
 function renderCalendar(data) {
   if (!data) {
     document.getElementById('calendarSection').style.display = 'none';
     return;
   }
   _calData = data;
-  // Default selected = today if it has entries, else today anyway
   if (!_calSelectedDate) _calSelectedDate = data.today;
+  const s = data.summary || {};
+  const tt = (s.by_platform || {});
+  const pinPosted = tt.pinterest_posted || 0;
+  const pinSched = tt.pinterest_scheduled || 0;
+  const ttPosted = tt.tiktok_posted || 0;
+  const ttSched = tt.tiktok_scheduled || 0;
+  const plannedCount = s.planned_count || 0;
   document.getElementById('calendarSubtitle').textContent =
-    `${data.summary.scheduled_future} scheduled · ${data.summary.posted_last_7d} posted in last 7d`;
+    `📌 ${pinPosted}/${pinSched} (posted/scheduled) · 🎵 ${ttPosted}/${ttSched} · ${plannedCount} planned slots open`;
 
-  // Compute target month
   const now = new Date();
   const target = new Date(now.getFullYear(), now.getMonth() + _calMonthOffset, 1);
   const year = target.getFullYear();
   const month = target.getMonth();
-  const monthLabel = target.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-  document.getElementById('calMonthLabel').textContent = monthLabel;
+  document.getElementById('calMonthLabel').textContent =
+    target.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-  // Build the cell list. Start from the Sunday before/on the 1st.
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
   const startCell = new Date(firstDay);
-  startCell.setDate(firstDay.getDate() - firstDay.getDay()); // Sunday = 0
+  startCell.setDate(firstDay.getDate() - firstDay.getDay());
   const endCell = new Date(lastDay);
   endCell.setDate(lastDay.getDate() + (6 - lastDay.getDay()));
 
   const grid = [];
-  // Header row
   for (const d of ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']) {
     grid.push(`<div class="cal-day-header">${d}</div>`);
   }
@@ -762,16 +800,17 @@ function renderCalendar(data) {
     const isToday = ymd === data.today;
     const isPast = cur < today && !isToday;
     const isSelected = ymd === _calSelectedDate;
-    const dayInfo = data.by_date[ymd] || { posted: [], scheduled: [] };
-    const totalCount = dayInfo.posted.length + dayInfo.scheduled.length;
-    // Build pin dots — group by niche, show solid for posted, ring for scheduled
-    const dots = [];
-    for (const item of dayInfo.posted) {
-      dots.push(`<span class="cal-pin-dot" style="background:${item.niche_color}" title="${item.niche_label}: posted ${item.title.replace(/"/g,'&quot;')}"></span>`);
-    }
-    for (const item of dayInfo.scheduled) {
-      dots.push(`<span class="cal-pin-dot scheduled" style="color:${item.niche_color}" title="${item.niche_label}: scheduled ${item.title.replace(/"/g,'&quot;')}"></span>`);
-    }
+    const dayInfo = data.by_date[ymd] || { posted: [], scheduled: [], planned: [] };
+    // Apply platform filter
+    const posted = _calFilterItems(dayInfo.posted || []);
+    const scheduled = _calFilterItems(dayInfo.scheduled || []);
+    const planned = _calFilterItems(dayInfo.planned || []);
+    const totalCount = posted.length + scheduled.length;
+    const dots = [
+      ...posted.map(it => _calDotHtml(it, 'posted')),
+      ...scheduled.map(it => _calDotHtml(it, 'scheduled')),
+      ...planned.map(it => _calDotHtml(it, 'planned')),
+    ];
     const cellCls = [
       'cal-cell',
       isOtherMonth ? 'empty' : '',
@@ -780,10 +819,11 @@ function renderCalendar(data) {
       isSelected ? 'selected' : '',
     ].filter(Boolean).join(' ');
     const cellAttrs = isOtherMonth ? '' : ` onclick="selectCalendarDate('${ymd}')"`;
+    // Cell count shows posted+scheduled (planned is informational, not "real" content)
     grid.push(`<div class="${cellCls}"${cellAttrs}>
       <div class="cal-cell-num">${cur.getDate()}</div>
       <div class="cal-cell-pins">${dots.join('')}</div>
-      ${totalCount > 0 ? `<div class="cal-cell-count">${totalCount}</div>` : ''}
+      ${totalCount > 0 ? `<div class="cal-cell-count">${totalCount}${planned.length ? ' +' + planned.length + 'p' : ''}</div>` : (planned.length ? `<div class="cal-cell-count" style="color:#ffba66">${planned.length}p</div>` : '')}
     </div>`);
     cur.setDate(cur.getDate() + 1);
   }
@@ -798,9 +838,11 @@ function renderCalendarDetails(ymd) {
     el.textContent = 'Click a day to see posts.';
     return;
   }
-  const info = _calData.by_date[ymd] || { posted: [], scheduled: [] };
-  const all = info.posted.map(p => ({ ...p, status: 'posted' }))
-    .concat(info.scheduled.map(p => ({ ...p, status: 'scheduled' })));
+  const info = _calData.by_date[ymd] || { posted: [], scheduled: [], planned: [] };
+  const posted = _calFilterItems(info.posted || []).map(p => ({ ...p, status: 'posted' }));
+  const scheduled = _calFilterItems(info.scheduled || []).map(p => ({ ...p, status: 'scheduled' }));
+  const planned = _calFilterItems(info.planned || []).map(p => ({ ...p, status: 'planned' }));
+  const all = [...posted, ...scheduled, ...planned];
   if (all.length === 0) {
     el.className = 'cal-details empty';
     el.textContent = `No pins on ${ymd}.`;
@@ -808,25 +850,28 @@ function renderCalendarDetails(ymd) {
   }
   el.className = 'cal-details';
   const dateLabel = new Date(ymd + 'T00:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-  const items = all.map(p => `
+  const items = all.map(p => {
+    const platIcon = p.platform === 'tiktok' ? '🎵' : '📌';
+    const titleSafe = (p.title || '').replace(/</g,'&lt;');
+    return `
     <div class="cal-details-item">
       <span class="cal-niche-tag" style="background:${p.niche_color}"></span>
       <div class="cal-item-body">
         <div class="cal-item-title">
           <span class="cal-status-pill ${p.status}">${p.status}</span>
-          ${p.title.replace(/</g,'&lt;')}
+          ${platIcon} ${titleSafe}
         </div>
         <div class="cal-item-meta">
           ${p.niche_label} · ${p.platform} ${p.time ? '· ' + p.time : ''} ${p.board ? '· ' + p.board : ''}
         </div>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
   el.innerHTML = `
     <div class="cal-details-header">
       <span>${dateLabel}</span>
       <span style="font-size:11px;color:var(--mut);font-weight:400">
-        ${info.posted.length} posted · ${info.scheduled.length} scheduled
+        ${posted.length} posted · ${scheduled.length} scheduled ${planned.length ? '· <span style="color:#ffba66">' + planned.length + ' planned</span>' : ''}
       </span>
     </div>
     <div class="cal-details-list">${items}</div>
@@ -845,6 +890,20 @@ document.getElementById('calToday')?.addEventListener('click', () => {
   _calSelectedDate = _calData?.today;
   renderCalendar(_calData);
 });
+document.querySelectorAll('[data-cal-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    _calFilter = btn.dataset.calFilter;
+    document.querySelectorAll('[data-cal-filter]').forEach(b => b.classList.toggle('active', b === btn));
+    renderCalendar(_calData);
+  });
+});
+
+// Add status-pill style for 'planned'
+(function(){
+  const css = document.createElement('style');
+  css.textContent = '.cal-status-pill.planned { background:rgba(255,186,102,.15); color:#ffba66; border:1px dashed #ffba66; padding:0 5px; }';
+  document.head.appendChild(css);
+})();
 
 // CHANNEL_RENDERERS — extensibility hook. Each kind (pinterest, tiktok, future
 // shopify/fanvue/etc) registers a renderer that takes a channel object from
