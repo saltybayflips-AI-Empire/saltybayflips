@@ -1,5 +1,35 @@
 {
-  "synced_at": "2026-05-19T07:04:14.100637",
-  "item_count": 0,
-  "items": []
+  "synced_at": "2026-05-19T07:11:40.737160",
+  "item_count": 3,
+  "items": [
+    {
+      "id": "tt_runway_luxe_living_daily",
+      "title": "LLD TikTok runway = 3 day(s)",
+      "detail": "46 TikTok post(s) scheduled, last fires 2026-05-22T09:00:00. Cadence target = 2 posts/day. Schedule more in TikTok Studio.",
+      "priority": "med",
+      "estimated_min": 30,
+      "category": "tiktok_runway",
+      "url": "https://www.tiktok.com/tiktokstudio/content?tab=video",
+      "deadline_at": "2026-05-22"
+    },
+    {
+      "id": "tt_runway_fuzzy_frames_ai",
+      "title": "Fuzzy TikTok runway = 2 day(s)",
+      "detail": "49 TikTok post(s) scheduled, last fires 2026-05-21T09:00:00. Cadence target = 2 posts/day. Schedule more in TikTok Studio.",
+      "priority": "high",
+      "estimated_min": 30,
+      "category": "tiktok_runway",
+      "url": "https://www.tiktok.com/tiktokstudio/content?tab=video",
+      "deadline_at": "2026-05-21"
+    },
+    {
+      "id": "tt_undated_fuzzy_frames_ai",
+      "title": "Fuzzy TikTok: 14 ready post(s) need dates",
+      "detail": "14 files in tiktok_ready_to_post/ have content but no scheduled_for. These won't fire until manually scheduled in TikTok Studio. Drag-upload them to fill cadence gaps.",
+      "priority": "med",
+      "estimated_min": 70,
+      "category": "tiktok_undated",
+      "url": "https://www.tiktok.com/tiktokstudio/content?tab=video"
+    }
+  ]
 }
