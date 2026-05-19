@@ -1,0 +1,771 @@
+{
+  "synced_at": "2026-05-19T08:33:54",
+  "project_name": "SaltyBayFlips Etsy Fuzzy Launch",
+  "project_start": "2026-05-19",
+  "phase": "pre_launch_drafting",
+  "phase_label": "Pre-launch: drafting listings",
+  "next_user_action": "QA listings #1 and #7 (sympathy card + pillow cover proof-of-concept)",
+  "next_claude_action": "After user approves listing format, draft remaining 18 listings",
+  "overall_progress_pct": 8.8,
+  "overall_done": 3,
+  "overall_total": 34,
+  "groups": {
+    "etsy_shop_setup": {
+      "label": "Etsy shop setup",
+      "owner": "user",
+      "done": 1,
+      "total": 8,
+      "pct": 12.5,
+      "items": [
+        {
+          "id": "shop_account",
+          "label": "Etsy seller account exists",
+          "done": true,
+          "note": "User confirmed 2026-05-19"
+        },
+        {
+          "id": "shop_handle",
+          "label": "Set shop handle to FuzzyFramesAI (or alternative)",
+          "done": false
+        },
+        {
+          "id": "shop_banner",
+          "label": "Upload shop banner + logo (Fuzzy aesthetic)",
+          "done": false
+        },
+        {
+          "id": "shop_about",
+          "label": "Write shop About / story (AI-disclosed)",
+          "done": false
+        },
+        {
+          "id": "shop_policies",
+          "label": "Set return policy, shipping policy",
+          "done": false
+        },
+        {
+          "id": "llc_info",
+          "label": "Confirm LLC info on Etsy (SaltyBayFlips LLC, EIN, S-Corp)",
+          "done": false
+        },
+        {
+          "id": "banking",
+          "label": "Banking + payout method connected",
+          "done": false
+        },
+        {
+          "id": "tax_info",
+          "label": "Tax info filed (1099 + S-Corp election)",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "shop_handle",
+        "label": "Set shop handle to FuzzyFramesAI (or alternative)",
+        "done": false
+      },
+      "blocked": false
+    },
+    "printful_setup": {
+      "label": "Printful account + Etsy integration",
+      "owner": "user",
+      "done": 0,
+      "total": 4,
+      "pct": 0.0,
+      "items": [
+        {
+          "id": "printful_account",
+          "label": "Create Printful account",
+          "done": false
+        },
+        {
+          "id": "printful_etsy_connect",
+          "label": "Connect Printful to Etsy shop",
+          "done": false
+        },
+        {
+          "id": "shipping_defaults",
+          "label": "Set default shipping rates",
+          "done": false
+        },
+        {
+          "id": "billing",
+          "label": "Add Printful billing method (auto-charge on order)",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "printful_account",
+        "label": "Create Printful account",
+        "done": false
+      },
+      "blocked": false
+    },
+    "sample_order": {
+      "label": "Sample order (validate Printful quality)",
+      "owner": "user",
+      "done": 0,
+      "total": 3,
+      "pct": 0.0,
+      "items": [
+        {
+          "id": "sample_pillow_ordered",
+          "label": "Order 1 pillow cover sample ($25-30)",
+          "done": false,
+          "note": "REVISED 2026-05-19: pillow cover instead of t-shirt — pillows are the new greenfield priority"
+        },
+        {
+          "id": "sample_received",
+          "label": "Sample received + visually inspected",
+          "done": false
+        },
+        {
+          "id": "sample_qa_pass",
+          "label": "Sample quality PASSES (colors, print sharpness, fabric)",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "sample_pillow_ordered",
+        "label": "Order 1 pillow cover sample ($25-30)",
+        "done": false,
+        "note": "REVISED 2026-05-19: pillow cover instead of t-shirt — pillows are the new greenfield priority"
+      },
+      "blocked": false
+    },
+    "asset_prep": {
+      "label": "Asset prep (source images + design templates)",
+      "owner": "claude",
+      "done": 1,
+      "total": 5,
+      "pct": 20.0,
+      "items": [
+        {
+          "id": "render_bandana_patterns",
+          "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
+          "done": false
+        },
+        {
+          "id": "canva_sympathy_template",
+          "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
+          "done": false
+        },
+        {
+          "id": "canva_sticker_template",
+          "label": "Create Canva template for sticker pack assembly (6-design kiss-cut sheet)",
+          "done": false
+        },
+        {
+          "id": "inventory_existing_renders",
+          "label": "Inventory existing 46+ Fuzzy renders mapped to listings",
+          "done": true,
+          "note": "Done 2026-05-19 — see launch_state.listings"
+        },
+        {
+          "id": "all_20_source_assets_ready",
+          "label": "All 20 source images prepped for upload",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "render_bandana_patterns",
+        "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
+        "done": false
+      },
+      "blocked": false
+    },
+    "listing_drafts": {
+      "label": "Listing drafts (20 total) — QA gate before any go live",
+      "owner": "claude_then_user_qa",
+      "done": 1,
+      "total": 6,
+      "pct": 16.7,
+      "items": [
+        {
+          "id": "draft_proof_of_concept",
+          "label": "Draft 2 proof-of-concept listings (sympathy + pillow)",
+          "done": true,
+          "note": "Listings #01 + #07 drafted 2026-05-19"
+        },
+        {
+          "id": "user_qa_proof_of_concept",
+          "label": "USER QA: approve template/format on listings #01 + #07",
+          "done": false,
+          "blocking": true
+        },
+        {
+          "id": "draft_remaining_18",
+          "label": "Draft remaining 18 listings (after format approved)",
+          "done": false,
+          "blocked_by": "user_qa_proof_of_concept"
+        },
+        {
+          "id": "user_qa_all_20",
+          "label": "USER QA: review all 20 drafted listings",
+          "done": false
+        },
+        {
+          "id": "publish_first_3",
+          "label": "Publish first 3 listings to Etsy (slow ramp)",
+          "done": false
+        },
+        {
+          "id": "publish_remaining_17",
+          "label": "Publish remaining 17 (cadence: 2-3 per week)",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "user_qa_proof_of_concept",
+        "label": "USER QA: approve template/format on listings #01 + #07",
+        "done": false,
+        "blocking": true
+      },
+      "blocked": true
+    },
+    "pinterest_ads": {
+      "label": "Pinterest Promoted Pins setup",
+      "owner": "claude_then_user_approval",
+      "done": 0,
+      "total": 4,
+      "pct": 0.0,
+      "items": [
+        {
+          "id": "ad_account",
+          "label": "Pinterest Ads account funded ($60 month 1)",
+          "done": false
+        },
+        {
+          "id": "ad_creative_brief",
+          "label": "Brief 3 organic pins to boost (with destination Etsy URLs)",
+          "done": false
+        },
+        {
+          "id": "ad_user_approval",
+          "label": "USER QA: approve ad creative briefs",
+          "done": false
+        },
+        {
+          "id": "campaign_live",
+          "label": "Campaign launched",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "ad_account",
+        "label": "Pinterest Ads account funded ($60 month 1)",
+        "done": false
+      },
+      "blocked": false
+    },
+    "launch_readiness": {
+      "label": "Launch readiness final checks",
+      "owner": "claude",
+      "done": 0,
+      "total": 4,
+      "pct": 0.0,
+      "items": [
+        {
+          "id": "ai_disclosure_audit",
+          "label": "Audit all 20 listings for AI disclosure compliance",
+          "done": false
+        },
+        {
+          "id": "shipping_under_6",
+          "label": "Verify all single SKUs ship under $6 (Etsy algo boost)",
+          "done": false
+        },
+        {
+          "id": "first_sale_response_plan",
+          "label": "Plan: when first sale arrives, follow-up review-request message ready",
+          "done": false
+        },
+        {
+          "id": "decision_log_complete",
+          "label": "Decision log has citation for every listing",
+          "done": false
+        }
+      ],
+      "next_pending": {
+        "id": "ai_disclosure_audit",
+        "label": "Audit all 20 listings for AI disclosure compliance",
+        "done": false
+      },
+      "blocked": false
+    }
+  },
+  "listings_summary": {
+    "total": 20,
+    "by_status": {
+      "drafted_pending_qa": 2,
+      "not_drafted": 18
+    },
+    "by_category": {
+      "sympathy_card": {
+        "total": 6,
+        "drafted": 1,
+        "approved": 0,
+        "live": 0
+      },
+      "pillow_cover": {
+        "total": 6,
+        "drafted": 1,
+        "approved": 0,
+        "live": 0
+      },
+      "bandana": {
+        "total": 4,
+        "drafted": 0,
+        "approved": 0,
+        "live": 0
+      },
+      "sticker_pack": {
+        "total": 3,
+        "drafted": 0,
+        "approved": 0,
+        "live": 0
+      },
+      "sweatshirt": {
+        "total": 1,
+        "drafted": 0,
+        "approved": 0,
+        "live": 0
+      }
+    },
+    "drafted_count": 2,
+    "approved_count": 0,
+    "live_count": 0
+  },
+  "listings": [
+    {
+      "id": 1,
+      "category": "sympathy_card",
+      "title_short": "Cavalier Rainbow Bridge",
+      "source_image": "fuzzy_v14_01_cavalier_bluebells.png",
+      "primary_competitor": "FoxCardCo",
+      "status": "drafted_pending_qa",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 2,
+      "category": "sympathy_card",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "FoxCardCo",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 3,
+      "category": "sympathy_card",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "FoxCardCo",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 4,
+      "category": "sympathy_card",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "OscarFinks",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 5,
+      "category": "sympathy_card",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "ThePawpShopCo",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 6,
+      "category": "sympathy_card",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "BarkingtailsCo",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 7,
+      "category": "pillow_cover",
+      "title_short": "Cavalier Bluebells Pillow",
+      "source_image": "fuzzy_v14_01_cavalier_bluebells.png",
+      "primary_competitor": "DrawYourPortrait",
+      "status": "drafted_pending_qa",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 8,
+      "category": "pillow_cover",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "DrawYourPortrait",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 9,
+      "category": "pillow_cover",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "DrawYourPortrait",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 10,
+      "category": "pillow_cover",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "DrawYourPortrait",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 11,
+      "category": "pillow_cover",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "DrawYourPortrait",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 12,
+      "category": "pillow_cover",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "DrawYourPortrait",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 13,
+      "category": "bandana",
+      "title_short": "TBD",
+      "source_image": "TBD_new_pattern_render",
+      "primary_competitor": "TheMinimalistPup",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null,
+      "needs_new_render": true
+    },
+    {
+      "id": 14,
+      "category": "bandana",
+      "title_short": "TBD",
+      "source_image": "TBD_new_pattern_render",
+      "primary_competitor": "TheMinimalistPup",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null,
+      "needs_new_render": true
+    },
+    {
+      "id": 15,
+      "category": "bandana",
+      "title_short": "TBD",
+      "source_image": "TBD_new_pattern_render",
+      "primary_competitor": "TheWhimsyDog",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null,
+      "needs_new_render": true
+    },
+    {
+      "id": 16,
+      "category": "bandana",
+      "title_short": "TBD",
+      "source_image": "TBD_new_pattern_render",
+      "primary_competitor": "TheWhimsyDog",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null,
+      "needs_new_render": true
+    },
+    {
+      "id": 17,
+      "category": "sticker_pack",
+      "title_short": "TBD",
+      "source_image": "TBD_pack_assembly",
+      "primary_competitor": "AcornandCrowStudio",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 18,
+      "category": "sticker_pack",
+      "title_short": "TBD",
+      "source_image": "TBD_pack_assembly",
+      "primary_competitor": "AcornandCrowStudio",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 19,
+      "category": "sticker_pack",
+      "title_short": "TBD",
+      "source_image": "TBD_pack_assembly",
+      "primary_competitor": "AbbyDiamondDraws",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    },
+    {
+      "id": 20,
+      "category": "sweatshirt",
+      "title_short": "TBD",
+      "source_image": null,
+      "primary_competitor": "TheDogMomCo",
+      "status": "not_drafted",
+      "user_approved": false,
+      "live_url": null,
+      "total_sales": 0,
+      "first_sale_at": null
+    }
+  ],
+  "post_launch_metrics": {
+    "first_sale_at": null,
+    "total_sales": 0,
+    "total_revenue_usd": 0,
+    "current_listings_live": 0,
+    "review_count": 0,
+    "average_rating": null,
+    "shop_visits_30d": null,
+    "pinterest_to_etsy_clicks_30d": null
+  },
+  "budget_state": {
+    "monthly_budget_usd": 100,
+    "month_1_planned": {
+      "etsy_listings_20": 4,
+      "printful_pillow_sample": 30,
+      "pinterest_promoted_pins": 60,
+      "etsy_ads_after_day_15": 0,
+      "reserve": 6,
+      "total": 100
+    },
+    "month_1_spent_to_date": 0
+  },
+  "user_action_items": [
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Set shop handle to FuzzyFramesAI (or alternative)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Upload shop banner + logo (Fuzzy aesthetic)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Write shop About / story (AI-disclosed)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Set return policy, shipping policy",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Confirm LLC info on Etsy (SaltyBayFlips LLC, EIN, S-Corp)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Banking + payout method connected",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "etsy_shop_setup",
+      "group_label": "Etsy shop setup",
+      "label": "Tax info filed (1099 + S-Corp election)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "printful_setup",
+      "group_label": "Printful account + Etsy integration",
+      "label": "Create Printful account",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "printful_setup",
+      "group_label": "Printful account + Etsy integration",
+      "label": "Connect Printful to Etsy shop",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "printful_setup",
+      "group_label": "Printful account + Etsy integration",
+      "label": "Set default shipping rates",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    }
+  ],
+  "claude_action_items": [
+    {
+      "group": "asset_prep",
+      "group_label": "Asset prep (source images + design templates)",
+      "label": "Render 4 new seamless cottagecore floral patterns (for bandanas)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "asset_prep",
+      "group_label": "Asset prep (source images + design templates)",
+      "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "asset_prep",
+      "group_label": "Asset prep (source images + design templates)",
+      "label": "Create Canva template for sticker pack assembly (6-design kiss-cut sheet)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "asset_prep",
+      "group_label": "Asset prep (source images + design templates)",
+      "label": "All 20 source images prepped for upload",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "listing_drafts",
+      "group_label": "Listing drafts (20 total) — QA gate before any go live",
+      "label": "USER QA: approve template/format on listings #01 + #07",
+      "blocking": true,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "listing_drafts",
+      "group_label": "Listing drafts (20 total) — QA gate before any go live",
+      "label": "Draft remaining 18 listings (after format approved)",
+      "blocking": false,
+      "blocked_by": "user_qa_proof_of_concept",
+      "note": null
+    },
+    {
+      "group": "listing_drafts",
+      "group_label": "Listing drafts (20 total) — QA gate before any go live",
+      "label": "USER QA: review all 20 drafted listings",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "listing_drafts",
+      "group_label": "Listing drafts (20 total) — QA gate before any go live",
+      "label": "Publish first 3 listings to Etsy (slow ramp)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "listing_drafts",
+      "group_label": "Listing drafts (20 total) — QA gate before any go live",
+      "label": "Publish remaining 17 (cadence: 2-3 per week)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "pinterest_ads",
+      "group_label": "Pinterest Promoted Pins setup",
+      "label": "Pinterest Ads account funded ($60 month 1)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    }
+  ]
+}

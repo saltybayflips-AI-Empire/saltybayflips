@@ -499,6 +499,15 @@
   <div class="nicherow" id="topPerformers"></div>
 </div>
 
+<!-- ============== ETSY LAUNCH TRACKER ================= -->
+<div class="section" id="etsyLaunchSection" style="display:none;">
+  <h2>🛍️ Etsy launch tracker <span class="count" id="etsyLaunchSubtitle"></span></h2>
+  <div id="etsyLaunchOverall"></div>
+  <div id="etsyLaunchActions" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px;"></div>
+  <div id="etsyLaunchChecklist" style="margin-top:14px;"></div>
+  <div id="etsyLaunchListings" style="margin-top:14px;"></div>
+</div>
+
 <!-- ============== CONTENT CALENDAR (interactive month view) ================= -->
 <div class="section" id="calendarSection">
   <h2>Content calendar <span class="count" id="calendarSubtitle"></span></h2>
@@ -729,6 +738,120 @@ async function fetchCalendar() {
   } catch (e) {
     return null;
   }
+}
+
+async function fetchEtsyLaunch() {
+  try {
+    const r = await fetch(`data/etsy_launch.json${_CB}`, {cache:'no-store'});
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+// =========== ETSY LAUNCH TRACKER ===========
+function renderEtsyLaunch(data) {
+  const section = document.getElementById('etsyLaunchSection');
+  if (!data) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = 'block';
+  const pct = data.overall_progress_pct || 0;
+  const phase = data.phase_label || data.phase || 'unknown';
+  document.getElementById('etsyLaunchSubtitle').innerHTML =
+    `${data.overall_done}/${data.overall_total} steps done · <span style="color:#ffba66">${phase}</span> · ${data.listings_summary?.drafted_count || 0}/20 listings drafted, ${data.listings_summary?.live_count || 0} live`;
+
+  // Overall progress bar + key state
+  const budget = data.budget_state || {};
+  const metrics = data.post_launch_metrics || {};
+  document.getElementById('etsyLaunchOverall').innerHTML = `
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:14px;align-items:start;">
+      <div style="grid-column:1/-1;background:var(--card2);padding:10px 14px;border-radius:8px;border:1px solid var(--line);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;">Overall progress</span>
+          <span style="font-weight:600;color:${pct >= 50 ? 'var(--good)' : pct >= 25 ? 'var(--warn)' : 'var(--mut)'}">${pct}%</span>
+        </div>
+        <div style="background:#1a1f28;height:8px;border-radius:4px;overflow:hidden;">
+          <div style="background:linear-gradient(90deg, #ff5050, #ffba66 50%, #5fce7c 100%);height:100%;width:${pct}%;transition:width .4s;"></div>
+        </div>
+      </div>
+      <div class="stat" style="margin:0;"><div class="lbl">Listings drafted</div><div class="val">${data.listings_summary?.drafted_count || 0}<small>/20</small></div></div>
+      <div class="stat" style="margin:0;"><div class="lbl">Listings live</div><div class="val good">${data.listings_summary?.live_count || 0}<small>/20</small></div></div>
+      <div class="stat" style="margin:0;"><div class="lbl">Month 1 budget</div><div class="val">$${budget.month_1_spent_to_date || 0}<small>/$${budget.monthly_budget_usd || 100}</small></div></div>
+    </div>
+  `;
+
+  // Action items split: User vs Claude
+  const userActions = (data.user_action_items || []).slice(0, 5);
+  const claudeActions = (data.claude_action_items || []).slice(0, 5);
+  document.getElementById('etsyLaunchActions').innerHTML = `
+    <div style="background:rgba(255,186,102,.1);border:1px solid rgba(255,186,102,.3);border-radius:8px;padding:12px;">
+      <div style="font-size:11px;color:#ffba66;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">⚠️ User actions needed (${userActions.length})</div>
+      ${userActions.length ? userActions.map(a => `
+        <div style="font-size:12px;margin-bottom:6px;line-height:1.4;">
+          ${a.blocking ? '🚧 ' : '• '}<strong>${a.label}</strong>
+          <div style="color:var(--mut);font-size:10px;">${a.group_label}</div>
+        </div>
+      `).join('') : '<div style="color:var(--mut);font-size:12px;">No user actions blocking right now.</div>'}
+    </div>
+    <div style="background:rgba(95,206,124,.1);border:1px solid rgba(95,206,124,.3);border-radius:8px;padding:12px;">
+      <div style="font-size:11px;color:var(--good);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">🤖 Claude actions (${claudeActions.length})</div>
+      ${claudeActions.length ? claudeActions.map(a => `
+        <div style="font-size:12px;margin-bottom:6px;line-height:1.4;">
+          • <strong>${a.label}</strong>
+          ${a.blocked_by ? `<div style="color:#ffba66;font-size:10px;">⏸ blocked by: ${a.blocked_by}</div>` : ''}
+          <div style="color:var(--mut);font-size:10px;">${a.group_label}</div>
+        </div>
+      `).join('') : '<div style="color:var(--mut);font-size:12px;">Caught up — waiting on user.</div>'}
+    </div>
+  `;
+
+  // Checklist by group
+  const groups = data.groups || {};
+  let checklistHtml = '<div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:10px;">';
+  for (const [gid, g] of Object.entries(groups)) {
+    const groupPct = g.pct;
+    const ownerBadge = g.owner === 'user' ? '<span style="background:rgba(255,186,102,.2);color:#ffba66;padding:1px 6px;border-radius:4px;font-size:9px;">USER</span>' :
+                       g.owner === 'claude' ? '<span style="background:rgba(95,206,124,.2);color:var(--good);padding:1px 6px;border-radius:4px;font-size:9px;">CLAUDE</span>' :
+                       '<span style="background:rgba(100,160,220,.2);color:#7fb6e6;padding:1px 6px;border-radius:4px;font-size:9px;">HYBRID</span>';
+    const itemsHtml = (g.items || []).map(it => `
+      <div style="font-size:11px;line-height:1.4;padding:2px 0;color:${it.done ? 'var(--mut)' : 'var(--fg)'};">
+        ${it.done ? '✅' : (it.blocking ? '🚧' : '⬜')} <span style="${it.done ? 'text-decoration:line-through;opacity:.6;' : ''}">${it.label}</span>
+        ${it.note ? `<div style="color:var(--mut);font-size:10px;margin-left:14px;">${it.note}</div>` : ''}
+      </div>
+    `).join('');
+    checklistHtml += `
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <div style="font-size:12px;font-weight:600;">${g.label} ${ownerBadge}</div>
+          <span style="font-size:11px;color:${groupPct === 100 ? 'var(--good)' : 'var(--mut)'};">${g.done}/${g.total}</span>
+        </div>
+        ${itemsHtml}
+      </div>`;
+  }
+  checklistHtml += '</div>';
+  document.getElementById('etsyLaunchChecklist').innerHTML = checklistHtml;
+
+  // Listings table summary by category
+  const byCat = data.listings_summary?.by_category || {};
+  let listingsHtml = '<div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;">';
+  listingsHtml += '<div style="font-size:12px;font-weight:600;margin-bottom:8px;">Listings by category</div>';
+  listingsHtml += '<table style="width:100%;font-size:11px;border-collapse:collapse;">';
+  listingsHtml += '<thead><tr style="border-bottom:1px solid var(--line);"><th style="text-align:left;padding:4px 8px;color:var(--mut);font-weight:500;">Category</th><th style="text-align:right;padding:4px 8px;color:var(--mut);font-weight:500;">Planned</th><th style="text-align:right;padding:4px 8px;color:var(--mut);font-weight:500;">Drafted</th><th style="text-align:right;padding:4px 8px;color:var(--mut);font-weight:500;">Approved</th><th style="text-align:right;padding:4px 8px;color:var(--mut);font-weight:500;">Live</th></tr></thead><tbody>';
+  for (const [cat, counts] of Object.entries(byCat)) {
+    const catLabel = cat.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    listingsHtml += `<tr style="border-bottom:1px solid rgba(255,255,255,.04);">
+      <td style="padding:4px 8px;">${catLabel}</td>
+      <td style="text-align:right;padding:4px 8px;">${counts.total}</td>
+      <td style="text-align:right;padding:4px 8px;color:${counts.drafted ? 'var(--info)' : 'var(--mut)'}">${counts.drafted}</td>
+      <td style="text-align:right;padding:4px 8px;color:${counts.approved ? 'var(--good)' : 'var(--mut)'}">${counts.approved}</td>
+      <td style="text-align:right;padding:4px 8px;color:${counts.live ? 'var(--good)' : 'var(--mut)'}">${counts.live}</td>
+    </tr>`;
+  }
+  listingsHtml += '</tbody></table></div>';
+  document.getElementById('etsyLaunchListings').innerHTML = listingsHtml;
 }
 
 // =========== CONTENT CALENDAR (interactive month view) ===========
@@ -1356,8 +1479,8 @@ async function loadAll() {
   document.getElementById('refreshBtn').disabled = true;
   document.getElementById('refreshBtn').textContent = '↻ Loading...';
 
-  // Tracker data + analytics + action items + top_performers + calendar in parallel
-  const [results, amazon, tiktok, pinterest, actionItems, topPerformers, calendar] = await Promise.all([
+  // Tracker data + analytics + action items + top_performers + calendar + etsy_launch in parallel
+  const [results, amazon, tiktok, pinterest, actionItems, topPerformers, calendar, etsyLaunch] = await Promise.all([
     Promise.all(NICHES.map(loadOne)),
     loadAnalytics('amazon'),
     loadAnalytics('tiktok'),
@@ -1365,10 +1488,12 @@ async function loadAll() {
     loadActionItems(),
     loadTopPerformers(),
     fetchCalendar(),
+    fetchEtsyLaunch(),
   ]);
   renderActionItems(actionItems);
   renderTopPerformers(topPerformers);
   renderCalendar(calendar);
+  renderEtsyLaunch(etsyLaunch);
 
   const errs = results.filter(r => !r.data).map(r =>
     `Couldn't load ${r.niche.title}: ${r.error}`);
