@@ -2177,10 +2177,10 @@
     }
   ],
   "pinterest_runway": {
-    "runway_days": 13,
-    "next_scheduled": "2026-05-19T11:00:00",
+    "runway_days": 12,
+    "next_scheduled": "2026-05-20T11:00:00",
     "last_scheduled": "2026-06-01T11:00:00",
-    "count": 15
+    "count": 13
   },
   "tiktok": {
     "enabled": true,
@@ -3041,9 +3041,9 @@
       "scheduled": 49,
       "ready_no_date": 14
     },
-    "runway_days": 2,
-    "next_unposted": "2026-05-19T09:00:00",
+    "runway_days": 1,
+    "next_unposted": "2026-05-20T09:00:00",
     "last_scheduled": "2026-05-21T09:00:00"
   },
-  "last_synced": "2026-05-19T09:23:13"
+  "last_synced": "2026-05-20T06:59:37"
 }

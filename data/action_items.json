@@ -1,20 +1,47 @@
 {
-  "synced_at": "2026-05-19T09:23:13.436969",
-  "item_count": 3,
+  "synced_at": "2026-05-20T06:59:37.260571",
+  "item_count": 6,
   "items": [
     {
+      "id": "overdue_aesthetic_spaces_co",
+      "title": "ASC: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche asc` to auto-fix. First few: #62 (2026-05-19 11:00, 20.0h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot",
+      "url": "https://www.pinterest.com/saltybayflipspin/_created/"
+    },
+    {
+      "id": "overdue_luxe_living_daily",
+      "title": "LLD: 1 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche lld` to auto-fix. First few: #59 (2026-05-19 11:00, 20.0h ago).",
+      "priority": "high",
+      "estimated_min": 2,
+      "category": "missed_slot",
+      "url": "https://www.pinterest.com/saltybayflipsluxe/_created/"
+    },
+    {
       "id": "tt_runway_luxe_living_daily",
-      "title": "LLD TikTok runway = 3 day(s)",
+      "title": "LLD TikTok runway = 2 day(s)",
       "detail": "46 TikTok post(s) scheduled, last fires 2026-05-22T09:00:00. Cadence target = 2 posts/day. Schedule more in TikTok Studio.",
-      "priority": "med",
+      "priority": "high",
       "estimated_min": 30,
       "category": "tiktok_runway",
       "url": "https://www.tiktok.com/tiktokstudio/content?tab=video",
       "deadline_at": "2026-05-22"
     },
     {
+      "id": "overdue_fuzzy_frames_ai",
+      "title": "Fuzzy: 2 scheduled slot(s) past their fire time",
+      "detail": "Tracker says scheduled but scheduled_for is in the past. With API live, run `python scripts/reconcile_past_fire.py --niche fuzzy` to auto-fix. First few: #74 (2026-05-19 11:00, 20.0h ago), #81 (2026-05-19 11:00, 20.0h ago).",
+      "priority": "high",
+      "estimated_min": 4,
+      "category": "missed_slot",
+      "url": "https://www.pinterest.com/saltybayflipsfuzzy/_created/"
+    },
+    {
       "id": "tt_runway_fuzzy_frames_ai",
-      "title": "Fuzzy TikTok runway = 2 day(s)",
+      "title": "Fuzzy TikTok runway = 1 day(s)",
       "detail": "49 TikTok post(s) scheduled, last fires 2026-05-21T09:00:00. Cadence target = 2 posts/day. Schedule more in TikTok Studio.",
       "priority": "high",
       "estimated_min": 30,

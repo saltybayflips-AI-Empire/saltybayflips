@@ -1,21 +1,21 @@
 {
-  "synced_at": "2026-05-19T09:23:21",
+  "synced_at": "2026-05-20T06:59:43",
   "project_name": "SaltyBayFlips Etsy Fuzzy Launch",
   "project_start": "2026-05-19",
   "phase": "pre_launch_shop_customization",
   "phase_label": "Pre-launch: shop branding + first listings",
-  "next_user_action": "When you can focus AI Empire Chrome window: (1) paste tagline + About story into Settings > Your shop (content drafted at shop_content_ready_to_paste.md), (2) upload a logo + banner image (I can draft from Fuzzy renders if you give me focus), (3) order 1 Printful pillow cover sample.",
-  "next_claude_action": "Awaiting browser focus to finish shop branding fields. Also: draft Canva templates for sympathy card + sticker pack overlays.",
-  "overall_progress_pct": 23.5,
-  "overall_done": 8,
+  "next_user_action": "When back at AI Empire Chrome: (1) drag-upload shop_logo_cavalier_500.png as shop icon + shop_banner_1600x400.png as banner (both in etsy_fuzzy_launch/mockups/), (2) create Printful account + connect to Etsy, (3) order 1 pillow cover sample. Then I can build listings.",
+  "next_claude_action": "Sympathy card designs done. Waiting on Printful connection to build listings (POD listings are created from Printful side). Can produce more card designs or pillow mockups meanwhile.",
+  "overall_progress_pct": 32.4,
+  "overall_done": 11,
   "overall_total": 34,
   "groups": {
     "etsy_shop_setup": {
       "label": "Etsy shop setup",
       "owner": "user",
-      "done": 2,
+      "done": 4,
       "total": 8,
-      "pct": 25.0,
+      "pct": 50.0,
       "items": [
         {
           "id": "shop_account",
@@ -32,17 +32,20 @@
         {
           "id": "shop_banner",
           "label": "Upload shop banner + logo (Fuzzy aesthetic)",
-          "done": false
+          "done": false,
+          "note": "ASSET READY: shop_logo_cavalier_500.png + shop_banner_1600x400.png staged in mockups/. Needs user drag-upload (file_upload blocked via MCP)."
         },
         {
           "id": "shop_about",
           "label": "Write shop About / story (AI-disclosed)",
-          "done": false
+          "done": true,
+          "note": "Tagline + headline + full About story saved on Etsy 2026-05-19 (AI-disclosed, cottagecore voice)"
         },
         {
           "id": "shop_policies",
           "label": "Set return policy, shipping policy",
-          "done": false
+          "done": true,
+          "note": "30-day return policy set (buyer pays return shipping). Etsy 'Success! Your policy is set.' confirmed."
         },
         {
           "id": "llc_info",
@@ -63,7 +66,8 @@
       "next_pending": {
         "id": "shop_banner",
         "label": "Upload shop banner + logo (Fuzzy aesthetic)",
-        "done": false
+        "done": false,
+        "note": "ASSET READY: shop_logo_cavalier_500.png + shop_banner_1600x400.png staged in mockups/. Needs user drag-upload (file_upload blocked via MCP)."
       },
       "blocked": false
     },
@@ -137,9 +141,9 @@
     "asset_prep": {
       "label": "Asset prep (source images + design templates)",
       "owner": "claude",
-      "done": 2,
+      "done": 3,
       "total": 5,
-      "pct": 40.0,
+      "pct": 60.0,
       "items": [
         {
           "id": "render_bandana_patterns",
@@ -150,12 +154,14 @@
         {
           "id": "canva_sympathy_template",
           "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
-          "done": false
+          "done": true,
+          "note": "DONE via PIL (better than Canva template): 5 finished sympathy card fronts produced (cavalier, golden, ragdoll, bernese, british). 1500x2100 @ 300dpi, cottagecore layout with script + serif text. Card #6 universal deferred (needs composite)."
         },
         {
           "id": "canva_sticker_template",
           "label": "Create Canva template for sticker pack assembly (6-design kiss-cut sheet)",
-          "done": false
+          "done": false,
+          "note": "Deferred — sticker die-cut assembly better done in Printify's sticker tool with proper cut-line templates. Will do when Printful/Printify connected."
         },
         {
           "id": "inventory_existing_renders",
@@ -170,9 +176,10 @@
         }
       ],
       "next_pending": {
-        "id": "canva_sympathy_template",
-        "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
-        "done": false
+        "id": "canva_sticker_template",
+        "label": "Create Canva template for sticker pack assembly (6-design kiss-cut sheet)",
+        "done": false,
+        "note": "Deferred — sticker die-cut assembly better done in Printify's sticker tool with proper cut-line templates. Will do when Printful/Printify connected."
       },
       "blocked": false
     },
@@ -350,7 +357,9 @@
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
-      "first_sale_at": null
+      "first_sale_at": null,
+      "design_asset": "01_sympathy_card_cavalier_FRONT.png",
+      "design_ready": true
     },
     {
       "id": 2,
@@ -362,7 +371,9 @@
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
-      "first_sale_at": null
+      "first_sale_at": null,
+      "design_asset": "02_sympathy_card_golden_FRONT.png",
+      "design_ready": true
     },
     {
       "id": 3,
@@ -374,7 +385,9 @@
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
-      "first_sale_at": null
+      "first_sale_at": null,
+      "design_asset": "03_sympathy_card_ragdoll_FRONT.png",
+      "design_ready": true
     },
     {
       "id": 4,
@@ -386,7 +399,9 @@
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
-      "first_sale_at": null
+      "first_sale_at": null,
+      "design_asset": "04_sympathy_card_bernese_FRONT.png",
+      "design_ready": true
     },
     {
       "id": 5,
@@ -398,7 +413,9 @@
       "user_approved": false,
       "live_url": null,
       "total_sales": 0,
-      "first_sale_at": null
+      "first_sale_at": null,
+      "design_asset": "05_sympathy_card_british_FRONT.png",
+      "design_ready": true
     },
     {
       "id": 6,
@@ -614,23 +631,7 @@
       "label": "Upload shop banner + logo (Fuzzy aesthetic)",
       "blocking": false,
       "blocked_by": null,
-      "note": null
-    },
-    {
-      "group": "etsy_shop_setup",
-      "group_label": "Etsy shop setup",
-      "label": "Write shop About / story (AI-disclosed)",
-      "blocking": false,
-      "blocked_by": null,
-      "note": null
-    },
-    {
-      "group": "etsy_shop_setup",
-      "group_label": "Etsy shop setup",
-      "label": "Set return policy, shipping policy",
-      "blocking": false,
-      "blocked_by": null,
-      "note": null
+      "note": "ASSET READY: shop_logo_cavalier_500.png + shop_banner_1600x400.png staged in mockups/. Needs user drag-upload (file_upload blocked via MCP)."
     },
     {
       "group": "etsy_shop_setup",
@@ -687,24 +688,32 @@
       "blocking": false,
       "blocked_by": null,
       "note": null
+    },
+    {
+      "group": "sample_order",
+      "group_label": "Sample order (validate Printful quality)",
+      "label": "Order 1 pillow cover sample ($25-30)",
+      "blocking": false,
+      "blocked_by": null,
+      "note": "REVISED 2026-05-19: pillow cover instead of t-shirt — pillows are the new greenfield priority"
+    },
+    {
+      "group": "sample_order",
+      "group_label": "Sample order (validate Printful quality)",
+      "label": "Sample received + visually inspected",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
     }
   ],
   "claude_action_items": [
     {
       "group": "asset_prep",
       "group_label": "Asset prep (source images + design templates)",
-      "label": "Create Canva template for sympathy card overlay (watercolor + flower border + hand-lettered text)",
-      "blocking": false,
-      "blocked_by": null,
-      "note": null
-    },
-    {
-      "group": "asset_prep",
-      "group_label": "Asset prep (source images + design templates)",
       "label": "Create Canva template for sticker pack assembly (6-design kiss-cut sheet)",
       "blocking": false,
       "blocked_by": null,
-      "note": null
+      "note": "Deferred — sticker die-cut assembly better done in Printify's sticker tool with proper cut-line templates. Will do when Printful/Printify connected."
     },
     {
       "group": "asset_prep",
@@ -766,6 +775,14 @@
       "group": "launch_readiness",
       "group_label": "Launch readiness final checks",
       "label": "Audit all 20 listings for AI disclosure compliance",
+      "blocking": false,
+      "blocked_by": null,
+      "note": null
+    },
+    {
+      "group": "launch_readiness",
+      "group_label": "Launch readiness final checks",
+      "label": "Verify all single SKUs ship under $6 (Etsy algo boost)",
       "blocking": false,
       "blocked_by": null,
       "note": null

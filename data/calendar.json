@@ -1,6 +1,6 @@
 {
-  "synced_at": "2026-05-19T09:23:21",
-  "today": "2026-05-19",
+  "synced_at": "2026-05-20T06:59:43",
+  "today": "2026-05-20",
   "niche_colors": {
     "asc": "#7fb069",
     "fuzzy": "#d472a2",
@@ -17,17 +17,17 @@
     "lld": true
   },
   "summary": {
-    "scheduled_future": 51,
-    "posted_last_7d": 59,
-    "planned_count": 93,
-    "total_entries": 358,
+    "scheduled_future": 44,
+    "posted_last_7d": 50,
+    "planned_count": 100,
+    "total_entries": 365,
     "by_platform": {
       "pinterest_posted": 111,
       "tiktok_posted": 44,
       "tiktok_scheduled": 68,
       "pinterest_scheduled": 42,
-      "tiktok_planned": 69,
-      "pinterest_planned": 24
+      "tiktok_planned": 73,
+      "pinterest_planned": 27
     }
   },
   "entries": [
@@ -4796,6 +4796,97 @@
       "title": "Planned TikTok slot (18:00) — needs content",
       "board": "",
       "url": ""
+    },
+    {
+      "id": "fuzzy_plan_tt_2026-06-10_0900",
+      "niche": "fuzzy",
+      "niche_label": "Fuzzy",
+      "niche_color": "#d472a2",
+      "platform": "tiktok",
+      "date": "2026-06-10",
+      "time": "09:00",
+      "status": "planned",
+      "title": "Planned TikTok slot (09:00) — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "lld_plan_tt_2026-06-10_0900",
+      "niche": "lld",
+      "niche_label": "LLD",
+      "niche_color": "#9d8189",
+      "platform": "tiktok",
+      "date": "2026-06-10",
+      "time": "09:00",
+      "status": "planned",
+      "title": "Planned TikTok slot (09:00) — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "asc_plan_pin_2026-06-10",
+      "niche": "asc",
+      "niche_label": "ASC",
+      "niche_color": "#7fb069",
+      "platform": "pinterest",
+      "date": "2026-06-10",
+      "time": "11:00",
+      "status": "planned",
+      "title": "Planned Pinterest slot — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "fuzzy_plan_pin_2026-06-10",
+      "niche": "fuzzy",
+      "niche_label": "Fuzzy",
+      "niche_color": "#d472a2",
+      "platform": "pinterest",
+      "date": "2026-06-10",
+      "time": "11:00",
+      "status": "planned",
+      "title": "Planned Pinterest slot — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "lld_plan_pin_2026-06-10",
+      "niche": "lld",
+      "niche_label": "LLD",
+      "niche_color": "#9d8189",
+      "platform": "pinterest",
+      "date": "2026-06-10",
+      "time": "11:00",
+      "status": "planned",
+      "title": "Planned Pinterest slot — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "fuzzy_plan_tt_2026-06-10_1800",
+      "niche": "fuzzy",
+      "niche_label": "Fuzzy",
+      "niche_color": "#d472a2",
+      "platform": "tiktok",
+      "date": "2026-06-10",
+      "time": "18:00",
+      "status": "planned",
+      "title": "Planned TikTok slot (18:00) — needs content",
+      "board": "",
+      "url": ""
+    },
+    {
+      "id": "lld_plan_tt_2026-06-10_1800",
+      "niche": "lld",
+      "niche_label": "LLD",
+      "niche_color": "#9d8189",
+      "platform": "tiktok",
+      "date": "2026-06-10",
+      "time": "18:00",
+      "status": "planned",
+      "title": "Planned TikTok slot (18:00) — needs content",
+      "board": "",
+      "url": ""
     }
   ],
   "by_date": {
@@ -9063,6 +9154,89 @@
         },
         {
           "id": "lld_plan_tt_2026-06-09_1800",
+          "niche": "lld",
+          "niche_label": "LLD",
+          "niche_color": "#9d8189",
+          "platform": "tiktok",
+          "time": "18:00",
+          "title": "Planned TikTok slot (18:00) — needs content",
+          "board": "",
+          "url": ""
+        }
+      ]
+    },
+    "2026-06-10": {
+      "posted": [],
+      "scheduled": [],
+      "planned": [
+        {
+          "id": "fuzzy_plan_tt_2026-06-10_0900",
+          "niche": "fuzzy",
+          "niche_label": "Fuzzy",
+          "niche_color": "#d472a2",
+          "platform": "tiktok",
+          "time": "09:00",
+          "title": "Planned TikTok slot (09:00) — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "lld_plan_tt_2026-06-10_0900",
+          "niche": "lld",
+          "niche_label": "LLD",
+          "niche_color": "#9d8189",
+          "platform": "tiktok",
+          "time": "09:00",
+          "title": "Planned TikTok slot (09:00) — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "asc_plan_pin_2026-06-10",
+          "niche": "asc",
+          "niche_label": "ASC",
+          "niche_color": "#7fb069",
+          "platform": "pinterest",
+          "time": "11:00",
+          "title": "Planned Pinterest slot — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "fuzzy_plan_pin_2026-06-10",
+          "niche": "fuzzy",
+          "niche_label": "Fuzzy",
+          "niche_color": "#d472a2",
+          "platform": "pinterest",
+          "time": "11:00",
+          "title": "Planned Pinterest slot — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "lld_plan_pin_2026-06-10",
+          "niche": "lld",
+          "niche_label": "LLD",
+          "niche_color": "#9d8189",
+          "platform": "pinterest",
+          "time": "11:00",
+          "title": "Planned Pinterest slot — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "fuzzy_plan_tt_2026-06-10_1800",
+          "niche": "fuzzy",
+          "niche_label": "Fuzzy",
+          "niche_color": "#d472a2",
+          "platform": "tiktok",
+          "time": "18:00",
+          "title": "Planned TikTok slot (18:00) — needs content",
+          "board": "",
+          "url": ""
+        },
+        {
+          "id": "lld_plan_tt_2026-06-10_1800",
           "niche": "lld",
           "niche_label": "LLD",
           "niche_color": "#9d8189",

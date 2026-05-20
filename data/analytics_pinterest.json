@@ -1,28 +1,28 @@
 {
-  "synced_at": "2026-05-19T09:23:21",
+  "synced_at": "2026-05-20T06:59:43",
   "report_url": "https://analytics.pinterest.com/overview/",
   "note": "All 3 niches now sourced from Pinterest API v5.",
   "scrape_status": "api_live",
   "accounts": {
     "fuzzy_frames_ai": {
-      "date_range": "2026-04-19 to 2026-05-19",
+      "date_range": "2026-04-20 to 2026-05-20",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-19T09:23:19",
+      "synced_at": "2026-05-20T06:59:41",
       "metrics": {
         "Impressions": "1431",
         "Engagements": "33",
         "Outbound clicks": "0",
         "Saves": "3",
-        "Total audience": "1295",
+        "Total audience": "1423",
         "Engaged audience": "?"
       }
     },
     "luxe_living_daily": {
-      "date_range": "2026-04-19 to 2026-05-19",
+      "date_range": "2026-04-20 to 2026-05-20",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-19T09:23:21",
+      "synced_at": "2026-05-20T06:59:43",
       "metrics": {
         "Impressions": "563",
         "Engagements": "8",
@@ -33,10 +33,10 @@
       }
     },
     "aesthetic_spaces_co": {
-      "date_range": "2026-04-19 to 2026-05-19",
+      "date_range": "2026-04-20 to 2026-05-20",
       "window_days": 30,
       "source": "pinterest_api_v5",
-      "synced_at": "2026-05-19T09:23:17",
+      "synced_at": "2026-05-20T06:59:39",
       "metrics": {
         "Impressions": "99",
         "Engagements": "4",
@@ -52,7 +52,7 @@
     "Engagements": 45,
     "Outbound clicks": 3,
     "Saves": 6,
-    "Total audience": 1878,
+    "Total audience": 2006,
     "Engaged audience": 0
   }
 }
